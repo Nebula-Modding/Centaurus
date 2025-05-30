@@ -1,0 +1,15 @@
+{
+  "values": [
+    "cepheus:oxygen_ice_coal_ore",
+    "cepheus:oxygen_ice_iron_ore",
+    "cepheus:oxygen_ice_copper_ore",
+    "cepheus:oxygen_ice_gold_ore",
+    "cepheus:oxygen_ice_redstone_ore",
+    "cepheus:oxygen_ice_emerald_ore",
+    "cepheus:oxygen_ice_lapis_ore",
+    "cepheus:oxygen_ice_diamond_ore",
+    "cepheus:oxygen_ice_obdurium_ore",
+    "cepheus:oxygen_ice_malunite_ore",
+    "cepheus:oxygen_ice_lutrum_ore"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/karcass_cobblestone_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/karcass_cobblestone"
+    },
+    "type=top": {
+      "model": "cepheus:block/karcass_cobblestone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "cepheus:block/graphite_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "cepheus:block/graphite_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cepheus:block/graphite_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "cepheus:block/graphite_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "cepheus:block/graphite_cluster"
+    },
+    "facing=west": {
+      "model": "cepheus:block/graphite_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

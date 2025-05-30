@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/polished_cut_sulfur_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/polished_cut_sulfur"
+    },
+    "type=top": {
+      "model": "cepheus:block/polished_cut_sulfur_slab_top"
+    }
+  }
+}

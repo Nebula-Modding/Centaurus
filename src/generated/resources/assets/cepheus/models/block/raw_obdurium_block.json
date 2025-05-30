@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cepheus:block/raw_obdurium_block"
+  }
+}

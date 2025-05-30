@@ -1,0 +1,24 @@
+{
+  "values": [
+    "cepheus:blueschist_copper_ore",
+    "cepheus:blueschist_redstone_ore",
+    "cepheus:blueschist_lapis_ore",
+    "cepheus:blueschist_lutrum_ore",
+    "cepheus:blue_shale_copper_ore",
+    "cepheus:blue_shale_redstone_ore",
+    "cepheus:blue_shale_lapis_ore",
+    "cepheus:blue_shale_lutrum_ore",
+    "cepheus:water_ice_copper_ore",
+    "cepheus:water_ice_redstone_ore",
+    "cepheus:water_ice_lapis_ore",
+    "cepheus:water_ice_lutrum_ore",
+    "cepheus:nitrogen_ice_copper_ore",
+    "cepheus:nitrogen_ice_redstone_ore",
+    "cepheus:nitrogen_ice_lapis_ore",
+    "cepheus:nitrogen_ice_lutrum_ore",
+    "cepheus:oxygen_ice_copper_ore",
+    "cepheus:oxygen_ice_redstone_ore",
+    "cepheus:oxygen_ice_lapis_ore",
+    "cepheus:oxygen_ice_lutrum_ore"
+  ]
+}

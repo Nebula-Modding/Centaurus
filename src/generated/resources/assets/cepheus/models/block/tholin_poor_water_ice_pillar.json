@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cepheus:block/tholin_poor_water_ice_pillar_top",
+    "side": "cepheus:block/tholin_poor_water_ice_pillar"
+  }
+}

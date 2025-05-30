@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cepheus:block/polished_karcass_stone",
+    "side": "cepheus:block/polished_karcass_stone",
+    "top": "cepheus:block/polished_karcass_stone"
+  }
+}

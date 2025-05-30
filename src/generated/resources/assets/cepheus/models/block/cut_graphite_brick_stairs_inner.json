@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cepheus:block/cut_graphite_bricks",
+    "side": "cepheus:block/cut_graphite_bricks",
+    "top": "cepheus:block/cut_graphite_bricks"
+  }
+}

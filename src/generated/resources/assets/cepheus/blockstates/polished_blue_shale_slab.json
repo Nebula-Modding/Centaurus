@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/polished_blue_shale_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/polished_blue_shale"
+    },
+    "type=top": {
+      "model": "cepheus:block/polished_blue_shale_slab_top"
+    }
+  }
+}

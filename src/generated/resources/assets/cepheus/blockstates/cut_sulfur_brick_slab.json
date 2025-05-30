@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/cut_sulfur_brick_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/cut_sulfur_bricks"
+    },
+    "type=top": {
+      "model": "cepheus:block/cut_sulfur_brick_slab_top"
+    }
+  }
+}

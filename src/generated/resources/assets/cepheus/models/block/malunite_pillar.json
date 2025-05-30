@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cepheus:block/malunite_pillar_top",
+    "side": "cepheus:block/malunite_pillar"
+  }
+}

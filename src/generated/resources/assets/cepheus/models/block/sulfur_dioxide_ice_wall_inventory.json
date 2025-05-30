@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "cepheus:block/sulfur_dioxide_ice"
+  }
+}

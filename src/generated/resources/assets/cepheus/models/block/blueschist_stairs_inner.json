@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cepheus:block/blueschist",
+    "side": "cepheus:block/blueschist",
+    "top": "cepheus:block/blueschist"
+  }
+}

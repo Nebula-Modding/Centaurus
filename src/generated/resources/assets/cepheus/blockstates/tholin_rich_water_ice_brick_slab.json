@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/tholin_rich_water_ice_brick_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/tholin_rich_water_ice_bricks"
+    },
+    "type=top": {
+      "model": "cepheus:block/tholin_rich_water_ice_brick_slab_top"
+    }
+  }
+}

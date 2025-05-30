@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cepheus:block/sulfur_dioxide_ice_pillar_top",
+    "side": "cepheus:block/sulfur_dioxide_ice_pillar"
+  }
+}

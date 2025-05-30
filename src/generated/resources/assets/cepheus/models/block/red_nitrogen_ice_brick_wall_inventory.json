@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "cepheus:block/red_nitrogen_ice_bricks"
+  }
+}

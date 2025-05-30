@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/cut_salt_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/cut_salt"
+    },
+    "type=top": {
+      "model": "cepheus:block/cut_salt_slab_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cepheus:block/oxidized_lutrum_plateblock"
+  }
+}

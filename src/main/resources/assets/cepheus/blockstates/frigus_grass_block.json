@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "cepheus:block/frigus_grass_block"
+      }
+    ],
+    "snowy=true": {
+      "model": "cepheus:block/frigus_grass_block_snow"
+    }
+  }
+}

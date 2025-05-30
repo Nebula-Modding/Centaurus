@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cepheus:block/marked_ostrum_pillar_top",
+    "side": "cepheus:block/marked_ostrum_pillar"
+  }
+}

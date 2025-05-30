@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cepheus:block/bruma_block_top",
+    "side": "cepheus:block/bruma_block"
+  }
+}
