@@ -4,18 +4,16 @@ import io.github.nebulamodding.cepheus.Cepheus;
 import io.github.nebulamodding.cepheus.registry.block.blocktypes.FrigusDirtPathBlock;
 import io.github.nebulamodding.cepheus.registry.block.blocktypes.FrigusFarmlandBlock;
 import io.github.nebulamodding.cepheus.registry.block.blocktypes.FrigusGrassBlock;
+import io.github.nebulamodding.cepheus.registry.block.blocktypes.ConfigurablePressurePlateBlock;
 import io.github.nebulamodding.cepheus.registry.item.CItems;
 import martian.regolith.DeferredHolders;
 import martian.regolith.builder.RegolithBlockBuilder;
 import martian.regolith.neoforge.RegolithNeoForge;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -1080,7 +1078,7 @@ public class CBlocks {
             EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_STAIRS = register("exposed_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_SLAB = register("exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_BARS = register("exposed_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1094,7 +1092,7 @@ public class CBlocks {
             WEATHERED_LUTRUM_PLATING = register("weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_STAIRS = register("weathered_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_SLAB = register("weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             WEATHERED_LUTRUM_PILLAR = register("weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_BARS = register("weathered_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.STONE))),
@@ -1108,7 +1106,7 @@ public class CBlocks {
             OXIDIZED_LUTRUM_PLATING = register("oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_STAIRS = register("oxidized_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_SLAB = register("oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             OXIDIZED_LUTRUM_PILLAR = register("oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_BARS = register("oxidized_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
@@ -1124,7 +1122,7 @@ public class CBlocks {
             OBDURIUM_PLATING = register("obdurium_plating", () -> new Block(obduriumProperties())),
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_PLATING.get().defaultBlockState(), obduriumProperties())),
             OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(obduriumProperties())),
-            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.OBDURIUM, obduriumProperties().forceSolidOn().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
+            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties().forceSolidOn().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
             OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
             OBDURIUM_PILLAR = register("obdurium_pillar", () -> new RotatedPillarBlock(obduriumProperties())),
             OBDURIUM_BARS = register("obdurium_bars", () -> new IronBarsBlock(obduriumProperties())),
