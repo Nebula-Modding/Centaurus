@@ -422,13 +422,13 @@ public class CBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(CBlocks.OBDURIUM_GRATE.get(), models().cubeAll("obdurium_grate", blockLoc(CBlocks.OBDURIUM_GRATE)).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.OBDURIUM_BARS.get(), blockLoc(CBlocks.OBDURIUM_BARS), blockLoc(CBlocks.OBDURIUM_BARS), "cutout");
-        doorBlockWithItem(CBlocks.OBDURIUM_DOOR, blockLoc(CBlocks.OBDURIUM_DOOR, "bottom"), blockLoc(CBlocks.OBDURIUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.OBDURIUM_TRAPDOOR, blockLoc(CBlocks.OBDURIUM_TRAPDOOR), true, "cutout");
+        doorBlockWithItem(CBlocks.OBDURIUM_DOOR, blockLoc(CBlocks.OBDURIUM_DOOR, "bottom"), blockLoc(CBlocks.OBDURIUM_DOOR, "top"), "translucent");
+        trapDoorBlockWithItem(CBlocks.OBDURIUM_TRAPDOOR, blockLoc(CBlocks.OBDURIUM_TRAPDOOR), true, "translucent");
 
         simpleBlockWithItem(CBlocks.MALUNITE_GRATE.get(), models().cubeAll("malunite_grate", blockLoc(CBlocks.MALUNITE_GRATE)).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.MALUNITE_BARS.get(), blockLoc(CBlocks.MALUNITE_BARS), blockLoc(CBlocks.MALUNITE_BARS), "cutout");
-        doorBlockWithItem(CBlocks.MALUNITE_DOOR, blockLoc(CBlocks.MALUNITE_DOOR, "bottom"), blockLoc(CBlocks.MALUNITE_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), true, "cutout");
+        doorBlockWithItem(CBlocks.MALUNITE_DOOR, blockLoc(CBlocks.MALUNITE_DOOR, "bottom"), blockLoc(CBlocks.MALUNITE_DOOR, "top"), "translucent");
+        trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), true, "translucent");
 
         simpleBlock(CBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(CBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.MAYURA_SAPLING)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_GRIMWOOD_SAPLING.get(), models().withExistingParent(CBlocks.POTTED_GRIMWOOD_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));

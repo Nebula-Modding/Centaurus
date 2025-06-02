@@ -1119,7 +1119,7 @@ public class CBlocks {
     // Obdurium
     public static final DeferredBlock<Block>
             OBDURIUM_BLOCK = register("obdurium_block", () -> new Block(obduriumProperties())),
-            OBDURIUM_SHEET_METAL = register("obdurium_sheet_metal", () -> new Block(lutrumProperties())),
+            OBDURIUM_SHEET_METAL = register("obdurium_sheet_metal", () -> new Block(obduriumProperties())),
             OBDURIUM_GRATE = register("obdurium_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(SoundType.NETHERITE_BLOCK))),
             OBDURIUM_PLATING = register("obdurium_plating", () -> new Block(obduriumProperties())),
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_PLATING.get().defaultBlockState(), obduriumProperties())),

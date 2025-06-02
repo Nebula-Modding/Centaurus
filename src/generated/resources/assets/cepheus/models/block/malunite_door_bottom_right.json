@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/door_bottom_right",
-  "render_type": "minecraft:cutout",
+  "render_type": "minecraft:translucent",
   "textures": {
     "bottom": "cepheus:block/malunite_door_bottom",
     "top": "cepheus:block/malunite_door_top"
