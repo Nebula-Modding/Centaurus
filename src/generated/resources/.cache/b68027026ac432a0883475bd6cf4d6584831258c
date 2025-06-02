@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-02T01:10:55.9544553	Tags for minecraft:block mod id cepheus
+// 1.21.1	2025-06-02T19:50:39.9138746	Tags for minecraft:block mod id cepheus
 92a95f0d2c98dd5ac61d46201de5a8c8b422b3a6 data/cepheus/tags/block/base_stone_frigus.json
 fc3ffb72645359678967b0da3d434391c288d304 data/cepheus/tags/block/blueschist_ore_replaceables.json
 e7b279d5a18a89f5111951f1a408faaad49fb058 data/cepheus/tags/block/blue_shale_ore_replaceables.json
@@ -14,11 +14,11 @@ fd0b9ed7639579ecc730abd19dc3ebd8535aed4a data/c/tags/block/fence_gates/wooden.js
 7fcf170ab722d1d64f4fd11948ab13e797845c92 data/c/tags/block/ores/lutrum.json
 31e0ec6a4fdaa754d1dc4a891ad8aad78b289342 data/c/tags/block/ores/malunite.json
 27029db2996de3a6e45ed23c1c844232cfede66e data/c/tags/block/ores/obdurium.json
-5f27f330d021c2d173303a273229ecb58808b354 data/c/tags/block/ores_in_ground/blueschist.json
-2e0085a3e54add2da6c79823b49ed9fb89bcc43c data/c/tags/block/ores_in_ground/blue_shale.json
-df03fc0937b5438b60f0f66e8cea70a5a9ef2c62 data/c/tags/block/ores_in_ground/nitrogen_ice.json
-98aca25526e2605d3227831af183d966c095442c data/c/tags/block/ores_in_ground/oxygen_ice.json
-b9d709de3391f16bd8f237b549aa7c1388be370e data/c/tags/block/ores_in_ground/water_ice.json
+fbe1df743ef82bda84cbff0172187af0558102c4 data/c/tags/block/ores_in_ground/blueschist.json
+f3840feb5b0542a12364d548b9764b38b6bd4ee9 data/c/tags/block/ores_in_ground/blue_shale.json
+9ccfddc84fbcd4580469677494e9ed9d6a3e7673 data/c/tags/block/ores_in_ground/nitrogen_ice.json
+55a737b7a7456eab8867f16e0324f7956a611065 data/c/tags/block/ores_in_ground/oxygen_ice.json
+6fc908c6c096beb1efd7e455490942827d710bc3 data/c/tags/block/ores_in_ground/water_ice.json
 7effc7eed3ac91131dc171974fe46b5650c06573 data/c/tags/block/ore_bearing_ground/blueschist.json
 e7b279d5a18a89f5111951f1a408faaad49fb058 data/c/tags/block/ore_bearing_ground/blue_shale.json
 ecc0b7ea95e71759c890e6e0e099d5225863bc02 data/c/tags/block/ore_bearing_ground/nitrogen_ice.json
@@ -28,7 +28,7 @@ a298e167cfb17ad0f97fcbbdb997d060289503e9 data/c/tags/block/ore_bearing_ground/wa
 6ce63f5c79101586f28cbf80f8325ac07f5bf694 data/c/tags/block/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_rates/sparse.json
 92a95f0d2c98dd5ac61d46201de5a8c8b422b3a6 data/c/tags/block/stones.json
-522ca7fa8f5e11e246388b953bd727b7357a3c69 data/c/tags/block/storage_blocks.json
+3459b70c3f91d3e580c08246f831d9b89f2ab112 data/c/tags/block/storage_blocks.json
 11dc7ec03d2524a3350a41d4456d1475778ef419 data/c/tags/block/storage_blocks/bruma.json
 92b762d5958b5e00810e0c291b444ea096aca122 data/c/tags/block/storage_blocks/lutrum.json
 73d88d08d5d57eab75adabf5d7849de88931677b data/c/tags/block/storage_blocks/malunite.json
@@ -64,7 +64,7 @@ fd1a4d866e4eebcf2e9b4dff7d9944d4aa000836 data/minecraft/tags/block/logs.json
 fd1a4d866e4eebcf2e9b4dff7d9944d4aa000836 data/minecraft/tags/block/logs_that_burn.json
 7fe1b44e49ad80b5af0d957b9b1850cdb7d9d0ad data/minecraft/tags/block/mineable/axe.json
 6e2de289a3e6dda03c43a673f9c325752f39703c data/minecraft/tags/block/mineable/hoe.json
-ef6a3c7015e66e73f0a7c22969f926d0fc6ce84a data/minecraft/tags/block/mineable/pickaxe.json
+24c83f14f2fb83df8f4047567a68bb4742043aa5 data/minecraft/tags/block/mineable/pickaxe.json
 fac4bb2ef89e91b90a5e88c00dd99cbffacf89ea data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 7a52397b4b8094c46171f73e3e231db59a1c6005 data/minecraft/tags/block/needs_iron_tool.json

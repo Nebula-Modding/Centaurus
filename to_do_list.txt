@@ -23,6 +23,7 @@ The obdurium hammer is meant to be a sideways mace. Code it.
 - Axe + Log
 - Shovel + Grass
 - Hoe + Dirt/Grass
+- Hoe + Coarse Dirt
 - Water Bottle + #can_become_frigus_mud
 - Bonemeal + Frigus Grass
 

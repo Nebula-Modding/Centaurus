@@ -6,6 +6,7 @@ import io.github.nebulamodding.cepheus.registry.item.CItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -77,6 +78,19 @@ public class CItemModelProvider extends ItemModelProvider {
         itemModel(CBlocks.OXIDIZED_LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.OXIDIZED_LUTRUM_BULB);
 
+        blockItemModel(CBlocks.WAXED_LUTRUM_BARS, CBlocks.LUTRUM_BARS, GENERATED);
+        itemModel(CBlocks.WAXED_LUTRUM_DOOR, itemLoc("lutrum_door"), GENERATED);
+        blockModel(CBlocks.WAXED_LUTRUM_BULB, blockLoc(CBlocks.LUTRUM_BULB));
+        blockItemModel(CBlocks.WAXED_EXPOSED_LUTRUM_BARS, CBlocks.EXPOSED_LUTRUM_BARS, GENERATED);
+        itemModel(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR, itemLoc("exposed_lutrum_door"), GENERATED);
+        blockModel(CBlocks.WAXED_EXPOSED_LUTRUM_BULB, blockLoc(CBlocks.EXPOSED_LUTRUM_BULB));
+        blockItemModel(CBlocks.WAXED_WEATHERED_LUTRUM_BARS, CBlocks.WEATHERED_LUTRUM_BARS, GENERATED);
+        itemModel(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR, itemLoc("weathered_lutrum_door"), GENERATED);
+        blockModel(CBlocks.WAXED_WEATHERED_LUTRUM_BULB, blockLoc(CBlocks.WEATHERED_LUTRUM_BULB));
+        blockItemModel(CBlocks.WAXED_OXIDIZED_LUTRUM_BARS, CBlocks.OXIDIZED_LUTRUM_BARS, GENERATED);
+        itemModel(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR, itemLoc("oxidized_lutrum_door"), GENERATED);
+        blockModel(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB, blockLoc(CBlocks.OXIDIZED_LUTRUM_BULB));
+
         blockItemModel(CBlocks.OBDURIUM_BARS, CBlocks.OBDURIUM_BARS, GENERATED);
         itemModel(CBlocks.OBDURIUM_DOOR, GENERATED);
         blockModel(CBlocks.OBDURIUM_BULB);
@@ -100,6 +114,9 @@ public class CItemModelProvider extends ItemModelProvider {
     public void blockModel(DeferredBlock<?> block, String suffix) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath() + "_" + suffix));
     }
+    public void blockModel(DeferredBlock<?> block, ResourceLocation texture) {
+        withExistingParent(block.getId().getPath(), modLoc(texture.getPath()));
+    }
     public void blockItemModel(DeferredBlock<?> block, DeferredBlock<?> textureBlock, ModelFile modelFile) {
         getBuilder(block.getId().getPath()).parent(modelFile).texture("layer0", "block/" + textureBlock.getId().getPath());
     }
@@ -115,8 +132,14 @@ public class CItemModelProvider extends ItemModelProvider {
     private void spawnEggModel(DeferredItem<Item> item) {
         withExistingParent(item.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
+    private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
+        return modLoc("block/" + block.getId().getPath());
+    }
     private ResourceLocation itemLoc(DeferredItem<? extends Item> item) {
         return modLoc("item/" + item.getId().getPath());
+    }
+    private ResourceLocation itemLoc(String item) {
+        return modLoc("item/" + item);
     }
     private ModelFile.ExistingModelFile getModel(DeferredItem<?> item, String suffix) {
         return new ModelFile.ExistingModelFile(modLoc("item/" + item.getId().getPath() + "_" + suffix), existingFileHelper);

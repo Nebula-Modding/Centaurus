@@ -45,7 +45,7 @@ public class CLanguageProvider extends LanguageProvider {
         excludedBlocks.add(CBlocks.RAW_MALUNITE_BLOCK);
 
         excludedBlocks.add(CBlocks.LUTRUM_BLOCK);
-        //excludedBlocks.add(CBlocks.WAXED_LUTRUM_BLOCK);
+        excludedBlocks.add(CBlocks.WAXED_LUTRUM_BLOCK);
         excludedBlocks.add(CBlocks.OBDURIUM_BLOCK);
         excludedBlocks.add(CBlocks.MALUNITE_BLOCK);
 
@@ -78,7 +78,7 @@ public class CLanguageProvider extends LanguageProvider {
         addBlock(CBlocks.LUTRUM_AMALGAMATE_BLOCK, "Block of Lutrum Amalgamate");
 
         addBlock(CBlocks.LUTRUM_BLOCK, "Block of Lutrum");
-        //addBlock(CBlocks.WAXED_LUTRUM_BLOCK, "Block of Waxed Lutrum");
+        addBlock(CBlocks.WAXED_LUTRUM_BLOCK, "Block of Waxed Lutrum");
         addBlock(CBlocks.OBDURIUM_BLOCK, "Block of Obdurium");
         addBlock(CBlocks.MALUNITE_BLOCK, "Block of Malunite");
 

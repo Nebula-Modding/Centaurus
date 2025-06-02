@@ -1,7 +1,7 @@
 {
   "values": [
+    "#c:ingots/lutrum",
     "#c:ingots/obdurium",
-    "#c:ingots/malunite",
-    "#c:ingots/lutrum"
+    "#c:ingots/malunite"
   ]
 }
