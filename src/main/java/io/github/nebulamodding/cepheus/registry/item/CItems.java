@@ -29,24 +29,6 @@ public class CItems {
     Metal Items
      */
 
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "raw_obdurium",
-            "obdurium_nugget",
-            "obdurium_ingot",
-            "obdurium_sheet",
-            "obdurium_rod"
-    );
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> MALUNITE_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "raw_malunite",
-            "malunite_nugget",
-            "malunite_ingot",
-            "malunite_sheet",
-            "malunite_rod"
-    );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> LUTRUM_ITEMS = RegolithItemUtil.registerItems(
             RegolithNeoForge.wrapItems(ITEMS),
             new Item.Properties(),
@@ -54,8 +36,23 @@ public class CItems {
             "lutrum_nugget",
             "lutrum_ingot",
             "lutrum_sheet",
-            "lutrum_rod"
-    );
+            "lutrum_rod");
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            "raw_obdurium",
+            "obdurium_nugget",
+            "obdurium_ingot",
+            "obdurium_sheet",
+            "obdurium_rod");
+    public static final DeferredHolders<Item, DeferredItem<? extends Item>> MALUNITE_ITEMS = RegolithItemUtil.registerItems(
+            RegolithNeoForge.wrapItems(ITEMS),
+            new Item.Properties(),
+            "raw_malunite",
+            "malunite_nugget",
+            "malunite_ingot",
+            "malunite_sheet",
+            "malunite_rod");
 
     /*
     Tools

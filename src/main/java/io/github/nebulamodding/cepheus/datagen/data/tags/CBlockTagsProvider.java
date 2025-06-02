@@ -47,9 +47,9 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         blueschistOres.add(CBlocks.BLUESCHIST_EMERALD_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_LAPIS_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_DIAMOND_ORE);
+        blueschistOres.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_OBDURIUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_MALUNITE_ORE);
-        blueschistOres.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_COAL_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_IRON_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_COPPER_ORE);
@@ -58,9 +58,9 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         blueShaleOres.add(CBlocks.BLUE_SHALE_EMERALD_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_LAPIS_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_DIAMOND_ORE);
+        blueShaleOres.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_OBDURIUM_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_MALUNITE_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_COAL_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_IRON_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_COPPER_ORE);
@@ -69,9 +69,9 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         waterIceOres.add(CBlocks.WATER_ICE_EMERALD_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_LAPIS_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_DIAMOND_ORE);
+        waterIceOres.add(CBlocks.WATER_ICE_LUTRUM_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_OBDURIUM_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_MALUNITE_ORE);
-        waterIceOres.add(CBlocks.WATER_ICE_LUTRUM_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_COAL_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_IRON_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_COPPER_ORE);
@@ -80,9 +80,9 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_EMERALD_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_LAPIS_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_DIAMOND_ORE);
+        nitrogenIceOres.add(CBlocks.NITROGEN_ICE_LUTRUM_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE);
         nitrogenIceOres.add(CBlocks.NITROGEN_ICE_MALUNITE_ORE);
-        nitrogenIceOres.add(CBlocks.NITROGEN_ICE_LUTRUM_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_COAL_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_IRON_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_COPPER_ORE);
@@ -91,9 +91,9 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_EMERALD_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_LAPIS_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_DIAMOND_ORE);
+        oxygenIceOres.add(CBlocks.OXYGEN_ICE_LUTRUM_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_MALUNITE_ORE);
-        oxygenIceOres.add(CBlocks.OXYGEN_ICE_LUTRUM_ORE);
         // Frigus Mud
         pickaxeStairs.add(CBlocks.FRIGUS_MUD_BRICK_STAIRS);
         pickaxeSlabs.add(CBlocks.FRIGUS_MUD_BRICK_SLAB);
@@ -659,6 +659,13 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get())
         ;
+        tag(CTags.CBlockTags.ORES_LUTRUM)
+                .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
+                .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
+                .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
+                .add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
+                .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
+        ;
         tag(CTags.CBlockTags.ORES_OBDURIUM)
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
@@ -672,13 +679,6 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.WATER_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get())
-        ;
-        tag(CTags.CBlockTags.ORES_LUTRUM)
-                .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
-                .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
-                .add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
-                .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
         tag(Tags.Blocks.ORE_RATES_DENSE)
                 .add(CBlocks.BLUESCHIST_COPPER_ORE.get())
@@ -795,15 +795,21 @@ public class CBlockTagsProvider extends BlockTagsProvider {
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
                 .addTag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
                 .addTag(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE)
                 .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
         ;
         tag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
                 .add(CBlocks.BRUMA_BLOCK.get())
+        ;
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
+                .add(CBlocks.LUTRUM_BLOCK.get())
+        ;
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
+                .add(CBlocks.RAW_LUTRUM_BLOCK.get())
         ;
         tag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .add(CBlocks.OBDURIUM_BLOCK.get())
@@ -816,12 +822,6 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(CBlocks.RAW_MALUNITE_BLOCK.get())
-        ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
-                .add(CBlocks.LUTRUM_BLOCK.get())
-        ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
-                .add(CBlocks.RAW_LUTRUM_BLOCK.get())
         ;
 
         /*

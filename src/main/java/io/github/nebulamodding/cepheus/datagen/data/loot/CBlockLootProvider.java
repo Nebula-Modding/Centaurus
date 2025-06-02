@@ -65,9 +65,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.BLUESCHIST_EMERALD_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_LAPIS_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_COAL_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_IRON_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_COPPER_ORE);
@@ -76,9 +76,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.BLUE_SHALE_EMERALD_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_LAPIS_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.BLUE_SHALE_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_COAL_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_IRON_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_COPPER_ORE);
@@ -87,9 +87,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.WATER_ICE_EMERALD_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_LAPIS_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.WATER_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.WATER_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_COAL_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_IRON_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_COPPER_ORE);
@@ -98,9 +98,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.NITROGEN_ICE_EMERALD_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_LAPIS_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.NITROGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.NITROGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_COAL_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_IRON_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_COPPER_ORE);
@@ -109,9 +109,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.OXYGEN_ICE_EMERALD_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_LAPIS_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.OXYGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.OXYGEN_ICE_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.BRAINROCK);
         excludedBlocks.add(CBlocks.LUTRUM_DOOR);
         excludedBlocks.add(CBlocks.EXPOSED_LUTRUM_DOOR);
@@ -187,9 +187,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.BLUESCHIST_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(CBlocks.BLUESCHIST_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.BLUESCHIST_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.BLUESCHIST_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(CBlocks.BLUESCHIST_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
-        add(CBlocks.BLUESCHIST_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.BLUE_SHALE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.BLUE_SHALE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.BLUE_SHALE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -198,9 +198,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.BLUE_SHALE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(CBlocks.BLUE_SHALE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
-        add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.WATER_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.WATER_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.WATER_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -209,9 +209,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.WATER_ICE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(CBlocks.WATER_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.WATER_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.WATER_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.WATER_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(CBlocks.WATER_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
-        add(CBlocks.WATER_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.NITROGEN_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.NITROGEN_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.NITROGEN_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -220,9 +220,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.NITROGEN_ICE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(CBlocks.NITROGEN_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
-        add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.OXYGEN_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.OXYGEN_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.OXYGEN_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -231,9 +231,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.OXYGEN_ICE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
         add(CBlocks.OXYGEN_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
         add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
-        add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
 
         /*
         Potted Plant Loot Tables

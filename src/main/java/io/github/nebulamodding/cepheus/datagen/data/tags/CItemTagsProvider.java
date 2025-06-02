@@ -65,9 +65,9 @@ public class CItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.EMERALD_ORES, ItemTags.EMERALD_ORES);
         copy(BlockTags.LAPIS_ORES, ItemTags.LAPIS_ORES);
         copy(BlockTags.DIAMOND_ORES, ItemTags.DIAMOND_ORES);
+        copy(CTags.CBlockTags.ORES_LUTRUM, CTags.CItemTags.ORES_LUTRUM);
         copy(CTags.CBlockTags.ORES_OBDURIUM, CTags.CItemTags.ORES_OBDURIUM);
         copy(CTags.CBlockTags.ORES_MALUNITE, CTags.CItemTags.ORES_MALUNITE);
-        copy(CTags.CBlockTags.ORES_LUTRUM, CTags.CItemTags.ORES_LUTRUM);
         copy(Tags.Blocks.ORE_RATES_DENSE, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);
@@ -82,39 +82,54 @@ public class CItemTagsProvider extends ItemTagsProvider {
         copy(CTags.CBlockTags.ORES_IN_GROUND_NITROGEN_ICE, CTags.CItemTags.ORES_IN_GROUND_NITROGEN_ICE);
         copy(CTags.CBlockTags.ORES_IN_GROUND_OXYGEN_ICE, CTags.CItemTags.ORES_IN_GROUND_OXYGEN_ICE);
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
                 .addTag(CTags.CItemTags.INGOTS_OBDURIUM)
                 .addTag(CTags.CItemTags.INGOTS_MALUNITE)
-                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
         ;
         tag(ItemTags.TRIM_MATERIALS)
+                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
                 .addTag(CTags.CItemTags.INGOTS_OBDURIUM)
                 .addTag(CTags.CItemTags.INGOTS_MALUNITE)
-                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
         ;
         tag(Tags.Items.RAW_MATERIALS)
+                .addTag(CTags.CItemTags.RAW_MATERIALS_LUTRUM)
                 .addTag(CTags.CItemTags.RAW_MATERIALS_OBDURIUM)
                 .addTag(CTags.CItemTags.RAW_MATERIALS_MALUNITE)
-                .addTag(CTags.CItemTags.RAW_MATERIALS_LUTRUM)
         ;
         tag(Tags.Items.NUGGETS)
+                .addTag(CTags.CItemTags.NUGGETS_LUTRUM)
                 .addTag(CTags.CItemTags.NUGGETS_OBDURIUM)
                 .addTag(CTags.CItemTags.NUGGETS_MALUNITE)
-                .addTag(CTags.CItemTags.NUGGETS_LUTRUM)
         ;
         tag(Tags.Items.INGOTS)
+                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
                 .addTag(CTags.CItemTags.INGOTS_OBDURIUM)
                 .addTag(CTags.CItemTags.INGOTS_MALUNITE)
-                .addTag(CTags.CItemTags.INGOTS_LUTRUM)
         ;
         tag(CTags.CItemTags.PLATES)
+                .addTag(CTags.CItemTags.PLATES_LUTRUM)
                 .addTag(CTags.CItemTags.PLATES_OBDURIUM)
                 .addTag(CTags.CItemTags.PLATES_MALUNITE)
-                .addTag(CTags.CItemTags.PLATES_LUTRUM)
         ;
         tag(Tags.Items.RODS)
+                .addTag(CTags.CItemTags.RODS_LUTRUM)
                 .addTag(CTags.CItemTags.RODS_OBDURIUM)
                 .addTag(CTags.CItemTags.RODS_MALUNITE)
-                .addTag(CTags.CItemTags.RODS_LUTRUM)
+        ;
+        tag(CTags.CItemTags.RAW_MATERIALS_LUTRUM)
+                .add(CItems.LUTRUM_ITEMS.get("raw_lutrum").get())
+        ;
+        tag(CTags.CItemTags.NUGGETS_LUTRUM)
+                .add(CItems.LUTRUM_ITEMS.get("lutrum_nugget").get())
+        ;
+        tag(CTags.CItemTags.INGOTS_LUTRUM)
+                .add(CItems.LUTRUM_ITEMS.get("lutrum_ingot").get())
+        ;
+        tag(CTags.CItemTags.PLATES_LUTRUM)
+                .add(CItems.LUTRUM_ITEMS.get("lutrum_sheet").get())
+        ;
+        tag(CTags.CItemTags.RODS_LUTRUM)
+                .add(CItems.LUTRUM_ITEMS.get("lutrum_rod").get())
         ;
         tag(CTags.CItemTags.RAW_MATERIALS_OBDURIUM)
                 .add(CItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
@@ -146,21 +161,6 @@ public class CItemTagsProvider extends ItemTagsProvider {
         tag(CTags.CItemTags.RODS_MALUNITE)
                 .add(CItems.MALUNITE_ITEMS.get("malunite_rod").get())
         ;
-        tag(CTags.CItemTags.RAW_MATERIALS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("raw_lutrum").get())
-        ;
-        tag(CTags.CItemTags.NUGGETS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_nugget").get())
-        ;
-        tag(CTags.CItemTags.INGOTS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_ingot").get())
-        ;
-        tag(CTags.CItemTags.PLATES_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_sheet").get())
-        ;
-        tag(CTags.CItemTags.RODS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_rod").get())
-        ;
 
         /*
         Stone Tags
@@ -185,12 +185,12 @@ public class CItemTagsProvider extends ItemTagsProvider {
 
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
         copy(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA, CTags.CItemTags.STORAGE_BLOCKS_BRUMA);
+        copy(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM, CTags.CItemTags.STORAGE_BLOCKS_LUTRUM);
+        copy(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM, CTags.CItemTags.STORAGE_BLOCKS_RAW_LUTRUM);
         copy(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM, CTags.CItemTags.STORAGE_BLOCKS_OBDURIUM);
         copy(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, CTags.CItemTags.STORAGE_BLOCKS_RAW_OBDURIUM);
         copy(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE, CTags.CItemTags.STORAGE_BLOCKS_MALUNITE);
         copy(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE, CTags.CItemTags.STORAGE_BLOCKS_RAW_MALUNITE);
-        copy(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM, CTags.CItemTags.STORAGE_BLOCKS_LUTRUM);
-        copy(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM, CTags.CItemTags.STORAGE_BLOCKS_RAW_LUTRUM);
 
         /*
         Soil Tags

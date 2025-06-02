@@ -142,8 +142,8 @@ public class CBlocks {
                     "blueschist_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()))),
-            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())));
+            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     /*
     Frigus Deepslate Blocks
@@ -272,8 +272,8 @@ public class CBlocks {
                     "karcass_stone_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()))),
-            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())));
+            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     /*
     Ore Blocks
@@ -288,9 +288,9 @@ public class CBlocks {
             BLUESCHIST_EMERALD_ORE = register("blueschist_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_LAPIS_ORE = register("blueschist_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_DIAMOND_ORE = register("blueschist_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_LUTRUM_ORE = register("blueschist_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_OBDURIUM_ORE = register("blueschist_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_MALUNITE_ORE = register("blueschist_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
-            BLUESCHIST_LUTRUM_ORE = register("blueschist_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
 
             BLUE_SHALE_COAL_ORE = register("blue_shale_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUE_SHALE_IRON_ORE = register("blue_shale_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -300,9 +300,9 @@ public class CBlocks {
             BLUE_SHALE_EMERALD_ORE = register("blue_shale_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUE_SHALE_LAPIS_ORE = register("blue_shale_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUE_SHALE_DIAMOND_ORE = register("blue_shale_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUE_SHALE_LUTRUM_ORE = register("blue_shale_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUE_SHALE_OBDURIUM_ORE = register("blue_shale_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUE_SHALE_MALUNITE_ORE = register("blue_shale_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_LUTRUM_ORE = register("blue_shale_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
 
             WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
@@ -312,9 +312,9 @@ public class CBlocks {
             WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_OBDURIUM_ORE = register("water_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_MALUNITE_ORE = register("water_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
-            WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
 
             NITROGEN_ICE_COAL_ORE = register("nitrogen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_IRON_ORE = register("nitrogen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
@@ -324,9 +324,9 @@ public class CBlocks {
             NITROGEN_ICE_EMERALD_ORE = register("nitrogen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_LAPIS_ORE = register("nitrogen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_DIAMOND_ORE = register("nitrogen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_LUTRUM_ORE = register("nitrogen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_OBDURIUM_ORE = register("nitrogen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_MALUNITE_ORE = register("nitrogen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
-            NITROGEN_ICE_LUTRUM_ORE = register("nitrogen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
 
             OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_IRON_ORE = register("oxygen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
@@ -336,9 +336,9 @@ public class CBlocks {
             OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_OBDURIUM_ORE = register("oxygen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
-            OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
-            OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F)));
+            OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F)));
 
     /*
     Ice Blocks
@@ -1054,8 +1054,8 @@ public class CBlocks {
             BRUMA_BLOCK = register("bruma_block", () -> new HayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.MOSS))),
             RAW_OBDURIUM_BLOCK = register("raw_obdurium_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_PURPLE))),
             RAW_MALUNITE_BLOCK = register("raw_malunite_block", () -> new Block(rawBlockProperties().mapColor(MapColor.COLOR_GREEN))),
-            LUTRUM_AMALGAMATE_BLOCK = register("lutrum_amalgamate_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_GRAY))),
-            RAW_LUTRUM_BLOCK = register("raw_lutrum_block", () -> new Block(rawBlockProperties().mapColor(MapColor.CLAY)));
+            RAW_LUTRUM_BLOCK = register("raw_lutrum_block", () -> new Block(rawBlockProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_AMALGAMATE_BLOCK = register("lutrum_amalgamate_block", () -> new Block(rawBlockProperties().sound(SoundType.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_GRAY)));
 
     // Lutrum
     public static final DeferredBlock<Block>
@@ -1066,8 +1066,8 @@ public class CBlocks {
             LUTRUM_PLATING = register("lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_PLATING_STAIRS = register("lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_PLATING_SLAB = register("lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.CLAY))),
-            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.CLAY))),
-            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 20, lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.CLAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 20, lutrumProperties().mapColor(MapColor.CLAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             LUTRUM_PILLAR = register("lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_BARS = register("lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
@@ -1080,8 +1080,8 @@ public class CBlocks {
             EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_STAIRS = register("exposed_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_SLAB = register("exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_BARS = register("exposed_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1094,8 +1094,8 @@ public class CBlocks {
             WEATHERED_LUTRUM_PLATING = register("weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_STAIRS = register("weathered_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_SLAB = register("weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             WEATHERED_LUTRUM_PILLAR = register("weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_BARS = register("weathered_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
@@ -1108,8 +1108,8 @@ public class CBlocks {
             OXIDIZED_LUTRUM_PLATING = register("oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_STAIRS = register("oxidized_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_SLAB = register("oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             OXIDIZED_LUTRUM_PILLAR = register("oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_BARS = register("oxidized_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
@@ -1124,8 +1124,8 @@ public class CBlocks {
             OBDURIUM_PLATING = register("obdurium_plating", () -> new Block(obduriumProperties())),
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_PLATING.get().defaultBlockState(), obduriumProperties())),
             OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(obduriumProperties())),
-            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.OBDURIUM, obduriumProperties())),
-            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties())),
+            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.OBDURIUM, obduriumProperties().forceSolidOn().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
+            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
             OBDURIUM_PILLAR = register("obdurium_pillar", () -> new RotatedPillarBlock(obduriumProperties())),
             OBDURIUM_BARS = register("obdurium_bars", () -> new IronBarsBlock(obduriumProperties())),
             OBDURIUM_DOOR = register("obdurium_door", () -> new DoorBlock(CBlockSetTypes.OBDURIUM, obduriumProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
@@ -1140,8 +1140,8 @@ public class CBlocks {
             MALUNITE_PLATING = register("malunite_plating", () -> new Block(maluniteProperties())),
             MALUNITE_PLATING_STAIRS = register("malunite_plating_stairs", () -> new StairBlock(MALUNITE_PLATING.get().defaultBlockState(), maluniteProperties())),
             MALUNITE_PLATING_SLAB = register("malunite_plating_slab", () -> new SlabBlock(maluniteProperties())),
-            MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.MALUNITE, maluniteProperties())),
-            MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(CBlockSetTypes.MALUNITE, 20, maluniteProperties())),
+            MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.MALUNITE, maluniteProperties().forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(CBlockSetTypes.MALUNITE, 20, maluniteProperties().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
             MALUNITE_PILLAR = register("malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties())),
             MALUNITE_BARS = register("malunite_bars", () -> new IronBarsBlock(maluniteProperties())),
             MALUNITE_DOOR = register("malunite_door", () -> new DoorBlock(CBlockSetTypes.MALUNITE, maluniteProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
