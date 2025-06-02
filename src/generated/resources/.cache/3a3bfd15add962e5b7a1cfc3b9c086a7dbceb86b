@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-29T19:55:57.6189581	Tags for minecraft:item mod id cepheus
+// 1.21.1	2025-06-02T00:57:32.5942602	Tags for minecraft:item mod id cepheus
 6636e931ce2892cef0f308eb769cf9afa8793a11 data/cepheus/tags/item/grimwood_logs.json
 f75c28ca078822d75474b403d3c373f2f641aeba data/cepheus/tags/item/mayura_logs.json
 2258dda775d107bd202d68297b6856c7449adf7b data/c/tags/item/cobblestones.json
@@ -33,9 +33,9 @@ a298e167cfb17ad0f97fcbbdb997d060289503e9 data/c/tags/item/ore_bearing_ground/wat
 998705019d6f34b3e53c286df7759f57c5481079 data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 2e9c6862b01f84ce75b377a29e5024ea653774d2 data/c/tags/item/plates.json
-6b15747ecc470971c25c5853f7c38d10143b9d3e data/c/tags/item/plates/lutrum.json
-595d7238c768c2cb6f1e6f374aa75f2fd4824c97 data/c/tags/item/plates/malunite.json
-a9ec0ddb19c8c6a1e832a629b8819a254a615ce0 data/c/tags/item/plates/obdurium.json
+89af6b73cf3b2659dff061a1b666c94e8ec57ea5 data/c/tags/item/plates/lutrum.json
+36f03ca1513469d80eb46971e83490e0873d1cb7 data/c/tags/item/plates/malunite.json
+a8df0d4914dd4b337fc1e2e6609315f118fd1eac data/c/tags/item/plates/obdurium.json
 1387f5d0d068f76cc4a13f7e222654279082f692 data/c/tags/item/raw_materials.json
 a9cb112073f0c5f5efe1f9a443a7ae2c9bb5419d data/c/tags/item/raw_material/lutrum.json
 ba332c271eabb121db5d4ef1524d8ac92f36bee2 data/c/tags/item/raw_material/malunite.json

@@ -45,6 +45,24 @@ public class CBlockSetTypes {
             )
     );
     public static final BlockSetType GRIMWOOD = register(new BlockSetType("grimwood"));
+    public static final BlockSetType LUTRUM = register(
+            new BlockSetType(
+                    "lutrum",
+                    true,
+                    true,
+                    false,
+                    BlockSetType.PressurePlateSensitivity.EVERYTHING,
+                    SoundType.COPPER,
+                    SoundEvents.COPPER_DOOR_CLOSE,
+                    SoundEvents.COPPER_DOOR_OPEN,
+                    SoundEvents.COPPER_TRAPDOOR_CLOSE,
+                    SoundEvents.COPPER_TRAPDOOR_OPEN,
+                    SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF,
+                    SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON,
+                    SoundEvents.STONE_BUTTON_CLICK_OFF,
+                    SoundEvents.STONE_BUTTON_CLICK_ON
+            )
+    );
     public static final BlockSetType OBDURIUM = register(
             new BlockSetType(
                     "obdurium",
@@ -53,6 +71,24 @@ public class CBlockSetTypes {
                     false,
                     BlockSetType.PressurePlateSensitivity.EVERYTHING,
                     SoundType.NETHERITE_BLOCK,
+                    SoundEvents.COPPER_DOOR_CLOSE,
+                    SoundEvents.COPPER_DOOR_OPEN,
+                    SoundEvents.COPPER_TRAPDOOR_CLOSE,
+                    SoundEvents.COPPER_TRAPDOOR_OPEN,
+                    SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF,
+                    SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON,
+                    SoundEvents.STONE_BUTTON_CLICK_OFF,
+                    SoundEvents.STONE_BUTTON_CLICK_ON
+            )
+    );
+    public static final BlockSetType MALUNITE = register(
+            new BlockSetType(
+                    "malunite",
+                    true,
+                    true,
+                    false,
+                    BlockSetType.PressurePlateSensitivity.EVERYTHING,
+                    SoundType.COPPER,
                     SoundEvents.COPPER_DOOR_CLOSE,
                     SoundEvents.COPPER_DOOR_OPEN,
                     SoundEvents.COPPER_TRAPDOOR_CLOSE,

@@ -13,6 +13,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Cepheus.MOD_ID);
 
+    /*
+    Crop Items
+     */
+
     public static final DeferredItem<Item>
             BRUMA = ITEMS.register("bruma", () -> new Item(new Item.Properties())),
             BRUMA_LOAF = ITEMS.register("bruma_loaf", () -> new Item(new Item.Properties().food(CFoods.BRUMA_LOAF)));
@@ -20,11 +24,6 @@ public class CItems {
             AZURE_ROOT = ITEMS.register("azure_root", () -> new Item(new Item.Properties().food(CFoods.AZURE_ROOT))),
             GOLDEN_AZURE_ROOT = ITEMS.register("golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(CFoods.GOLDEN_AZURE_ROOT))),
             ENCHANTED_GOLDEN_AZURE_ROOT = ITEMS.register("enchanted_golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(CFoods.ENCHANTED_GOLDEN_AZURE_ROOT).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
-
-    public static final DeferredItem<Item>
-            FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(CFoods.FLESH))),
-            COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(CFoods.COOKED_FLESH))),
-            VEIN_STALK = ITEMS.register("vein_stalk", () -> new Item(new Item.Properties().food(CFoods.VEIN_STALK)));
 
     /*
     Metal Items
@@ -36,7 +35,7 @@ public class CItems {
             "raw_obdurium",
             "obdurium_nugget",
             "obdurium_ingot",
-            "obdurium_plate",
+            "obdurium_sheet",
             "obdurium_rod"
     );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> MALUNITE_ITEMS = RegolithItemUtil.registerItems(
@@ -45,7 +44,7 @@ public class CItems {
             "raw_malunite",
             "malunite_nugget",
             "malunite_ingot",
-            "malunite_plate",
+            "malunite_sheet",
             "malunite_rod"
     );
     public static final DeferredHolders<Item, DeferredItem<? extends Item>> LUTRUM_ITEMS = RegolithItemUtil.registerItems(
@@ -54,18 +53,29 @@ public class CItems {
             "raw_lutrum",
             "lutrum_nugget",
             "lutrum_ingot",
-            "lutrum_plate",
+            "lutrum_sheet",
             "lutrum_rod"
     );
 
-    // Items
-    public static final DeferredItem<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DENSE_PENCIL = ITEMS.registerSimpleItem("dense_pencil", new Item.Properties().stacksTo(16));
+    /*
+    Tools
+     */
 
-    // Tools
     public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new ObduriumHammerItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(CTiers.OBDURIUM, 3.0F, -3.2F))));
 
-    // Helper methods
+    /*
+    Flesh Items
+     */
+
+    public static final DeferredItem<Item>
+            FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(CFoods.FLESH))),
+            COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(CFoods.COOKED_FLESH))),
+            VEIN_STALK = ITEMS.register("vein_stalk", () -> new Item(new Item.Properties().food(CFoods.VEIN_STALK)));
+
+    /*
+    Helper Methods
+     */
+
     private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new ShovelItem(tier, new Item.Properties()
                 .attributes(ShovelItem.createAttributes(tier, attackDamage, attackSpeed))

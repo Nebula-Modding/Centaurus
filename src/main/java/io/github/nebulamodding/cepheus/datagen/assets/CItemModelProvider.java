@@ -31,8 +31,6 @@ public class CItemModelProvider extends ItemModelProvider {
         // Items excluded from having a model automatically provided
         excludedItems.add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT);
         excludedItems.add(CItems.OBDURIUM_HAMMER);
-        excludedItems.add(CItems.PENCIL);
-        excludedItems.add(CItems.DENSE_PENCIL);
 
         /*
         Manual Item Models
@@ -40,8 +38,6 @@ public class CItemModelProvider extends ItemModelProvider {
 
         itemModel(CItems.ENCHANTED_GOLDEN_AZURE_ROOT, itemLoc(CItems.GOLDEN_AZURE_ROOT), GENERATED);
         itemModel(CItems.OBDURIUM_HAMMER, HANDHELD);
-        itemModel(CItems.PENCIL, HANDHELD);
-        itemModel(CItems.DENSE_PENCIL, HANDHELD);
 
         /*
         Manual Block Models
@@ -68,14 +64,26 @@ public class CItemModelProvider extends ItemModelProvider {
         blockItemModel(CBlocks.SHORT_GRISTLES, CBlocks.SHORT_GRISTLES, GENERATED);
         blockItemModel(CBlocks.TALL_GRISTLES, CBlocks.TALL_GRISTLES, GENERATED);
 
+        blockItemModel(CBlocks.LUTRUM_BARS, CBlocks.LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.LUTRUM_BULB);
+        blockItemModel(CBlocks.EXPOSED_LUTRUM_BARS, CBlocks.EXPOSED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.EXPOSED_LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.EXPOSED_LUTRUM_BULB);
+        blockItemModel(CBlocks.WEATHERED_LUTRUM_BARS, CBlocks.WEATHERED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WEATHERED_LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.WEATHERED_LUTRUM_BULB);
+        blockItemModel(CBlocks.OXIDIZED_LUTRUM_BARS, CBlocks.OXIDIZED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.OXIDIZED_LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.OXIDIZED_LUTRUM_BULB);
+
+        blockItemModel(CBlocks.OBDURIUM_BARS, CBlocks.OBDURIUM_BARS, GENERATED);
+        itemModel(CBlocks.OBDURIUM_DOOR, GENERATED);
+        blockModel(CBlocks.OBDURIUM_BULB);
+
+        blockItemModel(CBlocks.MALUNITE_BARS, CBlocks.MALUNITE_BARS, GENERATED);
+        itemModel(CBlocks.MALUNITE_DOOR, GENERATED);
+        blockModel(CBlocks.MALUNITE_BULB);
 
         /*
         Automated Item Models

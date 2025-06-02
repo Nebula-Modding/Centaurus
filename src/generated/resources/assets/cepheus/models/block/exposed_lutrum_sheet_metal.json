@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cepheus:block/exposed_lutrum_sheet_metal"
+  }
+}

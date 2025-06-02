@@ -659,21 +659,21 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get())
         ;
-        tag(CTags.EUBlockTags.ORES_OBDURIUM)
+        tag(CTags.CBlockTags.ORES_OBDURIUM)
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
                 .add(CBlocks.WATER_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get())
         ;
-        tag(CTags.EUBlockTags.ORES_MALUNITE)
+        tag(CTags.CBlockTags.ORES_MALUNITE)
                 .add(CBlocks.BLUESCHIST_MALUNITE_ORE.get())
                 .add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get())
                 .add(CBlocks.WATER_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get())
         ;
-        tag(CTags.EUBlockTags.ORES_LUTRUM)
+        tag(CTags.CBlockTags.ORES_LUTRUM)
                 .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
                 .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
                 .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
@@ -741,26 +741,26 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
-        tag(CTags.EUBlockTags.ORE_BEARING_GROUND_BLUESCHIST)
+        tag(CTags.CBlockTags.ORE_BEARING_GROUND_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
         ;
-        tag(CTags.EUBlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
+        tag(CTags.CBlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
-        tag(CTags.EUBlockTags.ORE_BEARING_GROUND_WATER_ICE)
+        tag(CTags.CBlockTags.ORE_BEARING_GROUND_WATER_ICE)
                 .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
         ;
-        tag(CTags.EUBlockTags.ORE_BEARING_GROUND_NITROGEN_ICE)
+        tag(CTags.CBlockTags.ORE_BEARING_GROUND_NITROGEN_ICE)
                 .add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice").get())
         ;
-        tag(CTags.EUBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
+        tag(CTags.CBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
                 .add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get())
         ;
-        blueschistOres.forEach(entry -> tag(CTags.EUBlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(CTags.EUBlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
-        waterIceOres.forEach(entry -> tag(CTags.EUBlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
-        nitrogenIceOres.forEach(entry -> tag(CTags.EUBlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
-        oxygenIceOres.forEach(entry -> tag(CTags.EUBlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
+        blueschistOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
+        blueShaleOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
+        waterIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
+        nitrogenIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
+        oxygenIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
 
         /*
         Stone Tags
@@ -772,18 +772,18 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
-                .addTag(CTags.EUBlockTags.COBBLESTONES_BLUESCHIST)
-                .addTag(CTags.EUBlockTags.COBBLESTONES_BLUE_SHALE)
+                .addTag(CTags.CBlockTags.COBBLESTONES_BLUESCHIST)
+                .addTag(CTags.CBlockTags.COBBLESTONES_BLUE_SHALE)
         ;
-        tag(CTags.EUBlockTags.COBBLESTONES_BLUESCHIST)
+        tag(CTags.CBlockTags.COBBLESTONES_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
         ;
-        tag(CTags.EUBlockTags.COBBLESTONES_BLUE_SHALE)
+        tag(CTags.CBlockTags.COBBLESTONES_BLUE_SHALE)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
         ;
 
         // Base Stone Tags
-        tag(CTags.EUBlockTags.BASE_STONE_FRIGUS)
+        tag(CTags.CBlockTags.BASE_STONE_FRIGUS)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
@@ -794,33 +794,33 @@ public class CBlockTagsProvider extends BlockTagsProvider {
          */
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_BRUMA)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_MALUNITE)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_LUTRUM)
-                .addTag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
+                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_BRUMA)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
                 .add(CBlocks.BRUMA_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_OBDURIUM)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .add(CBlocks.OBDURIUM_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
                 .add(CBlocks.RAW_OBDURIUM_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_MALUNITE)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE)
                 .add(CBlocks.MALUNITE_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(CBlocks.RAW_MALUNITE_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_LUTRUM)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
                 .add(CBlocks.LUTRUM_BLOCK.get())
         ;
-        tag(CTags.EUBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
+        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
                 .add(CBlocks.RAW_LUTRUM_BLOCK.get())
         ;
 
@@ -834,7 +834,7 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.COARSE_FRIGUS_DIRT.get())
                 .add(CBlocks.FRIGUS_MUD.get())
         ;
-        tag(CTags.EUBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
+        tag(CTags.CBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
                 .add(CBlocks.FRIGUS_DIRT.get())
                 .add(CBlocks.COARSE_FRIGUS_DIRT.get())
         ;
@@ -893,13 +893,13 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.MAYURA_PLANKS.get())
                 .add(CBlocks.GRIMWOOD_PLANKS.get())
         ;
-        tag(CTags.EUBlockTags.MAYURA_LOGS)
+        tag(CTags.CBlockTags.MAYURA_LOGS)
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
-        tag(CTags.EUBlockTags.GRIMWOOD_LOGS)
+        tag(CTags.CBlockTags.GRIMWOOD_LOGS)
                 .add(CBlocks.GRIMWOOD_LOG.get())
                 .add(CBlocks.GRIMWOOD_WOOD.get())
                 .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
@@ -933,8 +933,8 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Carver Replaceable Tags
          */
 
-        tag(CTags.EUBlockTags.FRIGUS_CARVER_REPLACEABLES)
-                .addTag(CTags.EUBlockTags.BASE_STONE_FRIGUS)
+        tag(CTags.CBlockTags.FRIGUS_CARVER_REPLACEABLES)
+                .addTag(CTags.CBlockTags.BASE_STONE_FRIGUS)
                 .addTag(BlockTags.DIRT)
                 .addTag(BlockTags.SAND)
                 .addTag(BlockTags.COPPER_ORES)
@@ -950,11 +950,11 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Ore Replaceable Tags
          */
 
-        tag(CTags.EUBlockTags.BLUESCHIST_ORE_REPLACEABLES)
+        tag(CTags.CBlockTags.BLUESCHIST_ORE_REPLACEABLES)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
-        tag(CTags.EUBlockTags.BLUE_SHALE_ORE_REPLACEABLES)
+        tag(CTags.CBlockTags.BLUE_SHALE_ORE_REPLACEABLES)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
 

@@ -21,7 +21,7 @@ public class CTags {
     public static TagKey<Item> itemTag(String name) {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
     }
-    public static class EUBlockTags {
+    public static class CBlockTags {
         // Blocks
         public static final TagKey<Block>
 
@@ -90,7 +90,7 @@ public class CTags {
                 GRIMWOOD_LOGS = blockTag("grimwood_logs")
         ;
     }
-    public static class EUItemTags {
+    public static class CItemTags {
         // Block Items
         public static final TagKey<Item>
                 // Cobblestones

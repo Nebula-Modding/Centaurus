@@ -117,10 +117,12 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.EXPOSED_LUTRUM_DOOR);
         excludedBlocks.add(CBlocks.WEATHERED_LUTRUM_DOOR);
         excludedBlocks.add(CBlocks.OXIDIZED_LUTRUM_DOOR);
-        excludedBlocks.add(CBlocks.WAXED_LUTRUM_DOOR);
-        excludedBlocks.add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
-        excludedBlocks.add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
-        excludedBlocks.add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
+        //excludedBlocks.add(CBlocks.WAXED_LUTRUM_DOOR);
+        //excludedBlocks.add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
+        //excludedBlocks.add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
+        //excludedBlocks.add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
+        excludedBlocks.add(CBlocks.OBDURIUM_DOOR);
+        excludedBlocks.add(CBlocks.MALUNITE_DOOR);
         excludedBlocks.add(CBlocks.POTTED_MAYURA_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
@@ -166,10 +168,12 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.EXPOSED_LUTRUM_DOOR.get(), this::createDoorTable);
         add(CBlocks.WEATHERED_LUTRUM_DOOR.get(), this::createDoorTable);
         add(CBlocks.OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
-        add(CBlocks.WAXED_LUTRUM_DOOR.get(), this::createDoorTable);
-        add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR.get(), this::createDoorTable);
-        add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR.get(), this::createDoorTable);
-        add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
+        //add(CBlocks.WAXED_LUTRUM_DOOR.get(), this::createDoorTable);
+        //add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR.get(), this::createDoorTable);
+        //add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR.get(), this::createDoorTable);
+        //add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
+        add(CBlocks.OBDURIUM_DOOR.get(), this::createDoorTable);
+        add(CBlocks.MALUNITE_DOOR.get(), this::createDoorTable);
 
         /*
         Ore Drops
