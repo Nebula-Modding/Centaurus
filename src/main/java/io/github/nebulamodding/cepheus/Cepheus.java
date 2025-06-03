@@ -1,6 +1,7 @@
 package io.github.nebulamodding.cepheus;
 
 import io.github.nebulamodding.cepheus.datagen.CDataGeneration;
+import io.github.nebulamodding.cepheus.events.CEvents;
 import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import io.github.nebulamodding.cepheus.registry.CCreativeTab;
 import io.github.nebulamodding.cepheus.registry.item.CItems;
@@ -35,6 +36,7 @@ public class Cepheus {
 
         eventBus.addListener(CCreativeTab::buildCreativeTab);
         eventBus.addListener(CDataGeneration::gatherData);
+        CEvents.gatherEvents(eventBus);
 
         eventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
@@ -43,13 +45,6 @@ public class Cepheus {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.MAYURA_SAPLING.getId(), CBlocks.POTTED_MAYURA_SAPLING);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.GRIMWOOD_SAPLING.getId(), CBlocks.POTTED_GRIMWOOD_SAPLING);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.VIVIAN.getId(), CBlocks.POTTED_VIVIAN);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.WICKUL.getId(), CBlocks.POTTED_WICKUL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.ICEFLOWER.getId(), CBlocks.POTTED_ICEFLOWER);
-        });
     }
 
     @SubscribeEvent
