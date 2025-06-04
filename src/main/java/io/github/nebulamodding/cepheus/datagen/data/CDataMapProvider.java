@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.datamaps.builtin.Compostable;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 import net.neoforged.neoforge.registries.datamaps.builtin.Oxidizable;
 import net.neoforged.neoforge.registries.datamaps.builtin.Waxable;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -16,7 +17,7 @@ public class CDataMapProvider extends DataMapProvider {
     public CDataMapProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
-    protected void gather() {
+    protected void gather(HolderLookup.@NotNull Provider provider) {
         this.builder(NeoForgeDataMaps.COMPOSTABLES)
                 .add(CBlocks.BRUMA_BLOCK.getId(), new Compostable(0.85F), false)
                 .add(CItems.BRUMA_LOAF.getId(), new Compostable(0.85F), false)
