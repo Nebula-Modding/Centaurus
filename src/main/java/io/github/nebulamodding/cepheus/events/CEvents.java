@@ -9,8 +9,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
@@ -39,7 +37,6 @@ public class CEvents {
         EVENT_BUS.addListener(CEvents::blockToolInteractions);
         EVENT_BUS.addListener(CEvents::useOn);
     }
-
     private static void setup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.MAYURA_SAPLING.getId(), CBlocks.POTTED_MAYURA_SAPLING);
@@ -49,7 +46,6 @@ public class CEvents {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.ICEFLOWER.getId(), CBlocks.POTTED_ICEFLOWER);
         });
     }
-
     private static void blockToolInteractions(BlockEvent.BlockToolModificationEvent event) {
         ItemAbility action = event.getItemAbility();
         BlockState keepState = event.getState();
@@ -84,8 +80,7 @@ public class CEvents {
             }
         }
     }
-
-    public static InteractionResult useOn(PlayerInteractEvent.RightClickBlock event) {
+    public static void useOn(PlayerInteractEvent.RightClickItem event) {
         Level level = event.getLevel();
         BlockPos blockPos = event.getPos();
         Player player = event.getEntity();
@@ -112,11 +107,10 @@ public class CEvents {
                         );
                     }
                 }
+                event.setCanceled(true);
                 level.playSound(null, blockPos, SoundEvents.BOTTLE_EMPTY, SoundSource.BLOCKS, 1.0F, 1.0F);
                 level.gameEvent(null, GameEvent.FLUID_PLACE, blockPos);
                 level.setBlockAndUpdate(blockPos, CBlocks.FRIGUS_MUD.get().defaultBlockState());
-                return InteractionResult.sidedSuccess(level.isClientSide);
             }
-        return InteractionResult.PASS;
     }
 }
