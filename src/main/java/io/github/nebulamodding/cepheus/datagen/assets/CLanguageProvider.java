@@ -78,7 +78,7 @@ public class CLanguageProvider extends LanguageProvider {
         addBlock(CBlocks.LUTRUM_AMALGAMATE_BLOCK, "Block of Lutrum Amalgamate");
 
         addBlock(CBlocks.LUTRUM_BLOCK, "Block of Lutrum");
-        addBlock(CBlocks.WAXED_LUTRUM_BLOCK, "Block of Waxed Lutrum");
+        addBlock(CBlocks.WAXED_LUTRUM_BLOCK, "Waxed Block of Lutrum");
         addBlock(CBlocks.OBDURIUM_BLOCK, "Block of Obdurium");
         addBlock(CBlocks.MALUNITE_BLOCK, "Block of Malunite");
 
