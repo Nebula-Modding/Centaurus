@@ -6,6 +6,7 @@ import io.github.nebulamodding.cepheus.datagen.assets.CItemModelProvider;
 import io.github.nebulamodding.cepheus.datagen.assets.CSoundDefinitionsProvider;
 import io.github.nebulamodding.cepheus.datagen.assets.CLanguageProvider;
 import io.github.nebulamodding.cepheus.datagen.data.CBuiltinEntriesProvider;
+import io.github.nebulamodding.cepheus.datagen.data.CDataMapProvider;
 import io.github.nebulamodding.cepheus.datagen.data.loot.CLootTableProvider;
 import io.github.nebulamodding.cepheus.datagen.data.tags.CBlockTagsProvider;
 import io.github.nebulamodding.cepheus.datagen.data.tags.CItemTagsProvider;
@@ -23,7 +24,7 @@ public class CDataGeneration {
             DataGenerator generator = event.getGenerator();
             PackOutput output = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-
+            CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
             if (event.includeClient()) {
                 // Generates the client-sided assets
                 generator.addProvider(true, new CLanguageProvider(output));
@@ -33,12 +34,11 @@ public class CDataGeneration {
             }
             if (event.includeServer()) {
                 // Generates the server-sided data
-                CBlockTagsProvider blockTagsProvider = new CBlockTagsProvider(output, event.getLookupProvider(), existingFileHelper);
+                CBlockTagsProvider blockTagsProvider = new CBlockTagsProvider(output, lookupProvider, existingFileHelper);
                 generator.addProvider(true, blockTagsProvider);
                 generator.addProvider(true, new CItemTagsProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
-
-                CompletableFuture<HolderLookup.Provider> newLookup = generator.addProvider(event.includeServer(), new CBuiltinEntriesProvider(output, event.getLookupProvider())).getRegistryProvider();
-                generator.addProvider(true, new CLootTableProvider(output, newLookup));
+                generator.addProvider(true, new CLootTableProvider(output, lookupProvider));
+                generator.addProvider(true, new CDataMapProvider(output, lookupProvider));
             }
         } catch (RuntimeException e) {
             Cepheus.LOGGER.error("Failed to gather Cepheus's data", e);

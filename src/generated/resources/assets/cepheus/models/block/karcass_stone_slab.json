@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/karcass_stone",
-    "side": "cepheus:block/karcass_stone",
-    "top": "cepheus:block/karcass_stone"
-  }
-}

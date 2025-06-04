@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cepheus:block/tholin_rich_water_ice_bricks",
-    "side": "cepheus:block/tholin_rich_water_ice_bricks",
-    "top": "cepheus:block/tholin_rich_water_ice_bricks"
-  }
-}

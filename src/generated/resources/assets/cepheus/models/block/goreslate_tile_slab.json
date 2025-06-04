@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/goreslate_tiles",
-    "side": "cepheus:block/goreslate_tiles",
-    "top": "cepheus:block/goreslate_tiles"
-  }
-}

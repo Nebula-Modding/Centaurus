@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cepheus:block/polished_blue_shale",
-    "side": "cepheus:block/polished_blue_shale",
-    "top": "cepheus:block/polished_blue_shale"
-  }
-}

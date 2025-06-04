@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cepheus:block/water_ice_obdurium_ore"
-  }
-}

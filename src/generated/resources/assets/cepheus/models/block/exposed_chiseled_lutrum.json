@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cepheus:block/exposed_chiseled_lutrum_top",
-    "side": "cepheus:block/exposed_chiseled_lutrum"
-  }
-}

@@ -33,10 +33,10 @@ public class Cepheus {
         CBlocks.BLOCKS.register(eventBus);
         CItems.ITEMS.register(eventBus);
         CCreativeTab.CREATIVE_MODE_TABS.register(eventBus);
+        CEvents.gatherEvents(eventBus);
 
         eventBus.addListener(CCreativeTab::buildCreativeTab);
         eventBus.addListener(CDataGeneration::gatherData);
-        CEvents.gatherEvents(eventBus);
 
         eventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);

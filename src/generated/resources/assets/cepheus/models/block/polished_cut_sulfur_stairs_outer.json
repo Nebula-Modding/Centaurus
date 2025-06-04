@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "cepheus:block/polished_cut_sulfur",
-    "side": "cepheus:block/polished_cut_sulfur",
-    "top": "cepheus:block/polished_cut_sulfur"
-  }
-}

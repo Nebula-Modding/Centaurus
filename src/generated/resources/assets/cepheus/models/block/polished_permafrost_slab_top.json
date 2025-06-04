@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/polished_permafrost",
-    "side": "cepheus:block/polished_permafrost",
-    "top": "cepheus:block/polished_permafrost"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/water_ice",
-    "side": "cepheus:block/water_ice",
-    "top": "cepheus:block/water_ice"
-  }
-}

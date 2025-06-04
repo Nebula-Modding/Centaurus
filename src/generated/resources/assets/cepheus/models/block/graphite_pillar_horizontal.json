@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "cepheus:block/graphite_pillar_top",
-    "side": "cepheus:block/graphite_pillar"
-  }
-}

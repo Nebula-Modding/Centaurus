@@ -1057,7 +1057,7 @@ public class CBlocks {
 
     // Lutrum
     public static final DeferredBlock<Block>
-            LUTRUM_BLOCK = register("lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
+            LUTRUM_BLOCK = register("lutrum_block", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY).randomTicks())),
             LUTRUM_SHEET_METAL = register("lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
             CHISELED_LUTRUM = register("chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_GRATE = register("lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.CLAY))),
@@ -1071,7 +1071,7 @@ public class CBlocks {
             LUTRUM_DOOR = register("lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
             LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
             LUTRUM_BULB = register("lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY))),
-            EXPOSED_LUTRUM = register("exposed_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM = register("exposed_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_SHEET_METAL = register("exposed_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_CHISELED_LUTRUM = register("exposed_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_GRATE = register("exposed_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1085,7 +1085,7 @@ public class CBlocks {
             EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).lightLevel(litBlockEmission(14)))),
-            WEATHERED_LUTRUM = register("weathered_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM = register("weathered_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_SHEET_METAL = register("weathered_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_CHISELED_LUTRUM = register("weathered_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_GRATE = register("weathered_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.STONE))),
@@ -1099,7 +1099,7 @@ public class CBlocks {
             WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.STONE).lightLevel(litBlockEmission(14)))),
-            OXIDIZED_LUTRUM = register("oxidized_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM = register("oxidized_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_SHEET_METAL = register("oxidized_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_CHISELED_LUTRUM = register("oxidized_chiseled_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_GRATE = register("oxidized_lutrum_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_GRAY))),

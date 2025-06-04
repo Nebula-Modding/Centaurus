@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cepheus:block/blue_shale_lutrum_ore"
-  }
-}

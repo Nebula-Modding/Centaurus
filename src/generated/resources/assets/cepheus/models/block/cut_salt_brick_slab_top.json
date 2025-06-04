@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/cut_salt_bricks",
-    "side": "cepheus:block/cut_salt_bricks",
-    "top": "cepheus:block/cut_salt_bricks"
-  }
-}

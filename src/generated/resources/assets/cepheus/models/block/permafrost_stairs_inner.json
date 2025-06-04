@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cepheus:block/permafrost",
-    "side": "cepheus:block/permafrost",
-    "top": "cepheus:block/permafrost"
-  }
-}

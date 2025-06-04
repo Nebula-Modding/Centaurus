@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cepheus:block/oxygen_ice",
-    "side": "cepheus:block/oxygen_ice",
-    "top": "cepheus:block/oxygen_ice"
-  }
-}

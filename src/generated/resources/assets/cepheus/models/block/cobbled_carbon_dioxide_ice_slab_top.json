@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/cobbled_carbon_dioxide_ice",
-    "side": "cepheus:block/cobbled_carbon_dioxide_ice",
-    "top": "cepheus:block/cobbled_carbon_dioxide_ice"
-  }
-}

@@ -1,6 +1,5 @@
 package io.github.nebulamodding.cepheus.events;
 
-import io.github.nebulamodding.cepheus.Cepheus;
 import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.UseOnContext;
@@ -18,7 +17,7 @@ import static net.neoforged.neoforge.common.NeoForge.EVENT_BUS;
 public class CEvents {
     public static void gatherEvents(IEventBus bus) {
         bus.addListener(CEvents::setup);
-        EVENT_BUS.addListener(CEvents::blockToolInteractions);
+        EVENT_BUS.addListener(CEvents::blockItemInteractions);
     }
     private static void setup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
@@ -29,35 +28,36 @@ public class CEvents {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.ICEFLOWER.getId(), CBlocks.POTTED_ICEFLOWER);
         });
     }
-    private static void blockToolInteractions(BlockEvent.BlockToolModificationEvent event) {
+    private static void blockItemInteractions(BlockEvent.BlockToolModificationEvent event) {
         ItemAbility action = event.getItemAbility();
-        BlockState state = event.getState();
+        BlockState keepState = event.getState();
+        BlockState keepButtonState = event.getState();
         UseOnContext context = event.getContext();
         if (!event.isSimulated()) {
             if (action == ItemAbilities.SHOVEL_FLATTEN && (context.getClickedFace() != Direction.DOWN && context.getLevel().getBlockState(context.getClickedPos().above()).isAir())) {
-                if (state.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || state.is(CBlocks.FRIGUS_DIRT.get()) || state.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
+                if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
                     event.setFinalState(CBlocks.FRIGUS_DIRT_PATH.get().defaultBlockState());
                 }
             }
             if (action == ItemAbilities.AXE_STRIP) {
-                if (state.is(CBlocks.MAYURA_LOG.get())) {
-                    event.setFinalState(CBlocks.STRIPPED_MAYURA_LOG.get().withPropertiesOf(state));
+                if (keepState.is(CBlocks.MAYURA_LOG.get())) {
+                    event.setFinalState(CBlocks.STRIPPED_MAYURA_LOG.get().withPropertiesOf(keepState));
                 }
-                if (state.is(CBlocks.MAYURA_WOOD.get())) {
-                    event.setFinalState(CBlocks.STRIPPED_MAYURA_WOOD.get().withPropertiesOf(state));
+                if (keepState.is(CBlocks.MAYURA_WOOD.get())) {
+                    event.setFinalState(CBlocks.STRIPPED_MAYURA_WOOD.get().withPropertiesOf(keepState));
                 }
-                if (state.is(CBlocks.GRIMWOOD_LOG.get())) {
-                    event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_LOG.get().withPropertiesOf(state));
+                if (keepState.is(CBlocks.GRIMWOOD_LOG.get())) {
+                    event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_LOG.get().withPropertiesOf(keepState));
                 }
-                if (state.is(CBlocks.GRIMWOOD_WOOD.get())) {
-                    event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_WOOD.get().withPropertiesOf(state));
+                if (keepState.is(CBlocks.GRIMWOOD_WOOD.get())) {
+                    event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_WOOD.get().withPropertiesOf(keepState));
                 }
             }
             if (action == ItemAbilities.HOE_TILL && (context.getClickedFace() != Direction.DOWN && context.getLevel().getBlockState(context.getClickedPos().above()).isAir())) {
-                if (state.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || state.is(CBlocks.FRIGUS_DIRT.get()) || state.is(CBlocks.FRIGUS_DIRT_PATH.get())) {
+                if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.FRIGUS_DIRT_PATH.get())) {
                     event.setFinalState(CBlocks.FRIGUS_FARMLAND.get().defaultBlockState());
                 }
-                if (state.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
+                if (keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
                     event.setFinalState(CBlocks.FRIGUS_DIRT.get().defaultBlockState());
                 }
             }
