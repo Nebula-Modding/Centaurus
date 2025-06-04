@@ -45,6 +45,9 @@
     "cepheus:exposed_lutrum_trapdoor": {
       "waxed": "cepheus:waxed_exposed_lutrum_trapdoor"
     },
+    "cepheus:exposed_lutrum_window": {
+      "waxed": "cepheus:waxed_exposed_lutrum_window"
+    },
     "cepheus:lutrum_bars": {
       "waxed": "cepheus:waxed_lutrum_bars"
     },
@@ -83,6 +86,9 @@
     },
     "cepheus:lutrum_trapdoor": {
       "waxed": "cepheus:waxed_lutrum_trapdoor"
+    },
+    "cepheus:lutrum_window": {
+      "waxed": "cepheus:waxed_lutrum_window"
     },
     "cepheus:oxidized_chiseled_lutrum": {
       "waxed": "cepheus:waxed_oxidized_chiseled_lutrum"
@@ -126,6 +132,9 @@
     "cepheus:oxidized_lutrum_trapdoor": {
       "waxed": "cepheus:waxed_oxidized_lutrum_trapdoor"
     },
+    "cepheus:oxidized_lutrum_window": {
+      "waxed": "cepheus:waxed_oxidized_lutrum_window"
+    },
     "cepheus:weathered_chiseled_lutrum": {
       "waxed": "cepheus:waxed_weathered_chiseled_lutrum"
     },
@@ -167,6 +176,9 @@
     },
     "cepheus:weathered_lutrum_trapdoor": {
       "waxed": "cepheus:waxed_weathered_lutrum_trapdoor"
+    },
+    "cepheus:weathered_lutrum_window": {
+      "waxed": "cepheus:waxed_weathered_lutrum_window"
     }
   }
 }
