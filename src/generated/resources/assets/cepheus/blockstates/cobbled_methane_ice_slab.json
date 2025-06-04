@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/cobbled_methane_ice_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/cobbled_methane_ice"
+    },
+    "type=top": {
+      "model": "cepheus:block/cobbled_methane_ice_slab_top"
+    }
+  }
+}

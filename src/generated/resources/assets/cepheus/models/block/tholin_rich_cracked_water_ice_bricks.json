@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cepheus:block/tholin_rich_cracked_water_ice_bricks"
+  }
+}

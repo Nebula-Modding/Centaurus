@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cepheus:block/tholin_poor_water_ice_bricks",
+    "side": "cepheus:block/tholin_poor_water_ice_bricks",
+    "top": "cepheus:block/tholin_poor_water_ice_bricks"
+  }
+}

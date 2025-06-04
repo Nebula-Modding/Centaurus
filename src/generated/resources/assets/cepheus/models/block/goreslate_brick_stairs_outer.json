@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cepheus:block/goreslate_bricks",
+    "side": "cepheus:block/goreslate_bricks",
+    "top": "cepheus:block/goreslate_bricks"
+  }
+}

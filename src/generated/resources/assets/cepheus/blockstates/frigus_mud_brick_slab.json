@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/frigus_mud_brick_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/frigus_mud_bricks"
+    },
+    "type=top": {
+      "model": "cepheus:block/frigus_mud_brick_slab_top"
+    }
+  }
+}

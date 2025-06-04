@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "cepheus:block/grimwood_door_bottom",
+    "top": "cepheus:block/grimwood_door_top"
+  }
+}

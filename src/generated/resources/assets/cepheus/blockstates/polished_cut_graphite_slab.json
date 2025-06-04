@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/polished_cut_graphite_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/polished_cut_graphite"
+    },
+    "type=top": {
+      "model": "cepheus:block/polished_cut_graphite_slab_top"
+    }
+  }
+}

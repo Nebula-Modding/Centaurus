@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cepheus:block/cobbled_black_water_ice",
+    "side": "cepheus:block/cobbled_black_water_ice",
+    "top": "cepheus:block/cobbled_black_water_ice"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "values": {
+    "cepheus:chiseled_lutrum": {
+      "next_oxidation_stage": "cepheus:exposed_chiseled_lutrum"
+    },
+    "cepheus:exposed_chiseled_lutrum": {
+      "next_oxidation_stage": "cepheus:weathered_chiseled_lutrum"
+    },
+    "cepheus:exposed_lutrum": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum"
+    },
+    "cepheus:exposed_lutrum_bars": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_bars"
+    },
+    "cepheus:exposed_lutrum_bulb": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_bulb"
+    },
+    "cepheus:exposed_lutrum_door": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_door"
+    },
+    "cepheus:exposed_lutrum_grate": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_grate"
+    },
+    "cepheus:exposed_lutrum_pillar": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_pillar"
+    },
+    "cepheus:exposed_lutrum_plating": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_plating"
+    },
+    "cepheus:exposed_lutrum_plating_button": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_plating_button"
+    },
+    "cepheus:exposed_lutrum_plating_pressure_plate": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_plating_pressure_plate"
+    },
+    "cepheus:exposed_lutrum_plating_slab": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_plating_slab"
+    },
+    "cepheus:exposed_lutrum_plating_stairs": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_plating_stairs"
+    },
+    "cepheus:exposed_lutrum_sheet_metal": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_sheet_metal"
+    },
+    "cepheus:exposed_lutrum_trapdoor": {
+      "next_oxidation_stage": "cepheus:weathered_lutrum_trapdoor"
+    },
+    "cepheus:lutrum_bars": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_bars"
+    },
+    "cepheus:lutrum_block": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum"
+    },
+    "cepheus:lutrum_bulb": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_bulb"
+    },
+    "cepheus:lutrum_door": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_door"
+    },
+    "cepheus:lutrum_grate": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_grate"
+    },
+    "cepheus:lutrum_pillar": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_pillar"
+    },
+    "cepheus:lutrum_plating": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_plating"
+    },
+    "cepheus:lutrum_plating_button": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_plating_button"
+    },
+    "cepheus:lutrum_plating_pressure_plate": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_plating_pressure_plate"
+    },
+    "cepheus:lutrum_plating_slab": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_plating_slab"
+    },
+    "cepheus:lutrum_plating_stairs": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_plating_stairs"
+    },
+    "cepheus:lutrum_sheet_metal": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_sheet_metal"
+    },
+    "cepheus:lutrum_trapdoor": {
+      "next_oxidation_stage": "cepheus:exposed_lutrum_trapdoor"
+    },
+    "cepheus:weathered_chiseled_lutrum": {
+      "next_oxidation_stage": "cepheus:oxidized_chiseled_lutrum"
+    },
+    "cepheus:weathered_lutrum": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum"
+    },
+    "cepheus:weathered_lutrum_bars": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_bars"
+    },
+    "cepheus:weathered_lutrum_bulb": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_bulb"
+    },
+    "cepheus:weathered_lutrum_door": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_door"
+    },
+    "cepheus:weathered_lutrum_grate": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_grate"
+    },
+    "cepheus:weathered_lutrum_pillar": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_pillar"
+    },
+    "cepheus:weathered_lutrum_plating": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_plating"
+    },
+    "cepheus:weathered_lutrum_plating_button": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_plating_button"
+    },
+    "cepheus:weathered_lutrum_plating_pressure_plate": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_plating_pressure_plate"
+    },
+    "cepheus:weathered_lutrum_plating_slab": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_plating_slab"
+    },
+    "cepheus:weathered_lutrum_plating_stairs": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_plating_stairs"
+    },
+    "cepheus:weathered_lutrum_sheet_metal": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_sheet_metal"
+    },
+    "cepheus:weathered_lutrum_trapdoor": {
+      "next_oxidation_stage": "cepheus:oxidized_lutrum_trapdoor"
+    }
+  }
+}

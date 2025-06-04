@@ -1,0 +1,55 @@
+{
+  "values": {
+    "cepheus:azure_root": {
+      "chance": 0.65
+    },
+    "cepheus:bruma": {
+      "chance": 0.65
+    },
+    "cepheus:bruma_block": {
+      "chance": 0.85
+    },
+    "cepheus:bruma_loaf": {
+      "chance": 0.85
+    },
+    "cepheus:frigus_grass_block": {
+      "chance": 0.3
+    },
+    "cepheus:frigus_short_grass": {
+      "chance": 0.3
+    },
+    "cepheus:grimwood_leaves": {
+      "chance": 0.3
+    },
+    "cepheus:grimwood_sapling": {
+      "chance": 0.3
+    },
+    "cepheus:gristle_block": {
+      "chance": 0.65
+    },
+    "cepheus:gristled_flesh": {
+      "chance": 0.3
+    },
+    "cepheus:iceflower": {
+      "chance": 0.65
+    },
+    "cepheus:mayura_leaves": {
+      "chance": 0.3
+    },
+    "cepheus:mayura_sapling": {
+      "chance": 0.3
+    },
+    "cepheus:short_gristles": {
+      "chance": 0.3
+    },
+    "cepheus:tall_gristles": {
+      "chance": 0.5
+    },
+    "cepheus:vivian": {
+      "chance": 0.65
+    },
+    "cepheus:wickul": {
+      "chance": 0.65
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cepheus:block/red_nitrogen_ice_pillar_top",
+    "side": "cepheus:block/red_nitrogen_ice_pillar"
+  }
+}

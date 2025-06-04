@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/obdurium_plating_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/obdurium_plating"
+    },
+    "type=top": {
+      "model": "cepheus:block/obdurium_plating_slab_top"
+    }
+  }
+}

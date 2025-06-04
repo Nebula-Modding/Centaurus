@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/mayura_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/mayura_planks"
+    },
+    "type=top": {
+      "model": "cepheus:block/mayura_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cepheus:block/lutrum_plating",
+    "side": "cepheus:block/lutrum_plating",
+    "top": "cepheus:block/lutrum_plating"
+  }
+}

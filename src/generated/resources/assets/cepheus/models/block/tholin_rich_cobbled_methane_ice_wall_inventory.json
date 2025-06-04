@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "cepheus:block/tholin_rich_cobbled_methane_ice"
+  }
+}

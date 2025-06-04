@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/waxed_lutrum_plating_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/lutrum_plating"
+    },
+    "type=top": {
+      "model": "cepheus:block/waxed_lutrum_plating_slab_top"
+    }
+  }
+}

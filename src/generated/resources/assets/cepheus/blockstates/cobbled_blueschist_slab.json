@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/cobbled_blueschist_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/cobbled_blueschist"
+    },
+    "type=top": {
+      "model": "cepheus:block/cobbled_blueschist_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cepheus:block/blood_vessel_top",
+    "side": "cepheus:block/blood_vessel"
+  }
+}
