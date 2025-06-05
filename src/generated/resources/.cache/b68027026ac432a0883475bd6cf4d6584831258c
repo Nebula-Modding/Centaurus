@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-05T16:31:06.9814074	Tags for minecraft:block mod id cepheus
+// 1.21.1	2025-06-05T19:03:34.9895848	Tags for minecraft:block mod id cepheus
 92a95f0d2c98dd5ac61d46201de5a8c8b422b3a6 data/cepheus/tags/block/base_stone_frigus.json
 fc3ffb72645359678967b0da3d434391c288d304 data/cepheus/tags/block/blueschist_ore_replaceables.json
 e7b279d5a18a89f5111951f1a408faaad49fb058 data/cepheus/tags/block/blue_shale_ore_replaceables.json
@@ -7,6 +7,7 @@ b1ca68ecd6dc84289ee6af5576cbba099e744a2a data/cepheus/tags/block/convertable_to_
 6636e931ce2892cef0f308eb769cf9afa8793a11 data/cepheus/tags/block/grimwood_logs.json
 36ec8890894d70e060dcfffdbf2b31a361ef7c50 data/cepheus/tags/block/karcass_stone_ore_replaceables.json
 f75c28ca078822d75474b403d3c373f2f641aeba data/cepheus/tags/block/mayura_logs.json
+e89bb4b6946d91cf552d9eadefb5ba2a65708312 data/create/tags/block/fan_transparent.json
 616afcdeebc5ac652226df852904922c094e03f2 data/c/tags/block/cobblestones.json
 d89cc621dd2580f197d965eecc76ac96ca15ff51 data/c/tags/block/cobblestones/blueschist.json
 45c28c275ff2476492ae57db96ecb81be0ad62fd data/c/tags/block/cobblestones/blue_shale.json

@@ -84,7 +84,13 @@ public class CTags {
                 KARCASS_STONE_ORE_REPLACEABLES = blockTag("karcass_stone_ore_replaceables"),
 
                 // Convertable to Mud
-                CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud")
+                CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud"),
+
+                /*
+                Mod Compatibility Tags
+                 */
+
+                CREATE_FAN_TRANSPARENT = createModBlockTag("fan_transparent")
         ;
     }
     public static class ItemTags {

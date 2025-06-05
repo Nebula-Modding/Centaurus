@@ -1215,6 +1215,33 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
 
         /*
+        Compatibility Tags
+         */
+
+        tag(CTags.BlockTags.CREATE_FAN_TRANSPARENT)
+                .add(CBlocks.LUTRUM_GRATE.get())
+                .add(CBlocks.EXPOSED_LUTRUM_GRATE.get())
+                .add(CBlocks.WEATHERED_LUTRUM_GRATE.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_GRATE.get())
+                .add(CBlocks.WAXED_LUTRUM_GRATE.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_GRATE.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_GRATE.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_GRATE.get())
+                .add(CBlocks.LUTRUM_BARS.get())
+                .add(CBlocks.EXPOSED_LUTRUM_BARS.get())
+                .add(CBlocks.WEATHERED_LUTRUM_BARS.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_BARS.get())
+                .add(CBlocks.WAXED_LUTRUM_BARS.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_BARS.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_BARS.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_BARS.get())
+                .add(CBlocks.OBDURIUM_GRATE.get())
+                .add(CBlocks.OBDURIUM_BARS.get())
+                .add(CBlocks.MALUNITE_GRATE.get())
+                .add(CBlocks.MALUNITE_GRATE.get())
+        ;
+
+        /*
         Miscellaneous Tags
          */
 
