@@ -87,7 +87,7 @@ public class CEvents {
         ItemStack itemStack = player.getItemInHand(event.getHand());
         PotionContents potionContents = itemStack.getOrDefault(POTION_CONTENTS, PotionContents.EMPTY);
         BlockState clickedBlock = level.getBlockState(blockPos);
-        if (clickedBlock.is(CTags.CBlockTags.CONVERTABLE_TO_FRIGUS_MUD) && potionContents.is(Potions.WATER)) {
+        if (clickedBlock.is(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD) && potionContents.is(Potions.WATER)) {
                 level.playSound(null, blockPos, SoundEvents.GENERIC_SPLASH, SoundSource.BLOCKS, 1.0F, 1.0F);
                 player.setItemInHand(event.getHand(), ItemUtils.createFilledResult(itemStack, player, new ItemStack(Items.GLASS_BOTTLE)));
                 player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));

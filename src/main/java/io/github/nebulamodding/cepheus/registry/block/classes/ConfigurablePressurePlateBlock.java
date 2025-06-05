@@ -1,4 +1,4 @@
-package io.github.nebulamodding.cepheus.registry.block.blocktypes;
+package io.github.nebulamodding.cepheus.registry.block.classes;
 
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.state.properties.BlockSetType;

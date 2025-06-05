@@ -1,7 +1,7 @@
 package io.github.nebulamodding.cepheus.registry.block;
 
 import io.github.nebulamodding.cepheus.Cepheus;
-import io.github.nebulamodding.cepheus.registry.block.blocktypes.*;
+import io.github.nebulamodding.cepheus.registry.block.classes.*;
 import io.github.nebulamodding.cepheus.registry.item.CItems;
 import martian.regolith.DeferredHolders;
 import martian.regolith.builder.RegolithBlockBuilder;

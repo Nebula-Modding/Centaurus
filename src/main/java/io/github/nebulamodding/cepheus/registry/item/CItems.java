@@ -1,7 +1,7 @@
 package io.github.nebulamodding.cepheus.registry.item;
 
 import io.github.nebulamodding.cepheus.Cepheus;
-import io.github.nebulamodding.cepheus.registry.item.itemtypes.ObduriumHammerItem;
+import io.github.nebulamodding.cepheus.registry.item.classes.ObduriumHammerItem;
 import martian.regolith.DeferredHolders;
 import martian.regolith.RegolithItemUtil;
 import martian.regolith.neoforge.RegolithNeoForge;

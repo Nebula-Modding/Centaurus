@@ -5,7 +5,6 @@ import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import io.github.nebulamodding.cepheus.registry.CTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -19,8 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class CBlockTagsProvider extends BlockTagsProvider {
-    public CBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+public class CBlockTagProvider extends BlockTagsProvider {
+    public CBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, Cepheus.MOD_ID, existingFileHelper);
     }
     @Override
@@ -386,7 +385,7 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Tool Tags
          */
 
-        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(CBlocks.FRIGUS_DIRT_PATH.get())
                 .add(CBlocks.FRIGUS_DIRT.get())
@@ -398,16 +397,16 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.SULFUR_DUST_BLOCK.get())
                 .add(CBlocks.GRAPHITE_DUST_BLOCK.get())
         ;
-        blueschistOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        waterIceOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        nitrogenIceOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        oxygenIceOres.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        pickaxeStairs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        pickaxeSlabs.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        stonePressurePlates.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        ices.forEach(entry -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        blueShaleOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        waterIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        nitrogenIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        oxygenIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        ices.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
                 // Frigus Stones
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
@@ -439,7 +438,7 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.PACKED_FRIGUS_MUD.get())
                 .add(CBlocks.FRIGUS_MUD_BRICKS.get())
         ;
-        tag(BlockTags.MINEABLE_WITH_AXE)
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_AXE)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
@@ -454,15 +453,15 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.GRIMWOOD_PLANKS.get())
                 .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
-        tag(BlockTags.MINEABLE_WITH_HOE)
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_HOE)
                 .add(CBlocks.MAYURA_LEAVES.get())
                 .add(CBlocks.GRIMWOOD_LEAVES.get())
                 .add(CBlocks.BRUMA_BLOCK.get())
         ;
-        tag(BlockTags.SWORD_EFFICIENT)
+        tag(net.minecraft.tags.BlockTags.SWORD_EFFICIENT)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        tag(BlockTags.NEEDS_STONE_TOOL)
+        tag(net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL)
                 .add(CBlocks.BLUESCHIST_COPPER_ORE.get())
                 .add(CBlocks.BLUESCHIST_IRON_ORE.get())
                 .add(CBlocks.BLUESCHIST_LAPIS_ORE.get())
@@ -484,7 +483,7 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.OXYGEN_ICE_LAPIS_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
-        tag(BlockTags.NEEDS_IRON_TOOL)
+        tag(net.minecraft.tags.BlockTags.NEEDS_IRON_TOOL)
                 .add(CBlocks.BLUESCHIST_GOLD_ORE.get())
                 .add(CBlocks.BLUESCHIST_REDSTONE_ORE.get())
                 .add(CBlocks.BLUESCHIST_EMERALD_ORE.get())
@@ -516,44 +515,44 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get())
         ;
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+        tag(net.minecraft.tags.BlockTags.NEEDS_DIAMOND_TOOL)
         ;
-        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+        tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_WOODEN_TOOL)
         ;
-        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+        tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_STONE_TOOL)
         ;
-        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+        tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_IRON_TOOL)
         ;
-        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+        tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_GOLD_TOOL)
         ;
-        tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+        tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
         ;
 
         /*
         Block Variant Tags
          */
 
-        pickaxeStairs.forEach(entry -> tag(BlockTags.STAIRS).add(entry.get()));
-        tag(BlockTags.STAIRS)
+        pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.STAIRS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STAIRS)
         ;
-        tag(BlockTags.WOODEN_STAIRS)
+        tag(net.minecraft.tags.BlockTags.WOODEN_STAIRS)
                 .add(CBlocks.MAYURA_STAIRS.get())
                 .add(CBlocks.GRIMWOOD_STAIRS.get())
         ;
-        pickaxeSlabs.forEach(entry -> tag(BlockTags.SLABS).add(entry.get()));
-        tag(BlockTags.SLABS)
+        pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.SLABS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.SLABS)
         ;
-        tag(BlockTags.WOODEN_SLABS)
+        tag(net.minecraft.tags.BlockTags.WOODEN_SLABS)
                 .add(CBlocks.MAYURA_SLAB.get())
                 .add(CBlocks.GRIMWOOD_SLAB.get())
         ;
-        tag(BlockTags.FENCES)
+        tag(net.minecraft.tags.BlockTags.FENCES)
         ;
-        tag(BlockTags.WOODEN_FENCES)
+        tag(net.minecraft.tags.BlockTags.WOODEN_FENCES)
                 .add(CBlocks.MAYURA_FENCE.get())
                 .add(CBlocks.GRIMWOOD_FENCE.get())
         ;
-        tag(BlockTags.FENCE_GATES)
+        tag(net.minecraft.tags.BlockTags.FENCE_GATES)
                 .add(CBlocks.MAYURA_FENCE_GATE.get())
                 .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
@@ -563,38 +562,38 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.MAYURA_FENCE_GATE.get())
                 .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
         ;
-        pickaxeWalls.forEach(entry -> tag(BlockTags.WALLS).add(entry.get()));
-        tag(BlockTags.WALLS)
+        pickaxeWalls.forEach(entry -> tag(net.minecraft.tags.BlockTags.WALLS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.WALLS)
         ;
-        tag(BlockTags.DOORS)
+        tag(net.minecraft.tags.BlockTags.DOORS)
         ;
-        tag(BlockTags.WOODEN_DOORS)
+        tag(net.minecraft.tags.BlockTags.WOODEN_DOORS)
                 .add(CBlocks.MAYURA_DOOR.get())
                 .add(CBlocks.GRIMWOOD_DOOR.get())
         ;
-        tag(BlockTags.TRAPDOORS)
+        tag(net.minecraft.tags.BlockTags.TRAPDOORS)
         ;
-        tag(BlockTags.WOODEN_TRAPDOORS)
+        tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS)
                 .add(CBlocks.MAYURA_TRAPDOOR.get())
                 .add(CBlocks.GRIMWOOD_TRAPDOOR.get())
         ;
-        tag(BlockTags.PRESSURE_PLATES)
+        tag(net.minecraft.tags.BlockTags.PRESSURE_PLATES)
                 .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
         ;
-        stonePressurePlates.forEach(entry -> tag(BlockTags.STONE_PRESSURE_PLATES).add(entry.get()));
-        tag(BlockTags.STONE_PRESSURE_PLATES)
+        stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES)
         ;
-        tag(BlockTags.WOODEN_PRESSURE_PLATES)
+        tag(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(CBlocks.MAYURA_PRESSURE_PLATE.get())
                 .add(CBlocks.GRIMWOOD_PRESSURE_PLATE.get())
         ;
-        tag(BlockTags.BUTTONS)
+        tag(net.minecraft.tags.BlockTags.BUTTONS)
                 .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
         ;
-        stoneButtons.forEach(entry -> tag(BlockTags.STONE_BUTTONS).add(entry.get()));
-        tag(BlockTags.STONE_BUTTONS)
+        stoneButtons.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_BUTTONS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STONE_BUTTONS)
         ;
-        tag(BlockTags.WOODEN_BUTTONS)
+        tag(net.minecraft.tags.BlockTags.WOODEN_BUTTONS)
                 .add(CBlocks.MAYURA_BUTTON.get())
                 .add(CBlocks.GRIMWOOD_BUTTON.get())
         ;
@@ -603,77 +602,77 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Ore Tags
          */
 
-        tag(BlockTags.COAL_ORES)
+        tag(net.minecraft.tags.BlockTags.COAL_ORES)
                 .add(CBlocks.BLUESCHIST_COAL_ORE.get())
                 .add(CBlocks.BLUE_SHALE_COAL_ORE.get())
                 .add(CBlocks.WATER_ICE_COAL_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_COAL_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_COAL_ORE.get())
         ;
-        tag(BlockTags.IRON_ORES)
+        tag(net.minecraft.tags.BlockTags.IRON_ORES)
                 .add(CBlocks.BLUESCHIST_IRON_ORE.get())
                 .add(CBlocks.BLUE_SHALE_IRON_ORE.get())
                 .add(CBlocks.WATER_ICE_IRON_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_IRON_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_IRON_ORE.get())
         ;
-        tag(BlockTags.COPPER_ORES)
+        tag(net.minecraft.tags.BlockTags.COPPER_ORES)
                 .add(CBlocks.BLUESCHIST_COPPER_ORE.get())
                 .add(CBlocks.BLUE_SHALE_COPPER_ORE.get())
                 .add(CBlocks.WATER_ICE_COPPER_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_COPPER_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_COPPER_ORE.get())
         ;
-        tag(BlockTags.GOLD_ORES)
+        tag(net.minecraft.tags.BlockTags.GOLD_ORES)
                 .add(CBlocks.BLUESCHIST_GOLD_ORE.get())
                 .add(CBlocks.BLUE_SHALE_GOLD_ORE.get())
                 .add(CBlocks.WATER_ICE_GOLD_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_GOLD_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_GOLD_ORE.get())
         ;
-        tag(BlockTags.REDSTONE_ORES)
+        tag(net.minecraft.tags.BlockTags.REDSTONE_ORES)
                 .add(CBlocks.BLUESCHIST_REDSTONE_ORE.get())
                 .add(CBlocks.BLUE_SHALE_REDSTONE_ORE.get())
                 .add(CBlocks.WATER_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_REDSTONE_ORE.get())
         ;
-        tag(BlockTags.EMERALD_ORES)
+        tag(net.minecraft.tags.BlockTags.EMERALD_ORES)
                 .add(CBlocks.BLUESCHIST_EMERALD_ORE.get())
                 .add(CBlocks.BLUE_SHALE_EMERALD_ORE.get())
                 .add(CBlocks.WATER_ICE_EMERALD_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_EMERALD_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_EMERALD_ORE.get())
         ;
-        tag(BlockTags.LAPIS_ORES)
+        tag(net.minecraft.tags.BlockTags.LAPIS_ORES)
                 .add(CBlocks.BLUESCHIST_LAPIS_ORE.get())
                 .add(CBlocks.BLUE_SHALE_LAPIS_ORE.get())
                 .add(CBlocks.WATER_ICE_LAPIS_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_LAPIS_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LAPIS_ORE.get())
         ;
-        tag(BlockTags.DIAMOND_ORES)
+        tag(net.minecraft.tags.BlockTags.DIAMOND_ORES)
                 .add(CBlocks.BLUESCHIST_DIAMOND_ORE.get())
                 .add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get())
                 .add(CBlocks.WATER_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get())
         ;
-        tag(CTags.CBlockTags.ORES_LUTRUM)
+        tag(CTags.BlockTags.ORES_LUTRUM)
                 .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
                 .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
                 .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
-        tag(CTags.CBlockTags.ORES_OBDURIUM)
+        tag(CTags.BlockTags.ORES_OBDURIUM)
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
                 .add(CBlocks.WATER_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get())
         ;
-        tag(CTags.CBlockTags.ORES_MALUNITE)
+        tag(CTags.BlockTags.ORES_MALUNITE)
                 .add(CBlocks.BLUESCHIST_MALUNITE_ORE.get())
                 .add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get())
                 .add(CBlocks.WATER_ICE_MALUNITE_ORE.get())
@@ -741,26 +740,26 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
-        tag(CTags.CBlockTags.ORE_BEARING_GROUND_BLUESCHIST)
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
         ;
-        tag(CTags.CBlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
-        tag(CTags.CBlockTags.ORE_BEARING_GROUND_WATER_ICE)
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE)
                 .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
         ;
-        tag(CTags.CBlockTags.ORE_BEARING_GROUND_NITROGEN_ICE)
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE)
                 .add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice").get())
         ;
-        tag(CTags.CBlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
                 .add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get())
         ;
-        blueschistOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
-        waterIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
-        nitrogenIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
-        oxygenIceOres.forEach(entry -> tag(CTags.CBlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
+        blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
+        blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
+        waterIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
+        nitrogenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
+        oxygenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
 
         /*
         Stone Tags
@@ -772,18 +771,18 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
-                .addTag(CTags.CBlockTags.COBBLESTONES_BLUESCHIST)
-                .addTag(CTags.CBlockTags.COBBLESTONES_BLUE_SHALE)
+                .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
+                .addTag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
         ;
-        tag(CTags.CBlockTags.COBBLESTONES_BLUESCHIST)
+        tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
         ;
-        tag(CTags.CBlockTags.COBBLESTONES_BLUE_SHALE)
+        tag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
         ;
 
         // Base Stone Tags
-        tag(CTags.CBlockTags.BASE_STONE_FRIGUS)
+        tag(CTags.BlockTags.BASE_STONE_FRIGUS)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
@@ -794,33 +793,33 @@ public class CBlockTagsProvider extends BlockTagsProvider {
          */
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE)
-                .addTag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_BRUMA)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_LUTRUM)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_OBDURIUM)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_MALUNITE)
+                .addTag(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_BRUMA)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_BRUMA)
                 .add(CBlocks.BRUMA_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_LUTRUM)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_LUTRUM)
                 .add(CBlocks.LUTRUM_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_RAW_LUTRUM)
                 .add(CBlocks.RAW_LUTRUM_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_OBDURIUM)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_OBDURIUM)
                 .add(CBlocks.OBDURIUM_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM)
                 .add(CBlocks.RAW_OBDURIUM_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_MALUNITE)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_MALUNITE)
                 .add(CBlocks.MALUNITE_BLOCK.get())
         ;
-        tag(CTags.CBlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
+        tag(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(CBlocks.RAW_MALUNITE_BLOCK.get())
         ;
 
@@ -828,25 +827,25 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Soil Tags
          */
 
-        tag(BlockTags.DIRT)
+        tag(net.minecraft.tags.BlockTags.DIRT)
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(CBlocks.FRIGUS_DIRT.get())
                 .add(CBlocks.COARSE_FRIGUS_DIRT.get())
                 .add(CBlocks.FRIGUS_MUD.get())
         ;
-        tag(CTags.CBlockTags.CONVERTABLE_TO_FRIGUS_MUD)
+        tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
                 .add(CBlocks.FRIGUS_DIRT.get())
                 .add(CBlocks.COARSE_FRIGUS_DIRT.get())
         ;
-        tag(BlockTags.ANIMALS_SPAWNABLE_ON)
+        tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
         ;
-        tag(BlockTags.SNIFFER_DIGGABLE_BLOCK)
+        tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
                 .add(CBlocks.FRIGUS_DIRT.get())
                 .add(CBlocks.COARSE_FRIGUS_DIRT.get())
         ;
-        tag(BlockTags.VALID_SPAWN)
+        tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
@@ -857,11 +856,11 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Tree Tags
          */
 
-        tag(BlockTags.LEAVES)
+        tag(net.minecraft.tags.BlockTags.LEAVES)
                 .add(CBlocks.MAYURA_LEAVES.get())
                 .add(CBlocks.GRIMWOOD_LEAVES.get())
         ;
-        tag(BlockTags.LOGS)
+        tag(net.minecraft.tags.BlockTags.LOGS)
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
@@ -879,7 +878,7 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        tag(BlockTags.LOGS_THAT_BURN)
+        tag(net.minecraft.tags.BlockTags.LOGS_THAT_BURN)
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
@@ -889,17 +888,17 @@ public class CBlockTagsProvider extends BlockTagsProvider {
                 .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
                 .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        tag(BlockTags.PLANKS)
+        tag(net.minecraft.tags.BlockTags.PLANKS)
                 .add(CBlocks.MAYURA_PLANKS.get())
                 .add(CBlocks.GRIMWOOD_PLANKS.get())
         ;
-        tag(CTags.CBlockTags.MAYURA_LOGS)
+        tag(CTags.BlockTags.MAYURA_LOGS)
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
                 .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
-        tag(CTags.CBlockTags.GRIMWOOD_LOGS)
+        tag(CTags.BlockTags.GRIMWOOD_LOGS)
                 .add(CBlocks.GRIMWOOD_LOG.get())
                 .add(CBlocks.GRIMWOOD_WOOD.get())
                 .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
@@ -910,20 +909,20 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Plant Tags
          */
 
-        tag(BlockTags.REPLACEABLE_BY_TREES)
+        tag(net.minecraft.tags.BlockTags.REPLACEABLE_BY_TREES)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        tag(BlockTags.SAPLINGS)
+        tag(net.minecraft.tags.BlockTags.SAPLINGS)
                 .add(CBlocks.MAYURA_SAPLING.get())
         ;
-        tag(BlockTags.SMALL_FLOWERS)
+        tag(net.minecraft.tags.BlockTags.SMALL_FLOWERS)
                 .add(CBlocks.VIVIAN.get())
                 .add(CBlocks.WICKUL.get())
                 .add(CBlocks.ICEFLOWER.get())
         ;
-        tag(BlockTags.TALL_FLOWERS)
+        tag(net.minecraft.tags.BlockTags.TALL_FLOWERS)
         ;
-        tag(BlockTags.FLOWER_POTS)
+        tag(net.minecraft.tags.BlockTags.FLOWER_POTS)
                 .add(CBlocks.POTTED_VIVIAN.get())
                 .add(CBlocks.POTTED_WICKUL.get())
                 .add(CBlocks.POTTED_ICEFLOWER.get())
@@ -933,13 +932,13 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Carver Replaceable Tags
          */
 
-        tag(CTags.CBlockTags.FRIGUS_CARVER_REPLACEABLES)
-                .addTag(CTags.CBlockTags.BASE_STONE_FRIGUS)
-                .addTag(BlockTags.DIRT)
-                .addTag(BlockTags.SAND)
-                .addTag(BlockTags.COPPER_ORES)
-                .addTag(BlockTags.IRON_ORES)
-                .addTag(BlockTags.SNOW)
+        tag(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES)
+                .addTag(CTags.BlockTags.BASE_STONE_FRIGUS)
+                .addTag(net.minecraft.tags.BlockTags.DIRT)
+                .addTag(net.minecraft.tags.BlockTags.SAND)
+                .addTag(net.minecraft.tags.BlockTags.COPPER_ORES)
+                .addTag(net.minecraft.tags.BlockTags.IRON_ORES)
+                .addTag(net.minecraft.tags.BlockTags.SNOW)
                 .add(Blocks.PACKED_ICE)
                 .add(Blocks.RAW_COPPER_BLOCK)
                 .add(Blocks.RAW_IRON_BLOCK)
@@ -950,11 +949,11 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Ore Replaceable Tags
          */
 
-        tag(CTags.CBlockTags.BLUESCHIST_ORE_REPLACEABLES)
+        tag(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
-        tag(CTags.CBlockTags.BLUE_SHALE_ORE_REPLACEABLES)
+        tag(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
 
@@ -962,14 +961,14 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         Miscellaneous Tags
          */
 
-        tag(BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
+        tag(net.minecraft.tags.BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
                 // Prevents blocks from interfering with enchanting
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        tag(BlockTags.REPLACEABLE)
+        tag(net.minecraft.tags.BlockTags.REPLACEABLE)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        tag(BlockTags.ICE)
+        tag(net.minecraft.tags.BlockTags.ICE)
                 .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
                 .add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get())
                 .add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice").get())

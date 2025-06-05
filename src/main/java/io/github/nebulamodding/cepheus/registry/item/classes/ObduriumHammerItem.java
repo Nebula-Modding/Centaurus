@@ -1,4 +1,4 @@
-package io.github.nebulamodding.cepheus.registry.item.itemtypes;
+package io.github.nebulamodding.cepheus.registry.item.classes;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

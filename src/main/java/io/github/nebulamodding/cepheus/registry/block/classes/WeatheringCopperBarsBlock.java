@@ -1,15 +1,15 @@
-package io.github.nebulamodding.cepheus.registry.block.blocktypes;
+package io.github.nebulamodding.cepheus.registry.block.classes;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.WeatheringCopper;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class WeatheringCopperRotatedPillarBlock extends RotatedPillarBlock implements WeatheringCopper {
+public class WeatheringCopperBarsBlock extends IronBarsBlock implements WeatheringCopper {
     private final WeatherState weatherState;
-    public WeatheringCopperRotatedPillarBlock(WeatherState weatherState, Properties properties) {
+    public WeatheringCopperBarsBlock(WeatherState weatherState, Properties properties) {
         super(properties);
         this.weatherState = weatherState;
     }
