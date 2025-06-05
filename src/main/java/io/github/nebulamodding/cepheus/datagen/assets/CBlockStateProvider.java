@@ -34,7 +34,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.MAYURA_PRESSURE_PLATE);
         excludedBlocks.add(CBlocks.MAYURA_BUTTON);
         excludedBlocks.add(CBlocks.MAYURA_SAPLING);
-
         excludedBlocks.add(CBlocks.GRIMWOOD_WOOD);
         excludedBlocks.add(CBlocks.STRIPPED_GRIMWOOD_WOOD);
         excludedBlocks.add(CBlocks.GRIMWOOD_STAIRS);
@@ -46,24 +45,19 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.GRIMWOOD_PRESSURE_PLATE);
         excludedBlocks.add(CBlocks.GRIMWOOD_BUTTON);
         excludedBlocks.add(CBlocks.GRIMWOOD_SAPLING);
-
         excludedBlocks.add(CBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(CBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(CBlocks.FRIGUS_FARMLAND);
-
         excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_SLAB);
         excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_WALL);
-
         excludedBlocks.add(CBlocks.FRIGUS_SHORT_GRASS);
         excludedBlocks.add(CBlocks.VIVIAN);
         excludedBlocks.add(CBlocks.WICKUL);
         excludedBlocks.add(CBlocks.ICEFLOWER);
-
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_slab"));
         excludedBlocks.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"));
-
         excludedBlocks.add(CBlocks.BLUE_SHALE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.BLUE_SHALE_TILE_STAIRS);
         excludedBlocks.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_brick_slab"));
@@ -72,7 +66,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_tile_slab"));
         excludedBlocks.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_brick_wall"));
         excludedBlocks.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_tile_wall"));
-
         excludedBlocks.add(CBlocks.PERMAFROST_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.PERMAFROST_TILE_STAIRS);
         excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
@@ -81,11 +74,9 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
         excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
         excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
-
         excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"));
         excludedBlocks.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"));
-
         excludedBlocks.add(CBlocks.WATER_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"));
         excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"));
@@ -98,7 +89,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"));
         excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.METHANE_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"));
         excludedBlocks.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_wall"));
@@ -108,7 +98,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_slab"));
         excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"));
         excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"));
@@ -118,11 +107,9 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"));
         excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.AMMONIA_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"));
         excludedBlocks.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.NITROGEN_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_slab"));
         excludedBlocks.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_wall"));
@@ -135,28 +122,22 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"));
         excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"));
         excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.OXYGEN_ICE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"));
         excludedBlocks.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"));
-
         excludedBlocks.add(CBlocks.CUT_SALT_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"));
         excludedBlocks.add(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"));
-
         excludedBlocks.add(CBlocks.GRAPHITE_CLUSTER);
         excludedBlocks.add(CBlocks.CUT_GRAPHITE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"));
         excludedBlocks.add(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"));
-
         excludedBlocks.add(CBlocks.CUT_SULFUR_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"));
         excludedBlocks.add(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
-
         excludedBlocks.add(CBlocks.TUMOR);
         excludedBlocks.add(CBlocks.GRISTLED_FLESH);
         excludedBlocks.add(CBlocks.SHORT_GRISTLES);
@@ -169,7 +150,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"));
         excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"));
         excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"));
-
         excludedBlocks.add(CBlocks.CHISELED_LUTRUM);
         excludedBlocks.add(CBlocks.LUTRUM_GRATE);
         excludedBlocks.add(CBlocks.LUTRUM_WINDOW);
@@ -198,7 +178,6 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.OXIDIZED_LUTRUM_DOOR);
         excludedBlocks.add(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(CBlocks.OXIDIZED_LUTRUM_BULB);
-
         excludedBlocks.add(CBlocks.WAXED_LUTRUM_BLOCK);
         excludedBlocks.add(CBlocks.WAXED_LUTRUM_SHEET_METAL);
         excludedBlocks.add(CBlocks.WAXED_CHISELED_LUTRUM);
@@ -259,21 +238,18 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
         excludedBlocks.add(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR);
         excludedBlocks.add(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB);
-
         excludedBlocks.add(CBlocks.OBDURIUM_GRATE);
         excludedBlocks.add(CBlocks.OBDURIUM_WINDOW);
         excludedBlocks.add(CBlocks.OBDURIUM_DOOR);
         excludedBlocks.add(CBlocks.OBDURIUM_BARS);
         excludedBlocks.add(CBlocks.OBDURIUM_TRAPDOOR);
         excludedBlocks.add(CBlocks.OBDURIUM_BULB);
-
         excludedBlocks.add(CBlocks.MALUNITE_GRATE);
         excludedBlocks.add(CBlocks.MALUNITE_WINDOW);
         excludedBlocks.add(CBlocks.MALUNITE_DOOR);
         excludedBlocks.add(CBlocks.MALUNITE_BARS);
         excludedBlocks.add(CBlocks.MALUNITE_TRAPDOOR);
         excludedBlocks.add(CBlocks.MALUNITE_BULB);
-
         excludedBlocks.add(CBlocks.POTTED_MAYURA_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
@@ -284,6 +260,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         Automated Block Models
          */
 
+        // To be re-done
         for (var entry : CBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
@@ -435,7 +412,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         stairsBlockWithItem(CBlocks.RED_NITROGEN_ICE_BRICK_STAIRS, blockLoc(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
         slabBlockWithItem(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"), blockLoc(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")), blockLoc(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
         wallBlockWithItem(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"), blockLoc(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks")));
-        
+
         stairsBlockWithItem(CBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS, blockLoc(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
         slabBlockWithItem(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"), blockLoc(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")), blockLoc(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
         wallBlockWithItem(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"), blockLoc(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks")));
@@ -447,11 +424,11 @@ public class CBlockStateProvider extends BlockStateProvider {
         stairsBlockWithItem(CBlocks.CUT_SALT_BRICK_STAIRS, blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
         slabBlockWithItem(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"), blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")), blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
         wallBlockWithItem(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"), blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-        
+
         stairsBlockWithItem(CBlocks.CUT_GRAPHITE_BRICK_STAIRS, blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
         slabBlockWithItem(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"), blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")), blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
         wallBlockWithItem(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"), blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-        
+
         stairsBlockWithItem(CBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
         slabBlockWithItem(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")), blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
         wallBlockWithItem(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));

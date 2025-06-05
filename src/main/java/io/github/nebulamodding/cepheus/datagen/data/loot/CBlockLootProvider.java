@@ -254,7 +254,6 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
     }
-
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
         return CBlocks.BLOCKS.getEntries()

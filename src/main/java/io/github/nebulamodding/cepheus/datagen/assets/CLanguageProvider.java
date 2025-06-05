@@ -24,32 +24,25 @@ public class CLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
+        final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Blocks excluded from having a translation automatically provided
         excludedBlocks.add(CBlocks.SALT_CRYSTAL_BLOCK);
         excludedBlocks.add(CBlocks.SALT_DUST_BLOCK);
-
         excludedBlocks.add(CBlocks.SULFUR_CRYSTAL_BLOCK);
         excludedBlocks.add(CBlocks.SULFUR_DUST_BLOCK);
-
         excludedBlocks.add(CBlocks.GRAPHITE_CRYSTAL_BLOCK);
         excludedBlocks.add(CBlocks.GRAPHITE_DUST_BLOCK);
-
         excludedBlocks.add(CBlocks.FLESH_BLOCK);
-
         excludedBlocks.add(CBlocks.BRUMA_BLOCK);
-
         excludedBlocks.add(CBlocks.BRUMA_BLOCK);
         excludedBlocks.add(CBlocks.RAW_LUTRUM_BLOCK);
         excludedBlocks.add(CBlocks.LUTRUM_AMALGAMATE_BLOCK);
         excludedBlocks.add(CBlocks.RAW_OBDURIUM_BLOCK);
         excludedBlocks.add(CBlocks.RAW_MALUNITE_BLOCK);
-
         excludedBlocks.add(CBlocks.LUTRUM_BLOCK);
         excludedBlocks.add(CBlocks.WAXED_LUTRUM_BLOCK);
         excludedBlocks.add(CBlocks.OBDURIUM_BLOCK);
         excludedBlocks.add(CBlocks.MALUNITE_BLOCK);
-
-        final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a translation automatically provided
         excludedItems.add(CItems.GOLDEN_AZURE_ROOT);
         excludedItems.add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT);
