@@ -1,5 +1,14 @@
 {
   "values": [
+    "cepheus:lutrum_plating_pressure_plate",
+    "cepheus:exposed_lutrum_plating_pressure_plate",
+    "cepheus:weathered_lutrum_plating_pressure_plate",
+    "cepheus:oxidized_lutrum_plating_pressure_plate",
+    "cepheus:waxed_lutrum_plating_pressure_plate",
+    "cepheus:waxed_exposed_lutrum_plating_pressure_plate",
+    "cepheus:waxed_weathered_lutrum_plating_pressure_plate",
+    "cepheus:waxed_oxidized_lutrum_plating_pressure_plate",
+    "cepheus:obdurium_plating_pressure_plate",
     "cepheus:malunite_plating_pressure_plate"
   ]
 }

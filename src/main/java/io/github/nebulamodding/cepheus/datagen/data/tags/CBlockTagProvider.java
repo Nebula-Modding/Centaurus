@@ -5,6 +5,7 @@ import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import io.github.nebulamodding.cepheus.registry.CTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -27,6 +28,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         // Lists with collections of blocks with multiple of the same tag to save on lines of code and make this file more readable
         final List<DeferredBlock<? extends Block>> blueschistOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> blueShaleOres = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> karcassStoneOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> waterIceOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> methaneIceOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> nitrogenIceOres = new ArrayList<>();
@@ -37,6 +39,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> stonePressurePlates = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> stoneButtons = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> ices = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> needsStonePickaxe = new ArrayList<>();
         // Ores
         blueschistOres.add(CBlocks.BLUESCHIST_COAL_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_IRON_ORE);
@@ -60,6 +63,19 @@ public class CBlockTagProvider extends BlockTagsProvider {
         blueShaleOres.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_OBDURIUM_ORE);
         blueShaleOres.add(CBlocks.BLUE_SHALE_MALUNITE_ORE);
+        // DELETE THE TEMPBLOCKTEST FROM KARCASSSTONEORES!!!
+        karcassStoneOres.add(CBlocks.TEMPBLOCKTEST);
+        //karcassStoneOres.add(CBlocks.KARCASS_COAL_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_IRON_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_COPPER_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_GOLD_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_REDSTONE_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_EMERALD_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_LAPIS_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_DIAMOND_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_LUTRUM_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_OBDURIUM_ORE);
+        //karcassStoneOres.add(CBlocks.KARCASS_MALUNITE_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_COAL_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_IRON_ORE);
         waterIceOres.add(CBlocks.WATER_ICE_COPPER_ORE);
@@ -97,7 +113,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeStairs.add(CBlocks.FRIGUS_MUD_BRICK_STAIRS);
         pickaxeSlabs.add(CBlocks.FRIGUS_MUD_BRICK_SLAB);
         pickaxeWalls.add(CBlocks.FRIGUS_MUD_BRICK_WALL);
-        // Frigus Stone
+        // Blueschist
         pickaxeStairs.add(CBlocks.BLUESCHIST_STAIRS);
         pickaxeStairs.add(CBlocks.FRIGUS_COBBLESTONE_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_BLUESCHIST_STAIRS);
@@ -112,7 +128,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"));
         stonePressurePlates.add(CBlocks.BLUESCHIST_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.BLUESCHIST_BUTTON);
-        // Frigus Deepslate
+        // Blue Shale
         pickaxeStairs.add(CBlocks.BLUE_SHALE_STAIRS);
         pickaxeStairs.add(CBlocks.COBBLED_BLUE_SHALE_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_BLUE_SHALE_STAIRS);
@@ -141,6 +157,21 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"));
         pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
         pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
+        // Karcass Stone
+        pickaxeStairs.add(CBlocks.KARCASS_STONE_STAIRS);
+        pickaxeStairs.add(CBlocks.KARCASS_COBBLESTONE_STAIRS);
+        pickaxeStairs.add(CBlocks.POLISHED_KARCASS_STONE_STAIRS);
+        pickaxeStairs.add(CBlocks.KARCASS_STONE_BRICK_STAIRS);
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_slab"));
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_cobblestone_slab"));
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("polished_karcass_stone_slab"));
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"));
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_wall"));
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_cobblestone_wall"));
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("polished_karcass_stone_wall"));
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"));
+        stonePressurePlates.add(CBlocks.KARCASS_STONE_PRESSURE_PLATE);
+        stoneButtons.add(CBlocks.KARCASS_STONE_BUTTON);
         // Ices
         ices.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice"));
         ices.add(CBlocks.WATER_ICE_BLOCKS.get("cobbled_water_ice"));
@@ -380,6 +411,159 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_wall"));
         pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("cobbled_oxygen_ice_wall"));
         pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"));
+        // Needs Stone Pickaxe
+        needsStonePickaxe.add(CBlocks.LUTRUM_BLOCK);
+        needsStonePickaxe.add(CBlocks.LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.EXPOSED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.EXPOSED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.WEATHERED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.WEATHERED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.OXIDIZED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_BLOCK);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.WAXED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_EXPOSED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_WEATHERED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_CHISELED_LUTRUM);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_GRATE);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_BARS);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB);
+        needsStonePickaxe.add(CBlocks.RAW_LUTRUM_BLOCK);
+        needsStonePickaxe.add(CBlocks.LUTRUM_AMALGAMATE_BLOCK);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_BLOCK);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_GRATE);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_WINDOW);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PLATING);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_PILLAR);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_BARS);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_DOOR);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.OBDURIUM_BULB);
+        needsStonePickaxe.add(CBlocks.RAW_OBDURIUM_BLOCK);
+        needsStonePickaxe.add(CBlocks.MALUNITE_BLOCK);
+        needsStonePickaxe.add(CBlocks.MALUNITE_SHEET_METAL);
+        needsStonePickaxe.add(CBlocks.MALUNITE_GRATE);
+        needsStonePickaxe.add(CBlocks.MALUNITE_WINDOW);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PLATING);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PLATING_STAIRS);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PLATING_SLAB);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PLATING_BUTTON);
+        needsStonePickaxe.add(CBlocks.MALUNITE_PILLAR);
+        needsStonePickaxe.add(CBlocks.MALUNITE_BARS);
+        needsStonePickaxe.add(CBlocks.MALUNITE_DOOR);
+        needsStonePickaxe.add(CBlocks.MALUNITE_TRAPDOOR);
+        needsStonePickaxe.add(CBlocks.MALUNITE_BULB);
+        needsStonePickaxe.add(CBlocks.RAW_MALUNITE_BLOCK);
 
         /*
         Tool Tags
@@ -399,6 +583,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         blueShaleOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        karcassStoneOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         oxygenIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -406,8 +591,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         ices.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        needsStonePickaxe.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
-                // Frigus Stones
+                // Blueschist
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("chiseled_blueschist").get())
@@ -415,6 +601,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks").get())
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cracked_blueschist_bricks").get())
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist_pillar").get())
+                // Blue Shale
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("chiseled_blue_shale").get())
@@ -431,6 +618,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.PERMAFROST_BLOCKS.get("cracked_permafrost_bricks").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost_pillar").get())
+                // Karcass Stone
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("chiseled_karcass_stone").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("polished_karcass_stone").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("cracked_karcass_stone_bricks").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_pillar").get())
                 // Plating
                 .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
                 .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
@@ -461,6 +656,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(net.minecraft.tags.BlockTags.SWORD_EFFICIENT)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
+        needsStonePickaxe.forEach(entry -> tag(BlockTags.NEEDS_STONE_TOOL).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL)
                 .add(CBlocks.BLUESCHIST_COPPER_ORE.get())
                 .add(CBlocks.BLUESCHIST_IRON_ORE.get())
@@ -641,16 +837,21 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
+                .addTag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
         ;
         tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
         ;
         tag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
+        ;
+        tag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get())
         ;
 
         // Base Stone Tags
@@ -815,6 +1016,12 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE)
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+        ;
+        tag(CTags.BlockTags.KARCASS_STONE_ORE_REPLACEABLES)
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+        ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE)
                 .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
         ;
@@ -826,6 +1033,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
         blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
+        karcassStoneOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
         oxygenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
@@ -853,6 +1061,16 @@ public class CBlockTagProvider extends BlockTagsProvider {
 
         pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.STAIRS).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.STAIRS)
+                .add(CBlocks.LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.EXPOSED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.WEATHERED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.WAXED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS.get())
+                .add(CBlocks.OBDURIUM_PLATING_STAIRS.get())
+                .add(CBlocks.MALUNITE_PLATING_STAIRS.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_STAIRS)
                 .add(CBlocks.MAYURA_STAIRS.get())
@@ -860,6 +1078,16 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.SLABS).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.SLABS)
+                .add(CBlocks.LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.EXPOSED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.WEATHERED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.WAXED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_SLAB.get())
+                .add(CBlocks.OBDURIUM_PLATING_SLAB.get())
+                .add(CBlocks.MALUNITE_PLATING_SLAB.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_SLABS)
                 .add(CBlocks.MAYURA_SLAB.get())
@@ -885,18 +1113,43 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(net.minecraft.tags.BlockTags.WALLS)
         ;
         tag(net.minecraft.tags.BlockTags.DOORS)
+                .add(CBlocks.LUTRUM_DOOR.get())
+                .add(CBlocks.EXPOSED_LUTRUM_DOOR.get())
+                .add(CBlocks.WEATHERED_LUTRUM_DOOR.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_DOOR.get())
+                .add(CBlocks.WAXED_LUTRUM_DOOR.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_DOORS)
                 .add(CBlocks.MAYURA_DOOR.get())
                 .add(CBlocks.GRIMWOOD_DOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.TRAPDOORS)
+                .add(CBlocks.LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.EXPOSED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.WEATHERED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.WAXED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS)
                 .add(CBlocks.MAYURA_TRAPDOOR.get())
                 .add(CBlocks.GRIMWOOD_TRAPDOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.PRESSURE_PLATES)
+                .add(CBlocks.LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.WAXED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE.get())
+                .add(CBlocks.OBDURIUM_PLATING_PRESSURE_PLATE.get())
                 .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
         ;
         stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES).add(entry.get()));
@@ -907,6 +1160,15 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.GRIMWOOD_PRESSURE_PLATE.get())
         ;
         tag(net.minecraft.tags.BlockTags.BUTTONS)
+                .add(CBlocks.LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.EXPOSED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.WEATHERED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.WAXED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON.get())
+                .add(CBlocks.OBDURIUM_PLATING_BUTTON.get())
                 .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
         ;
         stoneButtons.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_BUTTONS).add(entry.get()));
@@ -955,6 +1217,20 @@ public class CBlockTagProvider extends BlockTagsProvider {
         /*
         Miscellaneous Tags
          */
+
+        tag(BlockTags.IMPERMEABLE)
+                // Prevents dripping particles from forming if fluid is above
+                .add(CBlocks.LUTRUM_WINDOW.get())
+                .add(CBlocks.EXPOSED_LUTRUM_WINDOW.get())
+                .add(CBlocks.WEATHERED_LUTRUM_WINDOW.get())
+                .add(CBlocks.OXIDIZED_LUTRUM_WINDOW.get())
+                .add(CBlocks.WAXED_LUTRUM_WINDOW.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM_WINDOW.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM_WINDOW.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM_WINDOW.get())
+                .add(CBlocks.OBDURIUM_WINDOW.get())
+                .add(CBlocks.MALUNITE_WINDOW.get())
+        ;
 
         tag(net.minecraft.tags.BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
                 // Prevents blocks from interfering with enchanting

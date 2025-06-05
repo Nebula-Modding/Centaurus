@@ -1,3 +1,12 @@
 {
-  "values": []
+  "values": [
+    "cepheus:lutrum_trapdoor",
+    "cepheus:exposed_lutrum_trapdoor",
+    "cepheus:weathered_lutrum_trapdoor",
+    "cepheus:oxidized_lutrum_trapdoor",
+    "cepheus:waxed_lutrum_trapdoor",
+    "cepheus:waxed_exposed_lutrum_trapdoor",
+    "cepheus:waxed_weathered_lutrum_trapdoor",
+    "cepheus:waxed_oxidized_lutrum_trapdoor"
+  ]
 }

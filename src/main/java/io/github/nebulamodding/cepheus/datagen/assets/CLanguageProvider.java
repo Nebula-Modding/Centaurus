@@ -87,14 +87,17 @@ public class CLanguageProvider extends LanguageProvider {
         // Block Tags
         add(CTags.BlockTags.COBBLESTONES_BLUESCHIST, "Blueschist Cobblestones");
         add(CTags.BlockTags.COBBLESTONES_BLUE_SHALE, "Blue Shale Cobblestones");
+        add(CTags.BlockTags.COBBLESTONES_KARCASS_STONE, "Karcass Cobblestones");
         add(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST, "Blueschist Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE, "Blue Shale Ore Bearing Ground");
+        add(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE, "Karcass Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE, "Water Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE, "Blue Shale Ores In Ground");
+        add(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE, "Karcass Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE, "Water Ice Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE, "Nitrogen Ice Ores In Ground");
@@ -109,7 +112,7 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.BlockTags.STORAGE_BLOCKS_RAW_LUTRUM, "Raw Lutrum Storage Blocks");
         add(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, "Raw Obdurium Storage Blocks");
         add(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE, "Raw Malunite Storage Blocks");
-        // Cepheus Tags
+        // Cepheus-Specific Tags
         add(CTags.BlockTags.NEEDS_LUTRUM_TOOL, "Needs Lutrum Tool");
         add(CTags.BlockTags.NEEDS_OBDURIUM_TOOL, "Needs Obdurium Tool");
         add(CTags.BlockTags.NEEDS_MALUNITE_TOOL, "Needs Malunite Tool");
@@ -117,6 +120,7 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES, "Frigus Carver Replaceables");
         add(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES, "Blueschist Ore Replaceables");
         add(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES, "Blue Shale Ore Replaceables");
+        add(CTags.BlockTags.KARCASS_STONE_ORE_REPLACEABLES, "Karcass Ore Replaceables");
         add(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD, "Convertable to Frigus Mud");
         add(CTags.BlockTags.MAYURA_LOGS, "Mayura Logs");
         add(CTags.BlockTags.GRIMWOOD_LOGS, "Grimwood Logs");
@@ -124,14 +128,17 @@ public class CLanguageProvider extends LanguageProvider {
         // Block Item Tags
         add(CTags.ItemTags.COBBLESTONES_BLUESCHIST, "Blueschist Cobblestones");
         add(CTags.ItemTags.COBBLESTONES_BLUE_SHALE, "Blue Shale Cobblestones");
+        add(CTags.ItemTags.COBBLESTONES_KARCASS_STONE, "Karcass Cobblestones");
         add(CTags.ItemTags.ORE_BEARING_GROUND_BLUESCHIST, "Blueschist Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_BLUE_SHALE, "Blue Shale Ore Bearing Ground");
+        add(CTags.ItemTags.ORE_BEARING_GROUND_KARCASS_STONE, "Karcass Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_WATER_ICE, "Water Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_BLUE_SHALE, "Blue Shale Ores In Ground");
+        add(CTags.ItemTags.ORES_IN_GROUND_KARCASS_STONE, "Karcass Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_WATER_ICE, "Water Ice Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_NITROGEN_ICE, "Nitrogen Ice Ores In Ground");
@@ -146,7 +153,7 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.STORAGE_BLOCKS_RAW_LUTRUM, "Raw Lutrum Storage Blocks");
         add(CTags.ItemTags.STORAGE_BLOCKS_RAW_OBDURIUM, "Raw Obdurium Storage Blocks");
         add(CTags.ItemTags.STORAGE_BLOCKS_RAW_MALUNITE, "Raw Malunite Storage Blocks");
-        // Cepheus Tags
+        // Cepheus-Specific Tags
         add(CTags.ItemTags.MAYURA_LOGS, "Mayura Logs");
         add(CTags.ItemTags.GRIMWOOD_LOGS, "Grimwood Logs");
 

@@ -1,5 +1,14 @@
 {
   "values": [
+    "cepheus:lutrum_plating_button",
+    "cepheus:exposed_lutrum_plating_button",
+    "cepheus:weathered_lutrum_plating_button",
+    "cepheus:oxidized_lutrum_plating_button",
+    "cepheus:waxed_lutrum_plating_button",
+    "cepheus:waxed_exposed_lutrum_plating_button",
+    "cepheus:waxed_weathered_lutrum_plating_button",
+    "cepheus:waxed_oxidized_lutrum_plating_button",
+    "cepheus:obdurium_plating_button",
     "cepheus:malunite_plating_button"
   ]
 }

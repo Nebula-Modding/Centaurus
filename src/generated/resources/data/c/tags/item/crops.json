@@ -1,5 +1,6 @@
 {
   "values": [
-    "cepheus:bruma"
+    "#c:crops/bruma",
+    "#c:crops/azure_root"
   ]
 }

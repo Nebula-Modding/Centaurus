@@ -7,6 +7,7 @@ import io.github.nebulamodding.cepheus.registry.CTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -48,11 +49,18 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(net.minecraft.tags.BlockTags.SAPLINGS, net.minecraft.tags.ItemTags.SAPLINGS);
         copy(net.minecraft.tags.BlockTags.SMALL_FLOWERS, net.minecraft.tags.ItemTags.SMALL_FLOWERS);
         copy(net.minecraft.tags.BlockTags.TALL_FLOWERS, net.minecraft.tags.ItemTags.TALL_FLOWERS);
+        tag(Tags.Items.CROPS)
+                .addTag(CTags.ItemTags.CROPS_BRUMA)
+                .addTag(CTags.ItemTags.CROPS_AZURE_ROOT)
+        ;
         tag(Tags.Items.CROPS_WHEAT)
                 .add(CItems.BRUMA.get())
         ;
-        tag(Tags.Items.CROPS)
+        tag(CTags.ItemTags.CROPS_BRUMA)
                 .add(CItems.BRUMA.get())
+        ;
+        tag(CTags.ItemTags.CROPS_AZURE_ROOT)
+                .add(CItems.AZURE_ROOT.get())
         ;
 
         /*
@@ -69,13 +77,16 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
         copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
         copy(CTags.BlockTags.COBBLESTONES_BLUE_SHALE, CTags.ItemTags.COBBLESTONES_BLUE_SHALE);
+        copy(CTags.BlockTags.COBBLESTONES_KARCASS_STONE, CTags.ItemTags.COBBLESTONES_KARCASS_STONE);
         tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
         ;
         tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
         ;
 
         /*
@@ -98,11 +109,13 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST, CTags.ItemTags.ORE_BEARING_GROUND_BLUESCHIST);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE, CTags.ItemTags.ORE_BEARING_GROUND_BLUE_SHALE);
+        copy(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE, CTags.ItemTags.ORE_BEARING_GROUND_KARCASS_STONE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE, CTags.ItemTags.ORE_BEARING_GROUND_WATER_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_NITROGEN_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_OXYGEN_ICE);
         copy(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST, CTags.ItemTags.ORES_IN_GROUND_BLUESCHIST);
         copy(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE, CTags.ItemTags.ORES_IN_GROUND_BLUE_SHALE);
+        copy(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE, CTags.ItemTags.ORES_IN_GROUND_KARCASS_STONE);
         copy(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE, CTags.ItemTags.ORES_IN_GROUND_WATER_ICE);
         copy(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE, CTags.ItemTags.ORES_IN_GROUND_NITROGEN_ICE);
         copy(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE, CTags.ItemTags.ORES_IN_GROUND_OXYGEN_ICE);
@@ -224,7 +237,7 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE, CTags.ItemTags.STORAGE_BLOCKS_RAW_MALUNITE);
 
         /*
-        Miscellaneous Tags
+        Food Tags
          */
 
         tag(net.minecraft.tags.ItemTags.GOAT_FOOD)
@@ -240,9 +253,17 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(net.minecraft.tags.ItemTags.SHEEP_FOOD)
                 .add(CItems.BRUMA.get())
         ;
+        tag(ItemTags.PIG_FOOD)
+                .add(CItems.AZURE_ROOT.get())
+        ;
         tag(net.minecraft.tags.ItemTags.HORSE_FOOD)
                 .add(CItems.BRUMA.get())
                 .add(CBlocks.BRUMA_BLOCK.get().asItem())
+        ;
+        tag(ItemTags.WOLF_FOOD)
+                .add(CItems.FLESH.get())
+                .add(CItems.COOKED_FLESH.get())
+                .add(CItems.VEIN_STALK.get())
         ;
         tag(net.minecraft.tags.ItemTags.LLAMA_TEMPT_ITEMS)
                 .add(CBlocks.BRUMA_BLOCK.get().asItem())
@@ -251,6 +272,37 @@ public class CItemTagProvider extends ItemTagsProvider {
         ;
         tag(Tags.Items.FOODS_BREAD)
                 .add(CItems.BRUMA_LOAF.get())
+        ;
+        tag(Tags.Items.FOODS_GOLDEN)
+                .add(CItems.GOLDEN_AZURE_ROOT.get())
+                .add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT.get())
+        ;
+        tag(Tags.Items.FOODS_FRUIT)
+        ;
+        tag(Tags.Items.FOODS_VEGETABLE)
+                .add(CItems.AZURE_ROOT.get())
+                .add(CItems.GOLDEN_AZURE_ROOT.get())
+                .add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT.get())
+        ;
+        tag(ItemTags.MEAT)
+                .add(CItems.FLESH.get())
+                .add(CItems.COOKED_FLESH.get())
+                .add(CItems.VEIN_STALK.get())
+        ;
+        tag(Tags.Items.FOODS_COOKED_MEAT)
+                .add(CItems.COOKED_FLESH.get())
+        ;
+        tag(Tags.Items.FOODS_FOOD_POISONING)
+                .add(CItems.FLESH.get())
+        ;
+
+        /*
+        Miscellaneous Tags
+         */
+
+        tag(ItemTags.PIGLIN_LOVED)
+                .add(CItems.GOLDEN_AZURE_ROOT.get())
+                .add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT.get())
         ;
     }
 }

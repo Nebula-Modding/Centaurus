@@ -7,18 +7,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class CTags {
-    public static TagKey<Block> commonBlockTag(String name) {
-        return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
-    }
-    public static TagKey<Item> commonItemTag(String name) {
-        return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
-    }
-    public static TagKey<Block> blockTag(String name) {
-        return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
-    }
-    public static TagKey<Item> itemTag(String name) {
-        return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
-    }
 
     /*
 
@@ -37,10 +25,12 @@ public class CTags {
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonBlockTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUE_SHALE = commonBlockTag("cobblestones/blue_shale"),
+                COBBLESTONES_KARCASS_STONE = commonBlockTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
                 ORE_BEARING_GROUND_BLUESCHIST = commonBlockTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_BLUE_SHALE = commonBlockTag("ore_bearing_ground/blue_shale"),
+                ORE_BEARING_GROUND_KARCASS_STONE = commonBlockTag("ore_bearing_ground/karcass_stone"),
                 ORE_BEARING_GROUND_WATER_ICE = commonBlockTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonBlockTag("ore_bearing_ground/methane_ice"),
                 ORE_BEARING_GROUND_NITROGEN_ICE = commonBlockTag("ore_bearing_ground/nitrogen_ice"),
@@ -49,6 +39,7 @@ public class CTags {
                 // Ores In Ground
                 ORES_IN_GROUND_BLUESCHIST = commonBlockTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_BLUE_SHALE = commonBlockTag("ores_in_ground/blue_shale"),
+                ORES_IN_GROUND_KARCASS_STONE = commonBlockTag("ores_in_ground/karcass_stone"),
                 ORES_IN_GROUND_WATER_ICE = commonBlockTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonBlockTag("ores_in_ground/methane_ice"),
                 ORES_IN_GROUND_NITROGEN_ICE = commonBlockTag("ores_in_ground/nitrogen_ice"),
@@ -90,6 +81,7 @@ public class CTags {
                 // Ore Replacables
                 BLUESCHIST_ORE_REPLACEABLES = blockTag("blueschist_ore_replaceables"),
                 BLUE_SHALE_ORE_REPLACEABLES = blockTag("blue_shale_ore_replaceables"),
+                KARCASS_STONE_ORE_REPLACEABLES = blockTag("karcass_stone_ore_replaceables"),
 
                 // Convertable to Mud
                 CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud")
@@ -102,13 +94,20 @@ public class CTags {
          */
 
         public static final TagKey<Item>
+
+                /*
+                Common Tags
+                 */
+
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonItemTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUE_SHALE = commonItemTag("cobblestones/blue_shale"),
+                COBBLESTONES_KARCASS_STONE = commonItemTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
                 ORE_BEARING_GROUND_BLUESCHIST = commonItemTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_BLUE_SHALE = commonItemTag("ore_bearing_ground/blue_shale"),
+                ORE_BEARING_GROUND_KARCASS_STONE = commonItemTag("ore_bearing_ground/karcass_stone"),
                 ORE_BEARING_GROUND_WATER_ICE = commonItemTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonItemTag("ore_bearing_ground/methane_ice"),
                 ORE_BEARING_GROUND_NITROGEN_ICE = commonItemTag("ore_bearing_ground/nitrogen_ice"),
@@ -117,6 +116,7 @@ public class CTags {
                 // Ores In Ground
                 ORES_IN_GROUND_BLUESCHIST = commonItemTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_BLUE_SHALE = commonItemTag("ores_in_ground/blue_shale"),
+                ORES_IN_GROUND_KARCASS_STONE = commonItemTag("ores_in_ground/karcass_stone"),
                 ORES_IN_GROUND_WATER_ICE = commonItemTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonItemTag("ores_in_ground/methane_ice"),
                 ORES_IN_GROUND_NITROGEN_ICE = commonItemTag("ores_in_ground/nitrogen_ice"),
@@ -151,6 +151,8 @@ public class CTags {
 
         public static final TagKey<Item>
                 // Adds a plates tag because neoforge doesn't have a common tag for it by default
+
+                // Ores
                 PLATES = commonItemTag("plates"),
 
                 RAW_MATERIALS_LUTRUM = commonItemTag("raw_material/lutrum"),
@@ -169,7 +171,29 @@ public class CTags {
                 NUGGETS_MALUNITE = commonItemTag("nuggets/malunite"),
                 INGOTS_MALUNITE = commonItemTag("ingots/malunite"),
                 PLATES_MALUNITE = commonItemTag("plates/malunite"),
-                RODS_MALUNITE = commonItemTag("rods/malunite")
+                RODS_MALUNITE = commonItemTag("rods/malunite"),
+
+                // Crops
+                CROPS_BRUMA = commonItemTag("crops/bruma"),
+                CROPS_AZURE_ROOT = commonItemTag("crops/azure_root")
         ;
+    }
+    public static TagKey<Block> commonBlockTag(String name) {
+        return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+    }
+    public static TagKey<Item> commonItemTag(String name) {
+        return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+    }
+    public static TagKey<Block> blockTag(String name) {
+        return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
+    }
+    public static TagKey<Item> itemTag(String name) {
+        return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
+    }
+    public static TagKey<Block> createModBlockTag(String name) {
+        return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("create", name));
+    }
+    public static TagKey<Item> createModItemTag(String name) {
+        return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("create", name));
     }
 }

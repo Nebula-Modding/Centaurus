@@ -14,6 +14,10 @@
     "cepheus:polished_permafrost_stairs",
     "cepheus:permafrost_brick_stairs",
     "cepheus:permafrost_tile_stairs",
+    "cepheus:karcass_stone_stairs",
+    "cepheus:karcass_cobblestone_stairs",
+    "cepheus:polished_karcass_stone_stairs",
+    "cepheus:karcass_stone_brick_stairs",
     "cepheus:water_ice_stairs",
     "cepheus:cobbled_water_ice_stairs",
     "cepheus:water_ice_brick_stairs",
@@ -64,6 +68,16 @@
     "cepheus:sulfur_dioxide_ice_brick_stairs",
     "cepheus:oxygen_ice_stairs",
     "cepheus:cobbled_oxygen_ice_stairs",
-    "cepheus:oxygen_ice_brick_stairs"
+    "cepheus:oxygen_ice_brick_stairs",
+    "cepheus:lutrum_plating_stairs",
+    "cepheus:exposed_lutrum_plating_stairs",
+    "cepheus:weathered_lutrum_plating_stairs",
+    "cepheus:oxidized_lutrum_plating_stairs",
+    "cepheus:waxed_lutrum_plating_stairs",
+    "cepheus:waxed_exposed_lutrum_plating_stairs",
+    "cepheus:waxed_weathered_lutrum_plating_stairs",
+    "cepheus:waxed_oxidized_lutrum_plating_stairs",
+    "cepheus:obdurium_plating_stairs",
+    "cepheus:malunite_plating_stairs"
   ]
 }
