@@ -529,73 +529,135 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
 
         /*
-        Block Variant Tags
+        Tree Tags
          */
 
-        pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.STAIRS).add(entry.get()));
-        tag(net.minecraft.tags.BlockTags.STAIRS)
+        tag(net.minecraft.tags.BlockTags.LEAVES)
+                .add(CBlocks.MAYURA_LEAVES.get())
+                .add(CBlocks.GRIMWOOD_LEAVES.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_STAIRS)
-                .add(CBlocks.MAYURA_STAIRS.get())
-                .add(CBlocks.GRIMWOOD_STAIRS.get())
+        tag(net.minecraft.tags.BlockTags.LOGS)
+                .add(CBlocks.MAYURA_LOG.get())
+                .add(CBlocks.MAYURA_WOOD.get())
+                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(CBlocks.GRIMWOOD_LOG.get())
+                .add(CBlocks.GRIMWOOD_WOOD.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.SLABS).add(entry.get()));
-        tag(net.minecraft.tags.BlockTags.SLABS)
+        tag(Tags.Blocks.STRIPPED_LOGS)
+                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_SLABS)
-                .add(CBlocks.MAYURA_SLAB.get())
-                .add(CBlocks.GRIMWOOD_SLAB.get())
+        tag(Tags.Blocks.STRIPPED_WOODS)
+                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        tag(net.minecraft.tags.BlockTags.FENCES)
+        tag(net.minecraft.tags.BlockTags.LOGS_THAT_BURN)
+                .add(CBlocks.MAYURA_LOG.get())
+                .add(CBlocks.MAYURA_WOOD.get())
+                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
+                .add(CBlocks.GRIMWOOD_LOG.get())
+                .add(CBlocks.GRIMWOOD_WOOD.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_FENCES)
-                .add(CBlocks.MAYURA_FENCE.get())
-                .add(CBlocks.GRIMWOOD_FENCE.get())
+        tag(net.minecraft.tags.BlockTags.PLANKS)
+                .add(CBlocks.MAYURA_PLANKS.get())
+                .add(CBlocks.GRIMWOOD_PLANKS.get())
         ;
-        tag(net.minecraft.tags.BlockTags.FENCE_GATES)
-                .add(CBlocks.MAYURA_FENCE_GATE.get())
-                .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
+        tag(CTags.BlockTags.MAYURA_LOGS)
+                .add(CBlocks.MAYURA_LOG.get())
+                .add(CBlocks.MAYURA_WOOD.get())
+                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
+                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
         ;
-        tag(Tags.Blocks.FENCE_GATES)
+        tag(CTags.BlockTags.GRIMWOOD_LOGS)
+                .add(CBlocks.GRIMWOOD_LOG.get())
+                .add(CBlocks.GRIMWOOD_WOOD.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
-        tag(Tags.Blocks.FENCE_GATES_WOODEN)
-                .add(CBlocks.MAYURA_FENCE_GATE.get())
-                .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
+
+        /*
+        Plant Tags
+         */
+
+        tag(net.minecraft.tags.BlockTags.REPLACEABLE_BY_TREES)
+                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
         ;
-        pickaxeWalls.forEach(entry -> tag(net.minecraft.tags.BlockTags.WALLS).add(entry.get()));
-        tag(net.minecraft.tags.BlockTags.WALLS)
+        tag(net.minecraft.tags.BlockTags.SAPLINGS)
+                .add(CBlocks.MAYURA_SAPLING.get())
         ;
-        tag(net.minecraft.tags.BlockTags.DOORS)
+        tag(net.minecraft.tags.BlockTags.SMALL_FLOWERS)
+                .add(CBlocks.VIVIAN.get())
+                .add(CBlocks.WICKUL.get())
+                .add(CBlocks.ICEFLOWER.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_DOORS)
-                .add(CBlocks.MAYURA_DOOR.get())
-                .add(CBlocks.GRIMWOOD_DOOR.get())
+        tag(net.minecraft.tags.BlockTags.TALL_FLOWERS)
         ;
-        tag(net.minecraft.tags.BlockTags.TRAPDOORS)
+        tag(net.minecraft.tags.BlockTags.FLOWER_POTS)
+                .add(CBlocks.POTTED_VIVIAN.get())
+                .add(CBlocks.POTTED_WICKUL.get())
+                .add(CBlocks.POTTED_ICEFLOWER.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS)
-                .add(CBlocks.MAYURA_TRAPDOOR.get())
-                .add(CBlocks.GRIMWOOD_TRAPDOOR.get())
+
+        /*
+        Soil Tags
+         */
+
+        tag(net.minecraft.tags.BlockTags.DIRT)
+                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGUS_DIRT.get())
+                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
+                .add(CBlocks.FRIGUS_MUD.get())
         ;
-        tag(net.minecraft.tags.BlockTags.PRESSURE_PLATES)
-                .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
+        tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
+                .add(CBlocks.FRIGUS_DIRT.get())
+                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
         ;
-        stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES).add(entry.get()));
-        tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES)
+        tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
+                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(CBlocks.MAYURA_PRESSURE_PLATE.get())
-                .add(CBlocks.GRIMWOOD_PRESSURE_PLATE.get())
+        tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
+                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGUS_DIRT.get())
+                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
         ;
-        tag(net.minecraft.tags.BlockTags.BUTTONS)
-                .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
+        tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
+                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
         ;
-        stoneButtons.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_BUTTONS).add(entry.get()));
-        tag(net.minecraft.tags.BlockTags.STONE_BUTTONS)
+        tag(Tags.Blocks.VILLAGER_FARMLANDS)
+                .add(CBlocks.FRIGUS_FARMLAND.get())
         ;
-        tag(net.minecraft.tags.BlockTags.WOODEN_BUTTONS)
-                .add(CBlocks.MAYURA_BUTTON.get())
-                .add(CBlocks.GRIMWOOD_BUTTON.get())
+
+        /*
+        Stone Tags
+         */
+
+        tag(Tags.Blocks.STONES)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+        ;
+        tag(Tags.Blocks.COBBLESTONES)
+                .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
+                .addTag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
+        ;
+        tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
+        ;
+        tag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
+        ;
+
+        // Base Stone Tags
+        tag(CTags.BlockTags.BASE_STONE_FRIGUS)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
 
         /*
@@ -743,7 +805,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
         ;
+        tag(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+        ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+        ;
+        tag(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES)
                 .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE)
@@ -762,30 +831,90 @@ public class CBlockTagProvider extends BlockTagsProvider {
         oxygenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
 
         /*
-        Stone Tags
+        Carver Replaceable Tags
          */
 
-        tag(Tags.Blocks.STONES)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
-        ;
-        tag(Tags.Blocks.COBBLESTONES)
-                .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
-                .addTag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
-        ;
-        tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
-        ;
-        tag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
+        tag(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES)
+                .addTag(CTags.BlockTags.BASE_STONE_FRIGUS)
+                .addTag(net.minecraft.tags.BlockTags.DIRT)
+                .addTag(net.minecraft.tags.BlockTags.SAND)
+                .addTag(net.minecraft.tags.BlockTags.COPPER_ORES)
+                .addTag(net.minecraft.tags.BlockTags.IRON_ORES)
+                .addTag(net.minecraft.tags.BlockTags.SNOW)
+                .add(Blocks.PACKED_ICE)
+                .add(Blocks.RAW_COPPER_BLOCK)
+                .add(Blocks.RAW_IRON_BLOCK)
+                .add(Blocks.WATER)
         ;
 
-        // Base Stone Tags
-        tag(CTags.BlockTags.BASE_STONE_FRIGUS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+        /*
+        Block Variant Tags
+         */
+
+        pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.STAIRS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STAIRS)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_STAIRS)
+                .add(CBlocks.MAYURA_STAIRS.get())
+                .add(CBlocks.GRIMWOOD_STAIRS.get())
+        ;
+        pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.SLABS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.SLABS)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_SLABS)
+                .add(CBlocks.MAYURA_SLAB.get())
+                .add(CBlocks.GRIMWOOD_SLAB.get())
+        ;
+        tag(net.minecraft.tags.BlockTags.FENCES)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_FENCES)
+                .add(CBlocks.MAYURA_FENCE.get())
+                .add(CBlocks.GRIMWOOD_FENCE.get())
+        ;
+        tag(net.minecraft.tags.BlockTags.FENCE_GATES)
+                .add(CBlocks.MAYURA_FENCE_GATE.get())
+                .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
+        ;
+        tag(Tags.Blocks.FENCE_GATES)
+        ;
+        tag(Tags.Blocks.FENCE_GATES_WOODEN)
+                .add(CBlocks.MAYURA_FENCE_GATE.get())
+                .add(CBlocks.GRIMWOOD_FENCE_GATE.get())
+        ;
+        pickaxeWalls.forEach(entry -> tag(net.minecraft.tags.BlockTags.WALLS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.WALLS)
+        ;
+        tag(net.minecraft.tags.BlockTags.DOORS)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_DOORS)
+                .add(CBlocks.MAYURA_DOOR.get())
+                .add(CBlocks.GRIMWOOD_DOOR.get())
+        ;
+        tag(net.minecraft.tags.BlockTags.TRAPDOORS)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS)
+                .add(CBlocks.MAYURA_TRAPDOOR.get())
+                .add(CBlocks.GRIMWOOD_TRAPDOOR.get())
+        ;
+        tag(net.minecraft.tags.BlockTags.PRESSURE_PLATES)
+                .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
+        ;
+        stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STONE_PRESSURE_PLATES)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(CBlocks.MAYURA_PRESSURE_PLATE.get())
+                .add(CBlocks.GRIMWOOD_PRESSURE_PLATE.get())
+        ;
+        tag(net.minecraft.tags.BlockTags.BUTTONS)
+                .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
+        ;
+        stoneButtons.forEach(entry -> tag(net.minecraft.tags.BlockTags.STONE_BUTTONS).add(entry.get()));
+        tag(net.minecraft.tags.BlockTags.STONE_BUTTONS)
+        ;
+        tag(net.minecraft.tags.BlockTags.WOODEN_BUTTONS)
+                .add(CBlocks.MAYURA_BUTTON.get())
+                .add(CBlocks.GRIMWOOD_BUTTON.get())
         ;
 
         /*
@@ -821,140 +950,6 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(CBlocks.RAW_MALUNITE_BLOCK.get())
-        ;
-
-        /*
-        Soil Tags
-         */
-
-        tag(net.minecraft.tags.BlockTags.DIRT)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
-                .add(CBlocks.FRIGUS_MUD.get())
-        ;
-        tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-        ;
-        tag(Tags.Blocks.VILLAGER_FARMLANDS)
-                .add(CBlocks.FRIGUS_FARMLAND.get())
-        ;
-
-        /*
-        Tree Tags
-         */
-
-        tag(net.minecraft.tags.BlockTags.LEAVES)
-                .add(CBlocks.MAYURA_LEAVES.get())
-                .add(CBlocks.GRIMWOOD_LEAVES.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.LOGS)
-                .add(CBlocks.MAYURA_LOG.get())
-                .add(CBlocks.MAYURA_WOOD.get())
-                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
-                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
-                .add(CBlocks.GRIMWOOD_LOG.get())
-                .add(CBlocks.GRIMWOOD_WOOD.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
-        ;
-        tag(Tags.Blocks.STRIPPED_LOGS)
-                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
-        ;
-        tag(Tags.Blocks.STRIPPED_WOODS)
-                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.LOGS_THAT_BURN)
-                .add(CBlocks.MAYURA_LOG.get())
-                .add(CBlocks.MAYURA_WOOD.get())
-                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
-                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
-                .add(CBlocks.GRIMWOOD_LOG.get())
-                .add(CBlocks.GRIMWOOD_WOOD.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.PLANKS)
-                .add(CBlocks.MAYURA_PLANKS.get())
-                .add(CBlocks.GRIMWOOD_PLANKS.get())
-        ;
-        tag(CTags.BlockTags.MAYURA_LOGS)
-                .add(CBlocks.MAYURA_LOG.get())
-                .add(CBlocks.MAYURA_WOOD.get())
-                .add(CBlocks.STRIPPED_MAYURA_LOG.get())
-                .add(CBlocks.STRIPPED_MAYURA_WOOD.get())
-        ;
-        tag(CTags.BlockTags.GRIMWOOD_LOGS)
-                .add(CBlocks.GRIMWOOD_LOG.get())
-                .add(CBlocks.GRIMWOOD_WOOD.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
-                .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
-        ;
-
-        /*
-        Plant Tags
-         */
-
-        tag(net.minecraft.tags.BlockTags.REPLACEABLE_BY_TREES)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.SAPLINGS)
-                .add(CBlocks.MAYURA_SAPLING.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.SMALL_FLOWERS)
-                .add(CBlocks.VIVIAN.get())
-                .add(CBlocks.WICKUL.get())
-                .add(CBlocks.ICEFLOWER.get())
-        ;
-        tag(net.minecraft.tags.BlockTags.TALL_FLOWERS)
-        ;
-        tag(net.minecraft.tags.BlockTags.FLOWER_POTS)
-                .add(CBlocks.POTTED_VIVIAN.get())
-                .add(CBlocks.POTTED_WICKUL.get())
-                .add(CBlocks.POTTED_ICEFLOWER.get())
-        ;
-
-        /*
-        Carver Replaceable Tags
-         */
-
-        tag(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES)
-                .addTag(CTags.BlockTags.BASE_STONE_FRIGUS)
-                .addTag(net.minecraft.tags.BlockTags.DIRT)
-                .addTag(net.minecraft.tags.BlockTags.SAND)
-                .addTag(net.minecraft.tags.BlockTags.COPPER_ORES)
-                .addTag(net.minecraft.tags.BlockTags.IRON_ORES)
-                .addTag(net.minecraft.tags.BlockTags.SNOW)
-                .add(Blocks.PACKED_ICE)
-                .add(Blocks.RAW_COPPER_BLOCK)
-                .add(Blocks.RAW_IRON_BLOCK)
-                .add(Blocks.WATER)
-        ;
-
-        /*
-        Ore Replaceable Tags
-         */
-
-        tag(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
-        ;
-        tag(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES)
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
         ;
 
         /*

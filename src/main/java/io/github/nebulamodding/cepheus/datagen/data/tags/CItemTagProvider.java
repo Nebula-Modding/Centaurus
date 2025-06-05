@@ -29,27 +29,54 @@ public class CItemTagProvider extends ItemTagsProvider {
         // None applied yet :^
 
         /*
-        Block Variant Tags
+        Tree Tags
          */
 
-        copy(net.minecraft.tags.BlockTags.STAIRS, net.minecraft.tags.ItemTags.STAIRS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_STAIRS, net.minecraft.tags.ItemTags.WOODEN_STAIRS);
-        copy(net.minecraft.tags.BlockTags.SLABS, net.minecraft.tags.ItemTags.SLABS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_SLABS, net.minecraft.tags.ItemTags.WOODEN_SLABS);
-        copy(net.minecraft.tags.BlockTags.FENCES, net.minecraft.tags.ItemTags.FENCES);
-        copy(net.minecraft.tags.BlockTags.WOODEN_FENCES, net.minecraft.tags.ItemTags.WOODEN_FENCES);
-        copy(net.minecraft.tags.BlockTags.FENCE_GATES, net.minecraft.tags.ItemTags.FENCE_GATES);
-        copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
-        copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
-        copy(net.minecraft.tags.BlockTags.WALLS, net.minecraft.tags.ItemTags.WALLS);
-        copy(net.minecraft.tags.BlockTags.DOORS, net.minecraft.tags.ItemTags.DOORS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_DOORS, net.minecraft.tags.ItemTags.WOODEN_DOORS);
-        copy(net.minecraft.tags.BlockTags.TRAPDOORS, net.minecraft.tags.ItemTags.TRAPDOORS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS, net.minecraft.tags.ItemTags.WOODEN_TRAPDOORS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES, net.minecraft.tags.ItemTags.WOODEN_PRESSURE_PLATES);
-        copy(net.minecraft.tags.BlockTags.BUTTONS, net.minecraft.tags.ItemTags.BUTTONS);
-        copy(net.minecraft.tags.BlockTags.STONE_BUTTONS, net.minecraft.tags.ItemTags.STONE_BUTTONS);
-        copy(net.minecraft.tags.BlockTags.WOODEN_BUTTONS, net.minecraft.tags.ItemTags.WOODEN_BUTTONS);
+        copy(net.minecraft.tags.BlockTags.LEAVES, net.minecraft.tags.ItemTags.LEAVES);
+        copy(net.minecraft.tags.BlockTags.LOGS, net.minecraft.tags.ItemTags.LOGS);
+        copy(Tags.Blocks.STRIPPED_LOGS, Tags.Items.STRIPPED_LOGS);
+        copy(Tags.Blocks.STRIPPED_WOODS, Tags.Items.STRIPPED_WOODS);
+        copy(net.minecraft.tags.BlockTags.LOGS_THAT_BURN, net.minecraft.tags.ItemTags.LOGS_THAT_BURN);
+        copy(net.minecraft.tags.BlockTags.PLANKS, net.minecraft.tags.ItemTags.PLANKS);
+        copy(CTags.BlockTags.MAYURA_LOGS, CTags.ItemTags.MAYURA_LOGS);
+        copy(CTags.BlockTags.GRIMWOOD_LOGS, CTags.ItemTags.GRIMWOOD_LOGS);
+
+        /*
+        Plant Tags
+         */
+
+        copy(net.minecraft.tags.BlockTags.SAPLINGS, net.minecraft.tags.ItemTags.SAPLINGS);
+        copy(net.minecraft.tags.BlockTags.SMALL_FLOWERS, net.minecraft.tags.ItemTags.SMALL_FLOWERS);
+        copy(net.minecraft.tags.BlockTags.TALL_FLOWERS, net.minecraft.tags.ItemTags.TALL_FLOWERS);
+        tag(Tags.Items.CROPS_WHEAT)
+                .add(CItems.BRUMA.get())
+        ;
+        tag(Tags.Items.CROPS)
+                .add(CItems.BRUMA.get())
+        ;
+
+        /*
+        Soil Tags
+         */
+
+        copy(net.minecraft.tags.BlockTags.DIRT, net.minecraft.tags.ItemTags.DIRT);
+
+        /*
+        Stone Tags
+         */
+
+        copy(Tags.Blocks.STONES, Tags.Items.STONES);
+        copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
+        copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
+        copy(CTags.BlockTags.COBBLESTONES_BLUE_SHALE, CTags.ItemTags.COBBLESTONES_BLUE_SHALE);
+        tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+        ;
+        tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
+                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
+                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+        ;
 
         /*
         Ore Tags
@@ -161,21 +188,27 @@ public class CItemTagProvider extends ItemTagsProvider {
         ;
 
         /*
-        Stone Tags
+        Block Variant Tags
          */
 
-        copy(Tags.Blocks.STONES, Tags.Items.STONES);
-        copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
-        copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
-        copy(CTags.BlockTags.COBBLESTONES_BLUE_SHALE, CTags.ItemTags.COBBLESTONES_BLUE_SHALE);
-        tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
-        ;
-        tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
-        ;
+        copy(net.minecraft.tags.BlockTags.STAIRS, net.minecraft.tags.ItemTags.STAIRS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_STAIRS, net.minecraft.tags.ItemTags.WOODEN_STAIRS);
+        copy(net.minecraft.tags.BlockTags.SLABS, net.minecraft.tags.ItemTags.SLABS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_SLABS, net.minecraft.tags.ItemTags.WOODEN_SLABS);
+        copy(net.minecraft.tags.BlockTags.FENCES, net.minecraft.tags.ItemTags.FENCES);
+        copy(net.minecraft.tags.BlockTags.WOODEN_FENCES, net.minecraft.tags.ItemTags.WOODEN_FENCES);
+        copy(net.minecraft.tags.BlockTags.FENCE_GATES, net.minecraft.tags.ItemTags.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
+        copy(net.minecraft.tags.BlockTags.WALLS, net.minecraft.tags.ItemTags.WALLS);
+        copy(net.minecraft.tags.BlockTags.DOORS, net.minecraft.tags.ItemTags.DOORS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_DOORS, net.minecraft.tags.ItemTags.WOODEN_DOORS);
+        copy(net.minecraft.tags.BlockTags.TRAPDOORS, net.minecraft.tags.ItemTags.TRAPDOORS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS, net.minecraft.tags.ItemTags.WOODEN_TRAPDOORS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES, net.minecraft.tags.ItemTags.WOODEN_PRESSURE_PLATES);
+        copy(net.minecraft.tags.BlockTags.BUTTONS, net.minecraft.tags.ItemTags.BUTTONS);
+        copy(net.minecraft.tags.BlockTags.STONE_BUTTONS, net.minecraft.tags.ItemTags.STONE_BUTTONS);
+        copy(net.minecraft.tags.BlockTags.WOODEN_BUTTONS, net.minecraft.tags.ItemTags.WOODEN_BUTTONS);
 
         /*
         Storage Block Tags
@@ -189,39 +222,6 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, CTags.ItemTags.STORAGE_BLOCKS_RAW_OBDURIUM);
         copy(CTags.BlockTags.STORAGE_BLOCKS_MALUNITE, CTags.ItemTags.STORAGE_BLOCKS_MALUNITE);
         copy(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE, CTags.ItemTags.STORAGE_BLOCKS_RAW_MALUNITE);
-
-        /*
-        Soil Tags
-         */
-
-        copy(net.minecraft.tags.BlockTags.DIRT, net.minecraft.tags.ItemTags.DIRT);
-
-        /*
-        Tree Tags
-         */
-
-        copy(net.minecraft.tags.BlockTags.LEAVES, net.minecraft.tags.ItemTags.LEAVES);
-        copy(net.minecraft.tags.BlockTags.LOGS, net.minecraft.tags.ItemTags.LOGS);
-        copy(Tags.Blocks.STRIPPED_LOGS, Tags.Items.STRIPPED_LOGS);
-        copy(Tags.Blocks.STRIPPED_WOODS, Tags.Items.STRIPPED_WOODS);
-        copy(net.minecraft.tags.BlockTags.LOGS_THAT_BURN, net.minecraft.tags.ItemTags.LOGS_THAT_BURN);
-        copy(net.minecraft.tags.BlockTags.PLANKS, net.minecraft.tags.ItemTags.PLANKS);
-        copy(CTags.BlockTags.MAYURA_LOGS, CTags.ItemTags.MAYURA_LOGS);
-        copy(CTags.BlockTags.GRIMWOOD_LOGS, CTags.ItemTags.GRIMWOOD_LOGS);
-
-        /*
-        Plant Tags
-         */
-
-        copy(net.minecraft.tags.BlockTags.SAPLINGS, net.minecraft.tags.ItemTags.SAPLINGS);
-        copy(net.minecraft.tags.BlockTags.SMALL_FLOWERS, net.minecraft.tags.ItemTags.SMALL_FLOWERS);
-        copy(net.minecraft.tags.BlockTags.TALL_FLOWERS, net.minecraft.tags.ItemTags.TALL_FLOWERS);
-        tag(Tags.Items.CROPS_WHEAT)
-                .add(CItems.BRUMA.get())
-        ;
-        tag(Tags.Items.CROPS)
-                .add(CItems.BRUMA.get())
-        ;
 
         /*
         Miscellaneous Tags

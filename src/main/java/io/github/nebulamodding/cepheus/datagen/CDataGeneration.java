@@ -24,16 +24,15 @@ public class CDataGeneration {
             PackOutput output = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+            // Generates the assets
             if (event.includeClient()) {
-                // Generates the client-sided assets
                 generator.addProvider(true, new CLanguageProvider(output));
                 generator.addProvider(true, new CBlockStateProvider(output, existingFileHelper));
                 generator.addProvider(true, new CItemModelProvider(output, existingFileHelper));
             }
+            // Generates the data
             if (event.includeServer()) {
-                // Generates the server-sided data
-                CBlockTagProvider blockTagsProvider = new CBlockTagProvider(output, lookupProvider, existingFileHelper);
-                generator.addProvider(true, blockTagsProvider);
+                CBlockTagProvider blockTagsProvider = new CBlockTagProvider(output, lookupProvider, existingFileHelper); generator.addProvider(true, blockTagsProvider);
                 generator.addProvider(true, new CItemTagProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
                 generator.addProvider(true, new CLootTableProvider(output, lookupProvider));
                 generator.addProvider(true, new CRecipeProvider(output, lookupProvider));
