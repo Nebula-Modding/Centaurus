@@ -18,6 +18,13 @@ public class CSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_WINDOW_FALL = register("block.copper_window.fall");
     public static final DeferredSoundType COPPER_WINDOW = new DeferredSoundType(1, 1, COPPER_WINDOW_BREAK, COPPER_WINDOW_STEP, COPPER_WINDOW_PLACE, COPPER_WINDOW_HIT, COPPER_WINDOW_FALL);
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_BREAK = register("block.netherite_grate.break");
+    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_STEP = register("block.netherite_grate.step");
+    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_PLACE = register("block.netherite_grate.place");
+    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_HIT = register("block.netherite_grate.hit");
+    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_FALL = register("block.netherite_grate.fall");
+    public static final DeferredSoundType NETHERITE_GRATE = new DeferredSoundType(1, 1, NETHERITE_GRATE_BREAK, NETHERITE_GRATE_STEP, NETHERITE_GRATE_PLACE, NETHERITE_GRATE_HIT, NETHERITE_GRATE_FALL);
+
     public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_WINDOW_BREAK = register("block.netherite_window.break");
     public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_WINDOW_STEP = register("block.netherite_window.step");
     public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_WINDOW_PLACE = register("block.netherite_window.place");

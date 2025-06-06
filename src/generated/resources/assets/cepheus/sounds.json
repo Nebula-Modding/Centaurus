@@ -81,10 +81,10 @@
   },
   "block.netherite_bulb.place": {
     "sounds": [
-      "cepheus:block/netherite_bulb/place1",
-      "cepheus:block/netherite_bulb/place2",
-      "cepheus:block/netherite_bulb/place3",
-      "cepheus:block/netherite_bulb/place4"
+      "block/copper_bulb/place1",
+      "block/copper_bulb/place2",
+      "block/copper_bulb/place3",
+      "block/copper_bulb/place4"
     ],
     "subtitle": "subtitles.block.generic.place"
   },
@@ -96,6 +96,56 @@
       "cepheus:block/netherite_bulb/step4",
       "cepheus:block/netherite_bulb/step5",
       "cepheus:block/netherite_bulb/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.netherite_grate.break": {
+    "sounds": [
+      "cepheus:block/netherite_grate/break1",
+      "cepheus:block/netherite_grate/break2",
+      "cepheus:block/netherite_grate/break3",
+      "cepheus:block/netherite_grate/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.netherite_grate.fall": {
+    "sounds": [
+      "cepheus:block/netherite_grate/step1",
+      "cepheus:block/netherite_grate/step2",
+      "cepheus:block/netherite_grate/step3",
+      "cepheus:block/netherite_grate/step4",
+      "cepheus:block/netherite_grate/step5",
+      "cepheus:block/netherite_grate/step6"
+    ]
+  },
+  "block.netherite_grate.hit": {
+    "sounds": [
+      "cepheus:block/netherite_grate/step1",
+      "cepheus:block/netherite_grate/step2",
+      "cepheus:block/netherite_grate/step3",
+      "cepheus:block/netherite_grate/step4",
+      "cepheus:block/netherite_grate/step5",
+      "cepheus:block/netherite_grate/step6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.netherite_grate.place": {
+    "sounds": [
+      "cepheus:block/netherite_grate/break1",
+      "cepheus:block/netherite_grate/break2",
+      "cepheus:block/netherite_grate/break3",
+      "cepheus:block/netherite_grate/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.netherite_grate.step": {
+    "sounds": [
+      "cepheus:block/netherite_grate/step1",
+      "cepheus:block/netherite_grate/step2",
+      "cepheus:block/netherite_grate/step3",
+      "cepheus:block/netherite_grate/step4",
+      "cepheus:block/netherite_grate/step5",
+      "cepheus:block/netherite_grate/step6"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
