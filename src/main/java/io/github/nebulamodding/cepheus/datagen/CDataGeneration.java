@@ -4,6 +4,7 @@ import io.github.nebulamodding.cepheus.Cepheus;
 import io.github.nebulamodding.cepheus.datagen.assets.CBlockStateProvider;
 import io.github.nebulamodding.cepheus.datagen.assets.CItemModelProvider;
 import io.github.nebulamodding.cepheus.datagen.assets.CLanguageProvider;
+import io.github.nebulamodding.cepheus.datagen.assets.CSoundDefinitionsProvider;
 import io.github.nebulamodding.cepheus.datagen.data.CDataMapProvider;
 import io.github.nebulamodding.cepheus.datagen.data.CRecipeProvider;
 import io.github.nebulamodding.cepheus.datagen.data.loot.CLootTableProvider;
@@ -29,6 +30,7 @@ public class CDataGeneration {
                 generator.addProvider(true, new CLanguageProvider(output));
                 generator.addProvider(true, new CBlockStateProvider(output, existingFileHelper));
                 generator.addProvider(true, new CItemModelProvider(output, existingFileHelper));
+                generator.addProvider(true, new CSoundDefinitionsProvider(output, existingFileHelper));
             }
             // Generates the data
             if (event.includeServer()) {

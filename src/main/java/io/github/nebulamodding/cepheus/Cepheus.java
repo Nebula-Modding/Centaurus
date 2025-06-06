@@ -2,6 +2,7 @@ package io.github.nebulamodding.cepheus;
 
 import io.github.nebulamodding.cepheus.datagen.CDataGeneration;
 import io.github.nebulamodding.cepheus.events.CEvents;
+import io.github.nebulamodding.cepheus.registry.CSounds;
 import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import io.github.nebulamodding.cepheus.registry.CCreativeTab;
 import io.github.nebulamodding.cepheus.registry.item.CItems;
@@ -30,6 +31,7 @@ public class Cepheus {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Cepheus(IEventBus eventBus, ModContainer modContainer) {
+        CSounds.SOUND_EVENTS.register(eventBus);
         CBlocks.BLOCKS.register(eventBus);
         CItems.ITEMS.register(eventBus);
         CCreativeTab.CREATIVE_MODE_TABS.register(eventBus);
