@@ -29,11 +29,7 @@ public class CCreativeTab {
     public static void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         final List<DeferredBlock<? extends Block>> excludedItems = new ArrayList<>();
         // Blocks excluded from the creative menu
-        excludedItems.add(CBlocks.POTTED_MAYURA_SAPLING);
-        excludedItems.add(CBlocks.POTTED_GRIMWOOD_SAPLING);
-        excludedItems.add(CBlocks.POTTED_VIVIAN);
-        excludedItems.add(CBlocks.POTTED_WICKUL);
-        excludedItems.add(CBlocks.POTTED_ICEFLOWER);
+        excludedItems.add(CBlocks.TEMPBLOCKTEST);
 
         if(event.getTab() == CEPHEUS.get()) {
             CItems.ITEMS.getEntries()
