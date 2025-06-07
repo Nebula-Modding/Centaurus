@@ -539,75 +539,97 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlock(CBlocks.POTTED_WICKUL.get(), models().withExistingParent(CBlocks.POTTED_WICKUL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.WICKUL)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_ICEFLOWER.get(), models().withExistingParent(CBlocks.POTTED_ICEFLOWER.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.ICEFLOWER)).renderType("cutout"));
     }
-    // Helpers
+
+    /*
+    Helpers
+     */
+
     private void simpleBlock(DeferredBlock<? extends Block> block) {
         super.simpleBlock(block.get());
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     public void simpleBlockWithoutItem(DeferredBlock<? extends Block> block, ModelFile model) {
         super.simpleBlock(block.get(), model);
     }
+
     public void axisBlockWithItem(DeferredBlock<Block> block, ResourceLocation side, ResourceLocation end) {
         super.axisBlock((RotatedPillarBlock) block.get(), side, end);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     private void stairsBlockWithItem(DeferredBlock<Block> block, ResourceLocation texture) {
         super.stairsBlock((StairBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     private void slabBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation doubleSlab, ResourceLocation texture) {
         super.slabBlock((SlabBlock) block.get(), doubleSlab, texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     private void fenceBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceBlock((FenceBlock) block.get(), texture);
         models().fenceInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
+
     private void fenceGateBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.fenceGateBlock((FenceGateBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     private void pressurePlateBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.pressurePlateBlock((PressurePlateBlock) block.get(), texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
     }
+
     public void buttonBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.buttonBlock((ButtonBlock) block.get(), texture);
         models().buttonInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
+
     public void wallBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture) {
         super.wallBlock((WallBlock) block.get(), texture);
         models().wallInventory(block.getId().getPath() + "_inventory", texture);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_inventory")));
     }
+
     public void doorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top) {
         super.doorBlock((DoorBlock) block.get(), bottom, top);
     }
+
     public void doorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation bottom, ResourceLocation top, String renderType) {
         super.doorBlockWithRenderType((DoorBlock) block.get(), bottom, top, renderType);
     }
+
     public void trapDoorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable) {
         super.trapdoorBlock((TrapDoorBlock) block.get(), texture, orientable);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
     }
+
     public void trapDoorBlockWithItem(DeferredBlock<? extends Block> block, ResourceLocation texture, boolean orientable, String renderType) {
         super.trapdoorBlockWithRenderType((TrapDoorBlock) block.get(), texture, orientable, renderType);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
     }
+
     private ResourceLocation extend(ResourceLocation rl, String suffix) {
         return ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), rl.getPath() + suffix);
     }
+
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
     }
+
     public ResourceLocation blockLoc(DeferredBlock<? extends Block> block, String suffix) {
         return modLoc("block/" + block.getId().getPath() + "_" + suffix);
     }
+
     private ResourceLocation key(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block);
     }
+
     private String name(Block block) {
         return key(block).getPath();
     }

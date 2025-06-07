@@ -10,6 +10,7 @@ public class ConfigurablePressurePlateBlock extends PressurePlateBlock {
         super(type, properties);
         this.ticksToStayPressed = ticksToStayPressed;
     }
+
     protected int getPressedTime() {
         return ticksToStayPressed;
     }

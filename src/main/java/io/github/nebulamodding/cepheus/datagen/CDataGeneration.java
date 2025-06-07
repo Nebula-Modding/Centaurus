@@ -25,6 +25,7 @@ public class CDataGeneration {
             PackOutput output = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
             // Generates the assets
             if (event.includeClient()) {
                 generator.addProvider(true, new CLanguageProvider(output));
@@ -32,6 +33,7 @@ public class CDataGeneration {
                 generator.addProvider(true, new CItemModelProvider(output, existingFileHelper));
                 generator.addProvider(true, new CSoundDefinitionsProvider(output, existingFileHelper));
             }
+
             // Generates the data
             if (event.includeServer()) {
                 CBlockTagProvider blockTagsProvider = new CBlockTagProvider(output, lookupProvider, existingFileHelper); generator.addProvider(true, blockTagsProvider);
@@ -40,6 +42,7 @@ public class CDataGeneration {
                 generator.addProvider(true, new CRecipeProvider(output, lookupProvider));
                 generator.addProvider(true, new CDataMapProvider(output, lookupProvider));
             }
+
         } catch (RuntimeException e) {
             Cepheus.LOGGER.error("Failed to gather Cepheus's data", e);
         }

@@ -108,39 +108,51 @@ public class CItemModelProvider extends ItemModelProvider {
                 .filter(i -> !(i.get() instanceof BlockItem) && !excludedItems.contains(i))
                 .forEach(entry -> basicItem(entry.get()));
     }
+
     public void blockModel(DeferredBlock<?> block) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath()));
     }
+
     public void blockModel(DeferredBlock<?> block, String suffix) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath() + "_" + suffix));
     }
+
     public void blockModel(DeferredBlock<?> block, ResourceLocation texture) {
         withExistingParent(block.getId().getPath(), modLoc(texture.getPath()));
     }
+
     public void blockItemModel(DeferredBlock<?> block, DeferredBlock<?> textureBlock, ModelFile modelFile) {
         getBuilder(block.getId().getPath()).parent(modelFile).texture("layer0", "block/" + textureBlock.getId().getPath());
     }
+
     public ItemModelBuilder itemModel(DeferredHolder<?, ?> item, ModelFile modelFile) {
         return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
     }
+
     public ItemModelBuilder itemModel(DeferredHolder<?, ?> item, ResourceLocation texture, ModelFile modelFile) {
         return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", texture);
     }
+
     public void itemModelWithSuffix(DeferredItem<?> item, ModelFile modelFile, String suffix) {
         getBuilder(item.getId().getPath() + "_" + suffix).parent(modelFile).texture("layer0", "item/" + item.getId().getPath() + "_" + suffix);
     }
+
     private void spawnEggModel(DeferredItem<Item> item) {
         withExistingParent(item.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
+
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
     }
+
     private ResourceLocation itemLoc(DeferredItem<? extends Item> item) {
         return modLoc("item/" + item.getId().getPath());
     }
+
     private ResourceLocation itemLoc(String item) {
         return modLoc("item/" + item);
     }
+
     private ModelFile.ExistingModelFile getModel(DeferredItem<?> item, String suffix) {
         return new ModelFile.ExistingModelFile(modLoc("item/" + item.getId().getPath() + "_" + suffix), existingFileHelper);
     }

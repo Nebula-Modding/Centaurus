@@ -90,8 +90,7 @@ public class CTags {
                 Mod Compatibility Tags
                  */
 
-                CREATE_FAN_TRANSPARENT = createModBlockTag("fan_transparent")
-        ;
+                CREATE_FAN_TRANSPARENT = createModBlockTag("fan_transparent");
     }
     public static class ItemTags {
 
@@ -148,15 +147,17 @@ public class CTags {
 
                 // Logs
                 MAYURA_LOGS = itemTag("mayura_logs"),
-                GRIMWOOD_LOGS = itemTag("grimwood_logs")
-        ;
+                GRIMWOOD_LOGS = itemTag("grimwood_logs");
 
         /*
         Items
          */
 
         public static final TagKey<Item>
-                // Adds a plates tag because neoforge doesn't have a common tag for it by default
+
+                /*
+                Common Tags
+                 */
 
                 // Ores
                 PLATES = commonItemTag("plates"),
@@ -181,24 +182,36 @@ public class CTags {
 
                 // Crops
                 CROPS_BRUMA = commonItemTag("crops/bruma"),
-                CROPS_AZURE_ROOT = commonItemTag("crops/azure_root")
-        ;
+                CROPS_AZURE_ROOT = commonItemTag("crops/azure_root");
+
+                /*
+                Cepheus-Specific Tags
+                 */
+
+                // None yet! :^
     }
+
     public static TagKey<Block> commonBlockTag(String name) {
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
     }
+
     public static TagKey<Item> commonItemTag(String name) {
         return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
     }
+
     public static TagKey<Block> blockTag(String name) {
+
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
     }
+
     public static TagKey<Item> itemTag(String name) {
         return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, name));
     }
+
     public static TagKey<Block> createModBlockTag(String name) {
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("create", name));
     }
+
     public static TagKey<Item> createModItemTag(String name) {
         return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("create", name));
     }

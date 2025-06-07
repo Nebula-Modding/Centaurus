@@ -37,6 +37,7 @@ public class CEvents {
         EVENT_BUS.addListener(CEvents::blockToolInteractions);
         EVENT_BUS.addListener(CEvents::useOn);
     }
+
     private static void setup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.MAYURA_SAPLING.getId(), CBlocks.POTTED_MAYURA_SAPLING);
@@ -46,26 +47,32 @@ public class CEvents {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.ICEFLOWER.getId(), CBlocks.POTTED_ICEFLOWER);
         });
     }
+
     private static void blockToolInteractions(BlockEvent.BlockToolModificationEvent event) {
         ItemAbility action = event.getItemAbility();
         BlockState keepState = event.getState();
         UseOnContext context = event.getContext();
+
         if (!event.isSimulated()) {
             if (action == ItemAbilities.SHOVEL_FLATTEN && (context.getClickedFace() != Direction.DOWN && context.getLevel().getBlockState(context.getClickedPos().above()).isAir())) {
                 if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
                     event.setFinalState(CBlocks.FRIGUS_DIRT_PATH.get().defaultBlockState());
                 }
             }
+
             if (action == ItemAbilities.AXE_STRIP) {
                 if (keepState.is(CBlocks.MAYURA_LOG.get())) {
                     event.setFinalState(CBlocks.STRIPPED_MAYURA_LOG.get().withPropertiesOf(keepState));
                 }
+
                 if (keepState.is(CBlocks.MAYURA_WOOD.get())) {
                     event.setFinalState(CBlocks.STRIPPED_MAYURA_WOOD.get().withPropertiesOf(keepState));
                 }
+
                 if (keepState.is(CBlocks.GRIMWOOD_LOG.get())) {
                     event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_LOG.get().withPropertiesOf(keepState));
                 }
+
                 if (keepState.is(CBlocks.GRIMWOOD_WOOD.get())) {
                     event.setFinalState(CBlocks.STRIPPED_GRIMWOOD_WOOD.get().withPropertiesOf(keepState));
                 }
@@ -74,12 +81,14 @@ public class CEvents {
                 if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.FRIGUS_DIRT_PATH.get())) {
                     event.setFinalState(CBlocks.FRIGUS_FARMLAND.get().defaultBlockState());
                 }
+
                 if (keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
                     event.setFinalState(CBlocks.FRIGUS_DIRT.get().defaultBlockState());
                 }
             }
         }
     }
+
     public static void useOn(PlayerInteractEvent.RightClickItem event) {
         Level level = event.getLevel();
         BlockPos blockPos = event.getPos();
@@ -87,6 +96,7 @@ public class CEvents {
         ItemStack itemStack = player.getItemInHand(event.getHand());
         PotionContents potionContents = itemStack.getOrDefault(POTION_CONTENTS, PotionContents.EMPTY);
         BlockState clickedBlock = level.getBlockState(blockPos);
+
         if (clickedBlock.is(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD) && potionContents.is(Potions.WATER)) {
                 level.playSound(null, blockPos, SoundEvents.GENERIC_SPLASH, SoundSource.BLOCKS, 1.0F, 1.0F);
                 player.setItemInHand(event.getHand(), ItemUtils.createFilledResult(itemStack, player, new ItemStack(Items.GLASS_BOTTLE)));

@@ -29,6 +29,7 @@ public class FrigusGrassBlock extends GrassBlock {
         BlockPos blockpos = pos.above();
         return canBeGrass(state, level, pos) && !level.getFluidState(blockpos).is(FluidTags.WATER);
     }
+
     // WHY ARE YOU PRIVATE AAAAGHH I HATE YOUUU!!! I HATE YOUUU!! WHYYYY! WHYYYY!!!!! I HATE YOUUUU!!!!!
     private static boolean canBeGrass(BlockState state, LevelReader levelReader, BlockPos pos) {
         BlockPos blockpos = pos.above();
@@ -38,32 +39,30 @@ public class FrigusGrassBlock extends GrassBlock {
         } else if (blockstate.getFluidState().getAmount() == 8) {
             return false;
         } else {
-            int i = LightEngine.getLightBlockInto(
-                    levelReader, state, pos, blockstate, blockpos, Direction.UP, blockstate.getLightBlock(levelReader, blockpos)
-            );
+            int i = LightEngine.getLightBlockInto(levelReader, state, pos, blockstate, blockpos, Direction.UP, blockstate.getLightBlock(levelReader, blockpos));
             return i < levelReader.getMaxLightLevel();
         }
     }
+
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (!canBeGrass(state, level, pos)) {
-            if (!level.isAreaLoaded(pos, 1)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
+            if (!level.isAreaLoaded(pos, 1)) return;
             level.setBlockAndUpdate(pos, CBlocks.FRIGUS_DIRT.get().defaultBlockState());
         } else {
-            if (!level.isAreaLoaded(pos, 3)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
+            if (!level.isAreaLoaded(pos, 3)) return;
             if (level.getMaxLocalRawBrightness(pos.above()) >= 9) {
                 BlockState blockstate = this.defaultBlockState();
                 for (int i = 0; i < 4; i++) {
                     BlockPos blockpos = pos.offset(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
                     if (level.getBlockState(blockpos).is(CBlocks.FRIGUS_DIRT) && canPropagate(blockstate, level, blockpos)) {
-                        level.setBlockAndUpdate(
-                                blockpos, blockstate.setValue(SNOWY, Boolean.valueOf(level.getBlockState(blockpos.above()).is(Blocks.SNOW)))
-                        );
+                        level.setBlockAndUpdate(blockpos, blockstate.setValue(SNOWY, Boolean.valueOf(level.getBlockState(blockpos.above()).is(Blocks.SNOW))));
                     }
                 }
             }
         }
     }
+
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
         BlockPos blockpos = pos.above();
@@ -80,10 +79,12 @@ public class FrigusGrassBlock extends GrassBlock {
                     continue label49;
                 }
             }
+
             BlockState blockstate1 = level.getBlockState(blockpos1);
             if (blockstate1.is(blockstate.getBlock()) && random.nextInt(10) == 0) {
                 ((BonemealableBlock)blockstate.getBlock()).performBonemeal(level, random, blockpos1, blockstate1);
             }
+
             if (blockstate1.isAir()) {
                 Holder<PlacedFeature> holder;
                 if (random.nextInt(8) == 0) {

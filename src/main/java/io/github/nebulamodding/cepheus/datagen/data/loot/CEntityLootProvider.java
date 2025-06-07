@@ -14,10 +14,12 @@ public class CEntityLootProvider extends EntityLootSubProvider {
     protected CEntityLootProvider(HolderLookup.Provider registries) {
         super(FeatureFlags.REGISTRY.allFlags(), registries);
     }
+
     @Override
     public void generate() {
-        // Entity loot stuffs go here
+        // I'm going to put something here I swear!!!
     }
+
     @Override
     protected @NotNull Stream<EntityType<?>> getKnownEntityTypes() {
         return CEntities.ENTITIES.getEntries()

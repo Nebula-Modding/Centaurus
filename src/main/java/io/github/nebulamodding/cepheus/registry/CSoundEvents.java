@@ -15,50 +15,53 @@ public class CSoundEvents {
      */
 
     // Metal
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_GRATE_BREAK = register("block.metal_grate.break");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_GRATE_STEP = register("block.metal_grate.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_GRATE_PLACE = register("block.metal_grate.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_GRATE_HIT = register("block.metal_grate.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_GRATE_FALL = register("block.metal_grate.fall");
+    public static final DeferredHolder<SoundEvent, SoundEvent>
+            METAL_GRATE_BREAK = register("block.metal_grate.break"),
+            METAL_GRATE_STEP = register("block.metal_grate.step"),
+            METAL_GRATE_PLACE = register("block.metal_grate.place"),
+            METAL_GRATE_HIT = register("block.metal_grate.hit"),
+            METAL_GRATE_FALL = register("block.metal_grate.fall"),
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_BULB_BREAK = register("block.metal_bulb.break");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_BULB_STEP = register("block.metal_bulb.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_BULB_PLACE = register("block.metal_bulb.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_BULB_HIT = register("block.metal_bulb.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> METAL_BULB_FALL = register("block.metal_bulb.fall");
+            METAL_BULB_BREAK = register("block.metal_bulb.break"),
+            METAL_BULB_STEP = register("block.metal_bulb.step"),
+            METAL_BULB_PLACE = register("block.metal_bulb.place"),
+            METAL_BULB_HIT = register("block.metal_bulb.hit"),
+            METAL_BULB_FALL = register("block.metal_bulb.fall");
 
     // Netherite
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_BREAK = register("block.netherite_grate.break");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_STEP = register("block.netherite_grate.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_PLACE = register("block.netherite_grate.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_HIT = register("block.netherite_grate.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_GRATE_FALL = register("block.netherite_grate.fall");
+    public static final DeferredHolder<SoundEvent, SoundEvent>
+            NETHERITE_GRATE_BREAK = register("block.netherite_grate.break"),
+            NETHERITE_GRATE_STEP = register("block.netherite_grate.step"),
+            NETHERITE_GRATE_PLACE = register("block.netherite_grate.place"),
+            NETHERITE_GRATE_HIT = register("block.netherite_grate.hit"),
+            NETHERITE_GRATE_FALL = register("block.netherite_grate.fall"),
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_BULB_BREAK = register("block.netherite_bulb.break");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_BULB_STEP = register("block.netherite_bulb.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_BULB_HIT = register("block.netherite_bulb.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_BULB_FALL = register("block.netherite_bulb.fall");
+            NETHERITE_BULB_BREAK = register("block.netherite_bulb.break"),
+            NETHERITE_BULB_STEP = register("block.netherite_bulb.step"),
+            NETHERITE_BULB_HIT = register("block.netherite_bulb.hit"),
+            NETHERITE_BULB_FALL = register("block.netherite_bulb.fall");
 
     /*
     To Be Removed
      */
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> STONE_STEP = register("block.stone.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> STONE_PLACE = register("block.stone.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> STONE_HIT = register("block.stone.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> STONE_FALL = register("block.stone.fall");
+    public static final DeferredHolder<SoundEvent, SoundEvent>
+            STONE_STEP = register("block.stone.step"),
+            STONE_PLACE = register("block.stone.place"),
+            STONE_HIT = register("block.stone.hit"),
+            STONE_FALL = register("block.stone.fall"),
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_STEP = register("block.copper.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_PLACE = register("block.copper.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_HIT = register("block.copper.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_FALL = register("block.copper.fall");
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_BULB_BREAK = register("block.copper_bulb.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> COPPER_BULB_PLACE = register("block.copper_bulb.place");
+            COPPER_STEP = register("block.copper.step"),
+            COPPER_PLACE = register("block.copper.place"),
+            COPPER_HIT = register("block.copper.hit"),
+            COPPER_FALL = register("block.copper.fall"),
+            COPPER_BULB_BREAK = register("block.copper_bulb.step"),
+            COPPER_BULB_PLACE = register("block.copper_bulb.place"),
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_STEP = register("block.netherite.step");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_PLACE = register("block.netherite.place");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_HIT = register("block.netherite.hit");
-    public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_FALL = register("block.netherite.fall");
+            NETHERITE_STEP = register("block.netherite.step"),
+            NETHERITE_PLACE = register("block.netherite.place"),
+            NETHERITE_HIT = register("block.netherite.hit"),
+            NETHERITE_FALL = register("block.netherite.fall");
 
     /*
     Helper Method

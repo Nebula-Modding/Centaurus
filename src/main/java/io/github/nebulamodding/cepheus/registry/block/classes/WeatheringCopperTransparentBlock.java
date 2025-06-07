@@ -13,12 +13,15 @@ public class WeatheringCopperTransparentBlock extends TransparentBlock implement
         super(properties);
         this.weatherState = weatherState;
     }
+
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         this.changeOverTime(state, level, pos, random);
     }
+
     protected boolean isRandomlyTicking(BlockState state) {
         return WeatheringCopper.getNext(state.getBlock()).isPresent();
     }
+
     public WeatherState getAge() {
         return this.weatherState;
     }

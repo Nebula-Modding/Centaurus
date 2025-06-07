@@ -13,12 +13,14 @@ public class FrigusDirtPathBlock extends DirtPathBlock {
     public FrigusDirtPathBlock(Properties properties) {
         super(properties);
     }
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
         return !this.defaultBlockState().canSurvive(blockPlaceContext.getLevel(), blockPlaceContext.getClickedPos())
                 ? Block.pushEntitiesUp(this.defaultBlockState(), CBlocks.FRIGUS_DIRT.get().defaultBlockState(), blockPlaceContext.getLevel(), blockPlaceContext.getClickedPos())
                 : super.getStateForPlacement(blockPlaceContext);
     }
+
     @Override
     protected void tick(@NotNull BlockState blockState, @NotNull ServerLevel serverLevel, @NotNull BlockPos blockPos, @NotNull RandomSource randomSource) {
         FrigusFarmlandBlock.turnToFrigusDirt(null, blockState, serverLevel, blockPos);

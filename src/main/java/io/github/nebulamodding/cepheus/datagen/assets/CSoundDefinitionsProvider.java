@@ -27,6 +27,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_grate/break3"),
                 sound("block/metal_grate/break4")
         ));
+
         add(CSoundEvents.METAL_GRATE_STEP, subtitle("block.generic.footsteps").with(
                 sound("block/metal_grate/step1"),
                 sound("block/metal_grate/step2"),
@@ -35,12 +36,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_grate/step5"),
                 sound("block/metal_grate/step6")
         ));
+
         add(CSoundEvents.METAL_GRATE_PLACE, subtitle("block.generic.place").with(
                 sound("block/metal_grate/break1"),
                 sound("block/metal_grate/break2"),
                 sound("block/metal_grate/break3"),
                 sound("block/metal_grate/break4")
         ));
+
         add(CSoundEvents.METAL_GRATE_HIT, subtitle("block.generic.hit").with(
                 sound("block/metal_grate/step1"),
                 sound("block/metal_grate/step2"),
@@ -49,6 +52,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_grate/step5"),
                 sound("block/metal_grate/step6")
         ));
+
         add(CSoundEvents.METAL_GRATE_FALL, definition().with(
                 sound("block/metal_grate/step1"),
                 sound("block/metal_grate/step2"),
@@ -65,6 +69,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_bulb/break3"),
                 sound("block/metal_bulb/break4")
         ));
+
         add(CSoundEvents.METAL_BULB_STEP, subtitle("block.generic.footsteps").with(
                 sound("block/metal_bulb/step1"),
                 sound("block/metal_bulb/step2"),
@@ -73,12 +78,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_bulb/step5"),
                 sound("block/metal_bulb/step6")
         ));
+
         add(CSoundEvents.METAL_BULB_PLACE, subtitle("block.generic.place").with(
                 sound("block/metal_bulb/place1"),
                 sound("block/metal_bulb/place2"),
                 sound("block/metal_bulb/place3"),
                 sound("block/metal_bulb/place4")
         ));
+
         add(CSoundEvents.METAL_BULB_HIT, subtitle("block.generic.hit").with(
                 sound("block/metal_bulb/step1"),
                 sound("block/metal_bulb/step2"),
@@ -87,6 +94,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_bulb/step5"),
                 sound("block/metal_bulb/step6")
         ));
+
         add(CSoundEvents.METAL_BULB_FALL, definition().with(
                 sound("block/metal_bulb/step1"),
                 sound("block/metal_bulb/step2"),
@@ -107,6 +115,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_bulb/break3"),
                 sound("block/netherite_bulb/break4")
         ));
+
         add(CSoundEvents.NETHERITE_BULB_STEP, subtitle("block.generic.footsteps").with(
                 sound("block/netherite_bulb/step1"),
                 sound("block/netherite_bulb/step2"),
@@ -115,6 +124,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_bulb/step5"),
                 sound("block/netherite_bulb/step6")
         ));
+
         add(CSoundEvents.NETHERITE_BULB_HIT, subtitle("block.generic.hit").with(
                 sound("block/netherite_bulb/step1"),
                 sound("block/netherite_bulb/step2"),
@@ -123,6 +133,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_bulb/step5"),
                 sound("block/netherite_bulb/step6")
         ));
+
         add(CSoundEvents.NETHERITE_BULB_FALL, definition().with(
                 sound("block/netherite_bulb/step1"),
                 sound("block/netherite_bulb/step2"),
@@ -139,6 +150,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_grate/break3"),
                 sound("block/netherite_grate/break4")
         ));
+
         add(CSoundEvents.NETHERITE_GRATE_STEP, subtitle("block.generic.footsteps").with(
                 sound("block/netherite_grate/step1"),
                 sound("block/netherite_grate/step2"),
@@ -147,12 +159,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_grate/step5"),
                 sound("block/netherite_grate/step6")
         ));
+
         add(CSoundEvents.NETHERITE_GRATE_PLACE, subtitle("block.generic.place").with(
                 sound("block/netherite_grate/break1"),
                 sound("block/netherite_grate/break2"),
                 sound("block/netherite_grate/break3"),
                 sound("block/netherite_grate/break4")
         ));
+
         add(CSoundEvents.NETHERITE_GRATE_HIT, subtitle("block.generic.hit").with(
                 sound("block/netherite_grate/step1"),
                 sound("block/netherite_grate/step2"),
@@ -161,6 +175,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_grate/step5"),
                 sound("block/netherite_grate/step6")
         ));
+
         add(CSoundEvents.NETHERITE_GRATE_FALL, definition().with(
                 sound("block/netherite_grate/step1"),
                 sound("block/netherite_grate/step2"),
@@ -183,12 +198,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("step/stone5"),
                 mcSound("step/stone6")
         ));
+
         add(CSoundEvents.STONE_PLACE, subtitle("block.generic.place").with(
                 mcSound("dig/stone1"),
                 mcSound("dig/stone2"),
                 mcSound("dig/stone3"),
                 mcSound("dig/stone4")
         ));
+
         add(CSoundEvents.STONE_HIT, subtitle("block.generic.hit").with(
                 mcSound("step/stone1"),
                 mcSound("step/stone2"),
@@ -197,6 +214,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("step/stone5"),
                 mcSound("step/stone6")
         ));
+
         add(CSoundEvents.STONE_FALL, definition().with(
                 mcSound("step/stone1"),
                 mcSound("step/stone2"),
@@ -215,12 +233,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/copper/step5"),
                 mcSound("block/copper/step6")
         ));
+
         add(CSoundEvents.COPPER_PLACE, subtitle("block.generic.place").with(
                 mcSound("block/copper/break1"),
                 mcSound("block/copper/break2"),
                 mcSound("block/copper/break3"),
                 mcSound("block/copper/break4")
         ));
+
         add(CSoundEvents.COPPER_HIT, subtitle("block.generic.hit").with(
                 mcSound("block/copper/step1"),
                 mcSound("block/copper/step2"),
@@ -229,6 +249,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/copper/step5"),
                 mcSound("block/copper/step6")
         ));
+
         add(CSoundEvents.COPPER_FALL, definition().with(
                 mcSound("block/copper/step1"),
                 mcSound("block/copper/step2"),
@@ -237,12 +258,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/copper/step5"),
                 mcSound("block/copper/step6")
         ));
+
         add(CSoundEvents.COPPER_BULB_BREAK, subtitle("block.generic.break").with(
                 mcSound("block/copper_bulb/break1"),
                 mcSound("block/copper_bulb/break2"),
                 mcSound("block/copper_bulb/break3"),
                 mcSound("block/copper_bulb/break4")
         ));
+
         add(CSoundEvents.COPPER_BULB_PLACE, subtitle("block.generic.place").with(
                 mcSound("block/copper_bulb/place1"),
                 mcSound("block/copper_bulb/place2"),
@@ -259,12 +282,14 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/netherite/step5"),
                 mcSound("block/netherite/step6")
         ));
+
         add(CSoundEvents.NETHERITE_PLACE, subtitle("block.generic.place").with(
                 mcSound("block/netherite/break1"),
                 mcSound("block/netherite/break2"),
                 mcSound("block/netherite/break3"),
                 mcSound("block/netherite/break4")
         ));
+
         add(CSoundEvents.NETHERITE_HIT, subtitle("block.generic.hit").with(
                 mcSound("block/netherite/step1"),
                 mcSound("block/netherite/step2"),
@@ -273,6 +298,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/netherite/step5"),
                 mcSound("block/netherite/step6")
         ));
+
         add(CSoundEvents.NETHERITE_FALL, definition().with(
                 mcSound("block/netherite/step1"),
                 mcSound("block/netherite/step2"),

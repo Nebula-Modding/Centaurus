@@ -27,6 +27,7 @@ public class CBlockLootProvider extends BlockLootSubProvider {
     public CBlockLootProvider(HolderLookup.Provider provider) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), provider);
     }
+
     @Override
     protected void generate() {
         final List<DeferredHolder<Block, ? extends Block>> excludedBlocks = new ArrayList<>();
@@ -254,6 +255,7 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
     }
+
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
         return CBlocks.BLOCKS.getEntries()
@@ -261,6 +263,7 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                 .map(DeferredHolder::get)
                 .collect(Collectors.toSet());
     }
+
     protected LootTable.Builder createLutrumOreDrops(Block block) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
@@ -270,7 +273,6 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                         LootItem.lootTableItem(CItems.LUTRUM_ITEMS.get("raw_lutrum"))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
-                )
-        );
+                ));
     }
 }

@@ -21,16 +21,19 @@ public class FrigusFarmlandBlock extends FarmBlock {
     public FrigusFarmlandBlock(Properties properties) {
         super(properties);
     }
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return !this.defaultBlockState().canSurvive(context.getLevel(), context.getClickedPos())
                 ? CBlocks.FRIGUS_DIRT.get().defaultBlockState()
                 : super.getStateForPlacement(context);
     }
+
     // WHY ARE YOU PRIVATE AAAGHH!!!!
     private static boolean shouldMaintainFarmland(BlockGetter level, BlockPos pos) {
         return level.getBlockState(pos.above()).is(BlockTags.MAINTAINS_FARMLAND);
     }
+
     // WHY ARE YOU ALSO PRIVATE!!! I HATE YOUUU!! AAAAGHHH!!! I HATE YOUUUU!!!
     private static boolean isNearWater(LevelReader level, BlockPos pos) {
         BlockState state = level.getBlockState(pos);
@@ -41,12 +44,14 @@ public class FrigusFarmlandBlock extends FarmBlock {
         }
         return net.neoforged.neoforge.common.FarmlandWaterManager.hasBlockWaterTicket(level, pos);
     }
+
     @Override
     protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (!state.canSurvive(level, pos)) {
             turnToFrigusDirt(null, state, level, pos);
         }
     }
+
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         int i = state.getValue(MOISTURE);
@@ -60,6 +65,7 @@ public class FrigusFarmlandBlock extends FarmBlock {
             level.setBlock(pos, state.setValue(MOISTURE, Integer.valueOf(7)), 2);
         }
     }
+
     @Override
     public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDamage) {
         if (!level.isClientSide() && CommonHooks.onFarmlandTrample(level, pos, CBlocks.FRIGUS_DIRT.get().defaultBlockState(), fallDamage, entity)) {
@@ -67,6 +73,7 @@ public class FrigusFarmlandBlock extends FarmBlock {
         }
         entity.causeFallDamage(fallDamage, 1.0F, level.damageSources().fall());
     }
+
     public static void turnToFrigusDirt(@Nullable Entity entity, BlockState state, Level level, BlockPos pos) {
         BlockState blockstate = pushEntitiesUp(state, CBlocks.FRIGUS_DIRT.get().defaultBlockState(), level, pos);
         level.setBlockAndUpdate(pos, blockstate);

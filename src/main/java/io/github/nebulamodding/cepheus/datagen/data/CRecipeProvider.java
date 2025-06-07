@@ -14,6 +14,7 @@ public class CRecipeProvider extends RecipeProvider implements IConditionBuilder
     public CRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
+
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         doorBuilder(CBlocks.MAYURA_DOOR.get(), Ingredient.of(CBlocks.MAYURA_PLANKS.get())).group("mayura")

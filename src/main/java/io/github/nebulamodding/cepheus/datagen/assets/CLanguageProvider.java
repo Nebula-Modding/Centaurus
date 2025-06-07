@@ -193,7 +193,9 @@ public class CLanguageProvider extends LanguageProvider {
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
                                 .getPath()
-                                .replace("_", " "))));
+                                .replace("_", " "))
+                ));
+
         // Items
         CItems.ITEMS.getEntries()
                 .stream()
@@ -202,6 +204,7 @@ public class CLanguageProvider extends LanguageProvider {
                         StringUtils.capitaliseAllWords(entry
                                 .getId()
                                 .getPath()
-                                .replace("_", " "))));
+                                .replace("_", " "))
+                ));
     }
 }

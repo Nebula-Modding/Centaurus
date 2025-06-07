@@ -267,8 +267,8 @@ public class CBlocks {
                     "karcass_stone_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.KARCASS_STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(CBlockSetType.KARCASS_STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     /*
     Ore Blocks
