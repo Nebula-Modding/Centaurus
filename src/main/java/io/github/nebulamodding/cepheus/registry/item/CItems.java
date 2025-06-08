@@ -26,41 +26,6 @@ public class CItems {
             ENCHANTED_GOLDEN_AZURE_ROOT = ITEMS.register("enchanted_golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(CFoods.ENCHANTED_GOLDEN_AZURE_ROOT).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
 
     /*
-    Metal Items
-     */
-
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> LUTRUM_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "raw_lutrum",
-            "lutrum_nugget",
-            "lutrum_ingot",
-            "lutrum_sheet",
-            "lutrum_rod");
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> OBDURIUM_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "raw_obdurium",
-            "obdurium_nugget",
-            "obdurium_ingot",
-            "obdurium_sheet",
-            "obdurium_rod");
-    public static final DeferredHolders<Item, DeferredItem<? extends Item>> MALUNITE_ITEMS = RegolithItemUtil.registerItems(
-            RegolithNeoForge.wrapItems(ITEMS),
-            new Item.Properties(),
-            "raw_malunite",
-            "malunite_nugget",
-            "malunite_ingot",
-            "malunite_sheet",
-            "malunite_rod");
-
-    /*
-    Tools
-     */
-
-    public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new ObduriumHammerItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(CTiers.OBDURIUM, 3.0F, -3.2F))));
-
-    /*
     Flesh Items
      */
 
@@ -68,6 +33,37 @@ public class CItems {
             FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(CFoods.FLESH))),
             COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(CFoods.COOKED_FLESH))),
             VEIN_STALK = ITEMS.register("vein_stalk", () -> new Item(new Item.Properties().food(CFoods.VEIN_STALK)));
+
+    /*
+    Metal Items
+     */
+
+    public static final DeferredItem<Item>
+            RAW_LUTRUM = ITEMS.register("raw_lutrum", () -> new Item(new Item.Properties())),
+            LUTRUM_NUGGET = ITEMS.register("lutrum_nugget", () -> new Item(new Item.Properties())),
+            LUTRUM_INGOT = ITEMS.register("lutrum_ingot", () -> new Item(new Item.Properties())),
+            LUTRUM_SHEET = ITEMS.register("lutrum_sheet", () -> new Item(new Item.Properties())),
+            LUTRUM_ROD = ITEMS.register("lutrum_rod", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>
+            RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties())),
+            OBDURIUM_NUGGET = ITEMS.register("obdurium_nugget", () -> new Item(new Item.Properties())),
+            OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new Item(new Item.Properties())),
+            OBDURIUM_SHEET = ITEMS.register("obdurium_sheet", () -> new Item(new Item.Properties())),
+            OBDURIUM_ROD = ITEMS.register("obdurium_rod", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>
+            RAW_MALUNITE = ITEMS.register("raw_malunite", () -> new Item(new Item.Properties())),
+            MALUNITE_NUGGET = ITEMS.register("malunite_nugget", () -> new Item(new Item.Properties())),
+            MALUNITE_INGOT = ITEMS.register("malunite_ingot", () -> new Item(new Item.Properties())),
+            MALUNITE_SHEET = ITEMS.register("malunite_sheet", () -> new Item(new Item.Properties())),
+            MALUNITE_ROD = ITEMS.register("malunite_rod", () -> new Item(new Item.Properties()));
+
+    /*
+    Tools
+     */
+
+    public static final DeferredItem<Item> OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(CTiers.OBDURIUM, 3.0F, -3.2F))));
 
     /*
     Helper Methods

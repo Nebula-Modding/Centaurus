@@ -136,11 +136,14 @@ public class CBlockLootProvider extends BlockLootSubProvider {
 
         add(CBlocks.MAYURA_LEAVES.get(), b -> createLeavesDrops(b, CBlocks.MAYURA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         add(CBlocks.GRIMWOOD_LEAVES.get(), b -> createLeavesDrops(b, CBlocks.GRIMWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
         add(CBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTable(CBlocks.FRIGUS_DIRT.get()));
         add(CBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(CBlocks.FRIGUS_DIRT.get()));
         add(CBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.FRIGUS_DIRT.get()));
+
         add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get()));
         add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get()));
+
         add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.WATER_ICE_BLOCKS.get("cobbled_water_ice").get()));
         add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_cobbled_water_ice").get()));
         add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_cobbled_water_ice").get()));
@@ -189,8 +192,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.BLUESCHIST_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.BLUESCHIST_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(CBlocks.BLUESCHIST_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
-        add(CBlocks.BLUESCHIST_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+        add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.BLUESCHIST_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+
         add(CBlocks.BLUE_SHALE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.BLUE_SHALE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.BLUE_SHALE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -200,8 +204,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.BLUE_SHALE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
-        add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+        add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+
         add(CBlocks.WATER_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.WATER_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.WATER_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -211,8 +216,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.WATER_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.WATER_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(CBlocks.WATER_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.WATER_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
-        add(CBlocks.WATER_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+        add(CBlocks.WATER_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.WATER_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+
         add(CBlocks.NITROGEN_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.NITROGEN_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.NITROGEN_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -222,8 +228,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.NITROGEN_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
-        add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+        add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+
         add(CBlocks.OXYGEN_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.OXYGEN_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.OXYGEN_ICE_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -233,8 +240,8 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.OXYGEN_ICE_LAPIS_ORE.get(), this::createLapisOreDrops);
         add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
         add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.OBDURIUM_ITEMS.get("raw_obdurium").get()));
-        add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.MALUNITE_ITEMS.get("raw_malunite").get()));
+        add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
 
         /*
         Potted Plant Loot Tables
@@ -256,23 +263,23 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                 .forEach(entry -> dropSelf(entry.get()));
     }
 
-    @Override
-    protected @NotNull Iterable<Block> getKnownBlocks() {
-        return CBlocks.BLOCKS.getEntries()
-                .stream()
-                .map(DeferredHolder::get)
-                .collect(Collectors.toSet());
-    }
-
     protected LootTable.Builder createLutrumOreDrops(Block block) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
                 block,
                 this.applyExplosionDecay(
                         block,
-                        LootItem.lootTableItem(CItems.LUTRUM_ITEMS.get("raw_lutrum"))
+                        LootItem.lootTableItem(CItems.RAW_LUTRUM)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 ));
+    }
+
+    @Override
+    protected @NotNull Iterable<Block> getKnownBlocks() {
+        return CBlocks.BLOCKS.getEntries()
+                .stream()
+                .map(DeferredHolder::get)
+                .collect(Collectors.toSet());
     }
 }

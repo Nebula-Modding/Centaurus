@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -26,8 +25,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
 
-import static io.github.nebulamodding.cepheus.registry.block.CWoodType.GRIMWOOD;
-import static io.github.nebulamodding.cepheus.registry.block.CWoodType.MAYURA;
+import static io.github.nebulamodding.cepheus.registry.block.CWoodTypes.GRIMWOOD;
+import static io.github.nebulamodding.cepheus.registry.block.CWoodTypes.MAYURA;
 
 public class CBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Cepheus.MOD_ID);
@@ -55,10 +54,10 @@ public class CBlocks {
             MAYURA_SLAB = register("mayura_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.GLOW_LICHEN))),
             MAYURA_FENCE = register("mayura_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.GLOW_LICHEN))),
             MAYURA_FENCE_GATE = register("mayura_fence_gate", () -> new FenceGateBlock(MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.GLOW_LICHEN))),
-            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(CBlockSetType.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.GLOW_LICHEN))),
-            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(CBlockSetType.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.GLOW_LICHEN))),
-            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.GLOW_LICHEN))),
-            MAYURA_BUTTON = register("mayura_button", () -> new ButtonBlock(CBlockSetType.MAYURA, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
+            MAYURA_DOOR = register("mayura_door", () -> new DoorBlock(CBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_TRAPDOOR = register("mayura_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_PRESSURE_PLATE = register("mayura_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.MAYURA, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.GLOW_LICHEN))),
+            MAYURA_BUTTON = register("mayura_button", () -> new ButtonBlock(CBlockSetTypes.MAYURA, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
             MAYURA_LEAVES = register("mayura_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.GLOW_LICHEN))),
             MAYURA_SAPLING = register("mayura_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.GLOW_LICHEN)));
 
@@ -72,10 +71,10 @@ public class CBlocks {
             GRIMWOOD_SLAB = register("grimwood_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_SLAB).mapColor(MapColor.TERRACOTTA_CYAN))),
             GRIMWOOD_FENCE = register("grimwood_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE).mapColor(MapColor.TERRACOTTA_CYAN))),
             GRIMWOOD_FENCE_GATE = register("grimwood_fence_gate", () -> new FenceGateBlock(GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_FENCE_GATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            GRIMWOOD_DOOR = register("grimwood_door", () -> new DoorBlock(CBlockSetType.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            GRIMWOOD_TRAPDOOR = register("grimwood_trapdoor", () -> new TrapDoorBlock(CBlockSetType.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
-            GRIMWOOD_PRESSURE_PLATE = register("grimwood_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_CYAN))),
-            GRIMWOOD_BUTTON = register("grimwood_button", () -> new ButtonBlock(CBlockSetType.GRIMWOOD, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
+            GRIMWOOD_DOOR = register("grimwood_door", () -> new DoorBlock(CBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_DOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_TRAPDOOR = register("grimwood_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_TRAPDOOR).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_PRESSURE_PLATE = register("grimwood_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.GRIMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_CYAN))),
+            GRIMWOOD_BUTTON = register("grimwood_button", () -> new ButtonBlock(CBlockSetTypes.GRIMWOOD, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_BUTTON))),
             GRIMWOOD_LEAVES = register("grimwood_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).mapColor(MapColor.SNOW))),
             GRIMWOOD_SAPLING = register("grimwood_sapling", () -> new SaplingBlock(TreeGrower.SPRUCE, plantProperties().randomTicks().mapColor(MapColor.TERRACOTTA_CYAN)));
 
@@ -137,8 +136,8 @@ public class CBlocks {
                     "blueschist_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetType.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     /*
     Frigus Deepslate Blocks
@@ -267,8 +266,8 @@ public class CBlocks {
                     "karcass_stone_brick_wall")
             .done();
     public static final DeferredBlock<Block>
-            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.KARCASS_STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(CBlockSetType.KARCASS_STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+            KARCASS_STONE_PRESSURE_PLATE = register("karcass_stone_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.KARCASS_STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            KARCASS_STONE_BUTTON = register("karcass_stone_button", () -> new ButtonBlock(CBlockSetTypes.KARCASS_STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     /*
     Ore Blocks
@@ -1061,13 +1060,13 @@ public class CBlocks {
             LUTRUM_PLATING = register("lutrum_plating", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_PLATING_STAIRS = register("lutrum_plating_stairs", () -> new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.UNAFFECTED, LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_PLATING_SLAB = register("lutrum_plating_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY))),
-            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, 20, lutrumProperties().mapColor(MapColor.CLAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, 20, lutrumProperties().mapColor(MapColor.CLAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            LUTRUM_WINDOW = register("lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            LUTRUM_PLATING_PRESSURE_PLATE = register("lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, 20, lutrumProperties().mapColor(MapColor.CLAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            LUTRUM_PLATING_BUTTON = register("lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, 20, lutrumProperties().mapColor(MapColor.CLAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            LUTRUM_WINDOW = register("lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             LUTRUM_PILLAR = register("lutrum_pillar", () -> new WeatheringCopperRotatedPillarBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY))),
             LUTRUM_BARS = register("lutrum_bars", () -> new WeatheringCopperBarsBlock(WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().mapColor(MapColor.CLAY))),
-            LUTRUM_DOOR = register("lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
-            LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
+            LUTRUM_DOOR = register("lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
+            LUTRUM_TRAPDOOR = register("lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
             LUTRUM_BULB = register("lutrum_bulb", () -> new WeatheringCopperBulbBlock(WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY))),
             EXPOSED_LUTRUM = register("exposed_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_SHEET_METAL = register("exposed_lutrum_sheet_metal", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1076,13 +1075,13 @@ public class CBlocks {
             EXPOSED_LUTRUM_PLATING = register("exposed_lutrum_plating", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_STAIRS = register("exposed_lutrum_plating_stairs", () -> new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_PLATING_SLAB = register("exposed_lutrum_plating_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            EXPOSED_LUTRUM_WINDOW = register("exposed_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("exposed_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            EXPOSED_LUTRUM_PLATING_BUTTON = register("exposed_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            EXPOSED_LUTRUM_WINDOW = register("exposed_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             EXPOSED_LUTRUM_PILLAR = register("exposed_lutrum_pillar", () -> new WeatheringCopperRotatedPillarBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_BARS = register("exposed_lutrum_bars", () -> new WeatheringCopperBarsBlock(WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_DOOR = register("exposed_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            EXPOSED_LUTRUM_TRAPDOOR = register("exposed_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             EXPOSED_LUTRUM_BULB = register("exposed_lutrum_bulb", () -> new WeatheringCopperBulbBlock(WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).lightLevel(litBlockEmission(14)))),
             WEATHERED_LUTRUM = register("weathered_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_SHEET_METAL = register("weathered_lutrum_sheet_metal", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
@@ -1091,13 +1090,13 @@ public class CBlocks {
             WEATHERED_LUTRUM_PLATING = register("weathered_lutrum_plating", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_STAIRS = register("weathered_lutrum_plating_stairs", () -> new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_PLATING_SLAB = register("weathered_lutrum_plating_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, 40, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WEATHERED_LUTRUM_WINDOW = register("weathered_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("weathered_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, 40, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WEATHERED_LUTRUM_PLATING_BUTTON = register("weathered_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WEATHERED_LUTRUM_WINDOW = register("weathered_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             WEATHERED_LUTRUM_PILLAR = register("weathered_lutrum_pillar", () -> new WeatheringCopperRotatedPillarBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_BARS = register("weathered_lutrum_bars", () -> new WeatheringCopperBarsBlock(WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
-            WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_DOOR = register("weathered_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
+            WEATHERED_LUTRUM_TRAPDOOR = register("weathered_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
             WEATHERED_LUTRUM_BULB = register("weathered_lutrum_bulb", () -> new WeatheringCopperBulbBlock(WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.STONE).lightLevel(litBlockEmission(13)))),
             OXIDIZED_LUTRUM = register("oxidized_lutrum", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_SHEET_METAL = register("oxidized_lutrum_sheet_metal", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
@@ -1106,13 +1105,13 @@ public class CBlocks {
             OXIDIZED_LUTRUM_PLATING = register("oxidized_lutrum_plating", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_STAIRS = register("oxidized_lutrum_plating_stairs", () -> new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_PLATING_SLAB = register("oxidized_lutrum_plating_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            OXIDIZED_LUTRUM_WINDOW = register("oxidized_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("oxidized_lutrum_plating_pressure_plate", () -> new WeatheringCopperPressurePlateBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            OXIDIZED_LUTRUM_PLATING_BUTTON = register("oxidized_lutrum_plating_button", () -> new WeatheringCopperButtonBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            OXIDIZED_LUTRUM_WINDOW = register("oxidized_lutrum_window", () -> new WeatheringCopperTransparentBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             OXIDIZED_LUTRUM_PILLAR = register("oxidized_lutrum_pillar", () -> new WeatheringCopperRotatedPillarBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_BARS = register("oxidized_lutrum_bars", () -> new WeatheringCopperBarsBlock(WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
-            OXIDIZED_LUTRUM_TRAPDOOR = register("oxidized_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetType.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_DOOR = register("oxidized_lutrum_door", () -> new WeatheringCopperDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
+            OXIDIZED_LUTRUM_TRAPDOOR = register("oxidized_lutrum_trapdoor", () -> new WeatheringCopperTrapDoorBlock(CBlockSetTypes.LUTRUM, WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
             OXIDIZED_LUTRUM_BULB = register("oxidized_lutrum_bulb", () -> new WeatheringCopperBulbBlock(WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.COLOR_GRAY).lightLevel(litBlockEmission(12))));
     public static final DeferredBlock<Block>
             WAXED_LUTRUM_BLOCK = register("waxed_lutrum_block", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
@@ -1122,13 +1121,13 @@ public class CBlocks {
             WAXED_LUTRUM_PLATING = register("waxed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_PLATING_STAIRS = register("waxed_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_PLATING_SLAB = register("waxed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.CLAY))),
-            WAXED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.LUTRUM, lutrumProperties().mapColor(MapColor.CLAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetType.LUTRUM, 20, lutrumProperties().mapColor(MapColor.CLAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_LUTRUM_WINDOW = register("waxed_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.CLAY).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            WAXED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_lutrum_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.LUTRUM, lutrumProperties().mapColor(MapColor.CLAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_LUTRUM_PLATING_BUTTON = register("waxed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 20, lutrumProperties().mapColor(MapColor.CLAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_LUTRUM_WINDOW = register("waxed_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.CLAY).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             WAXED_LUTRUM_PILLAR = register("waxed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_BARS = register("waxed_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.CLAY))),
-            WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(CBlockSetType.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
-            WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetType.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_DOOR = register("waxed_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.CLAY))),
+            WAXED_LUTRUM_TRAPDOOR = register("waxed_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.CLAY))),
             WAXED_LUTRUM_BULB = register("waxed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.CLAY))),
             WAXED_EXPOSED_LUTRUM = register("waxed_exposed_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_SHEET_METAL = register("waxed_exposed_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
@@ -1137,13 +1136,13 @@ public class CBlocks {
             WAXED_EXPOSED_LUTRUM_PLATING = register("waxed_exposed_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_PLATING_STAIRS = register("waxed_exposed_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_PLATING_SLAB = register("waxed_exposed_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_exposed_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetType.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetType.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_EXPOSED_LUTRUM_WINDOW = register("waxed_exposed_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_exposed_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_EXPOSED_LUTRUM_PLATING_BUTTON = register("waxed_exposed_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 30, lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_EXPOSED_LUTRUM_WINDOW = register("waxed_exposed_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             WAXED_EXPOSED_LUTRUM_PILLAR = register("waxed_exposed_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_BARS = register("waxed_exposed_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(CBlockSetType.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetType.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_DOOR = register("waxed_exposed_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            WAXED_EXPOSED_LUTRUM_TRAPDOOR = register("waxed_exposed_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             WAXED_EXPOSED_LUTRUM_BULB = register("waxed_exposed_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).lightLevel(litBlockEmission(14)))),
             WAXED_WEATHERED_LUTRUM = register("waxed_weathered_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_SHEET_METAL = register("waxed_weathered_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
@@ -1152,13 +1151,13 @@ public class CBlocks {
             WAXED_WEATHERED_LUTRUM_PLATING = register("waxed_weathered_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_PLATING_STAIRS = register("waxed_weathered_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_PLATING_SLAB = register("waxed_weathered_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.STONE))),
-            WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_weathered_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetType.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_WEATHERED_LUTRUM_PLATING_BUTTON = register("waxed_weathered_lutrum_plating_button", () -> new ButtonBlock(CBlockSetType.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_WEATHERED_LUTRUM_WINDOW = register("waxed_weathered_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_weathered_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_WEATHERED_LUTRUM_PLATING_BUTTON = register("waxed_weathered_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 40, lutrumProperties().mapColor(MapColor.STONE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_WEATHERED_LUTRUM_WINDOW = register("waxed_weathered_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             WAXED_WEATHERED_LUTRUM_PILLAR = register("waxed_weathered_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_BARS = register("waxed_weathered_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.STONE))),
-            WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(CBlockSetType.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
-            WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetType.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_DOOR = register("waxed_weathered_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.STONE))),
+            WAXED_WEATHERED_LUTRUM_TRAPDOOR = register("waxed_weathered_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.STONE))),
             WAXED_WEATHERED_LUTRUM_BULB = register("waxed_weathered_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.STONE).lightLevel(litBlockEmission(13)))),
             WAXED_OXIDIZED_LUTRUM = register("waxed_oxidized_lutrum", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_SHEET_METAL = register("waxed_oxidized_lutrum_sheet_metal", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
@@ -1167,48 +1166,48 @@ public class CBlocks {
             WAXED_OXIDIZED_LUTRUM_PLATING = register("waxed_oxidized_lutrum_plating", () -> new Block(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS = register("waxed_oxidized_lutrum_plating_stairs", () -> new StairBlock(LUTRUM_PLATING.get().defaultBlockState(), lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_PLATING_SLAB = register("waxed_oxidized_lutrum_plating_slab", () -> new SlabBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_oxidized_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetType.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON = register("waxed_oxidized_lutrum_plating_button", () -> new ButtonBlock(CBlockSetType.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            WAXED_OXIDIZED_LUTRUM_WINDOW = register("waxed_oxidized_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.HAT).sound(CSoundType.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_PRESSURE_PLATE = register("waxed_oxidized_lutrum_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON = register("waxed_oxidized_lutrum_plating_button", () -> new ButtonBlock(CBlockSetTypes.LUTRUM, 50, lutrumProperties().mapColor(MapColor.COLOR_GRAY).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            WAXED_OXIDIZED_LUTRUM_WINDOW = register("waxed_oxidized_lutrum_window", () -> new TransparentBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.COPPER_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             WAXED_OXIDIZED_LUTRUM_PILLAR = register("waxed_oxidized_lutrum_pillar", () -> new RotatedPillarBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_BARS = register("waxed_oxidized_lutrum_bars", () -> new IronBarsBlock(lutrumProperties().mapColor(MapColor.COLOR_GRAY))),
-            WAXED_OXIDIZED_LUTRUM_DOOR = register("waxed_oxidized_lutrum_door", () -> new DoorBlock(CBlockSetType.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
-            WAXED_OXIDIZED_LUTRUM_TRAPDOOR = register("waxed_oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetType.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_DOOR = register("waxed_oxidized_lutrum_door", () -> new DoorBlock(CBlockSetTypes.LUTRUM, lutrumProperties().noOcclusion().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY))),
+            WAXED_OXIDIZED_LUTRUM_TRAPDOOR = register("waxed_oxidized_lutrum_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.LUTRUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GRAY))),
             WAXED_OXIDIZED_LUTRUM_BULB = register("waxed_oxidized_lutrum_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.COLOR_GRAY).lightLevel(litBlockEmission(12))));
 
     // Obdurium
     public static final DeferredBlock<Block>
             OBDURIUM_BLOCK = register("obdurium_block", () -> new Block(obduriumProperties())),
             OBDURIUM_SHEET_METAL = register("obdurium_sheet_metal", () -> new Block(obduriumProperties())),
-            OBDURIUM_GRATE = register("obdurium_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(CSoundType.NETHERITE_GRATE))),
+            OBDURIUM_GRATE = register("obdurium_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(CSoundTypes.NETHERITE_GRATE))),
             OBDURIUM_PLATING = register("obdurium_plating", () -> new Block(obduriumProperties())),
             OBDURIUM_PLATING_STAIRS = register("obdurium_plating_stairs", () -> new StairBlock(OBDURIUM_PLATING.get().defaultBlockState(), obduriumProperties())),
             OBDURIUM_PLATING_SLAB = register("obdurium_plating_slab", () -> new SlabBlock(obduriumProperties())),
-            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetType.OBDURIUM, 60, obduriumProperties().forceSolidOn().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
-            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(CBlockSetType.OBDURIUM, 60, obduriumProperties().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
-            OBDURIUM_WINDOW = register("obdurium_window", () -> new TransparentBlock(obduriumProperties().instrument(NoteBlockInstrument.HAT).sound(CSoundType.NETHERITE_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            OBDURIUM_PLATING_PRESSURE_PLATE = register("obdurium_plating_pressure_plate", () -> new ConfigurablePressurePlateBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties().forceSolidOn().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
+            OBDURIUM_PLATING_BUTTON = register("obdurium_plating_button", () -> new ButtonBlock(CBlockSetTypes.OBDURIUM, 60, obduriumProperties().noCollission().strength(2.0F, 6000.0F).pushReaction(PushReaction.DESTROY))),
+            OBDURIUM_WINDOW = register("obdurium_window", () -> new TransparentBlock(obduriumProperties().instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.NETHERITE_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             OBDURIUM_PILLAR = register("obdurium_pillar", () -> new RotatedPillarBlock(obduriumProperties())),
             OBDURIUM_BARS = register("obdurium_bars", () -> new IronBarsBlock(obduriumProperties())),
-            OBDURIUM_DOOR = register("obdurium_door", () -> new DoorBlock(CBlockSetType.OBDURIUM, obduriumProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
-            OBDURIUM_TRAPDOOR = register("obdurium_trapdoor", () -> new TrapDoorBlock(CBlockSetType.OBDURIUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(SoundType.NETHERITE_BLOCK))),
-            OBDURIUM_BULB = register("obdurium_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(CSoundType.NETHERITE_BULB)));
+            OBDURIUM_DOOR = register("obdurium_door", () -> new DoorBlock(CBlockSetTypes.OBDURIUM, obduriumProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
+            OBDURIUM_TRAPDOOR = register("obdurium_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.OBDURIUM, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(SoundType.NETHERITE_BLOCK))),
+            OBDURIUM_BULB = register("obdurium_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).mapColor(MapColor.COLOR_PURPLE).strength(8.0F, 6000.0F).sound(CSoundTypes.NETHERITE_BULB)));
 
     // Malunite
     public static final DeferredBlock<Block>
             MALUNITE_BLOCK = register("malunite_block", () -> new Block(maluniteProperties())),
             MALUNITE_SHEET_METAL = register("malunite_sheet_metal", () -> new Block(maluniteProperties())),
-            MALUNITE_GRATE = register("malunite_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).sound(CSoundType.METAL_GRATE).mapColor(MapColor.COLOR_GREEN))),
+            MALUNITE_GRATE = register("malunite_grate", () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE).sound(CSoundTypes.METAL_GRATE).mapColor(MapColor.COLOR_GREEN))),
             MALUNITE_PLATING = register("malunite_plating", () -> new Block(maluniteProperties())),
             MALUNITE_PLATING_STAIRS = register("malunite_plating_stairs", () -> new StairBlock(MALUNITE_PLATING.get().defaultBlockState(), maluniteProperties())),
             MALUNITE_PLATING_SLAB = register("malunite_plating_slab", () -> new SlabBlock(maluniteProperties())),
-            MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetType.MALUNITE, maluniteProperties().forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(CBlockSetType.MALUNITE, 20, maluniteProperties().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            MALUNITE_WINDOW = register("malunite_window", () -> new TransparentBlock(obduriumProperties().instrument(NoteBlockInstrument.HAT).sound(CSoundType.METAL_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
+            MALUNITE_PLATING_PRESSURE_PLATE = register("malunite_plating_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.MALUNITE, maluniteProperties().forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            MALUNITE_PLATING_BUTTON = register("malunite_plating_button", () -> new ButtonBlock(CBlockSetTypes.MALUNITE, 20, maluniteProperties().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            MALUNITE_WINDOW = register("malunite_window", () -> new TransparentBlock(obduriumProperties().instrument(NoteBlockInstrument.HAT).sound(CSoundTypes.METAL_WINDOW).noOcclusion().isValidSpawn(Blocks::never).isRedstoneConductor((state, getter, pos) -> false).isSuffocating((state, getter, pos) -> false).isViewBlocking((state, getter, pos) -> false))),
             MALUNITE_PILLAR = register("malunite_pillar", () -> new RotatedPillarBlock(maluniteProperties())),
             MALUNITE_BARS = register("malunite_bars", () -> new IronBarsBlock(maluniteProperties())),
-            MALUNITE_DOOR = register("malunite_door", () -> new DoorBlock(CBlockSetType.MALUNITE, maluniteProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
-            MALUNITE_TRAPDOOR = register("malunite_trapdoor", () -> new TrapDoorBlock(CBlockSetType.MALUNITE, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GREEN))),
-            MALUNITE_BULB = register("malunite_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).sound(CSoundType.METAL_BULB).mapColor(MapColor.COLOR_GREEN)));
+            MALUNITE_DOOR = register("malunite_door", () -> new DoorBlock(CBlockSetTypes.MALUNITE, maluniteProperties().noOcclusion().pushReaction(PushReaction.DESTROY))),
+            MALUNITE_TRAPDOOR = register("malunite_trapdoor", () -> new TrapDoorBlock(CBlockSetTypes.MALUNITE, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.COLOR_GREEN))),
+            MALUNITE_BULB = register("malunite_bulb", () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB).sound(CSoundTypes.METAL_BULB).mapColor(MapColor.COLOR_GREEN)));
 
     /*
     Potted Plants

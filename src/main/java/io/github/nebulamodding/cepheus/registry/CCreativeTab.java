@@ -17,14 +17,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CCreativeTab {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Cepheus.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Cepheus.MOD_ID);
 
     public static String CREATIVE_TAB_TITLE = "itemGroup.cepheus";
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CEPHEUS = CREATIVE_MODE_TABS.register("cepheus", () ->
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CEPHEUS = CREATIVE_MODE_TAB.register("cepheus", () ->
             CreativeModeTab.builder()
                     .title(Component.translatable(CREATIVE_TAB_TITLE))
                     .icon(() -> new ItemStack(CBlocks.FRIGUS_GRASS_BLOCK.get()))
-                    .build());
+                    .build()
+    );
 
     public static void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         final List<DeferredBlock<? extends Block>> excludedItems = new ArrayList<>();

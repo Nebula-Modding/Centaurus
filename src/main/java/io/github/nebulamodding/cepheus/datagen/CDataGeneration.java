@@ -13,12 +13,17 @@ import io.github.nebulamodding.cepheus.datagen.data.tags.CItemTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Tier;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
+@EventBusSubscriber(modid = Cepheus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class CDataGeneration {
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         try {
             DataGenerator generator = event.getGenerator();

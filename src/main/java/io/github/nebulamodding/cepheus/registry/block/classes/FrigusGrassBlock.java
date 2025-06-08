@@ -1,7 +1,7 @@
 package io.github.nebulamodding.cepheus.registry.block.classes;
 
 import io.github.nebulamodding.cepheus.registry.block.CBlocks;
-import io.github.nebulamodding.cepheus.registry.CVegetationPlacements;
+import io.github.nebulamodding.cepheus.registry.worldgen.CVegetationPlacements;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;

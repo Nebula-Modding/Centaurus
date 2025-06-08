@@ -7,7 +7,7 @@ import net.minecraft.world.food.FoodProperties;
 public class CFoods {
 
     /*
-    Frigus Plants
+    Frigus Foods
      */
 
     public static final FoodProperties
@@ -38,6 +38,10 @@ public class CFoods {
                 .alwaysEdible()
                 .build();
 
+    /*
+    Karnis Foods
+     */
+
     public static final FoodProperties
             FLESH = new FoodProperties.Builder()
                 .nutrition(4)
@@ -49,9 +53,9 @@ public class CFoods {
                     .saturationModifier(0.6F)
                     .build(),
             VEIN_STALK = new FoodProperties.Builder()
-                .nutrition(-1)
-                .saturationModifier(-0.8F)
-                .effect(new MobEffectInstance(MobEffects.REGENERATION, 40, 0), 1.0F)
+                .nutrition(-4)
+                .saturationModifier(0F)
+                .effect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1), 1.0F)
                 .alwaysEdible()
                 .build();
 }

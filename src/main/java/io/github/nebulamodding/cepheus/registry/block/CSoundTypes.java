@@ -3,7 +3,7 @@ package io.github.nebulamodding.cepheus.registry.block;
 import io.github.nebulamodding.cepheus.registry.CSoundEvents;
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 
-public class CSoundType {
+public class CSoundTypes {
 
     /*
     Metal

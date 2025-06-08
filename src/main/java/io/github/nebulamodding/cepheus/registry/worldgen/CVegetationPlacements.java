@@ -1,4 +1,4 @@
-package io.github.nebulamodding.cepheus.registry;
+package io.github.nebulamodding.cepheus.registry.worldgen;
 
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;

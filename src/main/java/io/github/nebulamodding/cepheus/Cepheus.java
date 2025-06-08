@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -29,18 +28,14 @@ public class Cepheus {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Cepheus(IEventBus eventBus, ModContainer modContainer) {
-        CSoundEvents.SOUND_EVENTS.register(eventBus);
-        CBlocks.BLOCKS.register(eventBus);
-        CItems.ITEMS.register(eventBus);
-        CCreativeTab.CREATIVE_MODE_TABS.register(eventBus);
-        CEvents.gatherEvents(eventBus);
-
-        eventBus.addListener(CCreativeTab::buildCreativeTab);
-        eventBus.addListener(CDataGeneration::gatherData);
-
         eventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        CBlocks.BLOCKS.register(eventBus);
+        CItems.ITEMS.register(eventBus);
+        CCreativeTab.CREATIVE_MODE_TAB.register(eventBus);
+        CSoundEvents.SOUND_EVENTS.register(eventBus);
+        CEvents.gatherEvents(eventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, CConfig.SPEC);
     }
 
@@ -55,7 +50,6 @@ public class Cepheus {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
 }

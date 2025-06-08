@@ -155,49 +155,49 @@ public class CItemTagProvider extends ItemTagsProvider {
                 .addTag(CTags.ItemTags.RODS_MALUNITE)
         ;
         tag(CTags.ItemTags.RAW_MATERIALS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("raw_lutrum").get())
+                .add(CItems.RAW_LUTRUM.get())
         ;
         tag(CTags.ItemTags.NUGGETS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_nugget").get())
+                .add(CItems.LUTRUM_NUGGET.get())
         ;
         tag(CTags.ItemTags.INGOTS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_ingot").get())
+                .add(CItems.LUTRUM_INGOT.get())
         ;
         tag(CTags.ItemTags.PLATES_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_sheet").get())
+                .add(CItems.LUTRUM_SHEET.get())
         ;
         tag(CTags.ItemTags.RODS_LUTRUM)
-                .add(CItems.LUTRUM_ITEMS.get("lutrum_rod").get())
+                .add(CItems.LUTRUM_ROD.get())
         ;
         tag(CTags.ItemTags.RAW_MATERIALS_OBDURIUM)
-                .add(CItems.OBDURIUM_ITEMS.get("raw_obdurium").get())
+                .add(CItems.RAW_OBDURIUM.get())
         ;
         tag(CTags.ItemTags.NUGGETS_OBDURIUM)
-                .add(CItems.OBDURIUM_ITEMS.get("obdurium_nugget").get())
+                .add(CItems.OBDURIUM_NUGGET.get())
         ;
         tag(CTags.ItemTags.INGOTS_OBDURIUM)
-                .add(CItems.OBDURIUM_ITEMS.get("obdurium_ingot").get())
+                .add(CItems.OBDURIUM_INGOT.get())
         ;
         tag(CTags.ItemTags.PLATES_OBDURIUM)
-                .add(CItems.OBDURIUM_ITEMS.get("obdurium_sheet").get())
+                .add(CItems.OBDURIUM_SHEET.get())
         ;
         tag(CTags.ItemTags.RODS_OBDURIUM)
-                .add(CItems.OBDURIUM_ITEMS.get("obdurium_rod").get())
+                .add(CItems.OBDURIUM_ROD.get())
         ;
         tag(CTags.ItemTags.RAW_MATERIALS_MALUNITE)
-                .add(CItems.MALUNITE_ITEMS.get("raw_malunite").get())
+                .add(CItems.RAW_MALUNITE.get())
         ;
         tag(CTags.ItemTags.NUGGETS_MALUNITE)
-                .add(CItems.MALUNITE_ITEMS.get("malunite_nugget").get())
+                .add(CItems.MALUNITE_NUGGET.get())
         ;
         tag(CTags.ItemTags.INGOTS_MALUNITE)
-                .add(CItems.MALUNITE_ITEMS.get("malunite_ingot").get())
+                .add(CItems.MALUNITE_INGOT.get())
         ;
         tag(CTags.ItemTags.PLATES_MALUNITE)
-                .add(CItems.MALUNITE_ITEMS.get("malunite_sheet").get())
+                .add(CItems.MALUNITE_SHEET.get())
         ;
         tag(CTags.ItemTags.RODS_MALUNITE)
-                .add(CItems.MALUNITE_ITEMS.get("malunite_rod").get())
+                .add(CItems.MALUNITE_ROD.get())
         ;
 
         /*
