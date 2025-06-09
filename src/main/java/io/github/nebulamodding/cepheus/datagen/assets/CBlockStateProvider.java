@@ -436,6 +436,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(CBlocks.GRISTLED_FLESH.get(), models().cubeBottomTop("gristled_flesh", blockLoc(CBlocks.GRISTLED_FLESH), blockLoc(CBlocks.FLESH_BLOCK), blockLoc(CBlocks.GRISTLE_BLOCK)));
         simpleBlock(CBlocks.SHORT_GRISTLES.get(), models().cross(CBlocks.SHORT_GRISTLES.getId().getPath(), blockLoc(CBlocks.SHORT_GRISTLES)).renderType("cutout"));
         simpleBlock(CBlocks.TALL_GRISTLES.get(), models().cross(CBlocks.TALL_GRISTLES.getId().getPath(), blockLoc(CBlocks.TALL_GRISTLES)).renderType("cutout"));
+
         stairsBlockWithItem(CBlocks.GORESLATE_BRICK_STAIRS, blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
         stairsBlockWithItem(CBlocks.GORESLATE_TILE_STAIRS, blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
         slabBlockWithItem(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));

@@ -37,7 +37,8 @@ public class CDataMapProvider extends DataMapProvider {
                 .add(CBlocks.FRIGUS_GRASS_BLOCK.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.FRIGUS_SHORT_GRASS.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.GRISTLED_FLESH.getId(), new Compostable(0.30F), false)
-                .add(CBlocks.SHORT_GRISTLES.getId(), new Compostable(0.30F), false);
+                .add(CBlocks.SHORT_GRISTLES.getId(), new Compostable(0.30F), false)
+        ;
         this.builder(NeoForgeDataMaps.OXIDIZABLES)
                 .add(CBlocks.LUTRUM_BLOCK, new Oxidizable(CBlocks.EXPOSED_LUTRUM.get()), false)
                 .add(CBlocks.LUTRUM_SHEET_METAL, new Oxidizable(CBlocks.EXPOSED_LUTRUM_SHEET_METAL.get()), false)
@@ -83,7 +84,8 @@ public class CDataMapProvider extends DataMapProvider {
                 .add(CBlocks.WEATHERED_LUTRUM_BARS, new Oxidizable(CBlocks.OXIDIZED_LUTRUM_BARS.get()), false)
                 .add(CBlocks.WEATHERED_LUTRUM_DOOR, new Oxidizable(CBlocks.OXIDIZED_LUTRUM_DOOR.get()), false)
                 .add(CBlocks.WEATHERED_LUTRUM_TRAPDOOR, new Oxidizable(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR.get()), false)
-                .add(CBlocks.WEATHERED_LUTRUM_BULB, new Oxidizable(CBlocks.OXIDIZED_LUTRUM_BULB.get()), false);
+                .add(CBlocks.WEATHERED_LUTRUM_BULB, new Oxidizable(CBlocks.OXIDIZED_LUTRUM_BULB.get()), false)
+        ;
         this.builder(NeoForgeDataMaps.WAXABLES)
                 .add(CBlocks.LUTRUM_BLOCK, new Waxable(CBlocks.WAXED_LUTRUM_BLOCK.get()), false)
                 .add(CBlocks.LUTRUM_SHEET_METAL, new Waxable(CBlocks.WAXED_LUTRUM_SHEET_METAL.get()), false)
@@ -144,6 +146,7 @@ public class CDataMapProvider extends DataMapProvider {
                 .add(CBlocks.OXIDIZED_LUTRUM_BARS, new Waxable(CBlocks.WAXED_OXIDIZED_LUTRUM_BARS.get()), false)
                 .add(CBlocks.OXIDIZED_LUTRUM_DOOR, new Waxable(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get()), false)
                 .add(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR, new Waxable(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR.get()), false)
-                .add(CBlocks.OXIDIZED_LUTRUM_BULB, new Waxable(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB.get()), false);
+                .add(CBlocks.OXIDIZED_LUTRUM_BULB, new Waxable(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB.get()), false)
+        ;
     }
 }
