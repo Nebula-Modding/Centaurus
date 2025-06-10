@@ -8,6 +8,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -35,7 +37,7 @@ public class CCreativeTab {
         if(event.getTab() == CEPHEUS.get()) {
             CItems.ITEMS.getEntries()
                     .stream()
-                    .filter(b -> !excludedItems.contains(b))
+                    .filter(i -> !excludedItems.contains(i))
                     .forEach(item -> event.accept(item.get()));
         }
     }

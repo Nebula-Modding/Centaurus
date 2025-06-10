@@ -1,10 +1,9 @@
 package io.github.nebulamodding.cepheus;
 
-import io.github.nebulamodding.cepheus.datagen.CDataGeneration;
 import io.github.nebulamodding.cepheus.events.CEvents;
+import io.github.nebulamodding.cepheus.registry.CCreativeTab;
 import io.github.nebulamodding.cepheus.registry.CSoundEvents;
 import io.github.nebulamodding.cepheus.registry.block.CBlocks;
-import io.github.nebulamodding.cepheus.registry.CCreativeTab;
 import io.github.nebulamodding.cepheus.registry.item.CItems;
 import org.slf4j.Logger;
 
@@ -31,9 +30,10 @@ public class Cepheus {
         eventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        eventBus.addListener(CCreativeTab::buildCreativeTab);
+        CCreativeTab.CREATIVE_MODE_TAB.register(eventBus);
         CBlocks.BLOCKS.register(eventBus);
         CItems.ITEMS.register(eventBus);
-        CCreativeTab.CREATIVE_MODE_TAB.register(eventBus);
         CSoundEvents.SOUND_EVENTS.register(eventBus);
         CEvents.gatherEvents(eventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, CConfig.SPEC);
