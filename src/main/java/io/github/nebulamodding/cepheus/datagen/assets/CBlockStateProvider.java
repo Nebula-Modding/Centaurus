@@ -260,19 +260,18 @@ public class CBlockStateProvider extends BlockStateProvider {
         Automated Block Models
          */
 
-        // To be re-done
         for (var entry : CBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
                 .collect(Collectors.toSet())
         ) {
             var model = new ModelFile.UncheckedModelFile(entry.getId().withPrefix("block/"));
+
             if (entry.get() instanceof RotatedPillarBlock pillarBlock) {
                 logBlock(pillarBlock);
                 simpleBlockItem(entry.get(), model);
             } else if (entry.get() instanceof StairBlock stairBlock) {
-                ResourceLocation texture = entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_stairs", ""));
-                stairsBlock(stairBlock, texture);
+                stairsBlock(stairBlock, entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_stairs", "")));
                 simpleBlockItem(stairBlock, model);
             } else if (entry.get() instanceof SlabBlock slabBlock) {
                 ResourceLocation textureId = entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_slab", ""));
@@ -294,8 +293,7 @@ public class CBlockStateProvider extends BlockStateProvider {
                 models().buttonInventory(entry.getId().getPath() + "_inventory", texture);
                 simpleBlockItem(buttonBlock, new ModelFile.UncheckedModelFile(entry.getId().withPrefix("block/").withSuffix("_inventory")));
             } else if (entry.get() instanceof PressurePlateBlock pressurePlateBlock) {
-                ResourceLocation texture = entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_pressure_plate", ""));
-                pressurePlateBlock(pressurePlateBlock, texture);
+                pressurePlateBlock(pressurePlateBlock, entry.getId().withPath(entry.getId().withPrefix("block/").getPath().replace("_pressure_plate", "")));
                 simpleBlockItem(pressurePlateBlock, model);
             } else {
                 cubeAll(entry.get());
