@@ -1,12 +1,11 @@
 package io.github.nebulamodding.cepheus.datagen.data;
 
-import io.github.nebulamodding.cepheus.registry.block.CBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -16,8 +15,21 @@ public class CRecipeProvider extends RecipeProvider implements IConditionBuilder
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput recipeOutput) {
-        doorBuilder(CBlocks.MAYURA_DOOR.get(), Ingredient.of(CBlocks.MAYURA_PLANKS.get())).group("mayura")
-                .unlockedBy("has_mayura", has(CBlocks.MAYURA_PLANKS.get())).save(recipeOutput);
+    protected void buildRecipes(@NotNull RecipeOutput output) {
+        craftingRecipes(output);
+        cookingRecipes(output);
+        stonecuttingRecipes(output);
+    }
+
+    private void craftingRecipes(RecipeOutput output) {
+
+    }
+
+    private void cookingRecipes(RecipeOutput output) {
+
+    }
+
+    private void stonecuttingRecipes(RecipeOutput output) {
+
     }
 }
