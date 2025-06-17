@@ -180,13 +180,25 @@ public class CLanguageProvider extends LanguageProvider {
         add("star.cepheus.alpha_centauri", "Alpha Centauri");
         add("star.cepheus.alpha_centauri_a", "Rigil Kentaurus");
         add("star.cepheus.alpha_centauri_b", "Toliman");
-        add("planet.cepheus.indra", "Indra");
         add("planet.cepheus.asano", "Asano");
+        add("planet.cepheus.indra", "Indra");
         add("star.cepheus.proxima_centauri", "Proxima Centauri");
         add("planet.cepheus.accola", "Accola");
         add("planet.cepheus.vicinus", "Vicinus");
         add("planet.cepheus.ignis", "Ignis");
         add("planet.cepheus.frigus", "Frigus");
+
+        add("star.cepheus.sentinel", "Sentinel");
+        add("planet.cepheus.vanguard", "Vanguard");
+        add("planet.cepheus.alkridge", "Alkridge");
+        add("planet.cepheus.arx", "Arx");
+        add("planet.cepheus.castra", "Castra");
+        add("planet.cepheus.obia", "Obia");
+        add("planet.cepheus.kador", "Kador");
+
+        add("star.cepheus.hades", "Hades");
+        add("planet.cepheus.infurnix", "Infurnix");
+        add("planet.cepheus.him", "Him.");
 
         /*
         Miscellaneous Translations
