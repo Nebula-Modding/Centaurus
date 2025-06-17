@@ -7,6 +7,8 @@
     "cepheus:waxed_lutrum_door",
     "cepheus:waxed_exposed_lutrum_door",
     "cepheus:waxed_weathered_lutrum_door",
-    "cepheus:waxed_oxidized_lutrum_door"
+    "cepheus:waxed_oxidized_lutrum_door",
+    "cepheus:obdurium_door",
+    "cepheus:malunite_door"
   ]
 }

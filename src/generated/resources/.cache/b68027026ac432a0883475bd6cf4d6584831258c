@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-09T20:14:14.6819686	Tags for minecraft:block mod id cepheus
+// 1.21.1	2025-06-16T23:52:02.1908863	Tags for minecraft:block mod id cepheus
 92a95f0d2c98dd5ac61d46201de5a8c8b422b3a6 data/cepheus/tags/block/base_stone_frigus.json
 fc3ffb72645359678967b0da3d434391c288d304 data/cepheus/tags/block/blueschist_ore_replaceables.json
 e7b279d5a18a89f5111951f1a408faaad49fb058 data/cepheus/tags/block/blue_shale_ore_replaceables.json
@@ -49,7 +49,7 @@ de2f9da6cead08ba954de850c55796b68eb4ca7a data/minecraft/tags/block/coal_ores.jso
 73ac6a8dc59d0eabf469327b5245fc203f43bdf6 data/minecraft/tags/block/copper_ores.json
 43f2d965329aa7eb6ae977089f0e07f9ad0dc106 data/minecraft/tags/block/diamond_ores.json
 f55fb53beb6fa98d0a356271daeb11a5ff7f9751 data/minecraft/tags/block/dirt.json
-554ecbb059495659f468102d7da526ab5b40bff7 data/minecraft/tags/block/doors.json
+49c4f09d1e9f2f4c0543c37857ae5d9cf34b9da2 data/minecraft/tags/block/doors.json
 8f3b2f3d4e73fc24fa4ea3229d2a4b1eb1ef03f0 data/minecraft/tags/block/emerald_ores.json
 4c606efad0b09a191b94d45b7a0f758f756c30f0 data/minecraft/tags/block/enchantment_power_transmitter.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/fences.json
@@ -89,7 +89,7 @@ dd26346f17bdb1bf63bf87cdb327d42a788944a8 data/minecraft/tags/block/stone_buttons
 a104010c35ada5f797ee0a13a22a74bb2686df59 data/minecraft/tags/block/stone_pressure_plates.json
 4c606efad0b09a191b94d45b7a0f758f756c30f0 data/minecraft/tags/block/sword_efficient.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/tall_flowers.json
-b46980091443e6486fbd1454e3e3379c1d93e661 data/minecraft/tags/block/trapdoors.json
+84dcaad610fc182a9ed188365207dac2e57b2e6e data/minecraft/tags/block/trapdoors.json
 0cfae6e68d7b6d81f5fce7dbe2c857b43037fd19 data/minecraft/tags/block/valid_spawn.json
 643452945c5ee20237cd2361534cfec6d2c7e03b data/minecraft/tags/block/walls.json
 8c1a19ad273b10baf070d004a5dc3babc2014240 data/minecraft/tags/block/wooden_buttons.json

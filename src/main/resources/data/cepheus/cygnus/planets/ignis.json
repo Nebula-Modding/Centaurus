@@ -1,0 +1,17 @@
+{
+	"dimension": "cepheus:ignis",
+	"gravity": 1.536,
+	"has_oxygen": false,
+	"day_length": 17000,
+	"night_length": 17000,
+	"year_length": 13,
+	"ambient_temperature_curve": [
+		{ "x": 0.00, "y": -93.5 }, // dawn
+		{ "x": 0.25, "y": -92.8 }, // midday
+		{ "x": 0.50, "y": -96.2 }, // midnight
+		{ "x": 1.00, "y": -93.5 } // dawn
+	],
+	"ambient_radiation": 1,
+	"moons": [],
+	"atmospheric_pressure": -1
+}

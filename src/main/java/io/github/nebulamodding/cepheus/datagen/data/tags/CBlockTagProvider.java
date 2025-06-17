@@ -1121,6 +1121,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR.get())
                 .add(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR.get())
                 .add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get())
+                .add(CBlocks.OBDURIUM_DOOR.get())
+                .add(CBlocks.MALUNITE_DOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_DOORS)
                 .add(CBlocks.MAYURA_DOOR.get())
@@ -1135,6 +1137,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR.get())
                 .add(CBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR.get())
                 .add(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR.get())
+                .add(CBlocks.OBDURIUM_TRAPDOOR.get())
+                .add(CBlocks.MALUNITE_TRAPDOOR.get())
         ;
         tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS)
                 .add(CBlocks.MAYURA_TRAPDOOR.get())
