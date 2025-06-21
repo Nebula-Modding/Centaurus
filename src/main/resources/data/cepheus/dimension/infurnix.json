@@ -1,5 +1,5 @@
 {
-  "type": "cepheus:him",
+  "type": "cepheus:infurnix",
   "generator": {
     "type": "minecraft:noise",
     "biome_source": {
@@ -67,6 +67,6 @@
       ],
       "type": "minecraft:multi_noise"
     },
-    "settings": "cepheus:him"
+    "settings": "cepheus:infurnix"
   }
 }

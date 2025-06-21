@@ -198,7 +198,9 @@ public class CLanguageProvider extends LanguageProvider {
 
         add("star.cepheus.hades", "Hades");
         add("planet.cepheus.infurnix", "Infurnix");
-        add("planet.cepheus.him", "Him.");
+        add("planet.cepheus.him", "Him."); // I know literally 0 people will check the source code :sob:
+        add("planet.cepheus.why_did", "Obtutus");
+        add("planet.cepheus.you_leave_us", "Vultus");
 
         /*
         Miscellaneous Translations
