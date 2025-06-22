@@ -13,5 +13,6 @@
 	],
 	"ambient_radiation": 0,
 	"moons": [],
-	"atmospheric_pressure": 162
+	"atmospheric_pressure": 162,
+	"danger_index": "lethal"
 }

@@ -183,6 +183,7 @@ public class CLanguageProvider extends LanguageProvider {
         add("planet.cepheus.asano", "Asano");
         add("planet.cepheus.indra", "Indra");
         add("star.cepheus.proxima_centauri", "Proxima Centauri");
+        add("planet.cepheus.proxima_centauri", "Proxima Centauri");
         add("planet.cepheus.accola", "Accola");
         add("planet.cepheus.vicinus", "Vicinus");
         add("planet.cepheus.ignis", "Ignis");

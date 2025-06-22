@@ -13,5 +13,6 @@
 	],
 	"ambient_radiation": 1,
 	"moons": [],
-	"atmospheric_pressure": -1
+	"atmospheric_pressure": 0,
+	"danger_index": "euclid"
 }
