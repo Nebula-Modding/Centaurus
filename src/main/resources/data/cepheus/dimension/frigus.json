@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:overworld",
+    "type": "cepheus:frigus",
     "generator": {
       "type": "minecraft:noise",
       "settings": "minecraft:overworld",

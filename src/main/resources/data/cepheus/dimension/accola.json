@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:overworld",
+    "type": "cepheus:accola",
     "generator": {
       "type": "minecraft:noise",
       "settings": "minecraft:overworld",
