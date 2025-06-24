@@ -20,13 +20,10 @@ file="META-INF/accesstransformer.cfg"
 
 [[dependencies.${mod_id}]]
 modId="neoforge"
-# required, optional, incompatible, discouraged
 type="required"
 reason="Neoforge is literally the modloader..."
 versionRange="${neo_version_range}"
-# BEFORE, AFTER
 ordering="NONE"
-# BOTH, CLIENT, SERVER
 side="BOTH"
 
 [[dependencies.${mod_id}]]
@@ -35,3 +32,11 @@ type="required"
 versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
+
+# [[dependencies.${mod_id}]]
+# modId="cygnus"
+# type="required"
+# reason="Cepheus is an addon to Cygnus."
+# versionRange="[0.0.1,)"
+# ordering="AFTER"
+# side="BOTH"

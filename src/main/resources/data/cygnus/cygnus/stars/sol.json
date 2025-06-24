@@ -1,0 +1,13 @@
+{
+	"planets": [
+		"cygnus:mercury",
+		"cygnus:venus",
+		"cygnus:earth",
+		"cygnus:mars",
+		"cygnus:ceres",
+		"cygnus:jupiter",
+		"cygnus:saturn",
+		"cygnus:uranus",
+		"cygnus:neptune"
+	]
+}

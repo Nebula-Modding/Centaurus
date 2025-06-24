@@ -177,6 +177,27 @@ public class CLanguageProvider extends LanguageProvider {
 
         // Cygnus GUI
 
+        add("planet.cygnus.ceres", "Ceres");
+        add("planet.cygnus.jupiter", "Jupiter");
+        add("planet.cygnus.io", "Io");
+        add("planet.cygnus.europa", "Europa");
+        add("planet.cygnus.ganymede", "Ganymede");
+        add("planet.cygnus.callisto", "Callisto");
+        add("planet.cygnus.saturn", "Saturn");
+        add("planet.cygnus.titan", "Titan");
+        add("planet.cygnus.iapetus", "Iapetus");
+        add("planet.cygnus.uranus", "Uranus");
+        add("planet.cygnus.neptune", "Neptune");
+        add("planet.cygnus.triton", "Triton");
+        add("planet.cygnus.pluto", "Pluto");
+        add("planet.cygnus.charon", "Charon");
+        add("planet.cygnus.styx", "Styx");
+        add("planet.cygnus.nix", "Nix");
+        add("planet.cygnus.kerberos", "Kerberos");
+        add("planet.cygnus.hydra", "Hydra");
+        add("planet.cygnus.eris", "Eris");
+        add("planet.cygnus.dysnomia", "Dysnomia");
+
         add("star.cepheus.alpha_centauri", "Alpha Centauri");
         add("star.cepheus.alpha_centauri_a", "Rigil Kentaurus");
         add("star.cepheus.alpha_centauri_b", "Toliman");
