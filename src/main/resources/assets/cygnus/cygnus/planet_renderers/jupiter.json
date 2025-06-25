@@ -1,0 +1,123 @@
+{
+	"render_sunset": true,
+
+	"skybox_objects": [
+		{
+			"is_for_orbit": true,
+			"layers": [{
+				"texture": "cygnus:textures/environment/star/8x8/f_class.png",
+				"size": 0.8
+			}],
+			"transforms": [
+				{ "axis": "x", "value": "cygnus:time", "args": { "multiplier": 1.0 } }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 3.2,
+				"color": [249, 248, 200, 175]
+			}
+		},
+
+		{
+			"layers": [{
+				"texture": "cygnus:textures/environment/solar_system/callisto.png",
+				"size": 1.5
+			}],
+			"transforms": [
+				{ "axis": "x", "value": "cygnus:time", "args": { "multiplier": 0.06 } }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 6.0,
+				"color": [153, 142, 133, 125]
+			}
+		},
+
+		{
+			"layers": [{
+				"texture": "cygnus:textures/environment/solar_system/ganymede.png",
+				"size": 2.8
+			}],
+			"transforms": [
+				{ "axis": "x", "value": "cygnus:time", "args": { "multiplier": 0.14 } }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 11.2,
+				"color": [158, 149, 138, 125]
+			}
+		},
+
+		{
+			"layers": [{
+				"texture": "cygnus:textures/environment/solar_system/europa.png",
+				"size": 2.6
+			}],
+			"transforms": [
+				{ "axis": "x", "value": "cygnus:time", "args": { "multiplier": 0.28 } }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 10.4,
+				"color": [214, 218, 219, 125]
+			}
+		},
+
+		{
+			"layers": [{
+				"texture": "cygnus:textures/environment/solar_system/io.png",
+				"size": 4.9
+			}],
+			"transforms": [
+				{ "axis": "x", "value": "cygnus:time", "args": { "multiplier": 0.56 } }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 19.6,
+				"color": [173, 161, 95, 125]
+			}
+		},
+
+		{
+			"is_for_orbit": true,
+			"layers": [{
+				"texture": "cygnus:textures/environment/solar_system/jupiter.png",
+				"size": 60.0
+			}],
+			"transforms": [ 
+				{ "axis": "x", "value": 180.0 }
+			],
+			"texture_rotation": [0, 90, 0],
+			"backlight": {
+				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
+				"size": 180.0,
+				"color": [209, 191, 166, 150]
+			}
+		}
+	],
+
+	"stars": {
+		"visibility": "always",
+		"brightness_curve": [
+			{"x": 0, "y": 1.00},
+			{"x": 0, "y": 0.50},
+			{"x": 1, "y": 0.50},
+			{"x": 1, "y": 1.00}
+		],
+		"count": 5000,
+		"palette": [
+			{ "color": [242, 83, 42], "weight": 1 },
+			{ "color": [249, 222, 165], "weight": 3 },
+			{ "color": [249, 239, 172], "weight": 3 },
+			{ "color": [249, 248, 200], "weight": 3 },
+			{ "color": [209, 236, 245], "weight": 2 },
+			{ "color": [196, 225, 247], "weight": 2 },
+			{ "color": [177, 208, 249], "weight": 1 }
+		]
+	}
+}
