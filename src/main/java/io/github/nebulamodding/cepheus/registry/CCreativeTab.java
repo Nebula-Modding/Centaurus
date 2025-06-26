@@ -32,7 +32,7 @@ public class CCreativeTab {
     public static void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         final List<DeferredBlock<? extends Block>> excludedItems = new ArrayList<>();
         // Blocks excluded from the creative menu
-        excludedItems.add(CBlocks.TEMPBLOCKTEST);
+        //excludedItems.add(CBlocks.TEMPBLOCKTEST);
 
         if(event.getTab() == CEPHEUS.get()) {
             CItems.ITEMS.getEntries()
