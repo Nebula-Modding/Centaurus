@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/blueslate_brick_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/blueslate_bricks"
+    },
+    "type=top": {
+      "model": "cepheus:block/blueslate_brick_slab_top"
+    }
+  }
+}

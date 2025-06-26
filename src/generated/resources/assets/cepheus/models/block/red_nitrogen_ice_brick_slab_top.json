@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/red_nitrogen_ice_bricks",
-    "side": "cepheus:block/red_nitrogen_ice_bricks",
-    "top": "cepheus:block/red_nitrogen_ice_bricks"
-  }
-}

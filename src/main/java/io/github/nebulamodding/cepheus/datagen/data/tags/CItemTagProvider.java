@@ -76,16 +76,16 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(Tags.Blocks.STONES, Tags.Items.STONES);
         copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
         copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
-        copy(CTags.BlockTags.COBBLESTONES_BLUE_SHALE, CTags.ItemTags.COBBLESTONES_BLUE_SHALE);
+        copy(CTags.BlockTags.COBBLESTONES_BLUESLATE, CTags.ItemTags.COBBLESTONES_BLUESLATE);
         copy(CTags.BlockTags.COBBLESTONES_KARCASS_STONE, CTags.ItemTags.COBBLESTONES_KARCASS_STONE);
         tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+                .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
+                .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
                 .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
         ;
         tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().asItem())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().asItem())
+                .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
+                .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
                 .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
         ;
 
@@ -108,13 +108,13 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST, CTags.ItemTags.ORE_BEARING_GROUND_BLUESCHIST);
-        copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE, CTags.ItemTags.ORE_BEARING_GROUND_BLUE_SHALE);
+        copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUESLATE, CTags.ItemTags.ORE_BEARING_GROUND_BLUESLATE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE, CTags.ItemTags.ORE_BEARING_GROUND_KARCASS_STONE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE, CTags.ItemTags.ORE_BEARING_GROUND_WATER_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_NITROGEN_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_OXYGEN_ICE);
         copy(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST, CTags.ItemTags.ORES_IN_GROUND_BLUESCHIST);
-        copy(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE, CTags.ItemTags.ORES_IN_GROUND_BLUE_SHALE);
+        copy(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE, CTags.ItemTags.ORES_IN_GROUND_BLUESLATE);
         copy(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE, CTags.ItemTags.ORES_IN_GROUND_KARCASS_STONE);
         copy(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE, CTags.ItemTags.ORES_IN_GROUND_WATER_ICE);
         copy(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE, CTags.ItemTags.ORES_IN_GROUND_NITROGEN_ICE);

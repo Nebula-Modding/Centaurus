@@ -52,17 +52,17 @@ public class CBlockTagProvider extends BlockTagsProvider {
         blueschistOres.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_OBDURIUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_MALUNITE_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_COAL_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_IRON_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_COPPER_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_GOLD_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_REDSTONE_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_EMERALD_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_LAPIS_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_DIAMOND_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_OBDURIUM_ORE);
-        blueShaleOres.add(CBlocks.BLUE_SHALE_MALUNITE_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_COAL_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_IRON_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_COPPER_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_GOLD_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_REDSTONE_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_EMERALD_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_LAPIS_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_DIAMOND_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_LUTRUM_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_OBDURIUM_ORE);
+        blueShaleOres.add(CBlocks.BLUESLATE_MALUNITE_ORE);
         // DELETE THE TEMPBLOCKTEST FROM KARCASSSTONEORES!!!
         karcassStoneOres.add(CBlocks.TEMPBLOCKTEST);
         //karcassStoneOres.add(CBlocks.KARCASS_COAL_ORE);
@@ -115,35 +115,35 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.FRIGUS_MUD_BRICK_WALL);
         // Blueschist
         pickaxeStairs.add(CBlocks.BLUESCHIST_STAIRS);
-        pickaxeStairs.add(CBlocks.FRIGUS_COBBLESTONE_STAIRS);
+        pickaxeStairs.add(CBlocks.COBBLED_BLUESCHIST_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_BLUESCHIST_STAIRS);
         pickaxeStairs.add(CBlocks.BLUESCHIST_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_slab"));
-        pickaxeSlabs.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("cobbled_blueschist_slab"));
-        pickaxeSlabs.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("polished_blueschist_slab"));
-        pickaxeSlabs.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_slab"));
-        pickaxeWalls.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_wall"));
-        pickaxeWalls.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("cobbled_blueschist_wall"));
-        pickaxeWalls.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("polished_blueschist_wall"));
-        pickaxeWalls.add(CBlocks.BLUESCHIST_BLOCKS_CONTINUED.get("blueschist_brick_wall"));
+        pickaxeSlabs.add(CBlocks.BLUESCHIST_SLAB);
+        pickaxeSlabs.add(CBlocks.COBBLED_BLUESCHIST_SLAB);
+        pickaxeSlabs.add(CBlocks.POLISHED_BLUESCHIST_SLAB);
+        pickaxeSlabs.add(CBlocks.BLUESCHIST_BRICK_SLAB);
+        pickaxeWalls.add(CBlocks.BLUESCHIST_WALL);
+        pickaxeWalls.add(CBlocks.COBBLED_BLUESCHIST_WALL);
+        pickaxeWalls.add(CBlocks.POLISHED_BLUESCHIST_WALL);
+        pickaxeWalls.add(CBlocks.BLUESCHIST_BRICK_WALL);
         stonePressurePlates.add(CBlocks.BLUESCHIST_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.BLUESCHIST_BUTTON);
         // Blue Shale
-        pickaxeStairs.add(CBlocks.BLUE_SHALE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_BLUE_SHALE_STAIRS);
-        pickaxeStairs.add(CBlocks.POLISHED_BLUE_SHALE_STAIRS);
-        pickaxeStairs.add(CBlocks.BLUE_SHALE_BRICK_STAIRS);
-        pickaxeStairs.add(CBlocks.BLUE_SHALE_TILE_STAIRS);
-        pickaxeSlabs.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_slab"));
-        pickaxeSlabs.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("cobbled_blue_shale_slab"));
-        pickaxeSlabs.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("polished_blue_shale_slab"));
-        pickaxeSlabs.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_brick_slab"));
-        pickaxeSlabs.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_tile_slab"));
-        pickaxeWalls.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_wall"));
-        pickaxeWalls.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("cobbled_blue_shale_wall"));
-        pickaxeWalls.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("polished_blue_shale_wall"));
-        pickaxeWalls.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_brick_wall"));
-        pickaxeWalls.add(CBlocks.BLUE_SHALE_BLOCKS_CONTINUED.get("blue_shale_tile_wall"));
+        pickaxeStairs.add(CBlocks.BLUESLATE_STAIRS);
+        pickaxeStairs.add(CBlocks.COBBLED_BLUESLATE_STAIRS);
+        pickaxeStairs.add(CBlocks.POLISHED_BLUESLATE_STAIRS);
+        pickaxeStairs.add(CBlocks.BLUESLATE_BRICK_STAIRS);
+        pickaxeStairs.add(CBlocks.BLUESLATE_TILE_STAIRS);
+        pickaxeSlabs.add(CBlocks.BLUESLATE_SLAB);
+        pickaxeSlabs.add(CBlocks.COBBLED_BLUESLATE_SLAB);
+        pickaxeSlabs.add(CBlocks.POLISHED_BLUESLATE_SLAB);
+        pickaxeSlabs.add(CBlocks.BLUESLATE_BRICK_SLAB);
+        pickaxeSlabs.add(CBlocks.BLUESLATE_TILE_SLAB);
+        pickaxeWalls.add(CBlocks.BLUESLATE_WALL);
+        pickaxeWalls.add(CBlocks.COBBLED_BLUESLATE_WALL);
+        pickaxeWalls.add(CBlocks.POLISHED_BLUESLATE_WALL);
+        pickaxeWalls.add(CBlocks.BLUESLATE_BRICK_WALL);
+        pickaxeWalls.add(CBlocks.BLUESLATE_TILE_WALL);
         // Permafrost
         pickaxeStairs.add(CBlocks.PERMAFROST_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_PERMAFROST_STAIRS);
@@ -594,22 +594,22 @@ public class CBlockTagProvider extends BlockTagsProvider {
         needsStonePickaxe.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
                 // Blueschist
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("chiseled_blueschist").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("polished_blueschist").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cracked_blueschist_bricks").get())
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist_pillar").get())
+                .add(CBlocks.BLUESCHIST.get())
+                .add(CBlocks.COBBLED_BLUESCHIST.get())
+                .add(CBlocks.CHISELED_BLUESCHIST.get())
+                .add(CBlocks.POLISHED_BLUESCHIST.get())
+                .add(CBlocks.BLUESCHIST_BRICKS.get())
+                .add(CBlocks.CRACKED_BLUESCHIST_BRICKS.get())
+                .add(CBlocks.BLUESCHIST_PILLAR.get())
                 // Blue Shale
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("chiseled_blue_shale").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("polished_blue_shale").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale_bricks").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cracked_blue_shale_bricks").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale_tiles").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale_pillar").get())
+                .add(CBlocks.BLUESLATE.get())
+                .add(CBlocks.COBBLED_BLUESLATE.get())
+                .add(CBlocks.CHISELED_BLUESLATE.get())
+                .add(CBlocks.POLISHED_BLUESLATE.get())
+                .add(CBlocks.BLUESLATE_BRICKS.get())
+                .add(CBlocks.CRACKED_BLUESLATE_BRICKS.get())
+                .add(CBlocks.BLUESLATE_TILES.get())
+                .add(CBlocks.BLUESLATE_PILLAR.get())
                 // Permafrost
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("chiseled_permafrost").get())
@@ -662,10 +662,10 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_IRON_ORE.get())
                 .add(CBlocks.BLUESCHIST_LAPIS_ORE.get())
                 .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_COPPER_ORE.get())
-                .add(CBlocks.BLUE_SHALE_IRON_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LAPIS_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
+                .add(CBlocks.BLUESLATE_COPPER_ORE.get())
+                .add(CBlocks.BLUESLATE_IRON_ORE.get())
+                .add(CBlocks.BLUESLATE_LAPIS_ORE.get())
+                .add(CBlocks.BLUESLATE_LUTRUM_ORE.get())
                 .add(CBlocks.WATER_ICE_COPPER_ORE.get())
                 .add(CBlocks.WATER_ICE_IRON_ORE.get())
                 .add(CBlocks.WATER_ICE_LAPIS_ORE.get())
@@ -686,12 +686,12 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_DIAMOND_ORE.get())
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(CBlocks.BLUESCHIST_MALUNITE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_GOLD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_REDSTONE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_EMERALD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get())
-                .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get())
+                .add(CBlocks.BLUESLATE_GOLD_ORE.get())
+                .add(CBlocks.BLUESLATE_REDSTONE_ORE.get())
+                .add(CBlocks.BLUESLATE_EMERALD_ORE.get())
+                .add(CBlocks.BLUESLATE_DIAMOND_ORE.get())
+                .add(CBlocks.BLUESLATE_OBDURIUM_ORE.get())
+                .add(CBlocks.BLUESLATE_MALUNITE_ORE.get())
                 .add(CBlocks.WATER_ICE_GOLD_ORE.get())
                 .add(CBlocks.WATER_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.WATER_ICE_EMERALD_ORE.get())
@@ -834,21 +834,21 @@ public class CBlockTagProvider extends BlockTagsProvider {
          */
 
         tag(Tags.Blocks.STONES)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+                .add(CBlocks.BLUESCHIST.get())
+                .add(CBlocks.BLUESLATE.get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
                 .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
-                .addTag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
+                .addTag(CTags.BlockTags.COBBLESTONES_BLUESLATE)
                 .addTag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
         ;
         tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get())
+                .add(CBlocks.COBBLED_BLUESCHIST.get())
         ;
-        tag(CTags.BlockTags.COBBLESTONES_BLUE_SHALE)
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get())
+        tag(CTags.BlockTags.COBBLESTONES_BLUESLATE)
+                .add(CBlocks.COBBLED_BLUESLATE.get())
         ;
         tag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
                 .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get())
@@ -856,8 +856,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
 
         // Base Stone Tags
         tag(CTags.BlockTags.BASE_STONE_FRIGUS)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+                .add(CBlocks.BLUESCHIST.get())
+                .add(CBlocks.BLUESLATE.get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
 
@@ -867,77 +867,77 @@ public class CBlockTagProvider extends BlockTagsProvider {
 
         tag(net.minecraft.tags.BlockTags.COAL_ORES)
                 .add(CBlocks.BLUESCHIST_COAL_ORE.get())
-                .add(CBlocks.BLUE_SHALE_COAL_ORE.get())
+                .add(CBlocks.BLUESLATE_COAL_ORE.get())
                 .add(CBlocks.WATER_ICE_COAL_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_COAL_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_COAL_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.IRON_ORES)
                 .add(CBlocks.BLUESCHIST_IRON_ORE.get())
-                .add(CBlocks.BLUE_SHALE_IRON_ORE.get())
+                .add(CBlocks.BLUESLATE_IRON_ORE.get())
                 .add(CBlocks.WATER_ICE_IRON_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_IRON_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_IRON_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.COPPER_ORES)
                 .add(CBlocks.BLUESCHIST_COPPER_ORE.get())
-                .add(CBlocks.BLUE_SHALE_COPPER_ORE.get())
+                .add(CBlocks.BLUESLATE_COPPER_ORE.get())
                 .add(CBlocks.WATER_ICE_COPPER_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_COPPER_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_COPPER_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.GOLD_ORES)
                 .add(CBlocks.BLUESCHIST_GOLD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_GOLD_ORE.get())
+                .add(CBlocks.BLUESLATE_GOLD_ORE.get())
                 .add(CBlocks.WATER_ICE_GOLD_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_GOLD_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_GOLD_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.REDSTONE_ORES)
                 .add(CBlocks.BLUESCHIST_REDSTONE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_REDSTONE_ORE.get())
+                .add(CBlocks.BLUESLATE_REDSTONE_ORE.get())
                 .add(CBlocks.WATER_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_REDSTONE_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.EMERALD_ORES)
                 .add(CBlocks.BLUESCHIST_EMERALD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_EMERALD_ORE.get())
+                .add(CBlocks.BLUESLATE_EMERALD_ORE.get())
                 .add(CBlocks.WATER_ICE_EMERALD_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_EMERALD_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_EMERALD_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.LAPIS_ORES)
                 .add(CBlocks.BLUESCHIST_LAPIS_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LAPIS_ORE.get())
+                .add(CBlocks.BLUESLATE_LAPIS_ORE.get())
                 .add(CBlocks.WATER_ICE_LAPIS_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_LAPIS_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LAPIS_ORE.get())
         ;
         tag(net.minecraft.tags.BlockTags.DIAMOND_ORES)
                 .add(CBlocks.BLUESCHIST_DIAMOND_ORE.get())
-                .add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get())
+                .add(CBlocks.BLUESLATE_DIAMOND_ORE.get())
                 .add(CBlocks.WATER_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_DIAMOND_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_DIAMOND_ORE.get())
         ;
         tag(CTags.BlockTags.ORES_LUTRUM)
                 .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
+                .add(CBlocks.BLUESLATE_LUTRUM_ORE.get())
                 .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
         ;
         tag(CTags.BlockTags.ORES_OBDURIUM)
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
+                .add(CBlocks.BLUESLATE_OBDURIUM_ORE.get())
                 .add(CBlocks.WATER_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_OBDURIUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get())
         ;
         tag(CTags.BlockTags.ORES_MALUNITE)
                 .add(CBlocks.BLUESCHIST_MALUNITE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get())
+                .add(CBlocks.BLUESLATE_MALUNITE_ORE.get())
                 .add(CBlocks.WATER_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_MALUNITE_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get())
@@ -947,10 +947,10 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_REDSTONE_ORE.get())
                 .add(CBlocks.BLUESCHIST_LAPIS_ORE.get())
                 .add(CBlocks.BLUESCHIST_LUTRUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_COPPER_ORE.get())
-                .add(CBlocks.BLUE_SHALE_REDSTONE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LAPIS_ORE.get())
-                .add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get())
+                .add(CBlocks.BLUESLATE_COPPER_ORE.get())
+                .add(CBlocks.BLUESLATE_REDSTONE_ORE.get())
+                .add(CBlocks.BLUESLATE_LAPIS_ORE.get())
+                .add(CBlocks.BLUESLATE_LUTRUM_ORE.get())
                 .add(CBlocks.WATER_ICE_COPPER_ORE.get())
                 .add(CBlocks.WATER_ICE_REDSTONE_ORE.get())
                 .add(CBlocks.WATER_ICE_LAPIS_ORE.get())
@@ -972,13 +972,13 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_DIAMOND_ORE.get())
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
                 .add(CBlocks.BLUESCHIST_MALUNITE_ORE.get())
-                .add(CBlocks.BLUE_SHALE_COAL_ORE.get())
-                .add(CBlocks.BLUE_SHALE_IRON_ORE.get())
-                .add(CBlocks.BLUE_SHALE_GOLD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_EMERALD_ORE.get())
-                .add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get())
-                .add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get())
-                .add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get())
+                .add(CBlocks.BLUESLATE_COAL_ORE.get())
+                .add(CBlocks.BLUESLATE_IRON_ORE.get())
+                .add(CBlocks.BLUESLATE_GOLD_ORE.get())
+                .add(CBlocks.BLUESLATE_EMERALD_ORE.get())
+                .add(CBlocks.BLUESLATE_DIAMOND_ORE.get())
+                .add(CBlocks.BLUESLATE_OBDURIUM_ORE.get())
+                .add(CBlocks.BLUESLATE_MALUNITE_ORE.get())
                 .add(CBlocks.WATER_ICE_COAL_ORE.get())
                 .add(CBlocks.WATER_ICE_IRON_ORE.get())
                 .add(CBlocks.WATER_ICE_GOLD_ORE.get())
@@ -1004,17 +1004,17 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(CBlocks.BLUESCHIST.get())
         ;
         tag(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES)
-                .add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get())
+                .add(CBlocks.BLUESCHIST.get())
                 .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
         ;
-        tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUE_SHALE)
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESLATE)
+                .add(CBlocks.BLUESLATE.get())
         ;
-        tag(CTags.BlockTags.BLUE_SHALE_ORE_REPLACEABLES)
-                .add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get())
+        tag(CTags.BlockTags.BLUESLATE_ORE_REPLACEABLES)
+                .add(CBlocks.BLUESLATE.get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE)
                 .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
@@ -1032,7 +1032,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get())
         ;
         blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUE_SHALE).add(entry.get()));
+        blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE).add(entry.get()));
         karcassStoneOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/methane_ice_bricks",
-    "side": "cepheus:block/methane_ice_bricks",
-    "top": "cepheus:block/methane_ice_bricks"
-  }
-}

@@ -39,8 +39,8 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.FRIGUS_GRASS_BLOCK);
         excludedBlocks.add(CBlocks.FRIGUS_DIRT_PATH);
         excludedBlocks.add(CBlocks.FRIGUS_FARMLAND);
-        excludedBlocks.add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist"));
-        excludedBlocks.add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale"));
+        excludedBlocks.add(CBlocks.BLUESCHIST);
+        excludedBlocks.add(CBlocks.BLUESLATE);
         excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice"));
         excludedBlocks.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice"));
         excludedBlocks.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice"));
@@ -69,17 +69,17 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_OBDURIUM_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_MALUNITE_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_COAL_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_IRON_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_COPPER_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_GOLD_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_REDSTONE_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_EMERALD_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_LAPIS_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_DIAMOND_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_LUTRUM_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_OBDURIUM_ORE);
-        excludedBlocks.add(CBlocks.BLUE_SHALE_MALUNITE_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_COAL_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_IRON_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_COPPER_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_GOLD_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_REDSTONE_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_EMERALD_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_LAPIS_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_DIAMOND_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_LUTRUM_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_OBDURIUM_ORE);
+        excludedBlocks.add(CBlocks.BLUESLATE_MALUNITE_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_COAL_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_IRON_ORE);
         excludedBlocks.add(CBlocks.WATER_ICE_COPPER_ORE);
@@ -141,8 +141,8 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(CBlocks.FRIGUS_DIRT.get()));
         add(CBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.FRIGUS_DIRT.get()));
 
-        add(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get()));
-        add(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get()));
+        add(CBlocks.BLUESCHIST.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.COBBLED_BLUESCHIST.get()));
+        add(CBlocks.BLUESLATE.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.COBBLED_BLUESLATE.get()));
 
         add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.WATER_ICE_BLOCKS.get("cobbled_water_ice").get()));
         add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_cobbled_water_ice").get()));
@@ -195,17 +195,17 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
         add(CBlocks.BLUESCHIST_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
 
-        add(CBlocks.BLUE_SHALE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
-        add(CBlocks.BLUE_SHALE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
-        add(CBlocks.BLUE_SHALE_COPPER_ORE.get(), this::createCopperOreDrops);
-        add(CBlocks.BLUE_SHALE_GOLD_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_GOLD));
-        add(CBlocks.BLUE_SHALE_REDSTONE_ORE.get(), this::createRedstoneOreDrops);
-        add(CBlocks.BLUE_SHALE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
-        add(CBlocks.BLUE_SHALE_LAPIS_ORE.get(), this::createLapisOreDrops);
-        add(CBlocks.BLUE_SHALE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
-        add(CBlocks.BLUE_SHALE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
-        add(CBlocks.BLUE_SHALE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
-        add(CBlocks.BLUE_SHALE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+        add(CBlocks.BLUESLATE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
+        add(CBlocks.BLUESLATE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
+        add(CBlocks.BLUESLATE_COPPER_ORE.get(), this::createCopperOreDrops);
+        add(CBlocks.BLUESLATE_GOLD_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_GOLD));
+        add(CBlocks.BLUESLATE_REDSTONE_ORE.get(), this::createRedstoneOreDrops);
+        add(CBlocks.BLUESLATE_EMERALD_ORE.get(), (block) -> this.createOreDrop(block, Items.EMERALD));
+        add(CBlocks.BLUESLATE_LAPIS_ORE.get(), this::createLapisOreDrops);
+        add(CBlocks.BLUESLATE_DIAMOND_ORE.get(), (block) -> this.createOreDrop(block, Items.DIAMOND));
+        add(CBlocks.BLUESLATE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
+        add(CBlocks.BLUESLATE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
+        add(CBlocks.BLUESLATE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
 
         add(CBlocks.WATER_ICE_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.WATER_ICE_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));

@@ -24,12 +24,12 @@ public class CTags {
 
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonBlockTag("cobblestones/blueschist"),
-                COBBLESTONES_BLUE_SHALE = commonBlockTag("cobblestones/blue_shale"),
+                COBBLESTONES_BLUESLATE = commonBlockTag("cobblestones/blueslate"),
                 COBBLESTONES_KARCASS_STONE = commonBlockTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
                 ORE_BEARING_GROUND_BLUESCHIST = commonBlockTag("ore_bearing_ground/blueschist"),
-                ORE_BEARING_GROUND_BLUE_SHALE = commonBlockTag("ore_bearing_ground/blue_shale"),
+                ORE_BEARING_GROUND_BLUESLATE = commonBlockTag("ore_bearing_ground/blueslate"),
                 ORE_BEARING_GROUND_KARCASS_STONE = commonBlockTag("ore_bearing_ground/karcass_stone"),
                 ORE_BEARING_GROUND_WATER_ICE = commonBlockTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonBlockTag("ore_bearing_ground/methane_ice"),
@@ -38,7 +38,7 @@ public class CTags {
 
                 // Ores In Ground
                 ORES_IN_GROUND_BLUESCHIST = commonBlockTag("ores_in_ground/blueschist"),
-                ORES_IN_GROUND_BLUE_SHALE = commonBlockTag("ores_in_ground/blue_shale"),
+                ORES_IN_GROUND_BLUESLATE = commonBlockTag("ores_in_ground/blueslate"),
                 ORES_IN_GROUND_KARCASS_STONE = commonBlockTag("ores_in_ground/karcass_stone"),
                 ORES_IN_GROUND_WATER_ICE = commonBlockTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonBlockTag("ores_in_ground/methane_ice"),
@@ -80,7 +80,7 @@ public class CTags {
 
                 // Ore Replacables
                 BLUESCHIST_ORE_REPLACEABLES = blockTag("blueschist_ore_replaceables"),
-                BLUE_SHALE_ORE_REPLACEABLES = blockTag("blue_shale_ore_replaceables"),
+                BLUESLATE_ORE_REPLACEABLES = blockTag("blueslate_ore_replaceables"),
                 KARCASS_STONE_ORE_REPLACEABLES = blockTag("karcass_stone_ore_replaceables"),
 
                 // Convertable to Mud
@@ -106,12 +106,12 @@ public class CTags {
 
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonItemTag("cobblestones/blueschist"),
-                COBBLESTONES_BLUE_SHALE = commonItemTag("cobblestones/blue_shale"),
+                COBBLESTONES_BLUESLATE = commonItemTag("cobblestones/blueslate"),
                 COBBLESTONES_KARCASS_STONE = commonItemTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
                 ORE_BEARING_GROUND_BLUESCHIST = commonItemTag("ore_bearing_ground/blueschist"),
-                ORE_BEARING_GROUND_BLUE_SHALE = commonItemTag("ore_bearing_ground/blue_shale"),
+                ORE_BEARING_GROUND_BLUESLATE = commonItemTag("ore_bearing_ground/blueslate"),
                 ORE_BEARING_GROUND_KARCASS_STONE = commonItemTag("ore_bearing_ground/karcass_stone"),
                 ORE_BEARING_GROUND_WATER_ICE = commonItemTag("ore_bearing_ground/water_ice"),
                 ORE_BEARING_GROUND_METHANE_ICE = commonItemTag("ore_bearing_ground/methane_ice"),
@@ -120,7 +120,7 @@ public class CTags {
 
                 // Ores In Ground
                 ORES_IN_GROUND_BLUESCHIST = commonItemTag("ores_in_ground/blueschist"),
-                ORES_IN_GROUND_BLUE_SHALE = commonItemTag("ores_in_ground/blue_shale"),
+                ORES_IN_GROUND_BLUESLATE = commonItemTag("ores_in_ground/blueslate"),
                 ORES_IN_GROUND_KARCASS_STONE = commonItemTag("ores_in_ground/karcass_stone"),
                 ORES_IN_GROUND_WATER_ICE = commonItemTag("ores_in_ground/water_ice"),
                 ORES_IN_GROUND_METHANE_ICE = commonItemTag("ores_in_ground/methane_ice"),

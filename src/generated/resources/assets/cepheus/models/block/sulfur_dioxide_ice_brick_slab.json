@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/sulfur_dioxide_ice_bricks",
-    "side": "cepheus:block/sulfur_dioxide_ice_bricks",
-    "top": "cepheus:block/sulfur_dioxide_ice_bricks"
-  }
-}

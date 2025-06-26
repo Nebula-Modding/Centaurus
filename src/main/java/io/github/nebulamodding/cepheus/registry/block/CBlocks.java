@@ -99,90 +99,52 @@ public class CBlocks {
             VIVIAN = register("vivian", () -> new FlowerBlock(MobEffects.INVISIBILITY, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             WICKUL = register("wickul", () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),
             ICEFLOWER = register("iceflower", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5.0F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ)));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUESCHIST_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(CItems.ITEMS),
-            stoneProperties().mapColor(MapColor.ICE))
-            .register(
-                    "blueschist",
-                    "cobbled_blueschist",
-                    "chiseled_blueschist",
-                    "polished_blueschist",
-                    "blueschist_bricks",
-                    "cracked_blueschist_bricks")
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("blueschist_pillar")
-            .done();
     public static final DeferredBlock<Block>
-            BLUESCHIST_STAIRS = register("blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()))),
-            FRIGUS_COBBLESTONE_STAIRS = register("cobbled_blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("cobbled_blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("cobbled_blueschist").get()))),
-            POLISHED_BLUESCHIST_STAIRS = register("polished_blueschist_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("polished_blueschist").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("polished_blueschist").get()))),
-            BLUESCHIST_BRICK_STAIRS = register("blueschist_brick_stairs", () -> new StairBlock(BLUESCHIST_BLOCKS.get("blueschist_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist_bricks").get())));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUESCHIST_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(CItems.ITEMS),
-            stoneProperties().mapColor(MapColor.ICE))
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "blueschist_slab",
-                    "cobbled_blueschist_slab",
-                    "polished_blueschist_slab",
-                    "blueschist_brick_slab")
-            .setBlockFunction(WallBlock::new)
-            .register(
-                    "blueschist_wall",
-                    "cobbled_blueschist_wall",
-                    "polished_blueschist_wall",
-                    "blueschist_brick_wall")
-            .done();
+            BLUESCHIST = register("blueschist", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_STAIRS = register("blueschist_stairs", () -> new StairBlock(BLUESCHIST.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST.get()))),
+            BLUESCHIST_SLAB = register("blueschist_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST.get()))),
+            BLUESCHIST_WALL = register("blueschist_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST.get()))),
+            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST.get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST.get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            COBBLED_BLUESCHIST = register("cobbled_blueschist", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            COBBLED_BLUESCHIST_STAIRS = register("cobbled_blueschist_stairs", () -> new StairBlock(COBBLED_BLUESCHIST.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESCHIST.get()))),
+            COBBLED_BLUESCHIST_SLAB = register("cobbled_blueschist_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESCHIST.get()))),
+            COBBLED_BLUESCHIST_WALL = register("cobbled_blueschist_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESCHIST.get()))),
+            CHISELED_BLUESCHIST = register("chiseled_blueschist", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            POLISHED_BLUESCHIST = register("polished_blueschist", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            POLISHED_BLUESCHIST_STAIRS = register("polished_blueschist_stairs", () -> new StairBlock(POLISHED_BLUESCHIST.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESCHIST.get()))),
+            POLISHED_BLUESCHIST_SLAB = register("polished_blueschist_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESCHIST.get()))),
+            POLISHED_BLUESCHIST_WALL = register("polished_blueschist_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESCHIST.get()))),
+            BLUESCHIST_BRICKS = register("blueschist_bricks", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            CRACKED_BLUESCHIST_BRICKS = register("cracked_blueschist_bricks", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_BRICK_STAIRS = register("blueschist_brick_stairs", () -> new StairBlock(BLUESCHIST_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BRICKS.get()))),
+            BLUESCHIST_BRICK_SLAB = register("blueschist_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BRICKS.get()))),
+            BLUESCHIST_BRICK_WALL = register("blueschist_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BRICKS.get()))),
+            BLUESCHIST_PILLAR = register("blueschist_pillar", () -> new RotatedPillarBlock(stoneProperties().mapColor(MapColor.ICE)));
     public static final DeferredBlock<Block>
-            BLUESCHIST_PRESSURE_PLATE = register("blueschist_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.BLUESCHIST, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
-            BLUESCHIST_BUTTON = register("blueschist_button", () -> new ButtonBlock(CBlockSetTypes.BLUESCHIST, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESCHIST_BLOCKS.get("blueschist").get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
-
-    /*
-    Frigus Deepslate Blocks
-     */
-
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUE_SHALE_BLOCKS = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(CItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))
-            .register(
-                    "blue_shale",
-                    "cobbled_blue_shale",
-                    "chiseled_blue_shale",
-                    "polished_blue_shale",
-                    "blue_shale_bricks",
-                    "cracked_blue_shale_bricks",
-                    "blue_shale_tiles")
-            .setBlockFunction(RotatedPillarBlock::new)
-            .register("blue_shale_pillar")
-            .done();
-    public static final DeferredBlock<Block>
-            BLUE_SHALE_STAIRS = register("blue_shale_stairs", () -> new StairBlock(BLUE_SHALE_BLOCKS.get("blue_shale").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale").get()))),
-            COBBLED_BLUE_SHALE_STAIRS = register("cobbled_blue_shale_stairs", () -> new StairBlock(BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUE_SHALE_BLOCKS.get("cobbled_blue_shale").get()))),
-            POLISHED_BLUE_SHALE_STAIRS = register("polished_blue_shale_stairs", () -> new StairBlock(BLUE_SHALE_BLOCKS.get("polished_blue_shale").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUE_SHALE_BLOCKS.get("polished_blue_shale").get()))),
-            BLUE_SHALE_BRICK_STAIRS = register("blue_shale_brick_stairs", () -> new StairBlock(BLUE_SHALE_BLOCKS.get("blue_shale_bricks").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale_bricks").get()))),
-            BLUE_SHALE_TILE_STAIRS = register("blue_shale_tile_stairs", () -> new StairBlock(BLUE_SHALE_BLOCKS.get("blue_shale_tiles").get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUE_SHALE_BLOCKS.get("blue_shale_tiles").get())));
-    public static final DeferredHolders<Block, DeferredBlock<? extends Block>> BLUE_SHALE_BLOCKS_CONTINUED = new RegolithBlockBuilder<>(
-            RegolithNeoForge.wrapBlocks(BLOCKS),
-            RegolithNeoForge.wrapItems(CItems.ITEMS),
-            deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))
-            .setBlockFunction(SlabBlock::new)
-            .register(
-                    "blue_shale_slab",
-                    "cobbled_blue_shale_slab",
-                    "polished_blue_shale_slab",
-                    "blue_shale_brick_slab",
-                    "blue_shale_tile_slab")
-            .setBlockFunction(WallBlock::new)
-            .register(
-                    "blue_shale_wall",
-                    "cobbled_blue_shale_wall",
-                    "polished_blue_shale_wall",
-                    "blue_shale_brick_wall",
-                    "blue_shale_tile_wall")
-            .done();
+            BLUESLATE = register("blueslate", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_STAIRS = register("blueslate_stairs", () -> new StairBlock(BLUESLATE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE.get()))),
+            BLUESLATE_SLAB = register("blueslate_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE.get()))),
+            BLUESLATE_WALL = register("blueslate_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE.get()))),
+            COBBLED_BLUESLATE = register("cobbled_blueslate", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            COBBLED_BLUESLATE_STAIRS = register("cobbled_blueslate_stairs", () -> new StairBlock(COBBLED_BLUESLATE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESLATE.get()))),
+            COBBLED_BLUESLATE_SLAB = register("cobbled_blueslate_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESLATE.get()))),
+            COBBLED_BLUESLATE_WALL = register("cobbled_blueslate_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.COBBLED_BLUESLATE.get()))),
+            CHISELED_BLUESLATE = register("chiseled_blueslate", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.DEEPSLATE_BRICKS))),
+            POLISHED_BLUESLATE = register("polished_blueslate", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            POLISHED_BLUESLATE_STAIRS = register("polished_blueslate_stairs", () -> new StairBlock(POLISHED_BLUESLATE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESLATE.get()))),
+            POLISHED_BLUESLATE_SLAB = register("polished_blueslate_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESLATE.get()))),
+            POLISHED_BLUESLATE_WALL = register("polished_blueslate_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_BLUESLATE.get()))),
+            BLUESLATE_BRICKS = register("blueslate_bricks", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.DEEPSLATE_BRICKS))),
+            CRACKED_BLUESLATE_BRICKS = register("cracked_blueslate_bricks", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.DEEPSLATE_BRICKS))),
+            BLUESLATE_BRICK_STAIRS = register("blueslate_brick_stairs", () -> new StairBlock(BLUESLATE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_BRICKS.get()))),
+            BLUESLATE_BRICK_SLAB = register("blueslate_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_BRICKS.get()))),
+            BLUESLATE_BRICK_WALL = register("blueslate_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_BRICKS.get()))),
+            BLUESLATE_TILES = register("blueslate_tiles", () -> new Block(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.DEEPSLATE_TILES))),
+            BLUESLATE_TILE_STAIRS = register("blueslate_tile_stairs", () -> new StairBlock(BLUESLATE_TILES.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_TILES.get()))),
+            BLUESLATE_TILE_SLAB = register("blueslate_tile_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_TILES.get()))),
+            BLUESLATE_TILE_WALL = register("blueslate_tile_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.BLUESLATE_TILES.get()))),
+            BLUESLATE_PILLAR = register("blueslate_pillar", () -> new RotatedPillarBlock(deepslateProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.DEEPSLATE_BRICKS)));
 
     /*
     Permafrost Blocks
@@ -286,17 +248,17 @@ public class CBlocks {
             BLUESCHIST_OBDURIUM_ORE = register("blueschist_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_MALUNITE_ORE = register("blueschist_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
 
-            BLUE_SHALE_COAL_ORE = register("blue_shale_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_IRON_ORE = register("blue_shale_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_COPPER_ORE = register("blue_shale_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_GOLD_ORE = register("blue_shale_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_REDSTONE_ORE = register("blue_shale_redstone_ore", () -> new RedStoneOreBlock(deepslateRedstoneOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_EMERALD_ORE = register("blue_shale_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_LAPIS_ORE = register("blue_shale_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_DIAMOND_ORE = register("blue_shale_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_LUTRUM_ORE = register("blue_shale_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_OBDURIUM_ORE = register("blue_shale_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUE_SHALE_MALUNITE_ORE = register("blue_shale_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_COAL_ORE = register("blueslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_IRON_ORE = register("blueslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_COPPER_ORE = register("blueslate_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_GOLD_ORE = register("blueslate_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_REDSTONE_ORE = register("blueslate_redstone_ore", () -> new RedStoneOreBlock(deepslateRedstoneOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_EMERALD_ORE = register("blueslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_LAPIS_ORE = register("blueslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_DIAMOND_ORE = register("blueslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_LUTRUM_ORE = register("blueslate_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_OBDURIUM_ORE = register("blueslate_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_MALUNITE_ORE = register("blueslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
 
             WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),

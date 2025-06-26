@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/blue_shale_bricks",
-    "side": "cepheus:block/blue_shale_bricks",
-    "top": "cepheus:block/blue_shale_bricks"
-  }
-}
