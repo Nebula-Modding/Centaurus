@@ -23,12 +23,13 @@ public class CBlockTagProvider extends BlockTagsProvider {
     public CBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, Cepheus.MOD_ID, existingFileHelper);
     }
+
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // region Common Tag Lists
         // Lists with collections of blocks with multiple of the same tag to save on lines of code and make this file more readable
         final List<DeferredBlock<? extends Block>> blueschistOres = new ArrayList<>();
-        final List<DeferredBlock<? extends Block>> blueShaleOres = new ArrayList<>();
+        final List<DeferredBlock<? extends Block>> blueslateOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> karcassStoneOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> waterIceOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> methaneIceOres = new ArrayList<>();
@@ -54,17 +55,17 @@ public class CBlockTagProvider extends BlockTagsProvider {
         blueschistOres.add(CBlocks.BLUESCHIST_LUTRUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_OBDURIUM_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_MALUNITE_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_COAL_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_IRON_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_COPPER_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_GOLD_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_REDSTONE_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_EMERALD_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_LAPIS_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_DIAMOND_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_LUTRUM_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_OBDURIUM_ORE);
-        blueShaleOres.add(CBlocks.BLUESLATE_MALUNITE_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_COAL_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_IRON_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_COPPER_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_GOLD_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_REDSTONE_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_EMERALD_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_LAPIS_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_DIAMOND_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_LUTRUM_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_OBDURIUM_ORE);
+        blueslateOres.add(CBlocks.BLUESLATE_MALUNITE_ORE);
         karcassStoneOres.add(CBlocks.PLACEHOLDER_BLOCK); // Todo: add karcass stone ores
         //karcassStoneOres.add(CBlocks.KARCASS_COAL_ORE);
         //karcassStoneOres.add(CBlocks.KARCASS_IRON_ORE);
@@ -332,6 +333,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         needsStonePickaxe.add(CBlocks.MALUNITE_BULB);
         needsStonePickaxe.add(CBlocks.RAW_MALUNITE_BLOCK);
         // endregion
+        // endregion
 
         // region Tool Tags
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_SHOVEL)
@@ -343,7 +345,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.FRIGIAN_MUD.get())
         ;
         blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
+        blueslateOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         karcassStoneOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -779,7 +781,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
         ;
         blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
-        blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE).add(entry.get()));
+        blueslateOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE).add(entry.get()));
         karcassStoneOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE).add(entry.get()));
         waterIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));

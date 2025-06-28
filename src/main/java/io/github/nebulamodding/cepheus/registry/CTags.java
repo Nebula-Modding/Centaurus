@@ -44,13 +44,13 @@ public class CTags {
                 ORES_MALUNITE = commonBlockTag("ores/malunite"),
 
                 // Storage Blocks
-                STORAGE_BLOCKS_RAW_MALUNITE = commonBlockTag("storage_blocks/raw_malunite"),
-                STORAGE_BLOCKS_RAW_LUTRUM = commonBlockTag("storage_blocks/raw_lutrum"),
                 STORAGE_BLOCKS_BRUMA = commonBlockTag("storage_blocks/bruma"),
-                STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium"),
-                STORAGE_BLOCKS_MALUNITE = commonBlockTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_LUTRUM = commonBlockTag("storage_blocks/lutrum"),
+                STORAGE_BLOCKS_RAW_LUTRUM = commonBlockTag("storage_blocks/raw_lutrum"),
+                STORAGE_BLOCKS_OBDURIUM = commonBlockTag("storage_blocks/obdurium"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonBlockTag("storage_blocks/raw_obdurium"),
+                STORAGE_BLOCKS_MALUNITE = commonBlockTag("storage_blocks/malunite"),
+                STORAGE_BLOCKS_RAW_MALUNITE = commonBlockTag("storage_blocks/raw_malunite"),
                 // endregion
 
                 // region Cepheus-Specific Tags
@@ -120,13 +120,13 @@ public class CTags {
                 ORES_MALUNITE = commonItemTag("ores/malunite"),
 
                 // Storage Blocks
-                STORAGE_BLOCKS_RAW_MALUNITE = commonItemTag("storage_blocks/raw_malunite"),
-                STORAGE_BLOCKS_RAW_LUTRUM = commonItemTag("storage_blocks/raw_lutrum"),
                 STORAGE_BLOCKS_BRUMA = commonItemTag("storage_blocks/bruma"),
-                STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium"),
-                STORAGE_BLOCKS_MALUNITE = commonItemTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_LUTRUM = commonItemTag("storage_blocks/lutrum"),
+                STORAGE_BLOCKS_RAW_LUTRUM = commonItemTag("storage_blocks/raw_lutrum"),
+                STORAGE_BLOCKS_OBDURIUM = commonItemTag("storage_blocks/obdurium"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonItemTag("storage_blocks/raw_obdurium"),
+                STORAGE_BLOCKS_MALUNITE = commonItemTag("storage_blocks/malunite"),
+                STORAGE_BLOCKS_RAW_MALUNITE = commonItemTag("storage_blocks/raw_malunite"),
                 // endregion
 
                 // region Cepheus-Specific Tags
