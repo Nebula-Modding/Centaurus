@@ -10,11 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CSoundEvents {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(Registries.SOUND_EVENT, Cepheus.MOD_ID);
 
-    /*
-    Block Sounds
-     */
-
-    // Metal
+    // region Metal Block Sounds
     public static final DeferredHolder<SoundEvent, SoundEvent>
             METAL_GRATE_BREAK = register("block.metal_grate.break"),
             METAL_GRATE_STEP = register("block.metal_grate.step"),
@@ -27,8 +23,9 @@ public class CSoundEvents {
             METAL_BULB_PLACE = register("block.metal_bulb.place"),
             METAL_BULB_HIT = register("block.metal_bulb.hit"),
             METAL_BULB_FALL = register("block.metal_bulb.fall");
+    // endregion
 
-    // Netherite
+    // region Netherite Block Sounds
     public static final DeferredHolder<SoundEvent, SoundEvent>
             NETHERITE_GRATE_BREAK = register("block.netherite_grate.break"),
             NETHERITE_GRATE_STEP = register("block.netherite_grate.step"),
@@ -40,11 +37,9 @@ public class CSoundEvents {
             NETHERITE_BULB_STEP = register("block.netherite_bulb.step"),
             NETHERITE_BULB_HIT = register("block.netherite_bulb.hit"),
             NETHERITE_BULB_FALL = register("block.netherite_bulb.fall");
+    // endregion
 
-    /*
-    To Be Removed
-     */
-
+    // region Existing Block Sounds
     public static final DeferredHolder<SoundEvent, SoundEvent>
             STONE_STEP = register("block.stone.step"),
             STONE_PLACE = register("block.stone.place"),
@@ -62,12 +57,11 @@ public class CSoundEvents {
             NETHERITE_PLACE = register("block.netherite.place"),
             NETHERITE_HIT = register("block.netherite.hit"),
             NETHERITE_FALL = register("block.netherite.fall");
+    // endregion
 
-    /*
-    Helper Method
-     */
-
+    // region Helpers
     private static DeferredHolder<SoundEvent, SoundEvent> register(String sound) {
         return SOUND_EVENTS.register(sound, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(Cepheus.MOD_ID, sound)));
     }
+    // endregion
 }

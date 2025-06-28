@@ -4,11 +4,7 @@ import io.github.nebulamodding.cepheus.registry.CSoundEvents;
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 
 public class CSoundTypes {
-
-    /*
-    Metal
-     */
-
+    // region Metal
     public static final DeferredSoundType
             METAL_GRATE = new DeferredSoundType(
                     1.0F,
@@ -37,11 +33,9 @@ public class CSoundTypes {
                 CSoundEvents.METAL_BULB_HIT,
                 CSoundEvents.METAL_BULB_FALL
     );
+    // endregion
 
-    /*
-    Copper
-     */
-
+    // region Copper
     public static final DeferredSoundType COPPER_WINDOW = new DeferredSoundType(
             1.0F,
             1.0F,
@@ -51,11 +45,9 @@ public class CSoundTypes {
             CSoundEvents.COPPER_HIT,
             CSoundEvents.COPPER_FALL
     );
+    // endregion
 
-    /*
-    Netherite
-     */
-
+    // region Netherite
     public static final DeferredSoundType
             NETHERITE_GRATE = new DeferredSoundType(
                 1.0F,
@@ -84,4 +76,5 @@ public class CSoundTypes {
                 CSoundEvents.NETHERITE_BULB_HIT,
                 CSoundEvents.NETHERITE_BULB_FALL
     );
+    // endregion
 }

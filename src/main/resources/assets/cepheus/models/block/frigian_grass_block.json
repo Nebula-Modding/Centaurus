@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "cepheus:block/frigian_dirt",
+    "particle": "cepheus:block/frigian_dirt",
+    "side": "cepheus:block/frigian_grass_block_side",
+    "top": "cepheus:block/frigian_grass_block_top"
+  }
+}

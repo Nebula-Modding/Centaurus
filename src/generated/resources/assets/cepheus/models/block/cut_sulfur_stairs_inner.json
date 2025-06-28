@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cepheus:block/cut_sulfur",
-    "side": "cepheus:block/cut_sulfur",
-    "top": "cepheus:block/cut_sulfur"
-  }
-}

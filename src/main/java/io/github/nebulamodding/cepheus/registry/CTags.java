@@ -7,21 +7,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class CTags {
-
-    /*
-
-    This file's ordering is somewhat based on how deep a player would have to go to find blocks or items in these tags.
-
-     */
-
     public static class BlockTags {
-        // Blocks
+
+        /*
+        Blocks
+         */
+
         public static final TagKey<Block>
-
-                /*
-                Common Tags
-                 */
-
+                // region Common Tags
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonBlockTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUESLATE = commonBlockTag("cobblestones/blueslate"),
@@ -58,11 +51,9 @@ public class CTags {
                 STORAGE_BLOCKS_MALUNITE = commonBlockTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_LUTRUM = commonBlockTag("storage_blocks/lutrum"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonBlockTag("storage_blocks/raw_obdurium"),
+                // endregion
 
-                /*
-                Cepheus-Specific Tags
-                 */
-
+                // region Cepheus-Specific Tags
                 // Needs Tools
                 NEEDS_OBDURIUM_TOOL = blockTag("needs_obdurium_tool"),
                 NEEDS_MALUNITE_TOOL = blockTag("needs_malunite_tool"),
@@ -85,13 +76,13 @@ public class CTags {
 
                 // Convertable to Mud
                 CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud"),
+                // endregion
 
-                /*
-                Mod Compatibility Tags
-                 */
-
+                // region Mod Compatibility Tags
                 CREATE_FAN_TRANSPARENT = createModBlockTag("fan_transparent");
+                // endregion
     }
+
     public static class ItemTags {
 
         /*
@@ -99,11 +90,7 @@ public class CTags {
          */
 
         public static final TagKey<Item>
-
-                /*
-                Common Tags
-                 */
-
+                // region Common Item Tags
                 // Cobblestones
                 COBBLESTONES_BLUESCHIST = commonItemTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUESLATE = commonItemTag("cobblestones/blueslate"),
@@ -140,25 +127,20 @@ public class CTags {
                 STORAGE_BLOCKS_MALUNITE = commonItemTag("storage_blocks/malunite"),
                 STORAGE_BLOCKS_LUTRUM = commonItemTag("storage_blocks/lutrum"),
                 STORAGE_BLOCKS_RAW_OBDURIUM = commonItemTag("storage_blocks/raw_obdurium"),
+                // endregion
 
-                /*
-                Cepheus-Specific Tags
-                 */
-
+                // region Cepheus-Specific Tags
                 // Logs
                 MAYURA_LOGS = itemTag("mayura_logs"),
                 GRIMWOOD_LOGS = itemTag("grimwood_logs");
+                // endregion
 
         /*
         Items
          */
 
         public static final TagKey<Item>
-
-                /*
-                Common Tags
-                 */
-
+                // region Common Tags
                 // Ores
                 PLATES = commonItemTag("plates"),
 
@@ -183,14 +165,14 @@ public class CTags {
                 // Crops
                 CROPS_BRUMA = commonItemTag("crops/bruma"),
                 CROPS_AZURE_ROOT = commonItemTag("crops/azure_root");
+                // endregion
 
-                /*
-                Cepheus-Specific Tags
-                 */
-
+                // region Cepheus-Specific Tags
                 // None yet! :^
+                // endregion
     }
 
+    // region Helpers
     public static TagKey<Block> commonBlockTag(String name) {
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
     }
@@ -215,4 +197,5 @@ public class CTags {
     public static TagKey<Item> createModItemTag(String name) {
         return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath("create", name));
     }
+    // endregion
 }

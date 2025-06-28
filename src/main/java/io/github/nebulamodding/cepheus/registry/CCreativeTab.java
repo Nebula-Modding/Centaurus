@@ -8,8 +8,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -25,7 +23,7 @@ public class CCreativeTab {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CEPHEUS = CREATIVE_MODE_TAB.register("cepheus", () ->
             CreativeModeTab.builder()
                     .title(Component.translatable(CREATIVE_TAB_TITLE))
-                    .icon(() -> new ItemStack(CBlocks.FRIGUS_GRASS_BLOCK.get()))
+                    .icon(() -> new ItemStack(CBlocks.FRIGIAN_GRASS_BLOCK.get()))
                     .build()
     );
 

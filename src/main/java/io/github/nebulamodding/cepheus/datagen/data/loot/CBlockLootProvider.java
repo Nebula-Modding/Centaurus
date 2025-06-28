@@ -30,34 +30,18 @@ public class CBlockLootProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // region Exclusions
         final List<DeferredHolder<Block, ? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having a drop automatically provided
         excludedBlocks.add(CBlocks.MAYURA_DOOR);
         excludedBlocks.add(CBlocks.MAYURA_LEAVES);
         excludedBlocks.add(CBlocks.GRIMWOOD_DOOR);
         excludedBlocks.add(CBlocks.GRIMWOOD_LEAVES);
-        excludedBlocks.add(CBlocks.FRIGUS_GRASS_BLOCK);
-        excludedBlocks.add(CBlocks.FRIGUS_DIRT_PATH);
-        excludedBlocks.add(CBlocks.FRIGUS_FARMLAND);
+        excludedBlocks.add(CBlocks.FRIGIAN_GRASS_BLOCK);
+        excludedBlocks.add(CBlocks.FRIGIAN_DIRT_PATH);
+        excludedBlocks.add(CBlocks.FRIGIAN_FARMLAND);
         excludedBlocks.add(CBlocks.BLUESCHIST);
         excludedBlocks.add(CBlocks.BLUESLATE);
-        excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice"));
-        excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice"));
-        excludedBlocks.add(CBlocks.METHANE_ICE_BLOCKS.get("methane_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice"));
-        excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice"));
-        excludedBlocks.add(CBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice"));
-        excludedBlocks.add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice"));
-        excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice"));
-        excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice"));
-        excludedBlocks.add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice"));
         excludedBlocks.add(CBlocks.BLUESCHIST_COAL_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_IRON_ORE);
         excludedBlocks.add(CBlocks.BLUESCHIST_COPPER_ORE);
@@ -129,43 +113,26 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
         excludedBlocks.add(CBlocks.POTTED_WICKUL);
         excludedBlocks.add(CBlocks.POTTED_ICEFLOWER);
+        // endregion
 
-        /*
-        Manual Loot Tables
-         */
-
+        // region Leaf Drops
         add(CBlocks.MAYURA_LEAVES.get(), b -> createLeavesDrops(b, CBlocks.MAYURA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         add(CBlocks.GRIMWOOD_LEAVES.get(), b -> createLeavesDrops(b, CBlocks.GRIMWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        // endregion
 
-        add(CBlocks.FRIGUS_GRASS_BLOCK.get(), b -> createSingleItemTable(CBlocks.FRIGUS_DIRT.get()));
-        add(CBlocks.FRIGUS_DIRT_PATH.get(), b -> createSingleItemTable(CBlocks.FRIGUS_DIRT.get()));
-        add(CBlocks.FRIGUS_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.FRIGUS_DIRT.get()));
+        // region Body-Specific Blocks
+        add(CBlocks.FRIGIAN_GRASS_BLOCK.get(), b -> createSingleItemTable(CBlocks.FRIGIAN_DIRT.get()));
+        add(CBlocks.FRIGIAN_DIRT_PATH.get(), b -> createSingleItemTable(CBlocks.FRIGIAN_DIRT.get()));
+        add(CBlocks.FRIGIAN_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.FRIGIAN_DIRT.get()));
+        // endregion
 
+        // region Stones
         add(CBlocks.BLUESCHIST.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.COBBLED_BLUESCHIST.get()));
         add(CBlocks.BLUESLATE.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.COBBLED_BLUESLATE.get()));
+        add(CBlocks.KARCASS_STONE.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.KARCASS_COBBLESTONE.get()));
+        // endregion
 
-        add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.WATER_ICE_BLOCKS.get("cobbled_water_ice").get()));
-        add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_cobbled_water_ice").get()));
-        add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_cobbled_water_ice").get()));
-        add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.BLACK_WATER_ICE_BLOCKS.get("cobbled_black_water_ice").get()));
-        add(CBlocks.METHANE_ICE_BLOCKS.get("methane_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.METHANE_ICE_BLOCKS.get("cobbled_methane_ice").get()));
-        add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_cobbled_methane_ice").get()));
-        add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_cobbled_methane_ice").get()));
-        add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_carbon_dioxide_ice").get()));
-        add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_cobbled_carbon_dioxide_ice").get()));
-        add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_cobbled_carbon_dioxide_ice").get()));
-        add(CBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.AMMONIA_ICE_BLOCKS.get("cobbled_ammonia_ice").get()));
-        add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.NITROGEN_ICE_BLOCKS.get("cobbled_nitrogen_ice").get()));
-        add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_cobbled_nitrogen_ice").get()));
-        add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_cobbled_nitrogen_ice").get()));
-        add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.RED_NITROGEN_ICE_BLOCKS.get("cobbled_red_nitrogen_ice").get()));
-        add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("cobbled_sulfur_dioxide_ice").get()));
-        add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.OXYGEN_ICE_BLOCKS.get("cobbled_oxygen_ice").get()));
-
-        /*
-        Door Drops
-         */
-
+        // region Door Drops
         add(CBlocks.MAYURA_DOOR.get(), this::createDoorTable);
         add(CBlocks.GRIMWOOD_DOOR.get(), this::createDoorTable);
         add(CBlocks.LUTRUM_DOOR.get(), this::createDoorTable);
@@ -178,11 +145,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR.get(), this::createDoorTable);
         add(CBlocks.OBDURIUM_DOOR.get(), this::createDoorTable);
         add(CBlocks.MALUNITE_DOOR.get(), this::createDoorTable);
+        // endregion
 
-        /*
-        Ore Drops
-         */
-
+        // region Ore Drops
         add(CBlocks.BLUESCHIST_COAL_ORE.get(), (block) -> this.createOreDrop(block, Items.COAL));
         add(CBlocks.BLUESCHIST_IRON_ORE.get(), (block) -> this.createOreDrop(block, Items.RAW_IRON));
         add(CBlocks.BLUESCHIST_COPPER_ORE.get(), this::createCopperOreDrops);
@@ -242,27 +207,25 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get(), this::createLutrumOreDrops);
         add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_OBDURIUM.get()));
         add(CBlocks.OXYGEN_ICE_MALUNITE_ORE.get(), (block) -> this.createOreDrop(block, CItems.RAW_MALUNITE.get()));
+        // endregion
 
-        /*
-        Potted Plant Loot Tables
-         */
-
+        // region Potted Plant Drops
         dropPottedContents(CBlocks.POTTED_MAYURA_SAPLING.get());
         dropPottedContents(CBlocks.POTTED_VIVIAN.get());
         dropPottedContents(CBlocks.POTTED_WICKUL.get());
         dropPottedContents(CBlocks.POTTED_ICEFLOWER.get());
         dropPottedContents(CBlocks.POTTED_GRIMWOOD_SAPLING.get());
+        // endregion
 
-        /*
-        Automated Loot Tables
-         */
-
+        // region Automated Loot Tables
         CBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
                 .forEach(entry -> dropSelf(entry.get()));
+        // endregion
     }
 
+    // region Helpers
     protected LootTable.Builder createLutrumOreDrops(Block block) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
@@ -282,4 +245,5 @@ public class CBlockLootProvider extends BlockLootSubProvider {
                 .map(DeferredHolder::get)
                 .collect(Collectors.toSet());
     }
+    // endregion
 }

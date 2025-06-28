@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/tholin_rich_methane_ice",
-    "side": "cepheus:block/tholin_rich_methane_ice",
-    "top": "cepheus:block/tholin_rich_methane_ice"
-  }
-}

@@ -34,8 +34,8 @@ public class CDataMapProvider extends DataMapProvider {
                 .add(CBlocks.MAYURA_LEAVES.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.GRIMWOOD_SAPLING.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.GRIMWOOD_LEAVES.getId(), new Compostable(0.30F), false)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.getId(), new Compostable(0.30F), false)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.getId(), new Compostable(0.30F), false)
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.getId(), new Compostable(0.30F), false)
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.GRISTLED_FLESH.getId(), new Compostable(0.30F), false)
                 .add(CBlocks.SHORT_GRISTLES.getId(), new Compostable(0.30F), false)
         ;

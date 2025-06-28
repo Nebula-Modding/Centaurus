@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/cobbled_oxygen_ice",
-    "side": "cepheus:block/cobbled_oxygen_ice",
-    "top": "cepheus:block/cobbled_oxygen_ice"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "cepheus:block/ammonia_ice",
-    "side": "cepheus:block/ammonia_ice",
-    "top": "cepheus:block/ammonia_ice"
-  }
-}

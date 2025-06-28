@@ -55,8 +55,8 @@ public class CEvents {
 
         if (!event.isSimulated()) {
             if (action == ItemAbilities.SHOVEL_FLATTEN && (context.getClickedFace() != Direction.DOWN && context.getLevel().getBlockState(context.getClickedPos().above()).isAir())) {
-                if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
-                    event.setFinalState(CBlocks.FRIGUS_DIRT_PATH.get().defaultBlockState());
+                if (keepState.is(CBlocks.FRIGIAN_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGIAN_DIRT.get()) || keepState.is(CBlocks.COARSE_FRIGIAN_DIRT.get())) {
+                    event.setFinalState(CBlocks.FRIGIAN_DIRT_PATH.get().defaultBlockState());
                 }
             }
 
@@ -78,12 +78,12 @@ public class CEvents {
                 }
             }
             if (action == ItemAbilities.HOE_TILL && (context.getClickedFace() != Direction.DOWN && context.getLevel().getBlockState(context.getClickedPos().above()).isAir())) {
-                if (keepState.is(CBlocks.FRIGUS_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGUS_DIRT.get()) || keepState.is(CBlocks.FRIGUS_DIRT_PATH.get())) {
-                    event.setFinalState(CBlocks.FRIGUS_FARMLAND.get().defaultBlockState());
+                if (keepState.is(CBlocks.FRIGIAN_GRASS_BLOCK.get()) || keepState.is(CBlocks.FRIGIAN_DIRT.get()) || keepState.is(CBlocks.FRIGIAN_DIRT_PATH.get())) {
+                    event.setFinalState(CBlocks.FRIGIAN_FARMLAND.get().defaultBlockState());
                 }
 
-                if (keepState.is(CBlocks.COARSE_FRIGUS_DIRT.get())) {
-                    event.setFinalState(CBlocks.FRIGUS_DIRT.get().defaultBlockState());
+                if (keepState.is(CBlocks.COARSE_FRIGIAN_DIRT.get())) {
+                    event.setFinalState(CBlocks.FRIGIAN_DIRT.get().defaultBlockState());
                 }
             }
         }
@@ -120,7 +120,7 @@ public class CEvents {
                 event.setCanceled(true);
                 level.playSound(null, blockPos, SoundEvents.BOTTLE_EMPTY, SoundSource.BLOCKS, 1.0F, 1.0F);
                 level.gameEvent(null, GameEvent.FLUID_PLACE, blockPos);
-                level.setBlockAndUpdate(blockPos, CBlocks.FRIGUS_MUD.get().defaultBlockState());
+                level.setBlockAndUpdate(blockPos, CBlocks.FRIGIAN_MUD.get().defaultBlockState());
             }
     }
 }

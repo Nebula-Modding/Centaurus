@@ -19,10 +19,6 @@ repositories {
         url = 'https://maven.neoforged.net/releases'
     }
     maven {
-        name = "Regolith Maven"
-        url = "https://codeberg.org/EmmaTheMartian/regolith/raw/branch/main/repo/"
-    }
-    maven {
         name = "TerraformersMC"
         url = "https://maven.terraformersmc.com/"
     }
@@ -71,10 +67,8 @@ configurations {
 
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
-    jarJar(implementation("martian:regolith-neoforge:${regolith_version}"))
-    //compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
-    //compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
-    //localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
+    runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
 }
 
 tasks.withType(ProcessResources).configureEach {

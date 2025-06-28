@@ -8,54 +8,62 @@ import static net.minecraft.world.level.block.state.properties.BlockSetType.regi
 
 public class CBlockSetTypes {
 
-    /*
-    Woods
-     */
-
+    // region Woods
     public static final BlockSetType
             MAYURA = register(new BlockSetType("mayura")),
             GRIMWOOD = register(new BlockSetType("grimwood"));
+    // endregion
 
-    /*
-    Stones
-     */
-
+    // region Stone Blockset Types
     public static final BlockSetType
             BLUESCHIST = register(new BlockSetType("blueschist",
-                true,
-                true,
-                false,
-                BlockSetType.PressurePlateSensitivity.MOBS,
-                SoundType.STONE,
-                SoundEvents.IRON_DOOR_CLOSE,
-                SoundEvents.IRON_DOOR_OPEN,
-                SoundEvents.IRON_TRAPDOOR_CLOSE,
-                SoundEvents.IRON_TRAPDOOR_OPEN,
-                SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
-                SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
-                SoundEvents.STONE_BUTTON_CLICK_OFF,
-                SoundEvents.STONE_BUTTON_CLICK_ON)
+            true,
+            true,
+            false,
+            BlockSetType.PressurePlateSensitivity.MOBS,
+            SoundType.STONE,
+            SoundEvents.IRON_DOOR_CLOSE,
+            SoundEvents.IRON_DOOR_OPEN,
+            SoundEvents.IRON_TRAPDOOR_CLOSE,
+            SoundEvents.IRON_TRAPDOOR_OPEN,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
+            SoundEvents.STONE_BUTTON_CLICK_OFF,
+            SoundEvents.STONE_BUTTON_CLICK_ON)
+    ),
+            PERMAFROST = register(new BlockSetType("permafrost",
+            true,
+            true,
+            false,
+            BlockSetType.PressurePlateSensitivity.MOBS,
+            SoundType.STONE,
+            SoundEvents.IRON_DOOR_CLOSE,
+            SoundEvents.IRON_DOOR_OPEN,
+            SoundEvents.IRON_TRAPDOOR_CLOSE,
+            SoundEvents.IRON_TRAPDOOR_OPEN,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
+            SoundEvents.STONE_BUTTON_CLICK_OFF,
+            SoundEvents.STONE_BUTTON_CLICK_ON)
     ),
             KARCASS_STONE = register(new BlockSetType("karcass_stone",
-                true,
-                true,
-                false,
-                BlockSetType.PressurePlateSensitivity.MOBS,
-                SoundType.STONE,
-                SoundEvents.IRON_DOOR_CLOSE,
-                SoundEvents.IRON_DOOR_OPEN,
-                SoundEvents.IRON_TRAPDOOR_CLOSE,
-                SoundEvents.IRON_TRAPDOOR_OPEN,
-                SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
-                SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
-                SoundEvents.STONE_BUTTON_CLICK_OFF,
-                SoundEvents.STONE_BUTTON_CLICK_ON)
+            true,
+            true,
+            false,
+            BlockSetType.PressurePlateSensitivity.MOBS,
+            SoundType.STONE,
+            SoundEvents.IRON_DOOR_CLOSE,
+            SoundEvents.IRON_DOOR_OPEN,
+            SoundEvents.IRON_TRAPDOOR_CLOSE,
+            SoundEvents.IRON_TRAPDOOR_OPEN,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
+            SoundEvents.STONE_BUTTON_CLICK_OFF,
+            SoundEvents.STONE_BUTTON_CLICK_ON)
     );
+    // endregion
 
-    /*
-    Metals
-     */
-
+    // region Metal Blocksets
     public static final BlockSetType
             LUTRUM = register(new BlockSetType("lutrum",
                 true,
@@ -102,4 +110,5 @@ public class CBlockSetTypes {
                 SoundEvents.STONE_BUTTON_CLICK_OFF,
                 SoundEvents.STONE_BUTTON_CLICK_ON)
     );
+    // endregion
 }

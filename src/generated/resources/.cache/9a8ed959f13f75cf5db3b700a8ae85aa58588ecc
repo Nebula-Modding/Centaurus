@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-25T11:44:00.1183489	Item Models: cepheus
+// 1.21.1	2025-06-27T19:52:04.5525812	Item Models: cepheus
 f8abc9394f8a57d7b24f034744e6b8a488ed4b21 assets/cepheus/models/item/azure_root.json
 0c1011b4e6bf43dc03eb325b4feac0cba65c79bd assets/cepheus/models/item/bruma.json
 d178583c9db09e52db3857f97d32c62ae8c72606 assets/cepheus/models/item/bruma_loaf.json
@@ -8,12 +8,11 @@ a188b0334f82f1a454523b8a9b1d16bb1bee7fbf assets/cepheus/models/item/enchanted_go
 8d25c8dca70bfff8832e80e1ae7cab5150d4e99d assets/cepheus/models/item/exposed_lutrum_bulb.json
 bf3bcfe7d90906070ee62909497970c880d7fff4 assets/cepheus/models/item/exposed_lutrum_door.json
 5e073936bdfbbb9d5c17d6dcba648efa3269c067 assets/cepheus/models/item/flesh.json
-44d4ad7d4973202b5584745833bab8242a7cb165 assets/cepheus/models/item/frigus_dirt_path.json
-43917bfe1904db9a3d15bb49606bc4a03e2dc83e assets/cepheus/models/item/frigus_farmland.json
-f7f648de8f45386c7fc94add1b2fbd6bb3b10165 assets/cepheus/models/item/frigus_grass_block.json
-1e5e27217525ab3dc7a33cbbbe9fbb88582a1c49 assets/cepheus/models/item/frigus_short_grass.json
+ec66a3b99368f18d9b8b7094ba7edec7df5f9ee5 assets/cepheus/models/item/frigian_dirt_path.json
+102e39a3f36853c7603efdb38340e9d211af2a48 assets/cepheus/models/item/frigian_farmland.json
+b7603d455c284ae6aa8468659e20d5395c4f7c92 assets/cepheus/models/item/frigian_grass_block.json
+2fa9a3388dffe8f7945b145e58f71c41f90a3923 assets/cepheus/models/item/frigian_short_grass.json
 a188b0334f82f1a454523b8a9b1d16bb1bee7fbf assets/cepheus/models/item/golden_azure_root.json
-6de4f3dee161774a1d796dee08d7abea5c3b14c0 assets/cepheus/models/item/graphite_cluster.json
 a78a8d8a713e1df85dc0301c21b9069cddd8acb7 assets/cepheus/models/item/grimwood_door.json
 c66067b222f7e686ec5f892d7063e8f7af036486 assets/cepheus/models/item/grimwood_sapling.json
 01e51cf37f805e03a3c7e2242a8cda3a385be2c4 assets/cepheus/models/item/gristled_flesh.json

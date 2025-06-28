@@ -33,7 +33,7 @@
 			"backlight": {
 				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
 				"size": 20.0,
-				"color": [174, 177, 192, 125]
+				"color": [33, 130, 186, 125]
 			}
 		},
 
@@ -49,7 +49,7 @@
 			"backlight": {
 				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
 				"size": 20.0,
-				"color": [68, 59, 54, 125]
+				"color": [81, 73, 62, 125]
 			}
 		},
 

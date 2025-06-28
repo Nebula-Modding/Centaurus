@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cepheus:coarse_frigian_dirt"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cepheus:blocks/coarse_frigian_dirt"
+}

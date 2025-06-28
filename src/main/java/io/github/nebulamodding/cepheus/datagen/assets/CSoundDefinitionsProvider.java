@@ -15,11 +15,7 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
 
     @Override
     public void registerSounds() {
-
-        /*
-        Block Sounds
-         */
-
+        // region Metal Block Sounds
         // Grate
         add(CSoundEvents.METAL_GRATE_BREAK, subtitle("block.generic.break").with(
                 sound("block/metal_grate/break1"),
@@ -103,11 +99,9 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/metal_bulb/step5"),
                 sound("block/metal_bulb/step6")
         ));
+        // endregion
 
-        /*
-        Netherite Sounds
-         */
-
+        // region Netherite Block Sounds
         // Bulb
         add(CSoundEvents.NETHERITE_BULB_BREAK, subtitle("block.generic.break").with(
                 sound("block/netherite_bulb/break1"),
@@ -184,10 +178,9 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 sound("block/netherite_grate/step5"),
                 sound("block/netherite_grate/step6")
         ));
+        // endregion
 
-        /*
-        To Be Deleted
-         */
+        // region Existing Block Sounds
 
         // Stone
         add(CSoundEvents.STONE_STEP, subtitle("block.generic.footsteps").with(
@@ -273,7 +266,6 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/copper_bulb/place4")
         ));
 
-        // Netherite
         add(CSoundEvents.NETHERITE_STEP, subtitle("block.generic.footsteps").with(
                 mcSound("block/netherite/step1"),
                 mcSound("block/netherite/step2"),
@@ -307,8 +299,10 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
                 mcSound("block/netherite/step5"),
                 mcSound("block/netherite/step6")
         ));
+        // endregion
     }
 
+    // region Helpers
     private SoundDefinition subtitle(String subtitle) {
         return definition().subtitle("subtitles." + subtitle);
     }
@@ -320,4 +314,5 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
     private static SoundDefinition.Sound mcSound(String location) {
         return sound(ResourceLocation.withDefaultNamespace(location));
     }
+    // endregion
 }

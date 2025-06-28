@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/polished_cut_graphite",
-    "side": "cepheus:block/polished_cut_graphite",
-    "top": "cepheus:block/polished_cut_graphite"
-  }
-}

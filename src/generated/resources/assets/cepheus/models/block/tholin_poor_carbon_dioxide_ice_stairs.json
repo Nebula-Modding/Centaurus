@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/tholin_poor_carbon_dioxide_ice",
-    "side": "cepheus:block/tholin_poor_carbon_dioxide_ice",
-    "top": "cepheus:block/tholin_poor_carbon_dioxide_ice"
-  }
-}

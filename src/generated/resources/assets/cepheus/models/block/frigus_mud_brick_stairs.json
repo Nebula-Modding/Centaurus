@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/frigus_mud_bricks",
-    "side": "cepheus:block/frigus_mud_bricks",
-    "top": "cepheus:block/frigus_mud_bricks"
-  }
-}

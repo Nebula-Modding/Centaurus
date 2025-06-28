@@ -25,6 +25,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+        // region Common Tag Lists
         // Lists with collections of blocks with multiple of the same tag to save on lines of code and make this file more readable
         final List<DeferredBlock<? extends Block>> blueschistOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> blueShaleOres = new ArrayList<>();
@@ -40,7 +41,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> stoneButtons = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> ices = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> needsStonePickaxe = new ArrayList<>();
-        // Ores
+        
+        // region Ores
         blueschistOres.add(CBlocks.BLUESCHIST_COAL_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_IRON_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_COPPER_ORE);
@@ -63,8 +65,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         blueShaleOres.add(CBlocks.BLUESLATE_LUTRUM_ORE);
         blueShaleOres.add(CBlocks.BLUESLATE_OBDURIUM_ORE);
         blueShaleOres.add(CBlocks.BLUESLATE_MALUNITE_ORE);
-        // DELETE THE TEMPBLOCKTEST FROM KARCASSSTONEORES!!!
-        karcassStoneOres.add(CBlocks.TEMPBLOCKTEST);
+        karcassStoneOres.add(CBlocks.PLACEHOLDER_BLOCK); // Todo: add karcass stone ores
         //karcassStoneOres.add(CBlocks.KARCASS_COAL_ORE);
         //karcassStoneOres.add(CBlocks.KARCASS_IRON_ORE);
         //karcassStoneOres.add(CBlocks.KARCASS_COPPER_ORE);
@@ -109,10 +110,13 @@ public class CBlockTagProvider extends BlockTagsProvider {
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_LUTRUM_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_OBDURIUM_ORE);
         oxygenIceOres.add(CBlocks.OXYGEN_ICE_MALUNITE_ORE);
+        // endregion
+
+        // region Building Blocks
         // Frigus Mud
-        pickaxeStairs.add(CBlocks.FRIGUS_MUD_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.FRIGUS_MUD_BRICK_SLAB);
-        pickaxeWalls.add(CBlocks.FRIGUS_MUD_BRICK_WALL);
+        pickaxeStairs.add(CBlocks.FRIGIAN_MUD_BRICK_STAIRS);
+        pickaxeSlabs.add(CBlocks.FRIGIAN_MUD_BRICK_SLAB);
+        pickaxeWalls.add(CBlocks.FRIGIAN_MUD_BRICK_WALL);
         // Blueschist
         pickaxeStairs.add(CBlocks.BLUESCHIST_STAIRS);
         pickaxeStairs.add(CBlocks.COBBLED_BLUESCHIST_STAIRS);
@@ -128,7 +132,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.BLUESCHIST_BRICK_WALL);
         stonePressurePlates.add(CBlocks.BLUESCHIST_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.BLUESCHIST_BUTTON);
-        // Blue Shale
+        // Blueslate
         pickaxeStairs.add(CBlocks.BLUESLATE_STAIRS);
         pickaxeStairs.add(CBlocks.COBBLED_BLUESLATE_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_BLUESLATE_STAIRS);
@@ -149,269 +153,32 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeStairs.add(CBlocks.POLISHED_PERMAFROST_STAIRS);
         pickaxeStairs.add(CBlocks.PERMAFROST_BRICK_STAIRS);
         pickaxeStairs.add(CBlocks.PERMAFROST_TILE_STAIRS);
-        pickaxeSlabs.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_slab"));
-        pickaxeSlabs.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_slab"));
-        pickaxeSlabs.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
-        pickaxeSlabs.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
-        pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_wall"));
-        pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("polished_permafrost_wall"));
-        pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
-        pickaxeWalls.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
+        pickaxeSlabs.add(CBlocks.PERMAFROST_SLAB);
+        pickaxeSlabs.add(CBlocks.POLISHED_PERMAFROST_SLAB);
+        pickaxeSlabs.add(CBlocks.PERMAFROST_BRICK_SLAB);
+        pickaxeSlabs.add(CBlocks.PERMAFROST_TILE_SLAB);
+        pickaxeWalls.add(CBlocks.PERMAFROST_WALL);
+        pickaxeWalls.add(CBlocks.POLISHED_PERMAFROST_WALL);
+        pickaxeWalls.add(CBlocks.PERMAFROST_BRICK_WALL);
+        pickaxeWalls.add(CBlocks.PERMAFROST_TILE_WALL);
         // Karcass Stone
         pickaxeStairs.add(CBlocks.KARCASS_STONE_STAIRS);
         pickaxeStairs.add(CBlocks.KARCASS_COBBLESTONE_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_KARCASS_STONE_STAIRS);
         pickaxeStairs.add(CBlocks.KARCASS_STONE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_slab"));
-        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_cobblestone_slab"));
-        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("polished_karcass_stone_slab"));
-        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"));
-        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_wall"));
-        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_cobblestone_wall"));
-        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("polished_karcass_stone_wall"));
-        pickaxeWalls.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"));
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_SLAB);
+        pickaxeSlabs.add(CBlocks.KARCASS_COBBLESTONE_SLAB);
+        pickaxeSlabs.add(CBlocks.POLISHED_KARCASS_STONE_SLAB);
+        pickaxeSlabs.add(CBlocks.KARCASS_STONE_BRICK_SLAB);
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_WALL);
+        pickaxeWalls.add(CBlocks.KARCASS_COBBLESTONE_WALL);
+        pickaxeWalls.add(CBlocks.POLISHED_KARCASS_STONE_WALL);
+        pickaxeWalls.add(CBlocks.KARCASS_STONE_BRICK_WALL);
         stonePressurePlates.add(CBlocks.KARCASS_STONE_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.KARCASS_STONE_BUTTON);
-        // Ices
-        ices.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice"));
-        ices.add(CBlocks.WATER_ICE_BLOCKS.get("cobbled_water_ice"));
-        ices.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks"));
-        ices.add(CBlocks.WATER_ICE_BLOCKS.get("cracked_water_ice_bricks"));
-        ices.add(CBlocks.WATER_ICE_BLOCKS.get("water_ice_pillar"));
-        pickaxeStairs.add(CBlocks.WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.WATER_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("cobbled_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_wall"));
-        pickaxeWalls.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("cobbled_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice"));
-        ices.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_cobbled_water_ice"));
-        ices.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_cracked_water_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_COBBLED_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice"));
-        ices.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_cobbled_water_ice"));
-        ices.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_cracked_water_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_COBBLED_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"));
-        ices.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice"));
-        ices.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("cobbled_black_water_ice"));
-        ices.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_bricks"));
-        ices.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("cracked_black_water_ice_bricks"));
-        ices.add(CBlocks.BLACK_WATER_ICE_BLOCKS.get("black_water_ice_pillar"));
-        pickaxeStairs.add(CBlocks.BLACK_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_BLACK_WATER_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.BLACK_WATER_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("cobbled_black_water_ice_slab"));
-        pickaxeSlabs.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("cobbled_black_water_ice_wall"));
-        pickaxeWalls.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"));
-        ices.add(CBlocks.METHANE_ICE_BLOCKS.get("methane_ice"));
-        ices.add(CBlocks.METHANE_ICE_BLOCKS.get("cobbled_methane_ice"));
-        ices.add(CBlocks.METHANE_ICE_BLOCKS.get("methane_ice_bricks"));
-        ices.add(CBlocks.METHANE_ICE_BLOCKS.get("cracked_methane_ice_bricks"));
-        ices.add(CBlocks.METHANE_ICE_BLOCKS.get("methane_ice_pillar"));
-        pickaxeStairs.add(CBlocks.METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.METHANE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("cobbled_methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("cobbled_methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice"));
-        ices.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_cobbled_methane_ice"));
-        ices.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_cracked_methane_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS.get("tholin_poor_methane_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_COBBLED_METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_METHANE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice"));
-        ices.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_cobbled_methane_ice"));
-        ices.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_cracked_methane_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS.get("tholin_rich_methane_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_COBBLED_METHANE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_METHANE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_methane_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_methane_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"));
-        ices.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice"));
-        ices.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("cobbled_carbon_dioxide_ice"));
-        ices.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("cracked_carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS.get("carbon_dioxide_ice_pillar"));
-        pickaxeStairs.add(CBlocks.CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice"));
-        ices.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_cobbled_carbon_dioxide_ice"));
-        ices.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_cracked_carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_poor_carbon_dioxide_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_COBBLED_CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice"));
-        ices.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_cobbled_carbon_dioxide_ice"));
-        ices.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_cracked_carbon_dioxide_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS.get("tholin_rich_carbon_dioxide_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_COBBLED_CARBON_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_carbon_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_carbon_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"));
-        ices.add(CBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice"));
-        ices.add(CBlocks.AMMONIA_ICE_BLOCKS.get("cobbled_ammonia_ice"));
-        ices.add(CBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_bricks"));
-        ices.add(CBlocks.AMMONIA_ICE_BLOCKS.get("cracked_ammonia_ice_bricks"));
-        ices.add(CBlocks.AMMONIA_ICE_BLOCKS.get("ammonia_ice_pillar"));
-        pickaxeStairs.add(CBlocks.AMMONIA_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_AMMONIA_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.AMMONIA_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_slab"));
-        pickaxeSlabs.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("cobbled_ammonia_ice_slab"));
-        pickaxeSlabs.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_wall"));
-        pickaxeWalls.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("cobbled_ammonia_ice_wall"));
-        pickaxeWalls.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"));
-        ices.add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice"));
-        ices.add(CBlocks.NITROGEN_ICE_BLOCKS.get("cobbled_nitrogen_ice"));
-        ices.add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_bricks"));
-        ices.add(CBlocks.NITROGEN_ICE_BLOCKS.get("cracked_nitrogen_ice_bricks"));
-        ices.add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice_pillar"));
-        pickaxeStairs.add(CBlocks.NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.NITROGEN_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("cobbled_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("cobbled_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice"));
-        ices.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_cobbled_nitrogen_ice"));
-        ices.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_cracked_nitrogen_ice_bricks"));
-        ices.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS.get("tholin_poor_nitrogen_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_COBBLED_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_cobbled_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_wall"));
-        ices.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice"));
-        ices.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_cobbled_nitrogen_ice"));
-        ices.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_cracked_nitrogen_ice_bricks"));
-        ices.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS.get("tholin_rich_nitrogen_ice_pillar"));
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_COBBLED_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_cobbled_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"));
-        ices.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice"));
-        ices.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("cobbled_red_nitrogen_ice"));
-        ices.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_bricks"));
-        ices.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("cracked_red_nitrogen_ice_bricks"));
-        ices.add(CBlocks.RED_NITROGEN_ICE_BLOCKS.get("red_nitrogen_ice_pillar"));
-        pickaxeStairs.add(CBlocks.RED_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_RED_NITROGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.RED_NITROGEN_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("cobbled_red_nitrogen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("cobbled_red_nitrogen_ice_wall"));
-        pickaxeWalls.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"));
-        ices.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice"));
-        ices.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("cobbled_sulfur_dioxide_ice"));
-        ices.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_bricks"));
-        ices.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("cracked_sulfur_dioxide_ice_bricks"));
-        ices.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS.get("sulfur_dioxide_ice_pillar"));
-        pickaxeStairs.add(CBlocks.SULFUR_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_SULFUR_DIOXIDE_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_sulfur_dioxide_ice_slab"));
-        pickaxeSlabs.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("cobbled_sulfur_dioxide_ice_wall"));
-        pickaxeWalls.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"));
-        ices.add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice"));
-        ices.add(CBlocks.OXYGEN_ICE_BLOCKS.get("cobbled_oxygen_ice"));
-        ices.add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_bricks"));
-        ices.add(CBlocks.OXYGEN_ICE_BLOCKS.get("cracked_oxygen_ice_bricks"));
-        ices.add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice_pillar"));
-        pickaxeStairs.add(CBlocks.OXYGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.COBBLED_OXYGEN_ICE_STAIRS);
-        pickaxeStairs.add(CBlocks.OXYGEN_ICE_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("cobbled_oxygen_ice_slab"));
-        pickaxeSlabs.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"));
-        pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_wall"));
-        pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("cobbled_oxygen_ice_wall"));
-        pickaxeWalls.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"));
-        // Needs Stone Pickaxe
+        // endregion
+
+        // region Needs Stone Pickaxe
         needsStonePickaxe.add(CBlocks.LUTRUM_BLOCK);
         needsStonePickaxe.add(CBlocks.LUTRUM_SHEET_METAL);
         needsStonePickaxe.add(CBlocks.CHISELED_LUTRUM);
@@ -564,22 +331,16 @@ public class CBlockTagProvider extends BlockTagsProvider {
         needsStonePickaxe.add(CBlocks.MALUNITE_TRAPDOOR);
         needsStonePickaxe.add(CBlocks.MALUNITE_BULB);
         needsStonePickaxe.add(CBlocks.RAW_MALUNITE_BLOCK);
+        // endregion
 
-        /*
-        Tool Tags
-         */
-
+        // region Tool Tags
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGUS_DIRT_PATH.get())
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
-                .add(CBlocks.FRIGUS_FARMLAND.get())
-                .add(CBlocks.FRIGUS_MUD.get())
-
-                .add(CBlocks.SALT_DUST_BLOCK.get())
-                .add(CBlocks.SULFUR_DUST_BLOCK.get())
-                .add(CBlocks.GRAPHITE_DUST_BLOCK.get())
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGIAN_DIRT_PATH.get())
+                .add(CBlocks.FRIGIAN_DIRT.get())
+                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
+                .add(CBlocks.FRIGIAN_FARMLAND.get())
+                .add(CBlocks.FRIGIAN_MUD.get())
         ;
         blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         blueShaleOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -590,7 +351,6 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         pickaxeSlabs.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
-        ices.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         needsStonePickaxe.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
                 // Blueschist
@@ -611,30 +371,30 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESLATE_TILES.get())
                 .add(CBlocks.BLUESLATE_PILLAR.get())
                 // Permafrost
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("chiseled_permafrost").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("polished_permafrost").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("cracked_permafrost_bricks").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles").get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost_pillar").get())
+                .add(CBlocks.PERMAFROST.get())
+                .add(CBlocks.CHISELED_PERMAFROST.get())
+                .add(CBlocks.POLISHED_PERMAFROST.get())
+                .add(CBlocks.PERMAFROST_BRICKS.get())
+                .add(CBlocks.CRACKED_PERMAFROST_BRICKS.get())
+                .add(CBlocks.PERMAFROST_TILES.get())
+                .add(CBlocks.PERMAFROST_PILLAR.get())
                 // Karcass Stone
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("chiseled_karcass_stone").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("polished_karcass_stone").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("cracked_karcass_stone_bricks").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_pillar").get())
+                .add(CBlocks.KARCASS_STONE.get())
+                .add(CBlocks.KARCASS_COBBLESTONE.get())
+                .add(CBlocks.CHISELED_KARCASS_STONE.get())
+                .add(CBlocks.POLISHED_KARCASS_STONE.get())
+                .add(CBlocks.KARCASS_STONE_BRICKS.get())
+                .add(CBlocks.CRACKED_KARCASS_STONE_BRICKS.get())
+                .add(CBlocks.KARCASS_STONE_PILLAR.get())
                 // Plating
                 .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
                 .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
                 // Miscellaneous
-                .add(CBlocks.PACKED_FRIGUS_MUD.get())
-                .add(CBlocks.FRIGUS_MUD_BRICKS.get())
+                .add(CBlocks.PACKED_FRIGIAN_MUD.get())
+                .add(CBlocks.FRIGIAN_MUD_BRICKS.get())
         ;
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_AXE)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
@@ -654,7 +414,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BRUMA_BLOCK.get())
         ;
         tag(net.minecraft.tags.BlockTags.SWORD_EFFICIENT)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
         ;
         needsStonePickaxe.forEach(entry -> tag(BlockTags.NEEDS_STONE_TOOL).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL)
@@ -723,11 +483,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
         ;
+        // endregion
 
-        /*
-        Tree Tags
-         */
-
+        //region Tree Tags
         tag(net.minecraft.tags.BlockTags.LEAVES)
                 .add(CBlocks.MAYURA_LEAVES.get())
                 .add(CBlocks.GRIMWOOD_LEAVES.get())
@@ -776,13 +534,11 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.STRIPPED_GRIMWOOD_LOG.get())
                 .add(CBlocks.STRIPPED_GRIMWOOD_WOOD.get())
         ;
+        // endregion
 
-        /*
-        Plant Tags
-         */
-
+        // region Plant Tags
         tag(net.minecraft.tags.BlockTags.REPLACEABLE_BY_TREES)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
         ;
         tag(net.minecraft.tags.BlockTags.SAPLINGS)
                 .add(CBlocks.MAYURA_SAPLING.get())
@@ -799,45 +555,41 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.POTTED_WICKUL.get())
                 .add(CBlocks.POTTED_ICEFLOWER.get())
         ;
+        // endregion
 
-        /*
-        Soil Tags
-         */
-
+        // region Soil Tags
         tag(net.minecraft.tags.BlockTags.DIRT)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
-                .add(CBlocks.FRIGUS_MUD.get())
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGIAN_DIRT.get())
+                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
+                .add(CBlocks.FRIGIAN_MUD.get())
         ;
         tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
+                .add(CBlocks.FRIGIAN_DIRT.get())
+                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
         ;
         tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
         ;
         tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGUS_DIRT.get())
-                .add(CBlocks.COARSE_FRIGUS_DIRT.get())
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGIAN_DIRT.get())
+                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
         ;
         tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
-                .add(CBlocks.FRIGUS_GRASS_BLOCK.get())
+                .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
-                .add(CBlocks.FRIGUS_FARMLAND.get())
+                .add(CBlocks.FRIGIAN_FARMLAND.get())
         ;
+        // endregion
 
-        /*
-        Stone Tags
-         */
-
+        // region Stone Tags
         tag(Tags.Blocks.STONES)
                 .add(CBlocks.BLUESCHIST.get())
                 .add(CBlocks.BLUESLATE.get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+                .add(CBlocks.PERMAFROST.get())
+                .add(CBlocks.KARCASS_STONE.get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
@@ -851,20 +603,18 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.COBBLED_BLUESLATE.get())
         ;
         tag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get())
+                .add(CBlocks.KARCASS_COBBLESTONE.get())
         ;
 
         // Base Stone Tags
         tag(CTags.BlockTags.BASE_STONE_FRIGUS)
                 .add(CBlocks.BLUESCHIST.get())
                 .add(CBlocks.BLUESLATE.get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+                .add(CBlocks.PERMAFROST.get())
         ;
+        // endregion
 
-        /*
-        Ore Tags
-         */
-
+        // region Ore Tags
         tag(net.minecraft.tags.BlockTags.COAL_ORES)
                 .add(CBlocks.BLUESCHIST_COAL_ORE.get())
                 .add(CBlocks.BLUESLATE_COAL_ORE.get())
@@ -1008,7 +758,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES)
                 .add(CBlocks.BLUESCHIST.get())
-                .add(CBlocks.PERMAFROST_BLOCKS.get("permafrost").get())
+                .add(CBlocks.PERMAFROST.get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESLATE)
                 .add(CBlocks.BLUESLATE.get())
@@ -1017,19 +767,16 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESLATE.get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE)
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+                .add(CBlocks.KARCASS_STONE.get())
         ;
         tag(CTags.BlockTags.KARCASS_STONE_ORE_REPLACEABLES)
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone").get())
+                .add(CBlocks.KARCASS_STONE.get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE)
-                .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE)
-                .add(CBlocks.NITROGEN_ICE_BLOCKS.get("nitrogen_ice").get())
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
-                .add(CBlocks.OXYGEN_ICE_BLOCKS.get("oxygen_ice").get())
         ;
         blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
         blueShaleOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE).add(entry.get()));
@@ -1037,11 +784,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
         waterIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_WATER_ICE).add(entry.get()));
         nitrogenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE).add(entry.get()));
         oxygenIceOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE).add(entry.get()));
+        // endregion
 
-        /*
-        Carver Replaceable Tags
-         */
-
+        // region Carver Replaceable Tags
         tag(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES)
                 .addTag(CTags.BlockTags.BASE_STONE_FRIGUS)
                 .addTag(net.minecraft.tags.BlockTags.DIRT)
@@ -1054,11 +799,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.RAW_IRON_BLOCK)
                 .add(Blocks.WATER)
         ;
+        // endregion
 
-        /*
-        Block Variant Tags
-         */
-
+        // region Block Variant Tags
         pickaxeStairs.forEach(entry -> tag(net.minecraft.tags.BlockTags.STAIRS).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.STAIRS)
                 .add(CBlocks.LUTRUM_PLATING_STAIRS.get())
@@ -1182,11 +925,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.MAYURA_BUTTON.get())
                 .add(CBlocks.GRIMWOOD_BUTTON.get())
         ;
+        // endregion
 
-        /*
-        Storage Block Tags
-         */
-
+        // region Storage Block Tags
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(CTags.BlockTags.STORAGE_BLOCKS_BRUMA)
                 .addTag(CTags.BlockTags.STORAGE_BLOCKS_LUTRUM)
@@ -1217,11 +958,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE)
                 .add(CBlocks.RAW_MALUNITE_BLOCK.get())
         ;
+        // endregion
 
-        /*
-        Compatibility Tags
-         */
-
+        // region Compatibility Tags
         tag(CTags.BlockTags.CREATE_FAN_TRANSPARENT)
                 .add(CBlocks.LUTRUM_GRATE.get())
                 .add(CBlocks.EXPOSED_LUTRUM_GRATE.get())
@@ -1244,11 +983,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.MALUNITE_GRATE.get())
                 .add(CBlocks.MALUNITE_GRATE.get())
         ;
+        // endregion
 
-        /*
-        Miscellaneous Tags
-         */
-
+        // region Miscellaneous Tags
         tag(BlockTags.IMPERMEABLE)
                 // Prevents dripping particles from forming if fluid is above
                 .add(CBlocks.LUTRUM_WINDOW.get())
@@ -1262,18 +999,13 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.OBDURIUM_WINDOW.get())
                 .add(CBlocks.MALUNITE_WINDOW.get())
         ;
-
         tag(net.minecraft.tags.BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
                 // Prevents blocks from interfering with enchanting
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
         ;
         tag(net.minecraft.tags.BlockTags.REPLACEABLE)
-                .add(CBlocks.FRIGUS_SHORT_GRASS.get())
+                .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
         ;
-        tag(net.minecraft.tags.BlockTags.ICE)
-                .add(CBlocks.WATER_ICE_BLOCKS.get("water_ice").get())
-                .add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS.get("tholin_poor_water_ice").get())
-                .add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS.get("tholin_rich_water_ice").get())
-        ;
+        // endregion
     }
 }

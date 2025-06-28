@@ -1,8 +1,8 @@
 {
   "values": [
-    "cepheus:frigus_grass_block",
-    "cepheus:frigus_dirt",
-    "cepheus:coarse_frigus_dirt",
-    "cepheus:frigus_mud"
+    "cepheus:frigian_grass_block",
+    "cepheus:frigian_dirt",
+    "cepheus:coarse_frigian_dirt",
+    "cepheus:frigian_mud"
   ]
 }

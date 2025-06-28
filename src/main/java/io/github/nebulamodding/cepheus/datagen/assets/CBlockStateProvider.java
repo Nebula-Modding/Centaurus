@@ -19,8 +19,10 @@ public class CBlockStateProvider extends BlockStateProvider {
     public CBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, Cepheus.MOD_ID, existingFileHelper);
     }
+
     @Override
     protected void registerStatesAndModels() {
+        // region Exclusions
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         // Blocks excluded from having blockstates and models provided
         excludedBlocks.add(CBlocks.MAYURA_WOOD);
@@ -45,16 +47,20 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.GRIMWOOD_PRESSURE_PLATE);
         excludedBlocks.add(CBlocks.GRIMWOOD_BUTTON);
         excludedBlocks.add(CBlocks.GRIMWOOD_SAPLING);
-        excludedBlocks.add(CBlocks.FRIGUS_GRASS_BLOCK);
-        excludedBlocks.add(CBlocks.FRIGUS_DIRT_PATH);
-        excludedBlocks.add(CBlocks.FRIGUS_FARMLAND);
-        excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_SLAB);
-        excludedBlocks.add(CBlocks.FRIGUS_MUD_BRICK_WALL);
-        excludedBlocks.add(CBlocks.FRIGUS_SHORT_GRASS);
+        excludedBlocks.add(CBlocks.FRIGIAN_GRASS_BLOCK);
+        excludedBlocks.add(CBlocks.FRIGIAN_DIRT_PATH);
+        excludedBlocks.add(CBlocks.FRIGIAN_FARMLAND);
+        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_STAIRS);
+        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_WALL);
+        excludedBlocks.add(CBlocks.FRIGIAN_SHORT_GRASS);
         excludedBlocks.add(CBlocks.VIVIAN);
         excludedBlocks.add(CBlocks.WICKUL);
         excludedBlocks.add(CBlocks.ICEFLOWER);
+        excludedBlocks.add(CBlocks.TUMOR);
+        excludedBlocks.add(CBlocks.GRISTLED_FLESH);
+        excludedBlocks.add(CBlocks.SHORT_GRISTLES);
+        excludedBlocks.add(CBlocks.TALL_GRISTLES);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_SLAB);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_WALL);
@@ -66,86 +72,19 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.BLUESLATE_TILE_WALL);
         excludedBlocks.add(CBlocks.PERMAFROST_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.PERMAFROST_TILE_STAIRS);
-        excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"));
-        excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"));
-        excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"));
-        excludedBlocks.add(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"));
+        excludedBlocks.add(CBlocks.PERMAFROST_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.PERMAFROST_TILE_SLAB);
+        excludedBlocks.add(CBlocks.PERMAFROST_BRICK_WALL);
+        excludedBlocks.add(CBlocks.PERMAFROST_TILE_WALL);
         excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"));
-        excludedBlocks.add(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"));
-        excludedBlocks.add(CBlocks.WATER_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.WATER_ICE_BLOCKS_CONTINUED.get("water_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_WATER_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_WATER_ICE_BLOCKS_CONTINUED.get("tholin_poor_water_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_WATER_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_WATER_ICE_BLOCKS_CONTINUED.get("tholin_rich_water_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.BLACK_WATER_ICE_BLOCKS_CONTINUED.get("black_water_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.METHANE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.METHANE_ICE_BLOCKS_CONTINUED.get("methane_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_METHANE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_poor_methane_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_METHANE_ICE_BLOCKS_CONTINUED.get("tholin_rich_methane_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("carbon_dioxide_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_poor_carbon_dioxide_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_CARBON_DIOXIDE_ICE_BLOCKS_CONTINUED.get("tholin_rich_carbon_dioxide_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.AMMONIA_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.AMMONIA_ICE_BLOCKS_CONTINUED.get("ammonia_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.NITROGEN_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.NITROGEN_ICE_BLOCKS_CONTINUED.get("nitrogen_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_POOR_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_poor_nitrogen_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.THOLIN_RICH_NITROGEN_ICE_BLOCKS_CONTINUED.get("tholin_rich_nitrogen_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.RED_NITROGEN_ICE_BLOCKS_CONTINUED.get("red_nitrogen_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.SULFUR_DIOXIDE_ICE_BLOCKS_CONTINUED.get("sulfur_dioxide_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.OXYGEN_ICE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_slab"));
-        excludedBlocks.add(CBlocks.OXYGEN_ICE_BLOCKS_CONTINUED.get("oxygen_ice_brick_wall"));
-        excludedBlocks.add(CBlocks.CUT_SALT_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"));
-        excludedBlocks.add(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"));
-        excludedBlocks.add(CBlocks.GRAPHITE_CLUSTER);
-        excludedBlocks.add(CBlocks.CUT_GRAPHITE_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"));
-        excludedBlocks.add(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"));
-        excludedBlocks.add(CBlocks.CUT_SULFUR_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"));
-        excludedBlocks.add(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"));
-        excludedBlocks.add(CBlocks.TUMOR);
-        excludedBlocks.add(CBlocks.GRISTLED_FLESH);
-        excludedBlocks.add(CBlocks.SHORT_GRISTLES);
-        excludedBlocks.add(CBlocks.TALL_GRISTLES);
+        excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_WALL);
         excludedBlocks.add(CBlocks.GORESLATE_BRICK_STAIRS);
+        excludedBlocks.add(CBlocks.GORESLATE_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.GORESLATE_BRICK_WALL);
         excludedBlocks.add(CBlocks.GORESLATE_TILE_STAIRS);
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"));
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"));
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"));
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"));
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"));
-        excludedBlocks.add(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"));
+        excludedBlocks.add(CBlocks.GORESLATE_TILE_SLAB);
+        excludedBlocks.add(CBlocks.GORESLATE_TILE_WALL);
         excludedBlocks.add(CBlocks.CHISELED_LUTRUM);
         excludedBlocks.add(CBlocks.LUTRUM_GRATE);
         excludedBlocks.add(CBlocks.LUTRUM_WINDOW);
@@ -251,11 +190,9 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
         excludedBlocks.add(CBlocks.POTTED_WICKUL);
         excludedBlocks.add(CBlocks.POTTED_ICEFLOWER);
+        // endregion
 
-        /*
-        Automated Block Models
-         */
-
+        // region Automated Block Models
         for (var entry : CBlocks.BLOCKS.getEntries()
                 .stream()
                 .filter(b -> !excludedBlocks.contains(b))
@@ -297,11 +234,9 @@ public class CBlockStateProvider extends BlockStateProvider {
                 simpleBlockItem(entry.get(), model);
             }
         }
+        // endregion
 
-        /*
-        Manual Block Models
-         */
-
+        // region Tree Blocks
         axisBlockWithItem(CBlocks.MAYURA_WOOD, blockLoc(CBlocks.MAYURA_LOG), blockLoc(CBlocks.MAYURA_LOG));
         axisBlockWithItem(CBlocks.STRIPPED_MAYURA_WOOD, blockLoc(CBlocks.STRIPPED_MAYURA_LOG), blockLoc(CBlocks.STRIPPED_MAYURA_LOG));
         stairsBlockWithItem(CBlocks.MAYURA_STAIRS, blockLoc(CBlocks.MAYURA_PLANKS));
@@ -325,16 +260,26 @@ public class CBlockStateProvider extends BlockStateProvider {
         pressurePlateBlockWithItem(CBlocks.GRIMWOOD_PRESSURE_PLATE, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         buttonBlockWithItem(CBlocks.GRIMWOOD_BUTTON, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         simpleBlock(CBlocks.GRIMWOOD_SAPLING.get(), models().cross(CBlocks.GRIMWOOD_SAPLING.getId().getPath(), blockLoc(CBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
+        // endregion
 
-        simpleBlock(CBlocks.FRIGUS_SHORT_GRASS.get(), models().cross(CBlocks.FRIGUS_SHORT_GRASS.getId().getPath(), blockLoc(CBlocks.FRIGUS_SHORT_GRASS)).renderType("cutout"));
+        // region Body-Specific Blocks
+        // Frigus
+        simpleBlock(CBlocks.FRIGIAN_SHORT_GRASS.get(), models().cross(CBlocks.FRIGIAN_SHORT_GRASS.getId().getPath(), blockLoc(CBlocks.FRIGIAN_SHORT_GRASS)).renderType("cutout"));
+        stairsBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_STAIRS, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
+        slabBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_SLAB, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
+        wallBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_WALL, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
+
         simpleBlock(CBlocks.VIVIAN.get(), models().cross("vivian", blockLoc(CBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(CBlocks.WICKUL.get(), models().cross("wickul", blockLoc(CBlocks.WICKUL)).renderType("cutout"));
         simpleBlock(CBlocks.ICEFLOWER.get(), models().cross("iceflower", blockLoc(CBlocks.ICEFLOWER)).renderType("cutout"));
 
-        stairsBlockWithItem(CBlocks.FRIGUS_MUD_BRICK_STAIRS, blockLoc(CBlocks.FRIGUS_MUD_BRICKS));
-        slabBlockWithItem(CBlocks.FRIGUS_MUD_BRICK_SLAB, blockLoc(CBlocks.FRIGUS_MUD_BRICKS));
-        wallBlockWithItem(CBlocks.FRIGUS_MUD_BRICK_WALL, blockLoc(CBlocks.FRIGUS_MUD_BRICKS));
+        // Karnis
+        simpleBlockWithItem(CBlocks.GRISTLED_FLESH.get(), models().cubeBottomTop("gristled_flesh", blockLoc(CBlocks.GRISTLED_FLESH), blockLoc(CBlocks.FLESH_BLOCK), blockLoc(CBlocks.GRISTLE_BLOCK)));
+        simpleBlock(CBlocks.SHORT_GRISTLES.get(), models().cross(CBlocks.SHORT_GRISTLES.getId().getPath(), blockLoc(CBlocks.SHORT_GRISTLES)).renderType("cutout"));
+        simpleBlock(CBlocks.TALL_GRISTLES.get(), models().cross(CBlocks.TALL_GRISTLES.getId().getPath(), blockLoc(CBlocks.TALL_GRISTLES)).renderType("cutout"));
+        // endregion
 
+        // region Stones
         stairsBlockWithItem(CBlocks.BLUESCHIST_BRICK_STAIRS, blockLoc(CBlocks.BLUESCHIST_BRICKS));
         slabBlockWithItem(CBlocks.BLUESCHIST_BRICK_SLAB, blockLoc(CBlocks.BLUESCHIST_BRICKS));
         wallBlockWithItem(CBlocks.BLUESCHIST_BRICK_WALL, blockLoc(CBlocks.BLUESCHIST_BRICKS));
@@ -346,42 +291,26 @@ public class CBlockStateProvider extends BlockStateProvider {
         slabBlockWithItem(CBlocks.BLUESLATE_TILE_SLAB, blockLoc(CBlocks.BLUESLATE_TILES));
         wallBlockWithItem(CBlocks.BLUESLATE_TILE_WALL, blockLoc(CBlocks.BLUESLATE_TILES));
 
-        stairsBlockWithItem(CBlocks.PERMAFROST_BRICK_STAIRS, blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        stairsBlockWithItem(CBlocks.PERMAFROST_TILE_STAIRS, blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
-        slabBlockWithItem(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_slab"), blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        slabBlockWithItem(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_slab"), blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
-        wallBlockWithItem(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_brick_wall"), blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_bricks")));
-        wallBlockWithItem(CBlocks.PERMAFROST_BLOCKS_CONTINUED.get("permafrost_tile_wall"), blockLoc(CBlocks.PERMAFROST_BLOCKS.get("permafrost_tiles")));
+        stairsBlockWithItem(CBlocks.PERMAFROST_BRICK_STAIRS, blockLoc(CBlocks.PERMAFROST_BRICKS));
+        stairsBlockWithItem(CBlocks.PERMAFROST_TILE_STAIRS, blockLoc(CBlocks.PERMAFROST_TILES));
+        slabBlockWithItem(CBlocks.PERMAFROST_BRICK_SLAB, blockLoc(CBlocks.PERMAFROST_BRICKS));
+        slabBlockWithItem(CBlocks.PERMAFROST_TILE_SLAB, blockLoc(CBlocks.PERMAFROST_TILES));
+        wallBlockWithItem(CBlocks.PERMAFROST_BRICK_WALL, blockLoc(CBlocks.PERMAFROST_BRICKS));
+        wallBlockWithItem(CBlocks.PERMAFROST_TILE_WALL, blockLoc(CBlocks.PERMAFROST_TILES));
 
-        stairsBlockWithItem(CBlocks.KARCASS_STONE_BRICK_STAIRS, blockLoc(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
-        slabBlockWithItem(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_slab"), blockLoc(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
-        wallBlockWithItem(CBlocks.KARCASS_STONE_BLOCKS_CONTINUED.get("karcass_stone_brick_wall"), blockLoc(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_stone_bricks")));
+        stairsBlockWithItem(CBlocks.KARCASS_STONE_BRICK_STAIRS, blockLoc(CBlocks.KARCASS_STONE_BRICKS));
+        slabBlockWithItem(CBlocks.KARCASS_STONE_BRICK_SLAB, blockLoc(CBlocks.KARCASS_STONE_BRICKS));
+        wallBlockWithItem(CBlocks.KARCASS_STONE_BRICK_WALL, blockLoc(CBlocks.KARCASS_STONE_BRICKS));
 
-        stairsBlockWithItem(CBlocks.WATER_ICE_BRICK_STAIRS, blockLoc(CBlocks.WATER_ICE_BLOCKS.get("water_ice_bricks")));
+        stairsBlockWithItem(CBlocks.GORESLATE_BRICK_STAIRS, blockLoc(CBlocks.GORESLATE_BRICKS));
+        slabBlockWithItem(CBlocks.GORESLATE_BRICK_SLAB, blockLoc(CBlocks.GORESLATE_BRICKS));
+        wallBlockWithItem(CBlocks.GORESLATE_BRICK_WALL, blockLoc(CBlocks.GORESLATE_BRICKS));
+        stairsBlockWithItem(CBlocks.GORESLATE_TILE_STAIRS, blockLoc(CBlocks.GORESLATE_TILES));
+        slabBlockWithItem(CBlocks.GORESLATE_TILE_SLAB, blockLoc(CBlocks.GORESLATE_TILES));
+        wallBlockWithItem(CBlocks.GORESLATE_TILE_WALL, blockLoc(CBlocks.GORESLATE_TILES));
+        // endregion
 
-        stairsBlockWithItem(CBlocks.CUT_SALT_BRICK_STAIRS, blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-        slabBlockWithItem(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_slab"), blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-        wallBlockWithItem(CBlocks.CUT_SALT_BLOCKS_CONTINUED.get("cut_salt_brick_wall"), blockLoc(CBlocks.CUT_SALT_BLOCKS.get("cut_salt_bricks")));
-
-        stairsBlockWithItem(CBlocks.CUT_GRAPHITE_BRICK_STAIRS, blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-        slabBlockWithItem(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_slab"), blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-        wallBlockWithItem(CBlocks.CUT_GRAPHITE_BLOCKS_CONTINUED.get("cut_graphite_brick_wall"), blockLoc(CBlocks.CUT_GRAPHITE_BLOCKS.get("cut_graphite_bricks")));
-
-        stairsBlockWithItem(CBlocks.CUT_SULFUR_BRICK_STAIRS, blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
-        slabBlockWithItem(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_slab"), blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
-        wallBlockWithItem(CBlocks.CUT_SULFUR_BLOCKS_CONTINUED.get("cut_sulfur_brick_wall"), blockLoc(CBlocks.CUT_SULFUR_BLOCKS.get("cut_sulfur_bricks")));
-
-        simpleBlockWithItem(CBlocks.GRISTLED_FLESH.get(), models().cubeBottomTop("gristled_flesh", blockLoc(CBlocks.GRISTLED_FLESH), blockLoc(CBlocks.FLESH_BLOCK), blockLoc(CBlocks.GRISTLE_BLOCK)));
-        simpleBlock(CBlocks.SHORT_GRISTLES.get(), models().cross(CBlocks.SHORT_GRISTLES.getId().getPath(), blockLoc(CBlocks.SHORT_GRISTLES)).renderType("cutout"));
-        simpleBlock(CBlocks.TALL_GRISTLES.get(), models().cross(CBlocks.TALL_GRISTLES.getId().getPath(), blockLoc(CBlocks.TALL_GRISTLES)).renderType("cutout"));
-
-        stairsBlockWithItem(CBlocks.GORESLATE_BRICK_STAIRS, blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        stairsBlockWithItem(CBlocks.GORESLATE_TILE_STAIRS, blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
-        slabBlockWithItem(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_slab"), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        slabBlockWithItem(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_slab"), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
-        wallBlockWithItem(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_brick_wall"), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_bricks")));
-        wallBlockWithItem(CBlocks.GORESLATE_BLOCKS_CONTINUED.get("goreslate_tile_wall"), blockLoc(CBlocks.GORESLATE_BLOCKS.get("goreslate_tiles")));
-
+        // region Metal Blocks
         simpleBlockWithItem(CBlocks.CHISELED_LUTRUM.get(), models().cubeColumn("chiseled_lutrum", blockLoc(CBlocks.CHISELED_LUTRUM), blockLoc(CBlocks.CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.LUTRUM_GRATE.get(), models().cubeAll("lutrum_grate", blockLoc(CBlocks.LUTRUM_WINDOW)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.LUTRUM_WINDOW.get(), models().cubeAll("lutrum_window", blockLoc(CBlocks.LUTRUM_WINDOW)).renderType("cutout"));
@@ -471,18 +400,18 @@ public class CBlockStateProvider extends BlockStateProvider {
         paneBlockWithRenderType((IronBarsBlock) CBlocks.MALUNITE_BARS.get(), blockLoc(CBlocks.MALUNITE_BARS), blockLoc(CBlocks.MALUNITE_BARS), "cutout");
         doorBlockWithItem(CBlocks.MALUNITE_DOOR, blockLoc(CBlocks.MALUNITE_DOOR, "bottom"), blockLoc(CBlocks.MALUNITE_DOOR, "top"), "translucent");
         trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), true, "translucent");
+        // endregion
 
+        // region Potted Plant Blocks
         simpleBlock(CBlocks.POTTED_MAYURA_SAPLING.get(), models().withExistingParent(CBlocks.POTTED_MAYURA_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.MAYURA_SAPLING)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_GRIMWOOD_SAPLING.get(), models().withExistingParent(CBlocks.POTTED_GRIMWOOD_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_VIVIAN.get(), models().withExistingParent(CBlocks.POTTED_VIVIAN.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_WICKUL.get(), models().withExistingParent(CBlocks.POTTED_WICKUL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.WICKUL)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_ICEFLOWER.get(), models().withExistingParent(CBlocks.POTTED_ICEFLOWER.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.ICEFLOWER)).renderType("cutout"));
+        // endregion
     }
 
-    /*
-    Helpers
-     */
-
+    // region Helpers
     private void simpleBlock(DeferredBlock<? extends Block> block) {
         super.simpleBlock(block.get());
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
@@ -572,4 +501,5 @@ public class CBlockStateProvider extends BlockStateProvider {
     private String name(Block block) {
         return key(block).getPath();
     }
+    // endregion
 }

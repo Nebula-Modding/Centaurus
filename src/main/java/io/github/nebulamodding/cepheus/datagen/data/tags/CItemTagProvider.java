@@ -23,16 +23,11 @@ public class CItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
 
-        /*
-        Tool Tags
-         */
-
+        // region Tool Tags
         // None applied yet :^
+        // endregion
 
-        /*
-        Tree Tags
-         */
-
+        // region Tree Tags
         copy(net.minecraft.tags.BlockTags.LEAVES, net.minecraft.tags.ItemTags.LEAVES);
         copy(net.minecraft.tags.BlockTags.LOGS, net.minecraft.tags.ItemTags.LOGS);
         copy(Tags.Blocks.STRIPPED_LOGS, Tags.Items.STRIPPED_LOGS);
@@ -41,11 +36,9 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(net.minecraft.tags.BlockTags.PLANKS, net.minecraft.tags.ItemTags.PLANKS);
         copy(CTags.BlockTags.MAYURA_LOGS, CTags.ItemTags.MAYURA_LOGS);
         copy(CTags.BlockTags.GRIMWOOD_LOGS, CTags.ItemTags.GRIMWOOD_LOGS);
+        // endregion
 
-        /*
-        Plant Tags
-         */
-
+        //region Plant Tags
         copy(net.minecraft.tags.BlockTags.SAPLINGS, net.minecraft.tags.ItemTags.SAPLINGS);
         copy(net.minecraft.tags.BlockTags.SMALL_FLOWERS, net.minecraft.tags.ItemTags.SMALL_FLOWERS);
         copy(net.minecraft.tags.BlockTags.TALL_FLOWERS, net.minecraft.tags.ItemTags.TALL_FLOWERS);
@@ -62,17 +55,13 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(CTags.ItemTags.CROPS_AZURE_ROOT)
                 .add(CItems.AZURE_ROOT.get())
         ;
+        // endregion
 
-        /*
-        Soil Tags
-         */
-
+        // region Soil Tags
         copy(net.minecraft.tags.BlockTags.DIRT, net.minecraft.tags.ItemTags.DIRT);
+        // endregion
 
-        /*
-        Stone Tags
-         */
-
+        //region Stone Tags
         copy(Tags.Blocks.STONES, Tags.Items.STONES);
         copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
         copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
@@ -81,18 +70,16 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
                 .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
+                .add(CBlocks.KARCASS_COBBLESTONE.get().asItem())
         ;
         tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
                 .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
                 .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
-                .add(CBlocks.KARCASS_STONE_BLOCKS.get("karcass_cobblestone").get().asItem())
+                .add(CBlocks.KARCASS_COBBLESTONE.get().asItem())
         ;
+        // endregion
 
-        /*
-        Ore Tags
-         */
-
+        // region Ore Tags
         copy(net.minecraft.tags.BlockTags.COAL_ORES, net.minecraft.tags.ItemTags.COAL_ORES);
         copy(net.minecraft.tags.BlockTags.IRON_ORES, net.minecraft.tags.ItemTags.IRON_ORES);
         copy(net.minecraft.tags.BlockTags.COPPER_ORES, net.minecraft.tags.ItemTags.COPPER_ORES);
@@ -199,11 +186,9 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(CTags.ItemTags.RODS_MALUNITE)
                 .add(CItems.MALUNITE_ROD.get())
         ;
+        // endregion
 
-        /*
-        Block Variant Tags
-         */
-
+        //region Block Variant Tags
         copy(net.minecraft.tags.BlockTags.STAIRS, net.minecraft.tags.ItemTags.STAIRS);
         copy(net.minecraft.tags.BlockTags.WOODEN_STAIRS, net.minecraft.tags.ItemTags.WOODEN_STAIRS);
         copy(net.minecraft.tags.BlockTags.SLABS, net.minecraft.tags.ItemTags.SLABS);
@@ -222,11 +207,9 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(net.minecraft.tags.BlockTags.BUTTONS, net.minecraft.tags.ItemTags.BUTTONS);
         copy(net.minecraft.tags.BlockTags.STONE_BUTTONS, net.minecraft.tags.ItemTags.STONE_BUTTONS);
         copy(net.minecraft.tags.BlockTags.WOODEN_BUTTONS, net.minecraft.tags.ItemTags.WOODEN_BUTTONS);
+        // endregion
 
-        /*
-        Storage Block Tags
-         */
-
+        // region Storage Block Tags
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
         copy(CTags.BlockTags.STORAGE_BLOCKS_BRUMA, CTags.ItemTags.STORAGE_BLOCKS_BRUMA);
         copy(CTags.BlockTags.STORAGE_BLOCKS_LUTRUM, CTags.ItemTags.STORAGE_BLOCKS_LUTRUM);
@@ -235,11 +218,9 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, CTags.ItemTags.STORAGE_BLOCKS_RAW_OBDURIUM);
         copy(CTags.BlockTags.STORAGE_BLOCKS_MALUNITE, CTags.ItemTags.STORAGE_BLOCKS_MALUNITE);
         copy(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE, CTags.ItemTags.STORAGE_BLOCKS_RAW_MALUNITE);
+        // endregion
 
-        /*
-        Food Tags
-         */
-
+        // region Food Tags
         tag(net.minecraft.tags.ItemTags.GOAT_FOOD)
                 .add(CItems.BRUMA.get())
         ;
@@ -295,14 +276,13 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.FOODS_FOOD_POISONING)
                 .add(CItems.FLESH.get())
         ;
+        // endregion
 
-        /*
-        Miscellaneous Tags
-         */
-
+        // region Miscellaneous Tags
         tag(ItemTags.PIGLIN_LOVED)
                 .add(CItems.GOLDEN_AZURE_ROOT.get())
                 .add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT.get())
         ;
+        // endregion
     }
 }

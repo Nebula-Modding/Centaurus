@@ -21,17 +21,13 @@ public class CLanguageProvider extends LanguageProvider {
     public CLanguageProvider(PackOutput output) {
         super(output, Cepheus.MOD_ID, "en_us");
     }
+
     @Override
     protected void addTranslations() {
+        // region Exclusions
         final List<DeferredBlock<? extends Block>> excludedBlocks = new ArrayList<>();
         final List<DeferredItem<? extends Item>> excludedItems = new ArrayList<>();
         // Blocks excluded from having a translation automatically provided
-        excludedBlocks.add(CBlocks.SALT_CRYSTAL_BLOCK);
-        excludedBlocks.add(CBlocks.SALT_DUST_BLOCK);
-        excludedBlocks.add(CBlocks.SULFUR_CRYSTAL_BLOCK);
-        excludedBlocks.add(CBlocks.SULFUR_DUST_BLOCK);
-        excludedBlocks.add(CBlocks.GRAPHITE_CRYSTAL_BLOCK);
-        excludedBlocks.add(CBlocks.GRAPHITE_DUST_BLOCK);
         excludedBlocks.add(CBlocks.FLESH_BLOCK);
         excludedBlocks.add(CBlocks.BRUMA_BLOCK);
         excludedBlocks.add(CBlocks.BRUMA_BLOCK);
@@ -47,20 +43,9 @@ public class CLanguageProvider extends LanguageProvider {
         excludedItems.add(CItems.GOLDEN_AZURE_ROOT);
         excludedItems.add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT);
         excludedItems.add(CItems.COOKED_FLESH);
+        // endregion
 
-        /*
-        Manual Translations
-         */
-
-        // Blocks
-        addBlock(CBlocks.SALT_CRYSTAL_BLOCK, "Block of Salt Crystals");
-        addBlock(CBlocks.SALT_DUST_BLOCK, "Block of Salt Dust");
-
-        addBlock(CBlocks.SULFUR_CRYSTAL_BLOCK, "Block of Sulfur Crystals");
-        addBlock(CBlocks.SULFUR_DUST_BLOCK, "Block of Sulfur Dust");
-
-        addBlock(CBlocks.GRAPHITE_CRYSTAL_BLOCK, "Block of Graphite Crystals");
-        addBlock(CBlocks.GRAPHITE_DUST_BLOCK, "Block of Graphite Dust");
+        // region Block Translations
 
         addBlock(CBlocks.FLESH_BLOCK, "Block of Flesh");
 
@@ -74,16 +59,15 @@ public class CLanguageProvider extends LanguageProvider {
         addBlock(CBlocks.WAXED_LUTRUM_BLOCK, "Waxed Block of Lutrum");
         addBlock(CBlocks.OBDURIUM_BLOCK, "Block of Obdurium");
         addBlock(CBlocks.MALUNITE_BLOCK, "Block of Malunite");
+        // endregion
 
-        // Items
+        // region Item Translations
         addItem(CItems.GOLDEN_AZURE_ROOT, "Golden Root");
         addItem(CItems.ENCHANTED_GOLDEN_AZURE_ROOT, "Enchanted Golden Root");
         addItem(CItems.COOKED_FLESH, "Jerky");
+        // endregion
 
-        /*
-        Tag Translations
-         */
-
+        // region Tag Translations
         // Block Tags
         add(CTags.BlockTags.COBBLESTONES_BLUESCHIST, "Blueschist Cobblestones");
         add(CTags.BlockTags.COBBLESTONES_BLUESLATE, "Blue Shale Cobblestones");
@@ -174,9 +158,12 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.INGOTS_MALUNITE, "Malunite Ingots");
         add(CTags.ItemTags.PLATES_MALUNITE, "Malunite Plates");
         add(CTags.ItemTags.RODS_MALUNITE, "Malunite Rods");
+        // endregion
 
-        // Cygnus GUI
+        // region GUI Translations
+        add(CCreativeTab.CREATIVE_TAB_TITLE, "Cepheus");
 
+        // region Cygnus GUI Translations
         add("planet.cygnus.ceres", "Ceres");
         add("planet.cygnus.jupiter", "Jupiter");
         add("planet.cygnus.io", "Io");
@@ -223,17 +210,10 @@ public class CLanguageProvider extends LanguageProvider {
         add("planet.cepheus.him", "Him."); // I know literally 0 people will check the source code :sob:
         add("planet.cepheus.why_did", "Obtutus");
         add("planet.cepheus.you_leave_us", "Vultus");
+        // endregion
+        // endregion
 
-        /*
-        Miscellaneous Translations
-         */
-
-        add(CCreativeTab.CREATIVE_TAB_TITLE, "Cepheus");
-
-        /*
-        Automated Translations
-         */
-
+        // region Automated Translations
         // Blocks
         CBlocks.BLOCKS.getEntries()
                 .stream()
@@ -255,5 +235,6 @@ public class CLanguageProvider extends LanguageProvider {
                                 .getPath()
                                 .replace("_", " "))
                 ));
+        // endregion
     }
 }

@@ -5,11 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class CFoods {
-
-    /*
-    Frigus Foods
-     */
-
+    // region Frigus Foods
     public static final FoodProperties
             BRUMA_LOAF = new FoodProperties.Builder()
                 .nutrition(5)
@@ -37,11 +33,9 @@ public class CFoods {
                 .effect(new MobEffectInstance(MobEffects.ABSORPTION, 1800, 2), 1.0F)
                 .alwaysEdible()
                 .build();
+    // endregion
 
-    /*
-    Karnis Foods
-     */
-
+    // region Karnis Foods
     public static final FoodProperties
             FLESH = new FoodProperties.Builder()
                 .nutrition(4)
@@ -58,4 +52,5 @@ public class CFoods {
                 .effect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1), 1.0F)
                 .alwaysEdible()
                 .build();
+    // endregion
 }

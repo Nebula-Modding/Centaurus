@@ -23,48 +23,44 @@ public class CItemModelProvider extends ItemModelProvider {
         super(output, Cepheus.MOD_ID, existingFileHelper);
     }
 
-    private final ModelFile GENERATED = getExistingFile(mcLoc("item/generated"));
-    private final ModelFile HANDHELD = getExistingFile(mcLoc("item/handheld"));
-
     @Override
     protected void registerModels() {
+        // region Exclusions
         final List<DeferredHolder<Item, ? extends Item>> excludedItems = new ArrayList<>();
         // Items excluded from having a model automatically provided
         excludedItems.add(CItems.ENCHANTED_GOLDEN_AZURE_ROOT);
         excludedItems.add(CItems.OBDURIUM_HAMMER);
+        // endregion
 
-        /*
-        Manual Item Models
-         */
-
+        // region Item Models
         itemModel(CItems.ENCHANTED_GOLDEN_AZURE_ROOT, itemLoc(CItems.GOLDEN_AZURE_ROOT), GENERATED);
         itemModel(CItems.OBDURIUM_HAMMER, HANDHELD);
+        // endregion
 
-        /*
-        Manual Block Models
-         */
-
+        // region Tree Blocks
         itemModel(CBlocks.MAYURA_DOOR, GENERATED);
         blockItemModel(CBlocks.MAYURA_SAPLING, CBlocks.MAYURA_SAPLING, GENERATED);
 
         itemModel(CBlocks.GRIMWOOD_DOOR, GENERATED);
         blockItemModel(CBlocks.GRIMWOOD_SAPLING, CBlocks.GRIMWOOD_SAPLING, GENERATED);
+        // endregion
 
-        blockModel(CBlocks.FRIGUS_GRASS_BLOCK);
-        blockModel(CBlocks.FRIGUS_DIRT_PATH);
-        blockModel(CBlocks.FRIGUS_FARMLAND);
-        blockItemModel(CBlocks.FRIGUS_SHORT_GRASS, CBlocks.FRIGUS_SHORT_GRASS, GENERATED);
+        // region Body-Specific Blocks
+        blockModel(CBlocks.FRIGIAN_GRASS_BLOCK);
+        blockModel(CBlocks.FRIGIAN_DIRT_PATH);
+        blockModel(CBlocks.FRIGIAN_FARMLAND);
+        blockItemModel(CBlocks.FRIGIAN_SHORT_GRASS, CBlocks.FRIGIAN_SHORT_GRASS, GENERATED);
         blockItemModel(CBlocks.VIVIAN, CBlocks.VIVIAN, GENERATED);
         blockItemModel(CBlocks.WICKUL, CBlocks.WICKUL, GENERATED);
         blockItemModel(CBlocks.ICEFLOWER, CBlocks.ICEFLOWER, GENERATED);
-
-        blockItemModel(CBlocks.GRAPHITE_CLUSTER, CBlocks.GRAPHITE_CLUSTER, GENERATED);
 
         blockItemModel(CBlocks.TUMOR, CBlocks.TUMOR, GENERATED);
         blockModel(CBlocks.GRISTLED_FLESH);
         blockItemModel(CBlocks.SHORT_GRISTLES, CBlocks.SHORT_GRISTLES, GENERATED);
         blockItemModel(CBlocks.TALL_GRISTLES, CBlocks.TALL_GRISTLES, GENERATED);
+        // endregion
 
+        // region Metal Blocks
         blockItemModel(CBlocks.LUTRUM_BARS, CBlocks.LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.LUTRUM_DOOR, GENERATED);
         blockModel(CBlocks.LUTRUM_BULB);
@@ -98,16 +94,20 @@ public class CItemModelProvider extends ItemModelProvider {
         blockItemModel(CBlocks.MALUNITE_BARS, CBlocks.MALUNITE_BARS, GENERATED);
         itemModel(CBlocks.MALUNITE_DOOR, GENERATED);
         blockModel(CBlocks.MALUNITE_BULB);
+        // endregion
 
-        /*
-        Automated Item Models
-         */
-
+        // region Automated Item Models
         CItems.ITEMS.getEntries()
                 .stream()
                 .filter(i -> !(i.get() instanceof BlockItem) && !excludedItems.contains(i))
                 .forEach(entry -> basicItem(entry.get()));
+        // endregion
     }
+
+    // region Helpers
+    private final ModelFile GENERATED = getExistingFile(mcLoc("item/generated"));
+
+    private final ModelFile HANDHELD = getExistingFile(mcLoc("item/handheld"));
 
     public void blockModel(DeferredBlock<?> block) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath()));
@@ -156,4 +156,5 @@ public class CItemModelProvider extends ItemModelProvider {
     private ModelFile.ExistingModelFile getModel(DeferredItem<?> item, String suffix) {
         return new ModelFile.ExistingModelFile(modLoc("item/" + item.getId().getPath() + "_" + suffix), existingFileHelper);
     }
+    // endregion
 }

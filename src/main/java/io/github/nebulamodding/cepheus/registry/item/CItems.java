@@ -9,10 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Cepheus.MOD_ID);
 
-    /*
-    Crop Items
-     */
-
+    // region Crop Items
     public static final DeferredItem<Item>
             BRUMA = ITEMS.register("bruma", () -> new Item(new Item.Properties())),
             BRUMA_LOAF = ITEMS.register("bruma_loaf", () -> new Item(new Item.Properties().food(CFoods.BRUMA_LOAF)));
@@ -20,20 +17,16 @@ public class CItems {
             AZURE_ROOT = ITEMS.register("azure_root", () -> new Item(new Item.Properties().food(CFoods.AZURE_ROOT))),
             GOLDEN_AZURE_ROOT = ITEMS.register("golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(CFoods.GOLDEN_AZURE_ROOT))),
             ENCHANTED_GOLDEN_AZURE_ROOT = ITEMS.register("enchanted_golden_azure_root", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(CFoods.ENCHANTED_GOLDEN_AZURE_ROOT).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
+    // endregion
 
-    /*
-    Flesh Items
-     */
-
+    // region Flesh Items
     public static final DeferredItem<Item>
             FLESH = ITEMS.register("flesh", () -> new Item(new Item.Properties().food(CFoods.FLESH))),
             COOKED_FLESH = ITEMS.register("cooked_flesh", () -> new Item(new Item.Properties().food(CFoods.COOKED_FLESH))),
             VEIN_STALK = ITEMS.register("vein_stalk", () -> new Item(new Item.Properties().food(CFoods.VEIN_STALK)));
+    // endregion
 
-    /*
-    Metal Items
-     */
-
+    // region Metal Items
     public static final DeferredItem<Item>
             RAW_LUTRUM = ITEMS.register("raw_lutrum", () -> new Item(new Item.Properties())),
             LUTRUM_NUGGET = ITEMS.register("lutrum_nugget", () -> new Item(new Item.Properties())),
@@ -54,17 +47,14 @@ public class CItems {
             MALUNITE_INGOT = ITEMS.register("malunite_ingot", () -> new Item(new Item.Properties())),
             MALUNITE_SHEET = ITEMS.register("malunite_sheet", () -> new Item(new Item.Properties())),
             MALUNITE_ROD = ITEMS.register("malunite_rod", () -> new Item(new Item.Properties()));
+    // endregion
 
-    /*
-    Tools
-     */
-
+    // region Tools
     public static final DeferredItem<Item>
             OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(CTiers.OBDURIUM, 3.0F, -3.2F))));
+    // endregion
 
-    /*
-    Helper Methods
-     */
+    // region Helpers
 
     private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new ShovelItem(tier, new Item.Properties()
@@ -95,4 +85,5 @@ public class CItems {
                 .attributes(SwordItem.createAttributes(tier, attackDamage, attackSpeed))
         ));
     }
+    // endregion
 }
