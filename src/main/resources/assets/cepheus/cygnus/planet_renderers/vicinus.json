@@ -57,15 +57,15 @@
 			"is_for_orbit": true,
 			"layers": [{
 				"texture": "cepheus:textures/environment/alpha_centauri/vicinus.png",
-				"size": 60.0
+				"size": 189.86
 			}],
 			"transforms": [ 
-				{ "axis": "x", "value": 180.0 }
+				{ "axis": "x", "value": 180 }
 			],
 			"texture_rotation": [0, 90, 0],
 			"backlight": {
 				"texture": "cygnus:textures/environment/backlights/32x32/circle.png",
-				"size": 180.0,
+				"size": 759.44,
 				"color": [207, 38, 167, 125]
 			}
 		}

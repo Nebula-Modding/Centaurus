@@ -2,17 +2,17 @@
 	"dimension": "cepheus:frigus",
 	"gravity": 7.842,
 	"has_oxygen": true,
-	"day_length": 17000,
-	"night_length": 17000,
-	"year_length": 32,
+	"day_length": 94000,
+	"night_length": 94000,
+	"year_length": 7.83,
 	"ambient_temperature_curve": [
-		{ "x": 0.00, "y": 7.6 }, // dawn
-		{ "x": 0.25, "y": 8.2 }, // midday
-		{ "x": 0.50, "y": 7.3 }, // midnight
-		{ "x": 1.00, "y": 7.6 } // dawn
+		{ "x": 0.00, "y": 5.9 }, // dawn
+		{ "x": 0.25, "y": 7.6 }, // midday
+		{ "x": 0.50, "y": 6.5 }, // midnight
+		{ "x": 1.00, "y": 5.9 } // dawn
 	],
 	"ambient_radiation": 0,
 	"moons": [],
-	"atmospheric_pressure": 0.926,
+	"atmospheric_pressure": 1.13,
 	"danger_index": "habitable"
 }

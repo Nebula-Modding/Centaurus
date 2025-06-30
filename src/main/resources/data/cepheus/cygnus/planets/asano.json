@@ -1,17 +1,17 @@
 {
 	"gravity": 8.924,
 	"has_oxygen": true,
-	"day_length": 11500,
-	"night_length": 11500,
-	"year_length": 238.176,
+	"day_length": 11300,
+	"night_length": 11300,
+	"year_length": 689.176,
 	"ambient_temperature_curve": [
-		{ "x": 0.00, "y": 20.8 }, // dawn
-		{ "x": 0.25, "y": 23.7 }, // midday
-		{ "x": 0.50, "y": 17.5 }, // midnight
-		{ "x": 1.00, "y": 20.8 } // dawn
+		{ "x": 0.00, "y": 21.8 }, // dawn
+		{ "x": 0.25, "y": 23.3 }, // midday
+		{ "x": 0.50, "y": 19.4 }, // midnight
+		{ "x": 1.00, "y": 21.8 } // dawn
 	],
 	"ambient_radiation": 0,
 	"moons": [],
-	"atmospheric_pressure": 0.967,
-	"danger_index": "non_landable"
+	"atmospheric_pressure": 0.654,
+	"danger_index": "habitable"
 }

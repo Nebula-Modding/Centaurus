@@ -1,20 +1,20 @@
 {
-	"gravity": 263.587,
+	"gravity": 36.167,
 	"has_oxygen": false,
-	"day_length": 17000,
-	"night_length": 17000,
-	"year_length": 1912.332,
+	"day_length": 13150,
+	"night_length": 13150,
+	"year_length": 1842.332,
 	"ambient_temperature_curve": [
-		{ "x": 0.00, "y": 427.7 }, // dawn
-		{ "x": 0.25, "y": 427.3 }, // midday
-		{ "x": 0.50, "y": 427.6 }, // midnight
-		{ "x": 1.00, "y": 427.7 } // dawn
+		{ "x": 0.00, "y": -85.9 }, // dawn
+		{ "x": 0.25, "y": -85.9 }, // midday
+		{ "x": 0.50, "y": -85.9 }, // midnight
+		{ "x": 1.00, "y": -85.9 } // dawn
 	],
-	"ambient_radiation": 1,
+	"ambient_radiation": 1, // todo
 	"moons": [
 		"cepheus:ignis",
 		"cepheus:frigus"
 	],
-	"atmospheric_pressure": 534924427,
+	"atmospheric_pressure": 202000000,
 	"danger_index": "non_landable"
 }
