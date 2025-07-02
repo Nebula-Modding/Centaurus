@@ -7,10 +7,6 @@ This means that you must do a different task first in order to do that task. Und
 
 ### Add Blocks ### (Varies) [Avery]
 - Mayura Signs (0/2)
-- Methane Ices (0/15)
-- Ammonia Ices (0/5)
-- Karcass Stones (0/7)
-- Goreslate (0/8)
 - Veinstalk
 
 ### Fix Tool Repairing ###
@@ -34,6 +30,7 @@ Go through and add tags for each and every block.
 - Make a crop block type
 - Add Bruma
 - Add Azure Root
+
 ### Frigus Worldgen ### (High)
 - Frigian Plains
 - Frigian Forest
