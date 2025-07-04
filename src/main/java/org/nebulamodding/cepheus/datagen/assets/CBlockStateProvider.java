@@ -61,6 +61,9 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.GRISTLED_FLESH);
         excludedBlocks.add(CBlocks.SHORT_GRISTLES);
         excludedBlocks.add(CBlocks.TALL_GRISTLES);
+        excludedBlocks.add(CBlocks.SILICATE_STONE_BRICK_STAIRS);
+        excludedBlocks.add(CBlocks.SILICATE_STONE_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.SILICATE_STONE_BRICK_WALL);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_SLAB);
         excludedBlocks.add(CBlocks.BLUESCHIST_BRICK_WALL);
@@ -244,7 +247,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         fenceBlockWithItem(CBlocks.MAYURA_FENCE, blockLoc(CBlocks.MAYURA_PLANKS));
         fenceGateBlockWithItem(CBlocks.MAYURA_FENCE_GATE, blockLoc(CBlocks.MAYURA_PLANKS));
         doorBlockWithItem(CBlocks.MAYURA_DOOR, blockLoc(CBlocks.MAYURA_DOOR, "bottom"), blockLoc(CBlocks.MAYURA_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.MAYURA_TRAPDOOR, blockLoc(CBlocks.MAYURA_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.MAYURA_TRAPDOOR, blockLoc(CBlocks.MAYURA_TRAPDOOR), false, "cutout");
         pressurePlateBlockWithItem(CBlocks.MAYURA_PRESSURE_PLATE, blockLoc(CBlocks.MAYURA_PLANKS));
         buttonBlockWithItem(CBlocks.MAYURA_BUTTON, blockLoc(CBlocks.MAYURA_PLANKS));
         simpleBlock(CBlocks.MAYURA_SAPLING.get(), models().cross(CBlocks.MAYURA_SAPLING.getId().getPath(), blockLoc(CBlocks.MAYURA_SAPLING)).renderType("cutout"));
@@ -256,7 +259,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         fenceBlockWithItem(CBlocks.GRIMWOOD_FENCE, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         fenceGateBlockWithItem(CBlocks.GRIMWOOD_FENCE_GATE, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         doorBlockWithItem(CBlocks.GRIMWOOD_DOOR, blockLoc(CBlocks.GRIMWOOD_DOOR, "bottom"), blockLoc(CBlocks.GRIMWOOD_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.GRIMWOOD_TRAPDOOR, blockLoc(CBlocks.GRIMWOOD_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.GRIMWOOD_TRAPDOOR, blockLoc(CBlocks.GRIMWOOD_TRAPDOOR), false, "cutout");
         pressurePlateBlockWithItem(CBlocks.GRIMWOOD_PRESSURE_PLATE, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         buttonBlockWithItem(CBlocks.GRIMWOOD_BUTTON, blockLoc(CBlocks.GRIMWOOD_PLANKS));
         simpleBlock(CBlocks.GRIMWOOD_SAPLING.get(), models().cross(CBlocks.GRIMWOOD_SAPLING.getId().getPath(), blockLoc(CBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
@@ -280,6 +283,10 @@ public class CBlockStateProvider extends BlockStateProvider {
         // endregion
 
         // region Stones
+        stairsBlockWithItem(CBlocks.SILICATE_STONE_BRICK_STAIRS, blockLoc(CBlocks.SILICATE_STONE_BRICKS));
+        slabBlockWithItem(CBlocks.SILICATE_STONE_BRICK_SLAB, blockLoc(CBlocks.SILICATE_STONE_BRICKS));
+        wallBlockWithItem(CBlocks.SILICATE_STONE_BRICK_WALL, blockLoc(CBlocks.SILICATE_STONE_BRICKS));
+
         stairsBlockWithItem(CBlocks.BLUESCHIST_BRICK_STAIRS, blockLoc(CBlocks.BLUESCHIST_BRICKS));
         slabBlockWithItem(CBlocks.BLUESCHIST_BRICK_SLAB, blockLoc(CBlocks.BLUESCHIST_BRICKS));
         wallBlockWithItem(CBlocks.BLUESCHIST_BRICK_WALL, blockLoc(CBlocks.BLUESCHIST_BRICKS));
@@ -316,31 +323,36 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(CBlocks.LUTRUM_WINDOW.get(), models().cubeAll("lutrum_window", blockLoc(CBlocks.LUTRUM_WINDOW)).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.LUTRUM_BARS.get(), blockLoc(CBlocks.LUTRUM_BARS), blockLoc(CBlocks.LUTRUM_BARS), "translucent");
         doorBlockWithItem(CBlocks.LUTRUM_DOOR, blockLoc(CBlocks.LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.LUTRUM_TRAPDOOR, blockLoc(CBlocks.LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.LUTRUM_TRAPDOOR, blockLoc(CBlocks.LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.LUTRUM_BULB, CBlocks.LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.EXPOSED_CHISELED_LUTRUM.get(), models().cubeColumn("exposed_chiseled_lutrum", blockLoc(CBlocks.EXPOSED_CHISELED_LUTRUM), blockLoc(CBlocks.EXPOSED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.EXPOSED_LUTRUM_GRATE.get(), models().cubeAll("exposed_lutrum_grate", blockLoc(CBlocks.EXPOSED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.EXPOSED_LUTRUM_WINDOW.get(), models().cubeAll("exposed_lutrum_window", blockLoc(CBlocks.EXPOSED_LUTRUM_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.EXPOSED_LUTRUM_BARS.get(), blockLoc(CBlocks.EXPOSED_LUTRUM_BARS), blockLoc(CBlocks.EXPOSED_LUTRUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.EXPOSED_LUTRUM_DOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.EXPOSED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.EXPOSED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.EXPOSED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.EXPOSED_LUTRUM_BULB, CBlocks.EXPOSED_LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.WEATHERED_CHISELED_LUTRUM.get(), models().cubeColumn("weathered_chiseled_lutrum", blockLoc(CBlocks.WEATHERED_CHISELED_LUTRUM), blockLoc(CBlocks.WEATHERED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.WEATHERED_LUTRUM_GRATE.get(), models().cubeAll("weathered_lutrum_grate", blockLoc(CBlocks.WEATHERED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.WEATHERED_LUTRUM_WINDOW.get(), models().cubeAll("weathered_lutrum_window", blockLoc(CBlocks.WEATHERED_LUTRUM_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.WEATHERED_LUTRUM_BARS.get(), blockLoc(CBlocks.WEATHERED_LUTRUM_BARS), blockLoc(CBlocks.WEATHERED_LUTRUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.WEATHERED_LUTRUM_DOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.WEATHERED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.WEATHERED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.WEATHERED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.WEATHERED_LUTRUM_BULB, CBlocks.WEATHERED_LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.OXIDIZED_CHISELED_LUTRUM.get(), models().cubeColumn("oxidized_chiseled_lutrum", blockLoc(CBlocks.OXIDIZED_CHISELED_LUTRUM), blockLoc(CBlocks.OXIDIZED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.OXIDIZED_LUTRUM_GRATE.get(), models().cubeAll("oxidized_lutrum_grate", blockLoc(CBlocks.OXIDIZED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.OXIDIZED_LUTRUM_WINDOW.get(), models().cubeAll("oxidized_lutrum_window", blockLoc(CBlocks.OXIDIZED_LUTRUM_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.OXIDIZED_LUTRUM_BARS.get(), blockLoc(CBlocks.OXIDIZED_LUTRUM_BARS), blockLoc(CBlocks.OXIDIZED_LUTRUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.OXIDIZED_LUTRUM_DOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.OXIDIZED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.OXIDIZED_LUTRUM_BULB, CBlocks.OXIDIZED_LUTRUM_BULB);
 
         simpleBlockWithItem(CBlocks.WAXED_LUTRUM_BLOCK.get(), models().cubeAll("lutrum_block", blockLoc(CBlocks.LUTRUM_BLOCK)));
         simpleBlockWithItem(CBlocks.WAXED_LUTRUM_SHEET_METAL.get(), models().cubeAll("lutrum_sheet_metal", blockLoc(CBlocks.LUTRUM_SHEET_METAL)));
         simpleBlockWithItem(CBlocks.WAXED_CHISELED_LUTRUM.get(), models().cubeColumn("chiseled_lutrum", blockLoc(CBlocks.CHISELED_LUTRUM), blockLoc(CBlocks.CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.WAXED_LUTRUM_GRATE.get(), models().cubeAll("lutrum_grate", blockLoc(CBlocks.LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.WAXED_LUTRUM_WINDOW.get(), models().cubeAll("lutrum_window", blockLoc(CBlocks.LUTRUM_WINDOW)).renderType("translucent"));
+        axisBlockWithItem(CBlocks.WAXED_LUTRUM_PILLAR, blockLoc(CBlocks.LUTRUM_PILLAR), blockLoc(CBlocks.LUTRUM_PILLAR, "top"));
         simpleBlockWithItem(CBlocks.WAXED_LUTRUM_PLATING.get(), models().cubeAll("lutrum_plating", blockLoc(CBlocks.LUTRUM_PLATING)));
         stairsBlockWithItem(CBlocks.WAXED_LUTRUM_PLATING_STAIRS, blockLoc(CBlocks.LUTRUM_PLATING));
         slabBlockWithItem(CBlocks.WAXED_LUTRUM_PLATING_SLAB, blockLoc(CBlocks.LUTRUM_PLATING));
@@ -348,12 +360,14 @@ public class CBlockStateProvider extends BlockStateProvider {
         buttonBlockWithItem(CBlocks.WAXED_LUTRUM_PLATING_BUTTON, blockLoc(CBlocks.LUTRUM_PLATING));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.WAXED_LUTRUM_BARS.get(), blockLoc(CBlocks.LUTRUM_BARS), blockLoc(CBlocks.LUTRUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.WAXED_LUTRUM_DOOR, blockLoc(CBlocks.LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.WAXED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.WAXED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.WAXED_LUTRUM_BULB, CBlocks.LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM.get(), models().cubeAll("exposed_lutrum", blockLoc(CBlocks.EXPOSED_LUTRUM)));
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_SHEET_METAL.get(), models().cubeAll("exposed_lutrum_sheet_metal", blockLoc(CBlocks.EXPOSED_LUTRUM_SHEET_METAL)));
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_CHISELED_LUTRUM.get(), models().cubeColumn("exposed_chiseled_lutrum", blockLoc(CBlocks.EXPOSED_CHISELED_LUTRUM), blockLoc(CBlocks.EXPOSED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_GRATE.get(), models().cubeAll("exposed_lutrum_grate", blockLoc(CBlocks.EXPOSED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_WINDOW.get(), models().cubeAll("exposed_lutrum_window", blockLoc(CBlocks.EXPOSED_LUTRUM_WINDOW)).renderType("translucent"));
+        axisBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_PILLAR, blockLoc(CBlocks.EXPOSED_LUTRUM_PILLAR), blockLoc(CBlocks.EXPOSED_LUTRUM_PILLAR, "top"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.WAXED_EXPOSED_LUTRUM_BARS.get(), blockLoc(CBlocks.EXPOSED_LUTRUM_BARS), blockLoc(CBlocks.EXPOSED_LUTRUM_BARS), "cutout");
         simpleBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING.get(), models().cubeAll("exposed_lutrum_plating", blockLoc(CBlocks.EXPOSED_LUTRUM_PLATING)));
         stairsBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_STAIRS, blockLoc(CBlocks.EXPOSED_LUTRUM_PLATING));
@@ -361,12 +375,14 @@ public class CBlockStateProvider extends BlockStateProvider {
         pressurePlateBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_PRESSURE_PLATE, blockLoc(CBlocks.EXPOSED_LUTRUM_PLATING));
         buttonBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_PLATING_BUTTON, blockLoc(CBlocks.EXPOSED_LUTRUM_PLATING));
         doorBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.EXPOSED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.EXPOSED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.WAXED_EXPOSED_LUTRUM_BULB, CBlocks.EXPOSED_LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM.get(), models().cubeAll("weathered_lutrum", blockLoc(CBlocks.WEATHERED_LUTRUM)));
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_SHEET_METAL.get(), models().cubeAll("weathered_lutrum_sheet_metal", blockLoc(CBlocks.WEATHERED_LUTRUM_SHEET_METAL)));
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_CHISELED_LUTRUM.get(), models().cubeColumn("weathered_chiseled_lutrum", blockLoc(CBlocks.WEATHERED_CHISELED_LUTRUM), blockLoc(CBlocks.WEATHERED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_GRATE.get(), models().cubeAll("weathered_lutrum_grate", blockLoc(CBlocks.WEATHERED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_WINDOW.get(), models().cubeAll("weathered_lutrum_window", blockLoc(CBlocks.WEATHERED_LUTRUM_WINDOW)).renderType("translucent"));
+        axisBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_PILLAR, blockLoc(CBlocks.WEATHERED_LUTRUM_PILLAR), blockLoc(CBlocks.WEATHERED_LUTRUM_PILLAR, "top"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.WAXED_WEATHERED_LUTRUM_BARS.get(), blockLoc(CBlocks.WEATHERED_LUTRUM_BARS), blockLoc(CBlocks.WEATHERED_LUTRUM_BARS), "cutout");
         simpleBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING.get(), models().cubeAll("weathered_lutrum_plating", blockLoc(CBlocks.WEATHERED_LUTRUM_PLATING)));
         stairsBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_STAIRS, blockLoc(CBlocks.WEATHERED_LUTRUM_PLATING));
@@ -374,12 +390,14 @@ public class CBlockStateProvider extends BlockStateProvider {
         pressurePlateBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_PRESSURE_PLATE, blockLoc(CBlocks.WEATHERED_LUTRUM_PLATING));
         buttonBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_PLATING_BUTTON, blockLoc(CBlocks.WEATHERED_LUTRUM_PLATING));
         doorBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.WEATHERED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.WEATHERED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.WAXED_WEATHERED_LUTRUM_BULB, CBlocks.WEATHERED_LUTRUM_BULB);
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM.get(), models().cubeAll("oxidized_lutrum", blockLoc(CBlocks.OXIDIZED_LUTRUM)));
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_SHEET_METAL.get(), models().cubeAll("oxidized_lutrum_sheet_metal", blockLoc(CBlocks.OXIDIZED_LUTRUM_SHEET_METAL)));
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_CHISELED_LUTRUM.get(), models().cubeColumn("oxidized_chiseled_lutrum", blockLoc(CBlocks.OXIDIZED_CHISELED_LUTRUM), blockLoc(CBlocks.OXIDIZED_CHISELED_LUTRUM, "top")));
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_GRATE.get(), models().cubeAll("oxidized_lutrum_grate", blockLoc(CBlocks.OXIDIZED_LUTRUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_WINDOW.get(), models().cubeAll("oxidized_lutrum_window", blockLoc(CBlocks.OXIDIZED_LUTRUM_WINDOW)).renderType("translucent"));
+        axisBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_PILLAR, blockLoc(CBlocks.OXIDIZED_LUTRUM_PILLAR), blockLoc(CBlocks.OXIDIZED_LUTRUM_PILLAR, "top"));
         simpleBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING.get(), models().cubeAll("oxidized_lutrum_plating", blockLoc(CBlocks.OXIDIZED_LUTRUM_PLATING)));
         stairsBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_STAIRS, blockLoc(CBlocks.OXIDIZED_LUTRUM_PLATING));
         slabBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_SLAB, blockLoc(CBlocks.OXIDIZED_LUTRUM_PLATING));
@@ -387,19 +405,22 @@ public class CBlockStateProvider extends BlockStateProvider {
         buttonBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_PLATING_BUTTON, blockLoc(CBlocks.OXIDIZED_LUTRUM_PLATING));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.WAXED_OXIDIZED_LUTRUM_BARS.get(), blockLoc(CBlocks.OXIDIZED_LUTRUM_BARS), blockLoc(CBlocks.OXIDIZED_LUTRUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_DOOR, "bottom"), blockLoc(CBlocks.OXIDIZED_LUTRUM_DOOR, "top"), "cutout");
-        trapDoorBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR), true, "cutout");
+        trapDoorBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_TRAPDOOR, blockLoc(CBlocks.OXIDIZED_LUTRUM_TRAPDOOR), false, "cutout");
+        bulbBlockWithItem(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB, CBlocks.OXIDIZED_LUTRUM_BULB);
 
         simpleBlockWithItem(CBlocks.OBDURIUM_GRATE.get(), models().cubeAll("obdurium_grate", blockLoc(CBlocks.OBDURIUM_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.OBDURIUM_WINDOW.get(), models().cubeAll("obdurium_window", blockLoc(CBlocks.OBDURIUM_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.OBDURIUM_BARS.get(), blockLoc(CBlocks.OBDURIUM_BARS), blockLoc(CBlocks.OBDURIUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.OBDURIUM_DOOR, blockLoc(CBlocks.OBDURIUM_DOOR, "bottom"), blockLoc(CBlocks.OBDURIUM_DOOR, "top"), "translucent");
         trapDoorBlockWithItem(CBlocks.OBDURIUM_TRAPDOOR, blockLoc(CBlocks.OBDURIUM_TRAPDOOR), true, "translucent");
+        bulbBlockWithItem(CBlocks.OBDURIUM_BULB, CBlocks.OBDURIUM_BULB);
 
         simpleBlockWithItem(CBlocks.MALUNITE_GRATE.get(), models().cubeAll("malunite_grate", blockLoc(CBlocks.MALUNITE_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.MALUNITE_WINDOW.get(), models().cubeAll("malunite_window", blockLoc(CBlocks.MALUNITE_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.MALUNITE_BARS.get(), blockLoc(CBlocks.MALUNITE_BARS), blockLoc(CBlocks.MALUNITE_BARS), "cutout");
         doorBlockWithItem(CBlocks.MALUNITE_DOOR, blockLoc(CBlocks.MALUNITE_DOOR, "bottom"), blockLoc(CBlocks.MALUNITE_DOOR, "top"), "translucent");
         trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), true, "translucent");
+        bulbBlockWithItem(CBlocks.MALUNITE_BULB, CBlocks.MALUNITE_BULB);
         // endregion
 
         // region Potted Plant Blocks
@@ -412,15 +433,6 @@ public class CBlockStateProvider extends BlockStateProvider {
     }
 
     // region Helpers
-    private void simpleBlock(DeferredBlock<? extends Block> block) {
-        super.simpleBlock(block.get());
-        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
-    }
-
-    public void simpleBlockWithoutItem(DeferredBlock<? extends Block> block, ModelFile model) {
-        super.simpleBlock(block.get(), model);
-    }
-
     public void axisBlockWithItem(DeferredBlock<Block> block, ResourceLocation side, ResourceLocation end) {
         super.axisBlock((RotatedPillarBlock) block.get(), side, end);
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
@@ -482,8 +494,32 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/").withSuffix("_bottom")));
     }
 
-    private ResourceLocation extend(ResourceLocation rl, String suffix) {
-        return ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), rl.getPath() + suffix);
+    private void bulbBlockWithItem(DeferredBlock<? extends Block> block, DeferredBlock<? extends Block> texture) {
+        String lit = "_lit";
+        String powered = "_powered";
+        getVariantBuilder(block.get())
+                .partialState()
+                .with(CopperBulbBlock.LIT, false)
+                .with(CopperBulbBlock.POWERED, false)
+                .modelForState().modelFile(models().cubeAll(block.getId().getPath(), blockLoc(texture))).addModel()
+                .partialState()
+                .with(CopperBulbBlock.LIT, true)
+                .with(CopperBulbBlock.POWERED, false)
+                .modelForState().modelFile(models().cubeAll(block.getId().getPath() + lit, blockLoc(texture, "lit"))).addModel()
+                .partialState()
+                .with(CopperBulbBlock.LIT, false)
+                .with(CopperBulbBlock.POWERED, true)
+                .modelForState().modelFile(models().cubeAll(block.getId().getPath() + powered, blockLoc(texture, "powered"))).addModel()
+                .partialState()
+                .with(CopperBulbBlock.LIT, true)
+                .with(CopperBulbBlock.POWERED, true)
+                .modelForState().modelFile(models().cubeAll(block.getId().getPath() + lit+powered, blockLoc(texture, "lit_powered"))).addModel()
+        ;
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(block.getId().withPrefix("block/")));
+    }
+
+    private ResourceLocation extend(ResourceLocation resourceLoc, String suffix) {
+        return ResourceLocation.fromNamespaceAndPath(resourceLoc.getNamespace(), resourceLoc.getPath() + suffix);
     }
 
     private ResourceLocation blockLoc(DeferredBlock<? extends Block> block) {

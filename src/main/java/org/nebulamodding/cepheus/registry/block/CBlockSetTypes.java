@@ -16,6 +16,21 @@ public class CBlockSetTypes {
 
     // region Stone Blockset Types
     public static final BlockSetType
+            SILICATE_STONE = register(new BlockSetType("silicate_stone",
+            true,
+            true,
+            false,
+            BlockSetType.PressurePlateSensitivity.MOBS,
+            SoundType.STONE,
+            SoundEvents.IRON_DOOR_CLOSE,
+            SoundEvents.IRON_DOOR_OPEN,
+            SoundEvents.IRON_TRAPDOOR_CLOSE,
+            SoundEvents.IRON_TRAPDOOR_OPEN,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON,
+            SoundEvents.STONE_BUTTON_CLICK_OFF,
+            SoundEvents.STONE_BUTTON_CLICK_ON)
+    ),
             BLUESCHIST = register(new BlockSetType("blueschist",
             true,
             true,

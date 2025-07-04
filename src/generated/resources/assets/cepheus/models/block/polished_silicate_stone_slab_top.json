@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cepheus:block/polished_silicate_stone",
+    "side": "cepheus:block/polished_silicate_stone",
+    "top": "cepheus:block/polished_silicate_stone"
+  }
+}

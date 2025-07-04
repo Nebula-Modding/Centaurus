@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cepheus:block/polished_silicate_stone_slab"
+    },
+    "type=double": {
+      "model": "cepheus:block/polished_silicate_stone"
+    },
+    "type=top": {
+      "model": "cepheus:block/polished_silicate_stone_slab_top"
+    }
+  }
+}

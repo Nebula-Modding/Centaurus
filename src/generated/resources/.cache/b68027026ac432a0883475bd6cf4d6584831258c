@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-01T21:09:35.4981446	Tags for minecraft:block mod id cepheus
+// 1.21.1	2025-07-03T21:56:00.8684749	Tags for minecraft:block mod id cepheus
 a33940d759905a88865cbba82adb4cb9d29014a5 data/cepheus/tags/block/base_stone_frigus.json
 fc3ffb72645359678967b0da3d434391c288d304 data/cepheus/tags/block/blueschist_ore_replaceables.json
 174def7db8e1ca0109fcb76de43a8d1d1db78439 data/cepheus/tags/block/blueslate_ore_replaceables.json
@@ -7,11 +7,13 @@ fc3ffb72645359678967b0da3d434391c288d304 data/cepheus/tags/block/blueschist_ore_
 6636e931ce2892cef0f308eb769cf9afa8793a11 data/cepheus/tags/block/grimwood_logs.json
 36ec8890894d70e060dcfffdbf2b31a361ef7c50 data/cepheus/tags/block/karcass_stone_ore_replaceables.json
 f75c28ca078822d75474b403d3c373f2f641aeba data/cepheus/tags/block/mayura_logs.json
+2f47fedddb06e41a3afdb53b9c3c884f7304afbc data/cepheus/tags/block/silicate_stone_ore_replaceables.json
 e89bb4b6946d91cf552d9eadefb5ba2a65708312 data/create/tags/block/fan_transparent.json
-4f75a7737a3d53acd5e28fb47787f31d71972084 data/c/tags/block/cobblestones.json
+348afb8e37189fb3359d12cb4ed5eec143f82c0b data/c/tags/block/cobblestones.json
 d89cc621dd2580f197d965eecc76ac96ca15ff51 data/c/tags/block/cobblestones/blueschist.json
 077c8cee20799d55e5b7067f0911d33aef94f962 data/c/tags/block/cobblestones/blueslate.json
 fbd603c880994030bb648cadc06b75d56a36cbf8 data/c/tags/block/cobblestones/karcass_stone.json
+7487d09bf9487d8e3126e75d3950f8e299683193 data/c/tags/block/cobblestones/silicate_stone.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/fence_gates.json
 fd0b9ed7639579ecc730abd19dc3ebd8535aed4a data/c/tags/block/fence_gates/wooden.json
 9d6bc501238d48dd551e02fc130fde60e97b4de8 data/c/tags/block/ores/lutrum.json
@@ -22,17 +24,19 @@ fbe1df743ef82bda84cbff0172187af0558102c4 data/c/tags/block/ores_in_ground/bluesc
 4a6aea42e4fd986d642227a17f97177102b3f339 data/c/tags/block/ores_in_ground/karcass_stone.json
 9ccfddc84fbcd4580469677494e9ed9d6a3e7673 data/c/tags/block/ores_in_ground/nitrogen_ice.json
 55a737b7a7456eab8867f16e0324f7956a611065 data/c/tags/block/ores_in_ground/oxygen_ice.json
+4a6aea42e4fd986d642227a17f97177102b3f339 data/c/tags/block/ores_in_ground/silicate_stone.json
 6fc908c6c096beb1efd7e455490942827d710bc3 data/c/tags/block/ores_in_ground/water_ice.json
 7effc7eed3ac91131dc171974fe46b5650c06573 data/c/tags/block/ore_bearing_ground/blueschist.json
 174def7db8e1ca0109fcb76de43a8d1d1db78439 data/c/tags/block/ore_bearing_ground/blueslate.json
 36ec8890894d70e060dcfffdbf2b31a361ef7c50 data/c/tags/block/ore_bearing_ground/karcass_stone.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_bearing_ground/nitrogen_ice.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_bearing_ground/oxygen_ice.json
+2f47fedddb06e41a3afdb53b9c3c884f7304afbc data/c/tags/block/ore_bearing_ground/silicate_stone.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_bearing_ground/water_ice.json
 798059f19dbef85be3729f50d033ea3dd0922d96 data/c/tags/block/ore_rates/dense.json
 64ebbac55aa92cf6642bbca47b1ea763ce22a8ca data/c/tags/block/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/ore_rates/sparse.json
-8292c20e72eed30dcdd7aeb11a8aa8f865aad0f9 data/c/tags/block/stones.json
+145fd8b973d77c2ef9e99eae8ab9bf77bab425f6 data/c/tags/block/stones.json
 3459b70c3f91d3e580c08246f831d9b89f2ab112 data/c/tags/block/storage_blocks.json
 11dc7ec03d2524a3350a41d4456d1475778ef419 data/c/tags/block/storage_blocks/bruma.json
 92b762d5958b5e00810e0c291b444ea096aca122 data/c/tags/block/storage_blocks/lutrum.json
@@ -69,7 +73,7 @@ fd1a4d866e4eebcf2e9b4dff7d9944d4aa000836 data/minecraft/tags/block/logs.json
 fd1a4d866e4eebcf2e9b4dff7d9944d4aa000836 data/minecraft/tags/block/logs_that_burn.json
 795d98c6a207ed8a1f5d275fd17d105daf0559a1 data/minecraft/tags/block/mineable/axe.json
 6e2de289a3e6dda03c43a673f9c325752f39703c data/minecraft/tags/block/mineable/hoe.json
-7f4277c1b62185cae258b20938532aabade69d5f data/minecraft/tags/block/mineable/pickaxe.json
+2fedff22ac791876b86efcce51803b29b39f38c5 data/minecraft/tags/block/mineable/pickaxe.json
 8af43c0957b24c7eddf28e7e53291a25de6b5936 data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 9ce7ce05ea800537b236b246ba0bc63d5bf5265f data/minecraft/tags/block/needs_iron_tool.json
@@ -80,17 +84,17 @@ d8f4836f42818b559035032df7ea5dbf1e9819b2 data/minecraft/tags/block/redstone_ores
 8b8373276398749116ca91b428968325b6b2299d data/minecraft/tags/block/replaceable.json
 8b8373276398749116ca91b428968325b6b2299d data/minecraft/tags/block/replaceable_by_trees.json
 98b60d402d2a53003192c8ede2a0a19c8f65e557 data/minecraft/tags/block/saplings.json
-91f42ee1b47725ef07afde64ea75d356f7380778 data/minecraft/tags/block/slabs.json
+aeb679aa4d47e8960fa6b801c02cf450835a5967 data/minecraft/tags/block/slabs.json
 7af725040efd4f379fd999322bb896577b8c5c8a data/minecraft/tags/block/small_flowers.json
 bedcc743ddd6369403ad5fb4dc3838d4567220a2 data/minecraft/tags/block/sniffer_diggable_block.json
-8f62415209528f0e2020a20042b00ef68dec465b data/minecraft/tags/block/stairs.json
-dd26346f17bdb1bf63bf87cdb327d42a788944a8 data/minecraft/tags/block/stone_buttons.json
-a104010c35ada5f797ee0a13a22a74bb2686df59 data/minecraft/tags/block/stone_pressure_plates.json
+d2f3bd812d04dff71b0db6c3602b68ec9b4c49c1 data/minecraft/tags/block/stairs.json
+99d02e85c3ee2b4a341c14c2107555b027d7f0b2 data/minecraft/tags/block/stone_buttons.json
+2103fd6ecfd23d4f319d2dcd01054359d7847d33 data/minecraft/tags/block/stone_pressure_plates.json
 8b8373276398749116ca91b428968325b6b2299d data/minecraft/tags/block/sword_efficient.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/tall_flowers.json
 84dcaad610fc182a9ed188365207dac2e57b2e6e data/minecraft/tags/block/trapdoors.json
 32697f330385ed9280d93ca3fcb08d709df7973c data/minecraft/tags/block/valid_spawn.json
-b7d0574b279f25247a0063a6b2f2af2a49390e21 data/minecraft/tags/block/walls.json
+ed3eb0ab9c02cbd10a1022536a6b9a1082b1a5d7 data/minecraft/tags/block/walls.json
 8c1a19ad273b10baf070d004a5dc3babc2014240 data/minecraft/tags/block/wooden_buttons.json
 88a011d8fa2e7b3682e08b80219ca32145a46631 data/minecraft/tags/block/wooden_doors.json
 75a087684d714111a1ef55db17c208a0a7e59499 data/minecraft/tags/block/wooden_fences.json

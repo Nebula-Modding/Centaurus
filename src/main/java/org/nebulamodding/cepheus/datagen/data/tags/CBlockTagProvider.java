@@ -28,6 +28,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // region Common Tag Lists
         // Lists with collections of blocks with multiple of the same tag to save on lines of code and make this file more readable
+        final List<DeferredBlock<? extends Block>> silicateStoneOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> blueschistOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> blueslateOres = new ArrayList<>();
         final List<DeferredBlock<? extends Block>> karcassStoneOres = new ArrayList<>();
@@ -44,6 +45,18 @@ public class CBlockTagProvider extends BlockTagsProvider {
         final List<DeferredBlock<? extends Block>> needsStonePickaxe = new ArrayList<>();
         
         // region Ores
+        silicateStoneOres.add(CBlocks.PLACEHOLDER_BLOCK); // Todo: add silicate stone ores
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_COAL_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_IRON_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_COPPER_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_GOLD_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_REDSTONE_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_EMERALD_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_LAPIS_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_DIAMOND_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_LUTRUM_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_OBDURIUM_ORE);
+        //silicateStoneOres.add(CBlocks.SILICATE_STONE_MALUNITE_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_COAL_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_IRON_ORE);
         blueschistOres.add(CBlocks.BLUESCHIST_COPPER_ORE);
@@ -114,6 +127,21 @@ public class CBlockTagProvider extends BlockTagsProvider {
         // endregion
 
         // region Building Blocks
+        // Silicate Stone
+        pickaxeStairs.add(CBlocks.SILICATE_STONE_STAIRS);
+        pickaxeStairs.add(CBlocks.SILICATE_COBBLESTONE_STAIRS);
+        pickaxeStairs.add(CBlocks.POLISHED_SILICATE_STONE_STAIRS);
+        pickaxeStairs.add(CBlocks.SILICATE_STONE_BRICK_STAIRS);
+        pickaxeSlabs.add(CBlocks.SILICATE_STONE_SLAB);
+        pickaxeSlabs.add(CBlocks.SILICATE_COBBLESTONE_SLAB);
+        pickaxeSlabs.add(CBlocks.POLISHED_SILICATE_STONE_SLAB);
+        pickaxeSlabs.add(CBlocks.SILICATE_STONE_BRICK_SLAB);
+        pickaxeWalls.add(CBlocks.SILICATE_STONE_WALL);
+        pickaxeWalls.add(CBlocks.SILICATE_COBBLESTONE_WALL);
+        pickaxeWalls.add(CBlocks.POLISHED_SILICATE_STONE_WALL);
+        pickaxeWalls.add(CBlocks.SILICATE_STONE_BRICK_WALL);
+        stonePressurePlates.add(CBlocks.SILICATE_STONE_PRESSURE_PLATE);
+        stoneButtons.add(CBlocks.SILICATE_STONE_BUTTON);
         // Frigus Mud
         pickaxeStairs.add(CBlocks.FRIGIAN_MUD_BRICK_STAIRS);
         pickaxeSlabs.add(CBlocks.FRIGIAN_MUD_BRICK_SLAB);
@@ -344,6 +372,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.FRIGIAN_FARMLAND.get())
                 .add(CBlocks.FRIGIAN_MUD.get())
         ;
+        silicateStoneOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         blueslateOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         karcassStoneOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -355,6 +384,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
         stonePressurePlates.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         needsStonePickaxe.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
+                // Silicate Stone
+                .add(CBlocks.SILICATE_STONE.get())
+                .add(CBlocks.SILICATE_COBBLESTONE.get())
+                .add(CBlocks.CHISELED_SILICATE_STONE.get())
+                .add(CBlocks.POLISHED_SILICATE_STONE.get())
+                .add(CBlocks.SILICATE_STONE_BRICKS.get())
+                .add(CBlocks.CRACKED_SILICATE_STONE_BRICKS.get())
+                .add(CBlocks.SILICATE_STONE_PILLAR.get())
                 // Blueschist
                 .add(CBlocks.BLUESCHIST.get())
                 .add(CBlocks.COBBLED_BLUESCHIST.get())
@@ -588,15 +625,20 @@ public class CBlockTagProvider extends BlockTagsProvider {
 
         // region Stone Tags
         tag(Tags.Blocks.STONES)
+                .add(CBlocks.SILICATE_STONE.get())
                 .add(CBlocks.BLUESCHIST.get())
                 .add(CBlocks.BLUESLATE.get())
                 .add(CBlocks.PERMAFROST.get())
                 .add(CBlocks.KARCASS_STONE.get())
         ;
         tag(Tags.Blocks.COBBLESTONES)
+                .addTag(CTags.BlockTags.COBBLESTONES_SILICATE_STONE)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
                 .addTag(CTags.BlockTags.COBBLESTONES_BLUESLATE)
                 .addTag(CTags.BlockTags.COBBLESTONES_KARCASS_STONE)
+        ;
+        tag(CTags.BlockTags.COBBLESTONES_SILICATE_STONE)
+                .add(CBlocks.SILICATE_COBBLESTONE.get())
         ;
         tag(CTags.BlockTags.COBBLESTONES_BLUESCHIST)
                 .add(CBlocks.COBBLED_BLUESCHIST.get())
@@ -755,6 +797,12 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(Tags.Blocks.ORE_RATES_SPARSE)
         ;
+        tag(CTags.BlockTags.ORE_BEARING_GROUND_SILICATE_STONE)
+                .add(CBlocks.SILICATE_STONE.get())
+        ;
+        tag(CTags.BlockTags.SILICATE_STONE_ORE_REPLACEABLES)
+                .add(CBlocks.SILICATE_STONE.get())
+        ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST)
                 .add(CBlocks.BLUESCHIST.get())
         ;
@@ -780,6 +828,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE)
         ;
+        silicateStoneOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_SILICATE_STONE).add(entry.get()));
         blueschistOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST).add(entry.get()));
         blueslateOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE).add(entry.get()));
         karcassStoneOres.forEach(entry -> tag(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE).add(entry.get()));

@@ -118,6 +118,31 @@ public class CBlocks {
     Stone Blocks
      */
 
+    // region Silicate Stone
+    public static final DeferredBlock<Block>
+            SILICATE_STONE = register("silicate_stone", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            SILICATE_STONE_STAIRS = register("silicate_stone_stairs", () -> new StairBlock(SILICATE_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE.get()))),
+            SILICATE_STONE_SLAB = register("silicate_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE.get()))),
+            SILICATE_STONE_WALL = register("silicate_stone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE.get()))),
+            SILICATE_STONE_PRESSURE_PLATE = register("silicate_stone_pressure_plate", () -> new PressurePlateBlock(CBlockSetTypes.SILICATE_STONE, BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE.get()).forceSolidOn().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            SILICATE_STONE_BUTTON = register("silicate_stone_button", () -> new ButtonBlock(CBlockSetTypes.SILICATE_STONE, 20, BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE.get()).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY))),
+            SILICATE_COBBLESTONE = register("silicate_cobblestone", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            SILICATE_COBBLESTONE_STAIRS = register("silicate_cobblestone_stairs", () -> new StairBlock(SILICATE_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_COBBLESTONE.get()))),
+            SILICATE_COBBLESTONE_SLAB = register("silicate_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_COBBLESTONE.get()))),
+            SILICATE_COBBLESTONE_WALL = register("silicate_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_COBBLESTONE.get()))),
+            CHISELED_SILICATE_STONE = register("chiseled_silicate_stone", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            POLISHED_SILICATE_STONE = register("polished_silicate_stone", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            POLISHED_SILICATE_STONE_STAIRS = register("polished_silicate_stone_stairs", () -> new StairBlock(POLISHED_SILICATE_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_SILICATE_STONE.get()))),
+            POLISHED_SILICATE_STONE_SLAB = register("polished_silicate_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_SILICATE_STONE.get()))),
+            POLISHED_SILICATE_STONE_WALL = register("polished_silicate_stone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.POLISHED_SILICATE_STONE.get()))),
+            SILICATE_STONE_BRICKS = register("silicate_stone_bricks", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            CRACKED_SILICATE_STONE_BRICKS = register("cracked_silicate_stone_bricks", () -> new Block(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY))),
+            SILICATE_STONE_BRICK_STAIRS = register("silicate_stone_brick_stairs", () -> new StairBlock(SILICATE_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE_BRICKS.get()))),
+            SILICATE_STONE_BRICK_SLAB = register("silicate_stone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE_BRICKS.get()))),
+            SILICATE_STONE_BRICK_WALL = register("silicate_stone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.SILICATE_STONE_BRICKS.get()))),
+            SILICATE_STONE_PILLAR = register("silicate_stone_pillar", () -> new RotatedPillarBlock(stoneProperties().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)));
+    // endregion
+
     // region Blueschist Blocks
     public static final DeferredBlock<Block>
             BLUESCHIST = register("blueschist", () -> new Block(stoneProperties().mapColor(MapColor.ICE))),

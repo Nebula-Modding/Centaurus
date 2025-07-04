@@ -64,15 +64,18 @@ public class CItemTagProvider extends ItemTagsProvider {
         //region Stone Tags
         copy(Tags.Blocks.STONES, Tags.Items.STONES);
         copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
+        copy(CTags.BlockTags.COBBLESTONES_SILICATE_STONE, CTags.ItemTags.COBBLESTONES_SILICATE_STONE);
         copy(CTags.BlockTags.COBBLESTONES_BLUESCHIST, CTags.ItemTags.COBBLESTONES_BLUESCHIST);
         copy(CTags.BlockTags.COBBLESTONES_BLUESLATE, CTags.ItemTags.COBBLESTONES_BLUESLATE);
         copy(CTags.BlockTags.COBBLESTONES_KARCASS_STONE, CTags.ItemTags.COBBLESTONES_KARCASS_STONE);
         tag(net.minecraft.tags.ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(CBlocks.SILICATE_COBBLESTONE.get().asItem())
                 .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
                 .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
                 .add(CBlocks.KARCASS_COBBLESTONE.get().asItem())
         ;
         tag(net.minecraft.tags.ItemTags.STONE_TOOL_MATERIALS)
+                .add(CBlocks.SILICATE_COBBLESTONE.get().asItem())
                 .add(CBlocks.COBBLED_BLUESCHIST.get().asItem())
                 .add(CBlocks.COBBLED_BLUESLATE.get().asItem())
                 .add(CBlocks.KARCASS_COBBLESTONE.get().asItem())
@@ -94,12 +97,14 @@ public class CItemTagProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORE_RATES_DENSE, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         copy(Tags.Blocks.ORE_RATES_SPARSE, Tags.Items.ORE_RATES_SPARSE);
+        copy(CTags.BlockTags.ORE_BEARING_GROUND_SILICATE_STONE, CTags.ItemTags.ORE_BEARING_GROUND_SILICATE_STONE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUESCHIST, CTags.ItemTags.ORE_BEARING_GROUND_BLUESCHIST);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_BLUESLATE, CTags.ItemTags.ORE_BEARING_GROUND_BLUESLATE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_KARCASS_STONE, CTags.ItemTags.ORE_BEARING_GROUND_KARCASS_STONE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_WATER_ICE, CTags.ItemTags.ORE_BEARING_GROUND_WATER_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_NITROGEN_ICE);
         copy(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, CTags.ItemTags.ORE_BEARING_GROUND_OXYGEN_ICE);
+        copy(CTags.BlockTags.ORES_IN_GROUND_SILICATE_STONE, CTags.ItemTags.ORES_IN_GROUND_SILICATE_STONE);
         copy(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST, CTags.ItemTags.ORES_IN_GROUND_BLUESCHIST);
         copy(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE, CTags.ItemTags.ORES_IN_GROUND_BLUESLATE);
         copy(CTags.BlockTags.ORES_IN_GROUND_KARCASS_STONE, CTags.ItemTags.ORES_IN_GROUND_KARCASS_STONE);

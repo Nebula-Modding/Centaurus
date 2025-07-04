@@ -1,5 +1,9 @@
 {
   "values": [
+    "cepheus:silicate_stone_wall",
+    "cepheus:silicate_cobblestone_wall",
+    "cepheus:polished_silicate_stone_wall",
+    "cepheus:silicate_stone_brick_wall",
     "cepheus:frigian_mud_brick_wall",
     "cepheus:blueschist_wall",
     "cepheus:cobbled_blueschist_wall",

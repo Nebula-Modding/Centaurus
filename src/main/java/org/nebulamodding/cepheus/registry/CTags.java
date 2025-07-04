@@ -16,11 +16,13 @@ public class CTags {
         public static final TagKey<Block>
                 // region Common Tags
                 // Cobblestones
+                COBBLESTONES_SILICATE_STONE = commonBlockTag("cobblestones/silicate_stone"),
                 COBBLESTONES_BLUESCHIST = commonBlockTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUESLATE = commonBlockTag("cobblestones/blueslate"),
                 COBBLESTONES_KARCASS_STONE = commonBlockTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
+                ORE_BEARING_GROUND_SILICATE_STONE = commonBlockTag("ore_bearing_ground/silicate_stone"),
                 ORE_BEARING_GROUND_BLUESCHIST = commonBlockTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_BLUESLATE = commonBlockTag("ore_bearing_ground/blueslate"),
                 ORE_BEARING_GROUND_KARCASS_STONE = commonBlockTag("ore_bearing_ground/karcass_stone"),
@@ -30,6 +32,7 @@ public class CTags {
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonBlockTag("ore_bearing_ground/oxygen_ice"),
 
                 // Ores In Ground
+                ORES_IN_GROUND_SILICATE_STONE = commonBlockTag("ores_in_ground/silicate_stone"),
                 ORES_IN_GROUND_BLUESCHIST = commonBlockTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_BLUESLATE = commonBlockTag("ores_in_ground/blueslate"),
                 ORES_IN_GROUND_KARCASS_STONE = commonBlockTag("ores_in_ground/karcass_stone"),
@@ -70,6 +73,7 @@ public class CTags {
                 FRIGUS_CARVER_REPLACEABLES = blockTag("frigus_carver_replaceables"),
 
                 // Ore Replacables
+                SILICATE_STONE_ORE_REPLACEABLES = blockTag("silicate_stone_ore_replaceables"),
                 BLUESCHIST_ORE_REPLACEABLES = blockTag("blueschist_ore_replaceables"),
                 BLUESLATE_ORE_REPLACEABLES = blockTag("blueslate_ore_replaceables"),
                 KARCASS_STONE_ORE_REPLACEABLES = blockTag("karcass_stone_ore_replaceables"),
@@ -92,11 +96,13 @@ public class CTags {
         public static final TagKey<Item>
                 // region Common Item Tags
                 // Cobblestones
+                COBBLESTONES_SILICATE_STONE = commonItemTag("cobblestones/silicate_stone"),
                 COBBLESTONES_BLUESCHIST = commonItemTag("cobblestones/blueschist"),
                 COBBLESTONES_BLUESLATE = commonItemTag("cobblestones/blueslate"),
                 COBBLESTONES_KARCASS_STONE = commonItemTag("cobblestones/karcass_stone"),
 
                 // Ore Bearing Ground
+                ORE_BEARING_GROUND_SILICATE_STONE = commonItemTag("ore_bearing_ground/silicate_stone"),
                 ORE_BEARING_GROUND_BLUESCHIST = commonItemTag("ore_bearing_ground/blueschist"),
                 ORE_BEARING_GROUND_BLUESLATE = commonItemTag("ore_bearing_ground/blueslate"),
                 ORE_BEARING_GROUND_KARCASS_STONE = commonItemTag("ore_bearing_ground/karcass_stone"),
@@ -106,6 +112,7 @@ public class CTags {
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonItemTag("ore_bearing_ground/oxygen_ice"),
 
                 // Ores In Ground
+                ORES_IN_GROUND_SILICATE_STONE = commonItemTag("ores_in_ground/silicate_stone"),
                 ORES_IN_GROUND_BLUESCHIST = commonItemTag("ores_in_ground/blueschist"),
                 ORES_IN_GROUND_BLUESLATE = commonItemTag("ores_in_ground/blueslate"),
                 ORES_IN_GROUND_KARCASS_STONE = commonItemTag("ores_in_ground/karcass_stone"),
@@ -171,7 +178,6 @@ public class CTags {
                 // None yet! :^
                 // endregion
     }
-
     // region Helpers
     public static TagKey<Block> commonBlockTag(String name) {
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));

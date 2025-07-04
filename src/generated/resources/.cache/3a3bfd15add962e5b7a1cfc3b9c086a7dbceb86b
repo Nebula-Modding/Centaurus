@@ -1,10 +1,11 @@
-// 1.21.1	2025-07-01T21:09:35.4991457	Tags for minecraft:item mod id cepheus
+// 1.21.1	2025-07-03T21:56:00.8694754	Tags for minecraft:item mod id cepheus
 6636e931ce2892cef0f308eb769cf9afa8793a11 data/cepheus/tags/item/grimwood_logs.json
 f75c28ca078822d75474b403d3c373f2f641aeba data/cepheus/tags/item/mayura_logs.json
-4f75a7737a3d53acd5e28fb47787f31d71972084 data/c/tags/item/cobblestones.json
+348afb8e37189fb3359d12cb4ed5eec143f82c0b data/c/tags/item/cobblestones.json
 d89cc621dd2580f197d965eecc76ac96ca15ff51 data/c/tags/item/cobblestones/blueschist.json
 077c8cee20799d55e5b7067f0911d33aef94f962 data/c/tags/item/cobblestones/blueslate.json
 fbd603c880994030bb648cadc06b75d56a36cbf8 data/c/tags/item/cobblestones/karcass_stone.json
+7487d09bf9487d8e3126e75d3950f8e299683193 data/c/tags/item/cobblestones/silicate_stone.json
 e9e37c7bb6ba70b7a19615783f80d8ed6c3d1530 data/c/tags/item/crops.json
 31ed9744f79c0986942ae4314ca3cae6212bd707 data/c/tags/item/crops/azure_root.json
 25d700a26c527a6d046872972a1bf1e007224638 data/c/tags/item/crops/bruma.json
@@ -33,14 +34,16 @@ fbe1df743ef82bda84cbff0172187af0558102c4 data/c/tags/item/ores_in_ground/bluesch
 4a6aea42e4fd986d642227a17f97177102b3f339 data/c/tags/item/ores_in_ground/karcass_stone.json
 9ccfddc84fbcd4580469677494e9ed9d6a3e7673 data/c/tags/item/ores_in_ground/nitrogen_ice.json
 55a737b7a7456eab8867f16e0324f7956a611065 data/c/tags/item/ores_in_ground/oxygen_ice.json
+4a6aea42e4fd986d642227a17f97177102b3f339 data/c/tags/item/ores_in_ground/silicate_stone.json
 6fc908c6c096beb1efd7e455490942827d710bc3 data/c/tags/item/ores_in_ground/water_ice.json
 7effc7eed3ac91131dc171974fe46b5650c06573 data/c/tags/item/ore_bearing_ground/blueschist.json
 174def7db8e1ca0109fcb76de43a8d1d1db78439 data/c/tags/item/ore_bearing_ground/blueslate.json
 36ec8890894d70e060dcfffdbf2b31a361ef7c50 data/c/tags/item/ore_bearing_ground/karcass_stone.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_bearing_ground/nitrogen_ice.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_bearing_ground/oxygen_ice.json
+2f47fedddb06e41a3afdb53b9c3c884f7304afbc data/c/tags/item/ore_bearing_ground/silicate_stone.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_bearing_ground/water_ice.json
-d9b4c3f4a6a21f980d9d771352f05ab7cffeb50b data/c/tags/item/ore_rates/singular.json
+acaaa1bb5f4ea52f5f6062b4b0e15ee9670060a5 data/c/tags/item/ore_rates/singular.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ore_rates/sparse.json
 0aa7560ae346212cf8f1e2e82178c0b85d2f9ddb data/c/tags/item/plates.json
 89af6b73cf3b2659dff061a1b666c94e8ec57ea5 data/c/tags/item/plates/lutrum.json
@@ -54,7 +57,7 @@ dc113210c75e5628fa838587c62a6aa430a0d1ef data/c/tags/item/rods.json
 13ffa03fa33e2537c902dd326f23e236d3c89e20 data/c/tags/item/rods/lutrum.json
 7b1423db5ccb17b63795af1f4f4c0836d70fab71 data/c/tags/item/rods/malunite.json
 f8c675ccbe7cc9a1c27f79f056475643682a807f data/c/tags/item/rods/obdurium.json
-8292c20e72eed30dcdd7aeb11a8aa8f865aad0f9 data/c/tags/item/stones.json
+145fd8b973d77c2ef9e99eae8ab9bf77bab425f6 data/c/tags/item/stones.json
 3459b70c3f91d3e580c08246f831d9b89f2ab112 data/c/tags/item/storage_blocks.json
 11dc7ec03d2524a3350a41d4456d1475778ef419 data/c/tags/item/storage_blocks/bruma.json
 92b762d5958b5e00810e0c291b444ea096aca122 data/c/tags/item/storage_blocks/lutrum.json
@@ -94,16 +97,16 @@ aa62ed7bd273ef716112ac04225ae3cae5e50758 data/minecraft/tags/item/planks.json
 d8f4836f42818b559035032df7ea5dbf1e9819b2 data/minecraft/tags/item/redstone_ores.json
 98b60d402d2a53003192c8ede2a0a19c8f65e557 data/minecraft/tags/item/saplings.json
 25d700a26c527a6d046872972a1bf1e007224638 data/minecraft/tags/item/sheep_food.json
-91f42ee1b47725ef07afde64ea75d356f7380778 data/minecraft/tags/item/slabs.json
+aeb679aa4d47e8960fa6b801c02cf450835a5967 data/minecraft/tags/item/slabs.json
 7af725040efd4f379fd999322bb896577b8c5c8a data/minecraft/tags/item/small_flowers.json
-8f62415209528f0e2020a20042b00ef68dec465b data/minecraft/tags/item/stairs.json
-dd26346f17bdb1bf63bf87cdb327d42a788944a8 data/minecraft/tags/item/stone_buttons.json
-95746f22dbf9393ec965555f1c817331e8325070 data/minecraft/tags/item/stone_crafting_materials.json
-95746f22dbf9393ec965555f1c817331e8325070 data/minecraft/tags/item/stone_tool_materials.json
+d2f3bd812d04dff71b0db6c3602b68ec9b4c49c1 data/minecraft/tags/item/stairs.json
+99d02e85c3ee2b4a341c14c2107555b027d7f0b2 data/minecraft/tags/item/stone_buttons.json
+3e333670313701bcea6d70d888a147ab58f04765 data/minecraft/tags/item/stone_crafting_materials.json
+3e333670313701bcea6d70d888a147ab58f04765 data/minecraft/tags/item/stone_tool_materials.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/tall_flowers.json
 84dcaad610fc182a9ed188365207dac2e57b2e6e data/minecraft/tags/item/trapdoors.json
 9f53a8b6db56e2e4e8deea4f519886a6c3d4ac4e data/minecraft/tags/item/trim_materials.json
-b7d0574b279f25247a0063a6b2f2af2a49390e21 data/minecraft/tags/item/walls.json
+ed3eb0ab9c02cbd10a1022536a6b9a1082b1a5d7 data/minecraft/tags/item/walls.json
 fd280915ac36b8b6e56af7d5a94824fa008126e8 data/minecraft/tags/item/wolf_food.json
 8c1a19ad273b10baf070d004a5dc3babc2014240 data/minecraft/tags/item/wooden_buttons.json
 88a011d8fa2e7b3682e08b80219ca32145a46631 data/minecraft/tags/item/wooden_doors.json

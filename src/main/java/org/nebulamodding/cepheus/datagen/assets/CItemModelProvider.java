@@ -63,37 +63,27 @@ public class CItemModelProvider extends ItemModelProvider {
         // region Metal Blocks
         blockItemModel(CBlocks.LUTRUM_BARS, CBlocks.LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.LUTRUM_DOOR, GENERATED);
-        blockModel(CBlocks.LUTRUM_BULB);
         blockItemModel(CBlocks.EXPOSED_LUTRUM_BARS, CBlocks.EXPOSED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.EXPOSED_LUTRUM_DOOR, GENERATED);
-        blockModel(CBlocks.EXPOSED_LUTRUM_BULB);
         blockItemModel(CBlocks.WEATHERED_LUTRUM_BARS, CBlocks.WEATHERED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WEATHERED_LUTRUM_DOOR, GENERATED);
-        blockModel(CBlocks.WEATHERED_LUTRUM_BULB);
         blockItemModel(CBlocks.OXIDIZED_LUTRUM_BARS, CBlocks.OXIDIZED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.OXIDIZED_LUTRUM_DOOR, GENERATED);
-        blockModel(CBlocks.OXIDIZED_LUTRUM_BULB);
 
         blockItemModel(CBlocks.WAXED_LUTRUM_BARS, CBlocks.LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WAXED_LUTRUM_DOOR, itemLoc("lutrum_door"), GENERATED);
-        blockModel(CBlocks.WAXED_LUTRUM_BULB, blockLoc(CBlocks.LUTRUM_BULB));
         blockItemModel(CBlocks.WAXED_EXPOSED_LUTRUM_BARS, CBlocks.EXPOSED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WAXED_EXPOSED_LUTRUM_DOOR, itemLoc("exposed_lutrum_door"), GENERATED);
-        blockModel(CBlocks.WAXED_EXPOSED_LUTRUM_BULB, blockLoc(CBlocks.EXPOSED_LUTRUM_BULB));
         blockItemModel(CBlocks.WAXED_WEATHERED_LUTRUM_BARS, CBlocks.WEATHERED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WAXED_WEATHERED_LUTRUM_DOOR, itemLoc("weathered_lutrum_door"), GENERATED);
-        blockModel(CBlocks.WAXED_WEATHERED_LUTRUM_BULB, blockLoc(CBlocks.WEATHERED_LUTRUM_BULB));
         blockItemModel(CBlocks.WAXED_OXIDIZED_LUTRUM_BARS, CBlocks.OXIDIZED_LUTRUM_BARS, GENERATED);
         itemModel(CBlocks.WAXED_OXIDIZED_LUTRUM_DOOR, itemLoc("oxidized_lutrum_door"), GENERATED);
-        blockModel(CBlocks.WAXED_OXIDIZED_LUTRUM_BULB, blockLoc(CBlocks.OXIDIZED_LUTRUM_BULB));
 
         blockItemModel(CBlocks.OBDURIUM_BARS, CBlocks.OBDURIUM_BARS, GENERATED);
         itemModel(CBlocks.OBDURIUM_DOOR, GENERATED);
-        blockModel(CBlocks.OBDURIUM_BULB);
 
         blockItemModel(CBlocks.MALUNITE_BARS, CBlocks.MALUNITE_BARS, GENERATED);
         itemModel(CBlocks.MALUNITE_DOOR, GENERATED);
-        blockModel(CBlocks.MALUNITE_BULB);
         // endregion
 
         // region Automated Item Models
@@ -103,7 +93,6 @@ public class CItemModelProvider extends ItemModelProvider {
                 .forEach(entry -> basicItem(entry.get()));
         // endregion
     }
-
     // region Helpers
     private final ModelFile GENERATED = getExistingFile(mcLoc("item/generated"));
 
