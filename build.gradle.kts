@@ -2,7 +2,6 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("org.jetbrains.kotlin.jvm") version "2.1.0"
     id("earth.terrarium.cloche") version "0.11.4"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
