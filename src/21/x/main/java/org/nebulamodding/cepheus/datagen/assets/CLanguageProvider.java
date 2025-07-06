@@ -165,6 +165,8 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.INGOTS_MALUNITE, "Malunite Ingots");
         add(CTags.ItemTags.PLATES_MALUNITE, "Malunite Plates");
         add(CTags.ItemTags.RODS_MALUNITE, "Malunite Rods");
+        add(CTags.ItemTags.CROPS_BRUMA, "Bruma Crops");
+        add(CTags.ItemTags.CROPS_AZURE_ROOT, "Azure Root Crops");
         // endregion
 
         // region GUI Translations

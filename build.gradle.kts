@@ -60,14 +60,11 @@ cloche {
         contributor(p("mod_contributors"))
     }
 
-    val common21 = common("1.21.x") {
-        sourceSet.java.srcDir("src/21/x/main")
-    }
+    val common21 = common("21:x")
 
-    neoforge("1.21.1") {
+    neoforge("21:1") {
         minecraftVersion = "1.21.1"
         loaderVersion = p("neo_21.1_version")
-        sourceSet.java.srcDir("src/21/1/main")
 
         dependsOn(common21)
 
@@ -96,7 +93,7 @@ cloche {
         }
     }
 
-    //neoforge("1.21.6") {
+    //neoforge("21:6") {
     //    minecraftVersion = "1.21.6"
     //    loaderVersion = p("neo_21.6_version")
     //    sourceSet.java.srcDir("src/21/6/main")
