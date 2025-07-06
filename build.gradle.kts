@@ -93,26 +93,32 @@ cloche {
         }
     }
 
-    //neoforge("21:6") {
-    //    minecraftVersion = "1.21.6"
-    //    loaderVersion = p("neo_21.6_version")
-    //    sourceSet.java.srcDir("src/21/6/main")
+    neoforge("21:6") {
+        minecraftVersion = "1.21.1" // Will be changed to 1.21.6 after Cygnus ports
+        loaderVersion = p("neo_21.6_version")
+        sourceSet.java.srcDir("src/21/6/main")
 
-    //    dependsOn(common21)
+        dependsOn(common21)
 
-    //    data()
+        data()
 
-    //    runs {
-    //        server()
-    //        client()
-    //        data()
-    //    }
+        runs {
+            server()
+            client()
+            data()
+        }
 
-    //    dependencies {
-    //        // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
-    //    }
-    //}
+        dependencies {
+            // Lazuli
+            modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.1_version")}")
+            // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
+        }
+    }
 }
+
+// Manually change the names of the finished jar files
+tasks.named<Jar>("211Jar") { archiveClassifier = "1.21.1" }
+tasks.named<Jar>("216Jar") { archiveClassifier = "1.21.6" }
 
 // YAML to lang
 yamlang {
