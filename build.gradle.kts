@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
     id("idea")
     id("org.jetbrains.kotlin.jvm") version "2.1.0"
-    id("earth.terrarium.cloche") version "0.10.21"
+    id("earth.terrarium.cloche") version "0.11.3"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -20,16 +20,31 @@ repositories {
     cloche {
         main()
 
-        mavenFabric()
         mavenNeoforgedMeta()
         mavenNeoforged()
     }
 
-    // EMI
-    maven("https://maven.terraformersmc.com/")
+    // Lazuli
+    exclusiveContent {
+        forRepository {
+            maven("https://jitpack.io")
+        }
+        filter {
+            includeModule("com.github.emmathemartian", "lazuli")
+        }
+    }
 
-    // Mekanism
-    maven("https://modmaven.dev/")
+    // For EMI
+    maven("https://maven.terraformersmc.com")
+
+    // For Mekanism
+    maven("https://modmaven.dev")
+
+    // For AppleSkin
+    maven("https://maven.ryanliptak.com")
+
+    // For Create, AppleSkin, Jade, and Stellar View
+    maven("https://api.modrinth.com/maven")
 }
 
 cloche {
@@ -45,9 +60,14 @@ cloche {
         contributor(p("mod_contributors"))
     }
 
+    val common21 = common("1.21.x") { sourceSet.java.srcDir("src/21/x/main") }
+
     neoforge("1.21.1") {
         minecraftVersion = "1.21.1"
         loaderVersion = p("neo_21.1_version")
+        sourceSet.java.srcDir("src/21/1/main")
+
+        dependsOn(common21)
 
         data()
 
@@ -58,26 +78,41 @@ cloche {
         }
 
         dependencies {
-            // add JEI, EMI, Cygnus, Lazuli, Appleskin, Create, Thermal, Mekanism, Jade, and Stellar View
+            // Lazuli
+            modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.1_version")}")
+
+            // EMI
+            compileOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1:api")
+            runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1")
+
+            // Modrinth Stuff
+            modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
+            modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
+            modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
+            //modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
+            // add Cygnus and Thermal later
         }
     }
 
-    //neoforge("1.21.6") {
-    //    minecraftVersion = "1.21.6"
-    //    loaderVersion = p("neo_21.6_version")
+    neoforge("1.21.6") {
+        minecraftVersion = "1.21.6"
+        loaderVersion = p("neo_21.6_version")
+        sourceSet.java.srcDir("src/21/6/main")
 
-    //    data()
+        dependsOn(common21)
 
-    //    runs {
-    //        server()
-    //        client()
-    //        data()
-    //    }
+        data()
 
-    //    dependencies {
-    //        // add JEI, EMI, Cygnus, Lazuli, Appleskin, Create, Thermal, Mekanism, Jade, and Stellar View when/if they update
-    //    }
-    //}
+        runs {
+            server()
+            client()
+            data()
+        }
+
+        dependencies {
+            // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
+        }
+    }
 }
 
 // YAML to lang
