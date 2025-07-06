@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
     id("idea")
     id("org.jetbrains.kotlin.jvm") version "2.1.0"
-    id("earth.terrarium.cloche") version "0.11.3"
+    id("earth.terrarium.cloche") version "0.11.4"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -60,7 +60,9 @@ cloche {
         contributor(p("mod_contributors"))
     }
 
-    val common21 = common("1.21.x") { sourceSet.java.srcDir("src/21/x/main") }
+    val common21 = common("1.21.x") {
+        sourceSet.java.srcDir("src/21/x/main")
+    }
 
     neoforge("1.21.1") {
         minecraftVersion = "1.21.1"
@@ -94,25 +96,25 @@ cloche {
         }
     }
 
-    neoforge("1.21.6") {
-        minecraftVersion = "1.21.6"
-        loaderVersion = p("neo_21.6_version")
-        sourceSet.java.srcDir("src/21/6/main")
+    //neoforge("1.21.6") {
+    //    minecraftVersion = "1.21.6"
+    //    loaderVersion = p("neo_21.6_version")
+    //    sourceSet.java.srcDir("src/21/6/main")
 
-        dependsOn(common21)
+    //    dependsOn(common21)
 
-        data()
+    //    data()
 
-        runs {
-            server()
-            client()
-            data()
-        }
+    //    runs {
+    //        server()
+    //        client()
+    //        data()
+    //    }
 
-        dependencies {
-            // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
-        }
-    }
+    //    dependencies {
+    //        // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
+    //    }
+    //}
 }
 
 // YAML to lang
