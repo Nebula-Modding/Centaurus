@@ -58,12 +58,7 @@ cloche {
         }
 
         dependencies {
-            //modApi("mezz.jei:jei-1.21.1-neoforge:" + p("jei_21.1_version") + ":api")
-            //modImplementation("mezz.jei:jei-1.21.1-neoforge:" + p("jei_21.1_version"))
-            //modApi("dev.emi:emi-neoforge:" + p("emi_21.1_version") + ":api")
-            //modImplementation("dev.emi:emi-neoforge:" + p("emi_21.1_version"))
-            //modApi("mekanism:Mekanism:" + p("mekanism_21.1_version") + ":api")
-            //modImplementation("mekanism:Mekanism:" + p("mekanism_21.1_version"))
+            // add JEI, EMI, Cygnus, Lazuli, Appleskin, Create, Thermal, Mekanism, Jade, and Stellar View
         }
     }
 }
