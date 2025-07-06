@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/malunite_plating",
-    "side": "cepheus:block/malunite_plating",
-    "top": "cepheus:block/malunite_plating"
-  }
-}

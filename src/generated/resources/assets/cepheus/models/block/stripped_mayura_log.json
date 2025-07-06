@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cepheus:block/stripped_mayura_log_top",
-    "side": "cepheus:block/stripped_mayura_log"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/karcass_stone_bricks",
-    "side": "cepheus:block/karcass_stone_bricks",
-    "top": "cepheus:block/karcass_stone_bricks"
-  }
-}

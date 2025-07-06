@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/blueslate_tiles",
-    "side": "cepheus:block/blueslate_tiles",
-    "top": "cepheus:block/blueslate_tiles"
-  }
-}

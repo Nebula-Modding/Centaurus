@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cepheus:block/grimwood_planks",
-    "side": "cepheus:block/grimwood_planks",
-    "top": "cepheus:block/grimwood_planks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/exposed_lutrum_plating",
-    "side": "cepheus:block/exposed_lutrum_plating",
-    "top": "cepheus:block/exposed_lutrum_plating"
-  }
-}

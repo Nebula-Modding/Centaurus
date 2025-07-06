@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cepheus:block/silicate_cobblestone",
-    "side": "cepheus:block/silicate_cobblestone",
-    "top": "cepheus:block/silicate_cobblestone"
-  }
-}

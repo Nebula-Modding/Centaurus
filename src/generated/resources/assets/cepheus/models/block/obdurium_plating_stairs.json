@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cepheus:block/obdurium_plating",
-    "side": "cepheus:block/obdurium_plating",
-    "top": "cepheus:block/obdurium_plating"
-  }
-}

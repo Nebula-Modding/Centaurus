@@ -412,14 +412,14 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(CBlocks.OBDURIUM_WINDOW.get(), models().cubeAll("obdurium_window", blockLoc(CBlocks.OBDURIUM_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.OBDURIUM_BARS.get(), blockLoc(CBlocks.OBDURIUM_BARS), blockLoc(CBlocks.OBDURIUM_BARS), "cutout");
         doorBlockWithItem(CBlocks.OBDURIUM_DOOR, blockLoc(CBlocks.OBDURIUM_DOOR, "bottom"), blockLoc(CBlocks.OBDURIUM_DOOR, "top"), "translucent");
-        trapDoorBlockWithItem(CBlocks.OBDURIUM_TRAPDOOR, blockLoc(CBlocks.OBDURIUM_TRAPDOOR), true, "translucent");
+        trapDoorBlockWithItem(CBlocks.OBDURIUM_TRAPDOOR, blockLoc(CBlocks.OBDURIUM_TRAPDOOR), false, "translucent");
         bulbBlockWithItem(CBlocks.OBDURIUM_BULB, CBlocks.OBDURIUM_BULB);
 
         simpleBlockWithItem(CBlocks.MALUNITE_GRATE.get(), models().cubeAll("malunite_grate", blockLoc(CBlocks.MALUNITE_GRATE)).renderType("cutout"));
         simpleBlockWithItem(CBlocks.MALUNITE_WINDOW.get(), models().cubeAll("malunite_window", blockLoc(CBlocks.MALUNITE_WINDOW)).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) CBlocks.MALUNITE_BARS.get(), blockLoc(CBlocks.MALUNITE_BARS), blockLoc(CBlocks.MALUNITE_BARS), "cutout");
         doorBlockWithItem(CBlocks.MALUNITE_DOOR, blockLoc(CBlocks.MALUNITE_DOOR, "bottom"), blockLoc(CBlocks.MALUNITE_DOOR, "top"), "translucent");
-        trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), true, "translucent");
+        trapDoorBlockWithItem(CBlocks.MALUNITE_TRAPDOOR, blockLoc(CBlocks.MALUNITE_TRAPDOOR), false, "translucent");
         bulbBlockWithItem(CBlocks.MALUNITE_BULB, CBlocks.MALUNITE_BULB);
         // endregion
 
