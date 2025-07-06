@@ -61,6 +61,23 @@ cloche {
             // add JEI, EMI, Cygnus, Lazuli, Appleskin, Create, Thermal, Mekanism, Jade, and Stellar View
         }
     }
+
+    //neoforge("1.21.6") {
+    //    minecraftVersion = "1.21.6"
+    //    loaderVersion = p("neo_21.6_version")
+
+    //    data()
+
+    //    runs {
+    //        server()
+    //        client()
+    //        data()
+    //    }
+
+    //    dependencies {
+    //        // add JEI, EMI, Cygnus, Lazuli, Appleskin, Create, Thermal, Mekanism, Jade, and Stellar View when/if they update
+    //    }
+    //}
 }
 
 // YAML to lang
