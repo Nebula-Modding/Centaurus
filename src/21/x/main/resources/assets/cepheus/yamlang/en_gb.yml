@@ -417,18 +417,21 @@ item.cepheus:
   ## Resources
   # Metals
   raw_lutrum: Raw Lutrum
+  crushed_raw_lutrum: Crushed Raw Lutrum
   lutrum_nugget: Lutrum Nugget
   lutrum_ingot: Lutrum Ingot
   lutrum_sheet: Lutrum Sheet
   lutrum_rod: Lutrum Rod
 
   raw_obdurium: Raw Obdurium
+  crushed_raw_obdurium: Crushed Raw Obdurium
   obdurium_nugget: Obdurium Nugget
   obdurium_ingot: Obdurium Ingot
   obdurium_sheet: Obdurium Sheet
   obdurium_rod: Obdurium Rod
 
   raw_malunite: Raw Malunite
+  crushed_raw_malunite: Crushed Raw Malunite
   malunite_nugget: Malunite Nugget
   malunite_ingot: Malunite Ingot
   malunite_sheet: Malunite Sheet

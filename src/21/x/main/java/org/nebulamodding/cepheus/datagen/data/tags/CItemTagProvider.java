@@ -283,6 +283,14 @@ public class CItemTagProvider extends ItemTagsProvider {
         ;
         // endregion
 
+        // region Compatibility Tags
+        tag(CTags.ItemTags.CREATE_CRUSHED_RAW_MATERIALS)
+                .add(CItems.CRUSHED_RAW_LUTRUM.get())
+                .add(CItems.CRUSHED_RAW_OBDURIUM.get())
+                .add(CItems.CRUSHED_RAW_MALUNITE.get())
+        ;
+        // endregion
+
         // region Miscellaneous Tags
         tag(ItemTags.PIGLIN_LOVED)
                 .add(CItems.GOLDEN_AZURE_ROOT.get())

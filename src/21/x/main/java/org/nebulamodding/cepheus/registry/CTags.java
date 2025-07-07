@@ -139,7 +139,11 @@ public class CTags {
                 // region Cepheus-Specific Tags
                 // Logs
                 MAYURA_LOGS = itemTag("mayura_logs"),
-                GRIMWOOD_LOGS = itemTag("grimwood_logs");
+                GRIMWOOD_LOGS = itemTag("grimwood_logs"),
+                // endregion
+
+                // region Mod Compatibility Tags
+                CREATE_CRUSHED_RAW_MATERIALS = createModItemTag("crushed_raw_materials");
                 // endregion
 
         /*

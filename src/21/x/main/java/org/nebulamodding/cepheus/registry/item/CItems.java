@@ -29,6 +29,7 @@ public class CItems {
     // region Metal Items
     public static final DeferredItem<Item>
             RAW_LUTRUM = ITEMS.register("raw_lutrum", () -> new Item(new Item.Properties())),
+            CRUSHED_RAW_LUTRUM = ITEMS.register("crushed_raw_lutrum", () -> new Item(new Item.Properties())),
             LUTRUM_NUGGET = ITEMS.register("lutrum_nugget", () -> new Item(new Item.Properties())),
             LUTRUM_INGOT = ITEMS.register("lutrum_ingot", () -> new Item(new Item.Properties())),
             LUTRUM_SHEET = ITEMS.register("lutrum_sheet", () -> new Item(new Item.Properties())),
@@ -36,6 +37,7 @@ public class CItems {
 
     public static final DeferredItem<Item>
             RAW_OBDURIUM = ITEMS.register("raw_obdurium", () -> new Item(new Item.Properties())),
+            CRUSHED_RAW_OBDURIUM = ITEMS.register("crushed_raw_obdurium", () -> new Item(new Item.Properties())),
             OBDURIUM_NUGGET = ITEMS.register("obdurium_nugget", () -> new Item(new Item.Properties())),
             OBDURIUM_INGOT = ITEMS.register("obdurium_ingot", () -> new Item(new Item.Properties())),
             OBDURIUM_SHEET = ITEMS.register("obdurium_sheet", () -> new Item(new Item.Properties())),
@@ -43,6 +45,7 @@ public class CItems {
 
     public static final DeferredItem<Item>
             RAW_MALUNITE = ITEMS.register("raw_malunite", () -> new Item(new Item.Properties())),
+            CRUSHED_RAW_MALUNITE = ITEMS.register("crushed_raw_malunite", () -> new Item(new Item.Properties())),
             MALUNITE_NUGGET = ITEMS.register("malunite_nugget", () -> new Item(new Item.Properties())),
             MALUNITE_INGOT = ITEMS.register("malunite_ingot", () -> new Item(new Item.Properties())),
             MALUNITE_SHEET = ITEMS.register("malunite_sheet", () -> new Item(new Item.Properties())),

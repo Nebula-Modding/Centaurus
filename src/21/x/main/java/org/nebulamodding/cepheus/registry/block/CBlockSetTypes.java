@@ -112,7 +112,7 @@ public class CBlockSetTypes {
     ),
             MALUNITE = register(new BlockSetType("malunite",
                 true,
-                true,
+                false,
                 false,
                 BlockSetType.PressurePlateSensitivity.EVERYTHING,
                 SoundType.METAL,
