@@ -10,6 +10,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CSoundEvents {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(Registries.SOUND_EVENT, Cepheus.MOD_ID);
 
+    // region Gristled Flesh Block Sounds
+    public static final DeferredHolder<SoundEvent, SoundEvent>
+            GRISTLED_FLESH_BREAK = register("block.gristled_flesh.break"),
+            GRISTLED_FLESH_PLACE = register("block.gristled_flesh.place"),
+            GRISTLED_FLESH_HIT = register("block.gristled_flesh.hit");
+    // endregion
+
     // region Metal Block Sounds
     public static final DeferredHolder<SoundEvent, SoundEvent>
             METAL_GRATE_BREAK = register("block.metal_grate.break"),
@@ -41,6 +48,9 @@ public class CSoundEvents {
 
     // region Existing Block Sounds
     public static final DeferredHolder<SoundEvent, SoundEvent>
+            MOSS_STEP = register("block.moss.step"),
+            MOSS_FALL = register("block.moss.fall"),
+
             STONE_STEP = register("block.stone.step"),
             STONE_PLACE = register("block.stone.place"),
             STONE_HIT = register("block.stone.hit"),

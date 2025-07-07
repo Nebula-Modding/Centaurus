@@ -15,6 +15,32 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
 
     @Override
     public void registerSounds() {
+        // Grate
+        add(CSoundEvents.GRISTLED_FLESH_BREAK, subtitle("block.generic.break").with(
+                sound("block/gristled_flesh/break1"),
+                sound("block/gristled_flesh/break2"),
+                sound("block/gristled_flesh/break3"),
+                sound("block/gristled_flesh/break4"),
+                sound("block/gristled_flesh/break5")
+        ));
+
+        add(CSoundEvents.GRISTLED_FLESH_PLACE, subtitle("block.generic.place").with(
+                sound("block/gristled_flesh/break1"),
+                sound("block/gristled_flesh/break2"),
+                sound("block/gristled_flesh/break3"),
+                sound("block/gristled_flesh/break4"),
+                sound("block/gristled_flesh/break5")
+        ));
+
+        add(CSoundEvents.GRISTLED_FLESH_HIT, subtitle("block.generic.hit").with(
+                sound("block/gristled_flesh/step1"),
+                sound("block/gristled_flesh/step2"),
+                sound("block/gristled_flesh/step3"),
+                sound("block/gristled_flesh/step4"),
+                sound("block/gristled_flesh/step5"),
+                sound("block/gristled_flesh/step6")
+        ));
+
         // region Metal Block Sounds
         // Grate
         add(CSoundEvents.METAL_GRATE_BREAK, subtitle("block.generic.break").with(
@@ -181,6 +207,24 @@ public class CSoundDefinitionsProvider extends SoundDefinitionsProvider {
         // endregion
 
         // region Existing Block Sounds
+        // Moss
+        add(CSoundEvents.MOSS_STEP, subtitle("block.generic.footsteps").with(
+                mcSound("block/moss/step1"),
+                mcSound("block/moss/step2"),
+                mcSound("block/moss/step3"),
+                mcSound("block/moss/step4"),
+                mcSound("block/moss/step5"),
+                mcSound("block/moss/step6")
+        ));
+
+        add(CSoundEvents.MOSS_FALL, definition().with(
+                mcSound("block/moss/step1"),
+                mcSound("block/moss/step2"),
+                mcSound("block/moss/step3"),
+                mcSound("block/moss/step4"),
+                mcSound("block/moss/step5"),
+                mcSound("block/moss/step6")
+        ));
 
         // Stone
         add(CSoundEvents.STONE_STEP, subtitle("block.generic.footsteps").with(

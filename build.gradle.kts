@@ -87,6 +87,7 @@ cloche {
             modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
             modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
             modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
+            modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
             //modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
             // add Cygnus and Thermal later
         }
@@ -122,7 +123,8 @@ tasks.named<Jar>("211Jar") { archiveClassifier = "1.21.1" }
 // YAML to lang
 yamlang {
     targetSourceSets = listOf(sourceSets.main.get())
-    inputDir = "assets/${p("mod_id")}/lang"
+    inputDir = "assets/cepheus/yamlang"
+    outputDir = "assets/cepheus/lang"
 }
 
 // Exclude datagen from built jars

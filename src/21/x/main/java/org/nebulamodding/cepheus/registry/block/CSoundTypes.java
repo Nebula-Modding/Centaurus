@@ -4,6 +4,19 @@ import org.nebulamodding.cepheus.registry.CSoundEvents;
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 
 public class CSoundTypes {
+    // region Body-Specific
+    public static final DeferredSoundType
+            GRISTLED_FLESH = new DeferredSoundType(
+            1.0F,
+            1.0F,
+            CSoundEvents.GRISTLED_FLESH_BREAK,
+            CSoundEvents.MOSS_STEP,
+            CSoundEvents.GRISTLED_FLESH_PLACE,
+            CSoundEvents.GRISTLED_FLESH_HIT,
+            CSoundEvents.MOSS_FALL
+    );
+    // endregion
+
     // region Metal
     public static final DeferredSoundType
             METAL_GRATE = new DeferredSoundType(
