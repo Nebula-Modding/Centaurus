@@ -2,7 +2,7 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.11.4"
+    id("earth.terrarium.cloche") version "0.11.5"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -23,15 +23,20 @@ repositories {
         mavenNeoforged()
     }
 
-    // Lazuli
+    // Cygnus and Lazuli
     exclusiveContent {
         forRepository {
             maven("https://jitpack.io")
         }
         filter {
+            includeGroup("com.github.nebula-modding")
             includeModule("com.github.emmathemartian", "lazuli")
         }
     }
+
+    // Cygnus Dependencies
+    maven("https://thedarkcolour.github.io/KotlinForForge/")
+    maven("https://codeberg.org/EmmaTheMartian/dapper/raw/branch/main/repo/")
 
     // For EMI
     maven("https://maven.terraformersmc.com")
@@ -60,6 +65,7 @@ cloche {
     }
 
     val common21 = common("21:x")
+    // val common22 = common("22:x")
 
     neoforge("21:1") {
         minecraftVersion = "1.21.1"
@@ -75,7 +81,19 @@ cloche {
             data()
         }
 
+        metadata {
+            // todo: make Centaurus load after
+            dependency {
+                modId = "cygnus"
+                required = true
+                version("${p("cygnus_21.1_dependency_version")}+1.21.1")
+            }
+        }
+
         dependencies {
+            // Cygnus
+            modImplementation("com.github.nebula-modding:cygnus:${p("cygnus_21.1_version")}")
+
             // Lazuli
             modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.1_version")}")
 
@@ -88,8 +106,8 @@ cloche {
             modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
             modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
             modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
-            //modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
-            // add Cygnus and Thermal later
+            // modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
+            // add Thermal later
         }
     }
 
@@ -110,7 +128,23 @@ cloche {
         }
 
         dependencies {
-            // add Cygnus, Lazuli, EMI, Create, Mekanism, Thermal, Appleskin, Jade, and Stellar View when/if they update
+            // Cygnus
+            modImplementation("com.github.nebula-modding:cygnus:${p("cygnus_21.6_version")}")
+
+            // Lazuli
+            modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.6_version")}")
+
+            // EMI
+            compileOnly("dev.emi:emi-neoforge:${p("emi_21.6_version")}+1.21.6:api")
+            runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.6_version")}+1.21.6")
+
+            // Modrinth Stuff
+            modImplementation("maven.modrinth:create:1.21.6-${p("create_version")}")
+            modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21.6")
+            modImplementation("maven.modrinth:jade:${p("jade_21.6_version")}+neoforge")
+            modImplementation("maven.modrinth:mekanism:${p("mekanism_21.6_version")}")
+            modImplementation("maven.modrinth:stellarview:${p("stellarview_21.6_version")}")
+            // add Thermal later
         }
     }
      */
@@ -123,13 +157,13 @@ tasks.named<Jar>("211Jar") { archiveClassifier = "1.21.1" }
 // YAML to lang
 yamlang {
     targetSourceSets = listOf(sourceSets.main.get())
-    inputDir = "assets/cepheus/yamlang"
-    outputDir = "assets/cepheus/lang"
+    inputDir = "assets/${p("mod_id")}/yamlang"
+    outputDir = "assets/${p("mod_id")}/lang"
 }
 
 // Exclude datagen from built jars
 tasks.withType<Jar>().configureEach {
-    exclude("org/nebulamodding/cepheus/datagen/*")
+    exclude("org/nebulamodding/${p("mod_id")}/datagen/*")
 }
 
 publishing {

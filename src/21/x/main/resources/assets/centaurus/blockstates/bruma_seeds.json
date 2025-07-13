@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "centaurus:block/bruma_stage0"
+    },
+    "age=1": {
+      "model": "centaurus:block/bruma_stage1"
+    },
+    "age=2": {
+      "model": "centaurus:block/bruma_stage2"
+    },
+    "age=3": {
+      "model": "centaurus:block/bruma_stage3"
+    },
+    "age=4": {
+      "model": "centaurus:block/bruma_stage4"
+    },
+    "age=5": {
+      "model": "centaurus:block/bruma_stage5"
+    },
+    "age=6": {
+      "model": "centaurus:block/bruma_stage6"
+    },
+    "age=7": {
+      "model": "centaurus:block/bruma_stage7"
+    }
+  }
+}

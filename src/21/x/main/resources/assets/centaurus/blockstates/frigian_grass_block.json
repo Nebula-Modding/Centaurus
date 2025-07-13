@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "centaurus:block/frigian_grass_block"
+      }
+    ],
+    "snowy=true": {
+      "model": "centaurus:block/frigian_grass_block_snow"
+    }
+  }
+}

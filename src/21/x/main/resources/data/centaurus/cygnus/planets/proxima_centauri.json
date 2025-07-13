@@ -1,0 +1,20 @@
+{
+	"gravity": 1585.326,
+	"has_oxygen": false,
+	"day_length": 12000,
+	"night_length": 0,
+	"year_length": 199850772.116,
+	"ambient_temperature_curve": [
+		{ "x": 0.00, "y": 2768.8 }, // dawn
+		{ "x": 0.25, "y": 2768.8 }, // midday
+		{ "x": 0.50, "y": 2768.8 }, // midnight
+		{ "x": 1.00, "y": 2768.8 } // dawn
+	],
+	"ambient_radiation": 100,
+	"moons": [
+		"centaurus:accola",
+		"centaurus:vicinus"
+	],
+	"atmospheric_pressure": 534924427,
+	"danger_index": "non_landable"
+}

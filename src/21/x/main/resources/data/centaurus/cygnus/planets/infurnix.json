@@ -1,0 +1,18 @@
+{
+	"dimension": "centaurus:infurnix",
+	"gravity": 11.346,
+	"has_oxygen": false,
+	"day_length": 12000,
+	"night_length": 12000,
+	"year_length": 1442845,
+	"ambient_temperature_curve": [
+		{ "x": 0.00, "y": 946.1 }, // dawn
+		{ "x": 0.25, "y": 952.4 }, // midday
+		{ "x": 0.50, "y": 938.7 }, // midnight
+		{ "x": 1.00, "y": 946.1 } // dawn
+	],
+	"ambient_radiation": 0,
+	"moons": [],
+	"atmospheric_pressure": 162,
+	"danger_index": "lethal"
+}

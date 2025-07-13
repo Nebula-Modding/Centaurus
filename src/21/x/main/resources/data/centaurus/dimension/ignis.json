@@ -1,0 +1,72 @@
+{
+  "type": "centaurus:ignis",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "biomes": [
+        {
+          "biome": "centaurus:ignean_wastes",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "offset": 0,
+            "temperature": 0,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "centaurus:ignean_calderas",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "offset": 0,
+            "temperature": 0,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "centaurus:ignean_volcanoes",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "offset": 0,
+            "temperature": 0.4,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "centaurus:ignean_lava_ocean",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "offset": 0.375,
+            "temperature": 0,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "centaurus:ignean_deltas",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "offset": 0.175,
+            "temperature": -0.5,
+            "weirdness": 0
+          }
+        }
+      ],
+      "type": "minecraft:multi_noise"
+    },
+    "settings": "centaurus:ignis"
+  }
+}

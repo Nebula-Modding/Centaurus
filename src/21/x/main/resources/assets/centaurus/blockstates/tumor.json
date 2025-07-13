@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=down": [
+      {
+        "model": "centaurus:block/tumor",
+        "x": 180
+      },
+      {
+        "model": "centaurus:block/tumor_alt",
+        "x": 180
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "centaurus:block/tumor",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "centaurus:block/tumor_alt",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "centaurus:block/tumor",
+        "x": 90
+      },
+      {
+        "model": "centaurus:block/tumor_alt",
+        "x": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "centaurus:block/tumor",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "centaurus:block/tumor_alt",
+        "x": 90,
+        "y": 180
+      }
+    ],
+    "facing=up": [
+      {
+        "model": "centaurus:block/tumor"
+      },
+      {
+        "model": "centaurus:block/tumor_alt"
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "centaurus:block/tumor",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "centaurus:block/tumor_alt",
+        "x": 90,
+        "y": 270
+      }
+    ]
+  }
+}

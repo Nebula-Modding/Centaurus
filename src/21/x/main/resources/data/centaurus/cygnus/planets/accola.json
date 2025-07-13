@@ -1,0 +1,18 @@
+{
+	"dimension": "centaurus:accola",
+	"gravity": 10.327,
+	"has_oxygen": false,
+	"day_length": 0,
+	"night_length": 0,
+	"year_length": 11.1,
+	"ambient_temperature_curve": [
+		{ "x": 0.00, "y": -87.8 }, // dawn
+		{ "x": 0.25, "y": -29.3 }, // midday
+		{ "x": 0.50, "y": -148.7 }, // midnight
+		{ "x": 1.00, "y": -87.8 } // dawn
+	],
+	"ambient_radiation": 10, // todo
+	"moons": [],
+	"atmospheric_pressure": 0,
+	"danger_index": "euclid"
+}

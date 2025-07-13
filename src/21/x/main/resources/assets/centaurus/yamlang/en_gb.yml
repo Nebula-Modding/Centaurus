@@ -1,0 +1,651 @@
+# This mod uses yamlang for every language except for American english.
+# This makes language files easier to read and makes it more bearable for translators to contribute.
+# Once you are done translating, you may convert this to a lang file at https://fallen-breath.github.io/yamlang/
+
+### Menus
+itemGroup.centaurus: Centaurus
+
+### Blocks
+block:
+  centaurus:
+    blood_vessel: Blood Vessel
+    blueschist: Blueschist
+    blueschist_brick_slab: Blueschist Brick Slab
+    blueschist_brick_stairs: Blueschist Brick Stairs
+    blueschist_brick_wall: Blueschist Brick Wall
+    blueschist_bricks: Blueschist Bricks
+    blueschist_button: Blueschist Button
+    blueschist_coal_ore: Blueschist Coal Ore
+    blueschist_copper_ore: Blueschist Copper Ore
+    blueschist_diamond_ore: Blueschist Diamond Ore
+    blueschist_emerald_ore: Blueschist Emerald Ore
+    blueschist_gold_ore: Blueschist Gold Ore
+    blueschist_iron_ore: Blueschist Iron Ore
+    blueschist_lapis_ore: Blueschist Lapis Ore
+    blueschist_lutrum_ore: Blueschist Lutrum Ore
+    blueschist_malunite_ore: Blueschist Malunite Ore
+    blueschist_obdurium_ore: Blueschist Obdurium Ore
+    blueschist_pillar: Blueschist Pillar
+    blueschist_pressure_plate: Blueschist Pressure Plate
+    blueschist_redstone_ore: Blueschist Redstone Ore
+    blueschist_slab: Blueschist Slab
+    blueschist_stairs: Blueschist Stairs
+    blueschist_wall: Blueschist Wall
+    blueslate: Blueslate
+    blueslate_brick_slab: Blueslate Brick Slab
+    blueslate_brick_stairs: Blueslate Brick Stairs
+    blueslate_brick_wall: Blueslate Brick Wall
+    blueslate_bricks: Blueslate Bricks
+    blueslate_coal_ore: Blueslate Coal Ore
+    blueslate_copper_ore: Blueslate Copper Ore
+    blueslate_diamond_ore: Blueslate Diamond Ore
+    blueslate_emerald_ore: Blueslate Emerald Ore
+    blueslate_gold_ore: Blueslate Gold Ore
+    blueslate_iron_ore: Blueslate Iron Ore
+    blueslate_lapis_ore: Blueslate Lapis Ore
+    blueslate_lutrum_ore: Blueslate Lutrum Ore
+    blueslate_malunite_ore: Blueslate Malunite Ore
+    blueslate_obdurium_ore: Blueslate Obdurium Ore
+    blueslate_pillar: Blueslate Pillar
+    blueslate_redstone_ore: Blueslate Redstone Ore
+    blueslate_slab: Blueslate Slab
+    blueslate_stairs: Blueslate Stairs
+    blueslate_tile_slab: Blueslate Tile Slab
+    blueslate_tile_stairs: Blueslate Tile Stairs
+    blueslate_tile_wall: Blueslate Tile Wall
+    blueslate_tiles: Blueslate Tiles
+    blueslate_wall: Blueslate Wall
+    brainrock: Brainrock
+    bruma_block: Bruma Bale
+    chiseled_blueschist: Chiselled Blueschist
+    chiseled_blueslate: Chiselled Blueslate
+    chiseled_goreslate: Chiselled Goreslate
+    chiseled_karcass_stone: Chiselled Karcass Stone
+    chiseled_lutrum: Chiselled Lutrum
+    chiseled_permafrost: Chiselled Permafrost
+    chiseled_silicate_stone: Chiselled Silicate Stone
+    coarse_frigian_dirt: Coarse Frigian Dirt
+    cobbled_blueschist: Cobbled Blueschist
+    cobbled_blueschist_slab: Cobbled Blueschist Slab
+    cobbled_blueschist_stairs: Cobbled Blueschist Stairs
+    cobbled_blueschist_wall: Cobbled Blueschist Wall
+    cobbled_blueslate: Cobbled Blueslate
+    cobbled_blueslate_slab: Cobbled Blueslate Slab
+    cobbled_blueslate_stairs: Cobbled Blueslate Stairs
+    cobbled_blueslate_wall: Cobbled Blueslate Wall
+    cracked_blueschist_bricks: Cracked Blueschist Bricks
+    cracked_blueslate_bricks: Cracked Blueslate Bricks
+    cracked_karcass_stone_bricks: Cracked Karcass Stone Bricks
+    cracked_permafrost_bricks: Cracked Permafrost Bricks
+    cracked_silicate_stone_bricks: Cracked Silicate Stone Bricks
+    exposed_chiseled_lutrum: Exposed Chiselled Lutrum
+    exposed_lutrum: Exposed Lutrum
+    exposed_lutrum_bars: Exposed Lutrum Bars
+    exposed_lutrum_bulb: Exposed Lutrum Bulb
+    exposed_lutrum_door: Exposed Lutrum Door
+    exposed_lutrum_grate: Exposed Lutrum Grate
+    exposed_lutrum_pillar: Exposed Lutrum Pillar
+    exposed_lutrum_plating: Exposed Lutrum Plating
+    exposed_lutrum_plating_button: Exposed Lutrum Plating Button
+    exposed_lutrum_plating_pressure_plate: Exposed Lutrum Plating Pressure Plate
+    exposed_lutrum_plating_slab: Exposed Lutrum Plating Slab
+    exposed_lutrum_plating_stairs: Exposed Lutrum Plating Stairs
+    exposed_lutrum_sheet_metal: Exposed Lutrum Sheet Metal
+    exposed_lutrum_trapdoor: Exposed Lutrum Trapdoor
+    exposed_lutrum_window: Exposed Lutrum Window
+    flesh_block: Block of Flesh
+    frigian_dirt: Frigian Dirt
+    frigian_dirt_path: Frigian Dirt Path
+    frigian_farmland: Frigian Farmland
+    frigian_grass_block: Frigian Grass Block
+    frigian_mud: Frigian Mud
+    frigian_mud_brick_slab: Frigian Mud Brick Slab
+    frigian_mud_brick_stairs: Frigian Mud Brick Stairs
+    frigian_mud_brick_wall: Frigian Mud Brick Wall
+    frigian_mud_bricks: Frigian Mud Bricks
+    frigian_short_grass: Frigian Short Grass
+    goreslate: Goreslate
+    goreslate_brick_slab: Goreslate Brick Slab
+    goreslate_brick_stairs: Goreslate Brick Stairs
+    goreslate_brick_wall: Goreslate Brick Wall
+    goreslate_bricks: Goreslate Bricks
+    goreslate_pillar: Goreslate Pillar
+    goreslate_slab: Goreslate Slab
+    goreslate_stairs: Goreslate Stairs
+    goreslate_tile_slab: Goreslate Tile Slab
+    goreslate_tile_stairs: Goreslate Tile Stairs
+    goreslate_tile_wall: Goreslate Tile Wall
+    goreslate_tiles: Goreslate Tiles
+    goreslate_wall: Goreslate Wall
+    grimwood_button: Grimwood Button
+    grimwood_door: Grimwood Door
+    grimwood_fence: Grimwood Fence
+    grimwood_fence_gate: Grimwood Fence Gate
+    grimwood_leaves: Grimwood Leaves
+    grimwood_log: Grimwood Log
+    grimwood_planks: Grimwood Planks
+    grimwood_pressure_plate: Grimwood Pressure Plate
+    grimwood_sapling: Grimwood Sapling
+    grimwood_slab: Grimwood Slab
+    grimwood_stairs: Grimwood Stairs
+    grimwood_trapdoor: Grimwood Trapdoor
+    grimwood_wood: Grimwood Wood
+    gristle_block: Block of Gristle
+    gristled_flesh: Gristled Flesh
+    iceflower: Iceflower
+    karcass_cobblestone: Karcass Cobblestone
+    karcass_cobblestone_slab: Karcass Cobblestone Slab
+    karcass_cobblestone_stairs: Karcass Cobblestone Stairs
+    karcass_cobblestone_wall: Karcass Cobblestone Wall
+    karcass_stone: Karcass Stone
+    karcass_stone_brick_slab: Karcass Stone Brick Slab
+    karcass_stone_brick_stairs: Karcass Stone Brick Stairs
+    karcass_stone_brick_wall: Karcass Stone Brick Wall
+    karcass_stone_bricks: Karcass Stone Bricks
+    karcass_stone_button: Karcass Stone Button
+    karcass_stone_pillar: Karcass Stone Pillar
+    karcass_stone_pressure_plate: Karcass Stone Pressure Plate
+    karcass_stone_slab: Karcass Stone Slab
+    karcass_stone_stairs: Karcass Stone Stairs
+    karcass_stone_wall: Karcass Stone Wall
+    lutrum_amalgamate_block: Block of Lutrum Amalgamate
+    lutrum_bars: Lutrum Bars
+    lutrum_block: Block of Lutrum
+    lutrum_bulb: Lutrum Bulb
+    lutrum_door: Lutrum Door
+    lutrum_grate: Lutrum Grate
+    lutrum_pillar: Lutrum Pillar
+    lutrum_plating: Lutrum Plating
+    lutrum_plating_button: Lutrum Plating Button
+    lutrum_plating_pressure_plate: Lutrum Plating Pressure Plate
+    lutrum_plating_slab: Lutrum Plating Slab
+    lutrum_plating_stairs: Lutrum Plating Stairs
+    lutrum_sheet_metal: Lutrum Sheet Metal
+    lutrum_trapdoor: Lutrum Trapdoor
+    lutrum_window: Lutrum Window
+    malunite_bars: Malunite Bars
+    malunite_block: Block of Malunite
+    malunite_bulb: Malunite Bulb
+    malunite_door: Malunite Door
+    malunite_grate: Malunite Grate
+    malunite_pillar: Malunite Pillar
+    malunite_plating: Malunite Plating
+    malunite_plating_button: Malunite Plating Button
+    malunite_plating_pressure_plate: Malunite Plating Pressure Plate
+    malunite_plating_slab: Malunite Plating Slab
+    malunite_plating_stairs: Malunite Plating Stairs
+    malunite_sheet_metal: Malunite Sheet Metal
+    malunite_trapdoor: Malunite Trapdoor
+    malunite_window: Malunite Window
+    mayura_button: Mayura Button
+    mayura_door: Mayura Door
+    mayura_fence: Mayura Fence
+    mayura_fence_gate: Mayura Fence Gate
+    mayura_leaves: Mayura Leaves
+    mayura_log: Mayura Log
+    mayura_planks: Mayura Planks
+    mayura_pressure_plate: Mayura Pressure Plate
+    mayura_sapling: Mayura Sapling
+    mayura_slab: Mayura Slab
+    mayura_stairs: Mayura Stairs
+    mayura_trapdoor: Mayura Trapdoor
+    mayura_wood: Mayura Wood
+    nitrogen_ice_coal_ore: Nitrogen Ice Coal Ore
+    nitrogen_ice_copper_ore: Nitrogen Ice Copper Ore
+    nitrogen_ice_diamond_ore: Nitrogen Ice Diamond Ore
+    nitrogen_ice_emerald_ore: Nitrogen Ice Emerald Ore
+    nitrogen_ice_gold_ore: Nitrogen Ice Gold Ore
+    nitrogen_ice_iron_ore: Nitrogen Ice Iron Ore
+    nitrogen_ice_lapis_ore: Nitrogen Ice Lapis Ore
+    nitrogen_ice_lutrum_ore: Nitrogen Ice Lutrum Ore
+    nitrogen_ice_malunite_ore: Nitrogen Ice Malunite Ore
+    nitrogen_ice_obdurium_ore: Nitrogen Ice Obdurium Ore
+    nitrogen_ice_redstone_ore: Nitrogen Ice Redstone Ore
+    obdurium_bars: Obdurium Bars
+    obdurium_block: Block of Obdurium
+    obdurium_bulb: Obdurium Bulb
+    obdurium_door: Obdurium Door
+    obdurium_grate: Obdurium Grate
+    obdurium_pillar: Obdurium Pillar
+    obdurium_plating: Obdurium Plating
+    obdurium_plating_button: Obdurium Plating Button
+    obdurium_plating_pressure_plate: Obdurium Plating Pressure Plate
+    obdurium_plating_slab: Obdurium Plating Slab
+    obdurium_plating_stairs: Obdurium Plating Stairs
+    obdurium_sheet_metal: Obdurium Sheet Metal
+    obdurium_trapdoor: Obdurium Trapdoor
+    obdurium_window: Obdurium Window
+    oxidized_chiseled_lutrum: Oxidized Chiselled Lutrum
+    oxidized_lutrum: Oxidized Lutrum
+    oxidized_lutrum_bars: Oxidized Lutrum Bars
+    oxidized_lutrum_bulb: Oxidized Lutrum Bulb
+    oxidized_lutrum_door: Oxidized Lutrum Door
+    oxidized_lutrum_grate: Oxidized Lutrum Grate
+    oxidized_lutrum_pillar: Oxidized Lutrum Pillar
+    oxidized_lutrum_plating: Oxidized Lutrum Plating
+    oxidized_lutrum_plating_button: Oxidized Lutrum Plating Button
+    oxidized_lutrum_plating_pressure_plate: Oxidized Lutrum Plating Pressure Plate
+    oxidized_lutrum_plating_slab: Oxidized Lutrum Plating Slab
+    oxidized_lutrum_plating_stairs: Oxidized Lutrum Plating Stairs
+    oxidized_lutrum_sheet_metal: Oxidized Lutrum Sheet Metal
+    oxidized_lutrum_trapdoor: Oxidized Lutrum Trapdoor
+    oxidized_lutrum_window: Oxidized Lutrum Window
+    oxygen_ice_coal_ore: Oxygen Ice Coal Ore
+    oxygen_ice_copper_ore: Oxygen Ice Copper Ore
+    oxygen_ice_diamond_ore: Oxygen Ice Diamond Ore
+    oxygen_ice_emerald_ore: Oxygen Ice Emerald Ore
+    oxygen_ice_gold_ore: Oxygen Ice Gold Ore
+    oxygen_ice_iron_ore: Oxygen Ice Iron Ore
+    oxygen_ice_lapis_ore: Oxygen Ice Lapis Ore
+    oxygen_ice_lutrum_ore: Oxygen Ice Lutrum Ore
+    oxygen_ice_malunite_ore: Oxygen Ice Malunite Ore
+    oxygen_ice_obdurium_ore: Oxygen Ice Obdurium Ore
+    oxygen_ice_redstone_ore: Oxygen Ice Redstone Ore
+    packed_frigian_mud: Packed Frigian Mud
+    permafrost: Permafrost
+    permafrost_brick_slab: Permafrost Brick Slab
+    permafrost_brick_stairs: Permafrost Brick Stairs
+    permafrost_brick_wall: Permafrost Brick Wall
+    permafrost_bricks: Permafrost Bricks
+    permafrost_button: Permafrost Button
+    permafrost_pillar: Permafrost Pillar
+    permafrost_pressure_plate: Permafrost Pressure Plate
+    permafrost_slab: Permafrost Slab
+    permafrost_stairs: Permafrost Stairs
+    permafrost_tile_slab: Permafrost Tile Slab
+    permafrost_tile_stairs: Permafrost Tile Stairs
+    permafrost_tile_wall: Permafrost Tile Wall
+    permafrost_tiles: Permafrost Tiles
+    permafrost_wall: Permafrost Wall
+    polished_blueschist: Polished Blueschist
+    polished_blueschist_slab: Polished Blueschist Slab
+    polished_blueschist_stairs: Polished Blueschist Stairs
+    polished_blueschist_wall: Polished Blueschist Wall
+    polished_blueslate: Polished Blueslate
+    polished_blueslate_slab: Polished Blueslate Slab
+    polished_blueslate_stairs: Polished Blueslate Stairs
+    polished_blueslate_wall: Polished Blueslate Wall
+    polished_goreslate: Polished Goreslate
+    polished_goreslate_slab: Polished Goreslate Slab
+    polished_goreslate_stairs: Polished Goreslate Stairs
+    polished_goreslate_wall: Polished Goreslate Wall
+    polished_karcass_stone: Polished Karcass Stone
+    polished_karcass_stone_slab: Polished Karcass Stone Slab
+    polished_karcass_stone_stairs: Polished Karcass Stone Stairs
+    polished_karcass_stone_wall: Polished Karcass Stone Wall
+    polished_permafrost: Polished Permafrost
+    polished_permafrost_slab: Polished Permafrost Slab
+    polished_permafrost_stairs: Polished Permafrost Stairs
+    polished_permafrost_wall: Polished Permafrost Wall
+    polished_silicate_stone: Polished Silicate Stone
+    polished_silicate_stone_slab: Polished Silicate Stone Slab
+    polished_silicate_stone_stairs: Polished Silicate Stone Stairs
+    polished_silicate_stone_wall: Polished Silicate Stone Wall
+    potted_grimwood_sapling: Potted Grimwood Sapling
+    potted_iceflower: Potted Iceflower
+    potted_mayura_sapling: Potted Mayura Sapling
+    potted_vivian: Potted Vivian
+    potted_wickul: Potted Wickul
+    raw_lutrum_block: Block of Raw Lutrum
+    raw_malunite_block: Block of Raw Malunite
+    raw_obdurium_block: Block of Raw Obdurium
+    short_gristles: Short Gristles
+    silicate_cobblestone: Silicate Cobblestone
+    silicate_cobblestone_slab: Silicate Cobblestone Slab
+    silicate_cobblestone_stairs: Silicate Cobblestone Stairs
+    silicate_cobblestone_wall: Silicate Cobblestone Wall
+    silicate_stone: Silicate Stone
+    silicate_stone_brick_slab: Silicate Stone Brick Slab
+    silicate_stone_brick_stairs: Silicate Stone Brick Stairs
+    silicate_stone_brick_wall: Silicate Stone Brick Wall
+    silicate_stone_bricks: Silicate Stone Bricks
+    silicate_stone_button: Silicate Stone Button
+    silicate_stone_pillar: Silicate Stone Pillar
+    silicate_stone_pressure_plate: Silicate Stone Pressure Plate
+    silicate_stone_slab: Silicate Stone Slab
+    silicate_stone_stairs: Silicate Stone Stairs
+    silicate_stone_wall: Silicate Stone Wall
+    stripped_grimwood_log: Stripped Grimwood Log
+    stripped_grimwood_wood: Stripped Grimwood Wood
+    stripped_mayura_log: Stripped Mayura Log
+    stripped_mayura_wood: Stripped Mayura Wood
+    tall_gristles: Tall Gristles
+    tumor: Tumour
+    vivian: Vivian
+    water_ice_coal_ore: Water Ice Coal Ore
+    water_ice_copper_ore: Water Ice Copper Ore
+    water_ice_diamond_ore: Water Ice Diamond Ore
+    water_ice_emerald_ore: Water Ice Emerald Ore
+    water_ice_gold_ore: Water Ice Gold Ore
+    water_ice_iron_ore: Water Ice Iron Ore
+    water_ice_lapis_ore: Water Ice Lapis Ore
+    water_ice_lutrum_ore: Water Ice Lutrum Ore
+    water_ice_malunite_ore: Water Ice Malunite Ore
+    water_ice_obdurium_ore: Water Ice Obdurium Ore
+    water_ice_redstone_ore: Water Ice Redstone Ore
+    waxed_chiseled_lutrum: Waxed Chiselled Lutrum
+    waxed_exposed_chiseled_lutrum: Waxed Exposed Chiselled Lutrum
+    waxed_exposed_lutrum: Waxed Exposed Lutrum
+    waxed_exposed_lutrum_bars: Waxed Exposed Lutrum Bars
+    waxed_exposed_lutrum_bulb: Waxed Exposed Lutrum Bulb
+    waxed_exposed_lutrum_door: Waxed Exposed Lutrum Door
+    waxed_exposed_lutrum_grate: Waxed Exposed Lutrum Grate
+    waxed_exposed_lutrum_pillar: Waxed Exposed Lutrum Pillar
+    waxed_exposed_lutrum_plating: Waxed Exposed Lutrum Plating
+    waxed_exposed_lutrum_plating_button: Waxed Exposed Lutrum Plating Button
+    waxed_exposed_lutrum_plating_pressure_plate: Waxed Exposed Lutrum Plating Pressure Plate
+    waxed_exposed_lutrum_plating_slab: Waxed Exposed Lutrum Plating Slab
+    waxed_exposed_lutrum_plating_stairs: Waxed Exposed Lutrum Plating Stairs
+    waxed_exposed_lutrum_sheet_metal: Waxed Exposed Lutrum Sheet Metal
+    waxed_exposed_lutrum_trapdoor: Waxed Exposed Lutrum Trapdoor
+    waxed_exposed_lutrum_window: Waxed Exposed Lutrum Window
+    waxed_lutrum_bars: Waxed Lutrum Bars
+    waxed_lutrum_block: Waxed Block of Lutrum
+    waxed_lutrum_bulb: Waxed Lutrum Bulb
+    waxed_lutrum_door: Waxed Lutrum Door
+    waxed_lutrum_grate: Waxed Lutrum Grate
+    waxed_lutrum_pillar: Waxed Lutrum Pillar
+    waxed_lutrum_plating: Waxed Lutrum Plating
+    waxed_lutrum_plating_button: Waxed Lutrum Plating Button
+    waxed_lutrum_plating_pressure_plate: Waxed Lutrum Plating Pressure Plate
+    waxed_lutrum_plating_slab: Waxed Lutrum Plating Slab
+    waxed_lutrum_plating_stairs: Waxed Lutrum Plating Stairs
+    waxed_lutrum_sheet_metal: Waxed Lutrum Sheet Metal
+    waxed_lutrum_trapdoor: Waxed Lutrum Trapdoor
+    waxed_lutrum_window: Waxed Lutrum Window
+    waxed_oxidized_chiseled_lutrum: Waxed Oxidized Chiselled Lutrum
+    waxed_oxidized_lutrum: Waxed Oxidized Lutrum
+    waxed_oxidized_lutrum_bars: Waxed Oxidized Lutrum Bars
+    waxed_oxidized_lutrum_bulb: Waxed Oxidized Lutrum Bulb
+    waxed_oxidized_lutrum_door: Waxed Oxidized Lutrum Door
+    waxed_oxidized_lutrum_grate: Waxed Oxidized Lutrum Grate
+    waxed_oxidized_lutrum_pillar: Waxed Oxidized Lutrum Pillar
+    waxed_oxidized_lutrum_plating: Waxed Oxidized Lutrum Plating
+    waxed_oxidized_lutrum_plating_button: Waxed Oxidized Lutrum Plating Button
+    waxed_oxidized_lutrum_plating_pressure_plate: Waxed Oxidized Lutrum Plating Pressure Plate
+    waxed_oxidized_lutrum_plating_slab: Waxed Oxidized Lutrum Plating Slab
+    waxed_oxidized_lutrum_plating_stairs: Waxed Oxidized Lutrum Plating Stairs
+    waxed_oxidized_lutrum_sheet_metal: Waxed Oxidized Lutrum Sheet Metal
+    waxed_oxidized_lutrum_trapdoor: Waxed Oxidized Lutrum Trapdoor
+    waxed_oxidized_lutrum_window: Waxed Oxidized Lutrum Window
+    waxed_weathered_chiseled_lutrum: Waxed Weathered Chiselled Lutrum
+    waxed_weathered_lutrum: Waxed Weathered Lutrum
+    waxed_weathered_lutrum_bars: Waxed Weathered Lutrum Bars
+    waxed_weathered_lutrum_bulb: Waxed Weathered Lutrum Bulb
+    waxed_weathered_lutrum_door: Waxed Weathered Lutrum Door
+    waxed_weathered_lutrum_grate: Waxed Weathered Lutrum Grate
+    waxed_weathered_lutrum_pillar: Waxed Weathered Lutrum Pillar
+    waxed_weathered_lutrum_plating: Waxed Weathered Lutrum Plating
+    waxed_weathered_lutrum_plating_button: Waxed Weathered Lutrum Plating Button
+    waxed_weathered_lutrum_plating_pressure_plate: Waxed Weathered Lutrum Plating Pressure Plate
+    waxed_weathered_lutrum_plating_slab: Waxed Weathered Lutrum Plating Slab
+    waxed_weathered_lutrum_plating_stairs: Waxed Weathered Lutrum Plating Stairs
+    waxed_weathered_lutrum_sheet_metal: Waxed Weathered Lutrum Sheet Metal
+    waxed_weathered_lutrum_trapdoor: Waxed Weathered Lutrum Trapdoor
+    waxed_weathered_lutrum_window: Waxed Weathered Lutrum Window
+    weathered_chiseled_lutrum: Weathered Chiselled Lutrum
+    weathered_lutrum: Weathered Lutrum
+    weathered_lutrum_bars: Weathered Lutrum Bars
+    weathered_lutrum_bulb: Weathered Lutrum Bulb
+    weathered_lutrum_door: Weathered Lutrum Door
+    weathered_lutrum_grate: Weathered Lutrum Grate
+    weathered_lutrum_pillar: Weathered Lutrum Pillar
+    weathered_lutrum_plating: Weathered Lutrum Plating
+    weathered_lutrum_plating_button: Weathered Lutrum Plating Button
+    weathered_lutrum_plating_pressure_plate: Weathered Lutrum Plating Pressure Plate
+    weathered_lutrum_plating_slab: Weathered Lutrum Plating Slab
+    weathered_lutrum_plating_stairs: Weathered Lutrum Plating Stairs
+    weathered_lutrum_sheet_metal: Weathered Lutrum Sheet Metal
+    weathered_lutrum_trapdoor: Weathered Lutrum Trapdoor
+    weathered_lutrum_window: Weathered Lutrum Window
+    wickul: Wickul
+
+### Items
+item.centaurus:
+  ## Crops/Foods
+  # Frigus
+  bruma: Bruma
+  bruma_loaf: Bruma Loaf
+  azure_root: Azure Root
+  golden_azure_root: Golden Root
+  enchanted_golden_azure_root: Enchanted Golden Root
+  # Karnis
+  flesh: Flesh
+  cooked_flesh: Jerky
+  vein_stalk: Vein Stalk
+
+  ## Resources
+  # Metals
+  raw_lutrum: Raw Lutrum
+  crushed_raw_lutrum: Crushed Raw Lutrum
+  lutrum_nugget: Lutrum Nugget
+  lutrum_ingot: Lutrum Ingot
+  lutrum_sheet: Lutrum Sheet
+  lutrum_rod: Lutrum Rod
+
+  raw_obdurium: Raw Obdurium
+  crushed_raw_obdurium: Crushed Raw Obdurium
+  obdurium_nugget: Obdurium Nugget
+  obdurium_ingot: Obdurium Ingot
+  obdurium_sheet: Obdurium Sheet
+  obdurium_rod: Obdurium Rod
+
+  raw_malunite: Raw Malunite
+  crushed_raw_malunite: Crushed Raw Malunite
+  malunite_nugget: Malunite Nugget
+  malunite_ingot: Malunite Ingot
+  malunite_sheet: Malunite Sheet
+  malunite_rod: Malunite Rod
+
+  ## Tools
+  obdurium_hammer: Obdurium Hammer
+  obdurium_hammer.tooltip: Deals more damage with horizontal momentum
+
+### Tags
+tag:
+  ## Block Tags
+  block:
+    # Common Tags
+    c:
+      cobblestones:
+        silicate_stone: Silicate Cobblestones
+        blueschist: Blueschist Cobblestones
+        blueslate: Blueslate Cobblestones
+        karcass_stone: Karcass Cobblestones
+      ore_bearing_ground:
+        silicate_stone: Silicate Stone Ore Bearing Ground
+        blueschist: Blueschist Ore Bearing Ground
+        blueslate: Blueslate Ore Bearing Ground
+        karcass_stone: Karcass Stone Ore Bearing Ground
+        water_ice: Water Ice Ore Bearing Ground
+        methane_ice: Methane Ice Ore Bearing Ground
+        nitrogen_ice: Nitrogen Ice Ore Bearing Ground
+        oxygen_ice: Oxygen Ice Ore Bearing Ground
+      ores:
+        lutrum: Lutrum Ores
+        obdurium: Obdurium Ores
+        malunite: Malunite Ores
+      ores_in_ground:
+        silicate_stone: Silicate Stone Ores In Ground
+        blueschist: Blueschist Ores In Ground
+        blueslate: Blueslate Ores In Ground
+        karcass_stone: Karcass Stone Ores In Ground
+        water_ice: Water Ice Ores In Ground
+        methane_ice: Methane Ice Ores In Ground
+        nitrogen_ice: Nitrogen Ice Ores In Ground
+        oxygen_ice: Oxygen Ice Ores In Ground
+      storage_blocks:
+        bruma: Bruma Storage Blocks
+        lutrum: Lutrum Storage Blocks
+        obdurium: Obdurium Storage Blocks
+        malunite: Malunite Storage Blocks
+        raw_lutrum: Raw Lutrum Storage Blocks
+        raw_obdurium: Raw Obdurium Storage Blocks
+        raw_malunite: Raw Malunite Storage Blocks
+    # Centaurus-Specific Tags
+    centaurus:
+      base_stone_frigus: Frigus Base Stones
+      frigus_carver_replaceables: Frigus Carver Replaceables
+      mayura_logs: Mayura Logs
+      grimwood_logs: Grimwood Logs
+      convertable_to_frigus_mud: Convertable to Frigus Mud
+      silicate_stone_ore_replaceables: Silicate Stone Ore Replaceables
+      blueschist_ore_replaceables: Blueschist Ore Replaceables
+      blueslate_ore_replaceables: Blueslate Ore Replaceables
+      karcass_stone_ore_replaceables: Karcass Stone Ore Replaceables
+      needs_lutrum_tool: Needs Lutrum Tool
+      needs_obdurium_tool: Needs Obdurium Tool
+      needs_malunite_tool: Needs Malunite Tool
+  ## Item Tags
+  item:
+    # Common Tags
+    c:
+      cobblestones:
+        silicate_stone: Silicate Cobblestones
+        blueschist: Blueschist Cobblestones
+        blueslate: Blueslate Cobblestones
+        karcass_stone: Karcass Cobblestones
+      ore_bearing_ground:
+        silicate_stone: Silicate Stone Ore Bearing Ground
+        blueschist: Blueschist Ore Bearing Ground
+        blueslate: Blueslate Ore Bearing Ground
+        karcass_stone: Karcass Stone Ore Bearing Ground
+        water_ice: Water Ice Ore Bearing Ground
+        methane_ice: Methane Ice Ore Bearing Ground
+        nitrogen_ice: Nitrogen Ice Ore Bearing Ground
+        oxygen_ice: Oxygen Ice Ore Bearing Ground
+      ores:
+        lutrum: Lutrum Ores
+        obdurium: Obdurium Ores
+        malunite: Malunite Ores
+      ores_in_ground:
+        silicate_stone: Silicate Stone Ores In Ground
+        blueschist: Blueschist Ores In Ground
+        blueslate: Blueslate Ores In Ground
+        karcass_stone: Karcass Stone Ores In Ground
+        water_ice: Water Ice Ores In Ground
+        methane_ice: Methane Ice Ores In Ground
+        nitrogen_ice: Nitrogen Ice Ores In Ground
+        oxygen_ice: Oxygen Ice Ores In Ground
+      storage_blocks:
+        bruma: Bruma Storage Blocks
+        lutrum: Lutrum Storage Blocks
+        obdurium: Obdurium Storage Blocks
+        malunite: Malunite Storage Blocks
+        raw_lutrum: Raw Lutrum Storage Blocks
+        raw_obdurium: Raw Obdurium Storage Blocks
+        raw_malunite: Raw Malunite Storage Blocks
+      raw_material:
+        lutrum: Lutrum Raw Materials
+        obdurium: Obdurium Raw Materials
+        malunite: Malunite Raw Materials
+      plates:
+        lutrum: Lutrum Plates
+        obdurium: Obdurium Plates
+        malunite: Malunite Plates
+      rods:
+        lutrum: Lutrum Rods
+        obdurium: Obdurium Rods
+        malunite: Malunite Rods
+    # Cepheus-Specific Tags
+    centaurus:
+      mayura_logs: Mayura Logs
+      grimwood_logs: Grimwood Logs
+
+### Stars
+star.centaurus:
+  alpha_centauri: Alpha Centauri
+  alpha_centauri_a: Rigil Kentaurus
+  alpha_centauri_b: Toliman
+  proxima_centauri: Proxima Centauri
+  sentinel: Sentinel
+  hades: Hades
+  cynon: Cynon
+  selloa: Selloa
+
+### Planets
+planet.cygnus:
+  # The Solar System
+  ceres: Ceres
+
+  jupiter: Jupiter
+  io: Io
+  europa: Europa
+  ganymede: Ganymede
+  callisto: Callisto
+
+  saturn: Saturn
+  mimas: Mimas
+  enceladus: Enceladus
+  tethys: Tethys
+  dione: Dione
+  rhea: Rhea
+  titan: Titan
+  hyperion: Hyperion
+  iapetus: Iapetus
+
+  uranus: Uranus
+  miranda: Miranda
+  ariel: Ariel
+  umbriel: Umbriel
+  titania: Titania
+  oberon: Oberon
+
+  neptune: Neptune
+  triton: Triton
+
+  pluto: Pluto
+  charon: Charon
+  styx: Styx
+  nix: Nix
+  kerberos: Kerberos
+  hydra: Hydra
+
+  haumea: Haumea
+  namaka: Namaka
+  hiiaka: Hiʻiaka
+
+  makemake: Makemake
+  mk2: Kenatea
+
+  eris: Eris
+  dysnomia: Dysnomia
+
+planet.centaurus:
+  # Alpha Centauri
+  asano: Asano
+
+  indra: Indra
+
+  accola: Accola
+
+  vicinus: Vicinus
+  ignis: Ignis
+  frigus: Frigus
+
+  # Sentinel
+  vanguard: Vanguard
+
+  alkridge: Alkridge
+
+  arx: Arx
+  castra: Castra
+
+  obia: Obia
+  kador: Kador
+
+  # Hades
+  infurnix: Infurnix
+  him: Karnis
+  why_did: Obtutus
+  you_leave_us: Vultus
+
+  # Cynon
+  unplanned1: unplanned
+
+  # Selloa
+  unplanned2: unplanned
+
+### Space Stations
+space_station.centaurus:
+  unnamed: I have no idea and I will be taking suggestions for space station names

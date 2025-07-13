@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=1": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=2": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=3": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=4": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=5": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=6": {
+      "model": "centaurus:block/frigian_farmland"
+    },
+    "moisture=7": {
+      "model": "centaurus:block/frigian_farmland_moist"
+    }
+  }
+}
