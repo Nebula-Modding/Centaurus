@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "cepheus:block/frigian_dirt",
-    "particle": "cepheus:block/frigian_dirt",
-    "side": "cepheus:block/frigian_grass_block_snow",
+    "bottom": "centaurus:block/frigian_dirt",
+    "particle": "centaurus:block/frigian_dirt",
+    "side": "centaurus:block/frigian_grass_block_snow",
     "top": "minecraft:block/snow"
   }
 }

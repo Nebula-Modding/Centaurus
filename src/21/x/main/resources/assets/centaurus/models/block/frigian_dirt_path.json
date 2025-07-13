@@ -1,10 +1,10 @@
 {   
     "parent": "block/block",
     "textures": {
-        "particle": "cepheus:block/frigian_dirt",
-        "top": "cepheus:block/frigian_dirt_path_top",
-        "side": "cepheus:block/frigian_dirt_path_side",
-        "bottom": "cepheus:block/frigian_dirt"
+        "particle": "centaurus:block/frigian_dirt",
+        "top": "centaurus:block/frigian_dirt_path_top",
+        "side": "centaurus:block/frigian_dirt_path_side",
+        "bottom": "centaurus:block/frigian_dirt"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

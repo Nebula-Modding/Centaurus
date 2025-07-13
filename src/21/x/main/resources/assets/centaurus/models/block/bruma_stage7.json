@@ -2,6 +2,6 @@
   "parent": "minecraft:block/crop",
   "render_type": "cutout",
   "textures": {
-    "crop": "cepheus:block/bruma_stage7"
+    "crop": "centaurus:block/bruma_stage7"
   }
 }
