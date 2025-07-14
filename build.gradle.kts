@@ -2,7 +2,7 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.11.5"
+    id("earth.terrarium.cloche") version "0.11.6"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -41,6 +41,9 @@ repositories {
     // For EMI
     maven("https://maven.terraformersmc.com")
 
+    // For JEI
+    maven("https://maven.blamejared.com/")
+
     // For Mekanism
     maven("https://modmaven.dev")
 
@@ -49,6 +52,9 @@ repositories {
 
     // For Create, AppleSkin, Jade, and Stellar View
     maven("https://api.modrinth.com/maven")
+
+    // DevAuth
+    maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
 }
 
 cloche {
@@ -101,12 +107,20 @@ cloche {
             compileOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1:api")
             runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1")
 
+            // JEI
+            compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${p("jei_21.1_version")}")
+            modRuntimeOnly("mezz.jei:jei-1.21.1-neoforge:${p("jei_21.1_version")}")
+
             // Modrinth Stuff
             modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
             modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
             modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
             modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
             // modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
+
+            // DevAuth
+            modRuntimeOnly("me.djtheredstoner:DevAuth-neoforge:${p("devauth_version")}")
+
             // add Thermal later
         }
     }
