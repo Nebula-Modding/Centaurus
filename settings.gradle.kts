@@ -1,4 +1,4 @@
-rootProject.name = "Cepheus"
+rootProject.name = "Centaurus"
 
 pluginManagement {
     repositories {

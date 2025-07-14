@@ -48,7 +48,7 @@ public class CDataGeneration {
             }
 
         } catch (RuntimeException e) {
-            Centaurus.LOGGER.error("Failed to gather Cepheus's data", e);
+            Centaurus.LOGGER.error("Failed to gather Centaurus's data", e);
         }
     }
 }
