@@ -276,7 +276,7 @@ public class CBlocks {
 
     // region Blueschist Ore Blocks
     public static final DeferredBlock<Block>
-            BLUESCHIST_COAL_ORE = register("blueschist_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), stoneOreProperties().mapColor(MapColor.ICE))),
+            BLUESCHIST_COAL_ORE = register("blueschist_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 2), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_IRON_ORE = register("blueschist_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_COPPER_ORE = register("blueschist_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
             BLUESCHIST_GOLD_ORE = register("blueschist_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), stoneOreProperties().mapColor(MapColor.ICE))),
@@ -291,14 +291,14 @@ public class CBlocks {
     
     // region Blueslate Ore Blocks
     public static final DeferredBlock<Block>
-            BLUESLATE_COAL_ORE = register("blueslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_COAL_ORE = register("blueslate_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 2), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_IRON_ORE = register("blueslate_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_COPPER_ORE = register("blueslate_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_GOLD_ORE = register("blueslate_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_REDSTONE_ORE = register("blueslate_redstone_ore", () -> new RedStoneOreBlock(deepslateRedstoneOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUESLATE_EMERALD_ORE = register("blueslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_EMERALD_ORE = register("blueslate_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_LAPIS_ORE = register("blueslate_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            BLUESLATE_DIAMOND_ORE = register("blueslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            BLUESLATE_DIAMOND_ORE = register("blueslate_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_LUTRUM_ORE = register("blueslate_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_OBDURIUM_ORE = register("blueslate_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             BLUESLATE_MALUNITE_ORE = register("blueslate_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), deepslateOreProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
@@ -306,38 +306,38 @@ public class CBlocks {
 
     // region Ice Ore Blocks
     public static final DeferredBlock<Block>
-            WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_COAL_ORE = register("water_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 2), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_IRON_ORE = register("water_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_COPPER_ORE = register("water_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_GOLD_ORE = register("water_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_REDSTONE_ORE = register("water_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME))),
-            WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
-            WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
-            WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_EMERALD_ORE = register("water_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_LAPIS_ORE = register("water_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5), iceProperties().strength(3.0F, 1.0F))),
+            WATER_ICE_DIAMOND_ORE = register("water_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_LUTRUM_ORE = register("water_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_OBDURIUM_ORE = register("water_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             WATER_ICE_MALUNITE_ORE = register("water_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F)));
     public static final DeferredBlock<Block>
-            NITROGEN_ICE_COAL_ORE = register("nitrogen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_COAL_ORE = register("nitrogen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 2), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_IRON_ORE = register("nitrogen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_COPPER_ORE = register("nitrogen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_GOLD_ORE = register("nitrogen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_REDSTONE_ORE = register("nitrogen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME).mapColor(MapColor.SNOW))),
-            NITROGEN_ICE_EMERALD_ORE = register("nitrogen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
-            NITROGEN_ICE_LAPIS_ORE = register("nitrogen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
-            NITROGEN_ICE_DIAMOND_ORE = register("nitrogen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_EMERALD_ORE = register("nitrogen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_LAPIS_ORE = register("nitrogen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
+            NITROGEN_ICE_DIAMOND_ORE = register("nitrogen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_LUTRUM_ORE = register("nitrogen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_OBDURIUM_ORE = register("nitrogen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW))),
             NITROGEN_ICE_MALUNITE_ORE = register("nitrogen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block>
-            OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_COAL_ORE = register("oxygen_ice_coal_ore", () -> new DropExperienceBlock(UniformInt.of(1, 2), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_IRON_ORE = register("oxygen_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_COPPER_ORE = register("oxygen_ice_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_GOLD_ORE = register("oxygen_ice_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_REDSTONE_ORE = register("oxygen_ice_redstone_ore", () -> new RedStoneOreBlock(stoneRedstoneOreProperties().strength(3.0F, 1.0F).requiresCorrectToolForDrops().friction(0.85F).sound(SoundType.GLASS).instrument(NoteBlockInstrument.CHIME))),
-            OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
-            OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(4, 8), iceProperties().strength(3.0F, 1.0F))),
-            OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(5, 10), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_EMERALD_ORE = register("oxygen_ice_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_LAPIS_ORE = register("oxygen_ice_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5), iceProperties().strength(3.0F, 1.0F))),
+            OXYGEN_ICE_DIAMOND_ORE = register("oxygen_ice_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_LUTRUM_ORE = register("oxygen_ice_lutrum_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_OBDURIUM_ORE = register("oxygen_ice_obdurium_ore", () -> new DropExperienceBlock(ConstantInt.of(0), iceProperties().strength(3.0F, 1.0F))),
             OXYGEN_ICE_MALUNITE_ORE = register("oxygen_ice_malunite_ore", () -> new DropExperienceBlock(UniformInt.of(1, 4), iceProperties().strength(3.0F, 1.0F)));
