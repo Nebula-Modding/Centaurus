@@ -101,7 +101,7 @@ cloche {
             modImplementation("com.github.nebula-modding:cygnus:${p("cygnus_21.1_version")}")
 
             // Lazuli
-            modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.1_version")}")
+            modImplementation("maven.modrinth:lazuli:${p("lazuli_21.1_version")}+1.21.1")
 
             // EMI
             compileOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1:api")
