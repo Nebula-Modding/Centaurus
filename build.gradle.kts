@@ -171,7 +171,9 @@ tasks.named<Jar>("211Jar") { archiveClassifier = "1.21.1" }
 // YAML to lang
 yamlang {
     targetSourceSets = listOf(sourceSets.main.get())
-    inputDir = "assets/${p("mod_id")}/lang"
+    inputDir = "assets/${p("mod_id")}/yamlang"
+    outputDir = "assets/${p("mod_id")}/lang"
+    preserveYaml = true
 }
 
 // Exclude datagen from built jars
