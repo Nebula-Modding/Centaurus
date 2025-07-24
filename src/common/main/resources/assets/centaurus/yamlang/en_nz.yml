@@ -1,8 +1,6 @@
 # This mod uses yamlang for every language except for American english.
 # This makes language files easier to read and makes it more bearable for translators to contribute.
-# Here are upside-down letters to use: 
-# Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-# ∀ɐ ᗺq Ɔɔ ᗡp Ǝǝ Ⅎɟ ⅁ᵷ Hɥ Iᴉ Րɾ Ʞʞ Ꞁꞁ Wɯ Nu Oo Ԁd Ꝺb ᴚɹ Ss ⟘ʇ ∩n Ʌʌ Mʍ Xx ⅄ʎ Zz
+# This is just copied and pasted from en_gb
 
 ### Menus
 itemGroup.centaurus: Centaurus
@@ -90,7 +88,7 @@ block:
     iceflower: Iceflower
     potted_iceflower: Potted Iceflower
     # Karnis
-    tumor: Tumor
+    tumor: Tumour
     flesh_block: Block of Flesh
     gristled_flesh: Gristled Flesh
     gristle_block: Block of Gristle
@@ -115,7 +113,7 @@ block:
     polished_silicate_stone_stairs: Polished Silicate Stone Stairs
     polished_silicate_stone_slab: Polished Silicate Stone Slab
     polished_silicate_stone_wall: Polished Silicate Stone Wall
-    chiseled_silicate_stone: Chiseled Silicate Stone
+    chiseled_silicate_stone: Chiselled Silicate Stone
     silicate_stone_bricks: Silicate Stone Bricks
     cracked_silicate_stone_bricks: Cracked Silicate Stone Bricks
     silicate_stone_brick_stairs: Silicate Stone Brick Stairs
@@ -137,7 +135,7 @@ block:
     polished_permafrost_stairs: Polished Permafrost Stairs
     polished_permafrost_slab: Polished Permafrost Slab
     polished_permafrost_wall: Polished Permafrost Wall
-    chiseled_permafrost: Chiseled Permafrost
+    chiseled_permafrost: Chiselled Permafrost
     permafrost_bricks: Permafrost Bricks
     cracked_permafrost_bricks: Cracked Permafrost Bricks
     permafrost_brick_stairs: Permafrost Brick Stairs
@@ -164,7 +162,7 @@ block:
     polished_blueschist_stairs: Polished Blueschist Stairs
     polished_blueschist_slab: Polished Blueschist Slab
     polished_blueschist_wall: Polished Blueschist Wall
-    chiseled_blueschist: Chiseled Blueschist
+    chiseled_blueschist: Chiselled Blueschist
     blueschist_bricks: Blueschist Bricks
     cracked_blueschist_bricks: Cracked Blueschist Bricks
     blueschist_brick_stairs: Blueschist Brick Stairs
@@ -184,7 +182,7 @@ block:
     polished_blueslate_stairs: Polished Blueslate Stairs
     polished_blueslate_slab: Polished Blueslate Slab
     polished_blueslate_wall: Polished Blueslate Wall
-    chiseled_blueslate: Chiseled Blueslate
+    chiseled_blueslate: Chiselled Blueslate
     blueslate_bricks: Blueslate Bricks
     cracked_blueslate_bricks: Cracked Blueslate Bricks
     blueslate_brick_stairs: Blueslate Brick Stairs
@@ -211,7 +209,7 @@ block:
     polished_karcass_stone_stairs: Polished Karcass Stone Stairs
     polished_karcass_stone_slab: Polished Karcass Stone Slab
     polished_karcass_stone_wall: Polished Karcass Stone Wall
-    chiseled_karcass_stone: Chiseled Karcass Stone
+    chiseled_karcass_stone: Chiselled Karcass Stone
     karcass_stone_bricks: Karcass Stone Bricks
     cracked_karcass_stone_bricks: Cracked Karcass Stone Bricks
     karcass_stone_brick_stairs: Karcass Stone Brick Stairs
@@ -231,7 +229,7 @@ block:
     polished_goreslate_stairs: Polished Goreslate Stairs
     polished_goreslate_slab: Polished Goreslate Slab
     polished_goreslate_wall: Polished Goreslate Wall
-    chiseled_goreslate: Chiseled Goreslate
+    chiseled_goreslate: Chiselled Goreslate
     goreslate_bricks: Goreslate Bricks
     cracked_goreslate_bricks: Cracked Goreslate Bricks
     goreslate_brick_stairs: Goreslate Brick Stairs
@@ -254,7 +252,7 @@ block:
     silicate_emerald_ore: Silicate Emerald Ore
     silicate_lapis_ore: Silicate Lapis Ore
     silicate_diamond_ore: Silicate Diamond Ore
-    silicate_aluminum_ore: Silicate Aluminum Ore
+    silicate_aluminum_ore: Silicate Aluminium Ore
     silicate_titanium_ore: Silicate Titanium Ore
     silicate_lutrum_ore: Silicate Lutrum Ore
     silicate_obdurium_ore: Silicate Obdurium Ore
@@ -268,7 +266,7 @@ block:
     permafrost_emerald_ore: Permafrost Emerald Ore
     permafrost_lapis_ore: Permafrost Lapis Ore
     permafrost_diamond_ore: Permafrost Diamond Ore
-    permafrost_aluminum_ore: Permafrost Aluminum Ore
+    permafrost_aluminum_ore: Permafrost Aluminium Ore
     permafrost_titanium_ore: Permafrost Titanium Ore
     permafrost_lutrum_ore: Permafrost Lutrum Ore
     permafrost_obdurium_ore: Permafrost Obdurium Ore
@@ -282,7 +280,7 @@ block:
     blueschist_emerald_ore: Blueschist Emerald Ore
     blueschist_lapis_ore: Blueschist Lapis Ore
     blueschist_diamond_ore: Blueschist Diamond Ore
-    blueschist_aluminum_ore: Blueschist Aluminum Ore
+    blueschist_aluminum_ore: Blueschist Aluminium Ore
     blueschist_titanium_ore: Blueschist Titanium Ore
     blueschist_lutrum_ore: Blueschist Lutrum Ore
     blueschist_obdurium_ore: Blueschist Obdurium Ore
@@ -296,7 +294,7 @@ block:
     blueslate_emerald_ore: Blueslate Emerald Ore
     blueslate_lapis_ore: Blueslate Lapis Ore
     blueslate_diamond_ore: Blueslate Diamond Ore
-    blueslate_aluminum_ore: Blueslate Aluminum Ore
+    blueslate_aluminum_ore: Blueslate Aluminium Ore
     blueslate_titanium_ore: Blueslate Titanium Ore
     blueslate_lutrum_ore: Blueslate Lutrum Ore
     blueslate_obdurium_ore: Blueslate Obdurium Ore
@@ -310,7 +308,7 @@ block:
     karcass_emerald_ore: Karcass Emerald Ore
     karcass_lapis_ore: Karcass Lapis Ore
     karcass_diamond_ore: Karcass Diamond Ore
-    karcass_aluminum_ore: Karcass Aluminum Ore
+    karcass_aluminum_ore: Karcass Aluminium Ore
     karcass_titanium_ore: Karcass Titanium Ore
     karcass_lutrum_ore: Karcass Lutrum Ore
     karcass_obdurium_ore: Karcass Obdurium Ore
@@ -324,7 +322,7 @@ block:
     goreslate_emerald_ore: Goreslate Emerald Ore
     goreslate_lapis_ore: Goreslate Lapis Ore
     goreslate_diamond_ore: Goreslate Diamond Ore
-    goreslate_aluminum_ore: Goreslate Aluminum Ore
+    goreslate_aluminum_ore: Goreslate Aluminium Ore
     goreslate_titanium_ore: Goreslate Titanium Ore
     goreslate_lutrum_ore: Goreslate Lutrum Ore
     goreslate_obdurium_ore: Goreslate Obdurium Ore
@@ -338,7 +336,7 @@ block:
     water_ice_emerald_ore: Water Ice Emerald Ore
     water_ice_lapis_ore: Water Ice Lapis Ore
     water_ice_diamond_ore: Water Ice Diamond Ore
-    water_ice_aluminum_ore: Water Ice Aluminum Ore
+    water_ice_aluminum_ore: Water Ice Aluminium Ore
     water_ice_titanium_ore: Water Ice Titanium Ore
     water_ice_lutrum_ore: Water Ice Lutrum Ore
     water_ice_obdurium_ore: Water Ice Obdurium Ore
@@ -352,7 +350,7 @@ block:
     nitrogen_ice_emerald_ore: Nitrogen Ice Emerald Ore
     nitrogen_ice_lapis_ore: Nitrogen Ice Lapis Ore
     nitrogen_ice_diamond_ore: Nitrogen Ice Diamond Ore
-    nitrogen_ice_aluminum_ore: Nitrogen Ice Aluminum Ore
+    nitrogen_ice_aluminum_ore: Nitrogen Ice Aluminium Ore
     nitrogen_ice_titanium_ore: Nitrogen Ice Titanium Ore
     nitrogen_ice_lutrum_ore: Nitrogen Ice Lutrum Ore
     nitrogen_ice_obdurium_ore: Nitrogen Ice Obdurium Ore
@@ -366,7 +364,7 @@ block:
     oxygen_ice_emerald_ore: Oxygen Ice Emerald Ore
     oxygen_ice_lapis_ore: Oxygen Ice Lapis Ore
     oxygen_ice_diamond_ore: Oxygen Ice Diamond Ore
-    oxygen_ice_aluminum_ore: Oxygen Ice Aluminum Ore
+    oxygen_ice_aluminum_ore: Oxygen Ice Aluminium Ore
     oxygen_ice_titanium_ore: Oxygen Ice Titanium Ore
     oxygen_ice_lutrum_ore: Oxygen Ice Lutrum Ore
     oxygen_ice_obdurium_ore: Oxygen Ice Obdurium Ore
@@ -378,7 +376,7 @@ block:
     raw_lutrum_block: Block of Raw Lutrum
     lutrum_sheet_metal: Lutrum Sheet Metal
     lutrum_block: Block of Lutrum
-    chiseled_lutrum: Chiseled Lutrum
+    chiseled_lutrum: Chiselled Lutrum
     lutrum_grate: Lutrum Grate
     lutrum_plating: Lutrum Plating
     lutrum_plating_stairs: Lutrum Plating Stairs
@@ -393,7 +391,7 @@ block:
     lutrum_bulb: Lutrum Bulb
     exposed_lutrum_sheet_metal: Exposed Lutrum Sheet Metal
     exposed_lutrum_block: Exposed Lutrum
-    exposed_chiseled_lutrum: Exposed Chiseled Lutrum
+    exposed_chiseled_lutrum: Exposed Chiselled Lutrum
     exposed_lutrum_grate: Exposed Lutrum Grate
     exposed_lutrum_plating: Exposed Lutrum Plating
     exposed_lutrum_plating_stairs: Exposed Lutrum Plating Stairs
@@ -408,7 +406,7 @@ block:
     exposed_lutrum_bulb: Exposed Lutrum Bulb
     weathered_lutrum_sheet_metal: Weathered Lutrum Sheet Metal
     weathered_lutrum_block: Weathered Lutrum
-    weathered_chiseled_lutrum: Weathered Chiseled Lutrum
+    weathered_chiseled_lutrum: Weathered Chiselled Lutrum
     weathered_lutrum_grate: Weathered Lutrum Grate
     weathered_lutrum_plating: Weathered Lutrum Plating
     weathered_lutrum_plating_stairs: Weathered Lutrum Plating Stairs
@@ -423,7 +421,7 @@ block:
     weathered_lutrum_bulb: Weathered Lutrum Bulb
     oxidized_lutrum_sheet_metal: Oxidized Lutrum Sheet Metal
     oxidized_lutrum_block: Oxidized Lutrum
-    oxidized_chiseled_lutrum: Oxidized Chiseled Lutrum
+    oxidized_chiseled_lutrum: Oxidized Chiselled Lutrum
     oxidized_lutrum_grate: Oxidized Lutrum Grate
     oxidized_lutrum_plating: Oxidized Lutrum Plating
     oxidized_lutrum_plating_stairs: Oxidized Lutrum Plating Stairs
@@ -438,7 +436,7 @@ block:
     oxidized_lutrum_bulb: Oxidized Lutrum Bulb
     waxed_lutrum_sheet_metal: Waxed Lutrum Sheet Metal
     waxed_lutrum_block: Waxed Block of Lutrum
-    waxed_chiseled_lutrum: Waxed Chiseled Lutrum
+    waxed_chiseled_lutrum: Waxed Chiselled Lutrum
     waxed_lutrum_grate: Waxed Lutrum Grate
     waxed_lutrum_plating: Waxed Lutrum Plating
     waxed_lutrum_plating_stairs: Waxed Lutrum Plating Stairs
@@ -453,7 +451,7 @@ block:
     waxed_lutrum_bulb: Waxed Lutrum Bulb
     waxed_exposed_lutrum_sheet_metal: Waxed Exposed Lutrum Sheet Metal
     waxed_exposed_lutrum_block: Waxed Exposed Lutrum
-    waxed_exposed_chiseled_lutrum: Waxed Exposed Chiseled Lutrum
+    waxed_exposed_chiseled_lutrum: Waxed Exposed Chiselled Lutrum
     waxed_exposed_lutrum_grate: Waxed Exposed Lutrum Grate
     waxed_exposed_lutrum_plating: Waxed Exposed Lutrum Plating
     waxed_exposed_lutrum_plating_stairs: Waxed Exposed Lutrum Plating Stairs
@@ -468,7 +466,7 @@ block:
     waxed_exposed_lutrum_bulb: Waxed Exposed Lutrum Bulb
     waxed_weathered_lutrum_sheet_metal: Waxed Weathered Lutrum Sheet Metal
     waxed_weathered_lutrum_block: Waxed Weathered Lutrum
-    waxed_weathered_chiseled_lutrum: Waxed Weathered Chiseled Lutrum
+    waxed_weathered_chiseled_lutrum: Waxed Weathered Chiselled Lutrum
     waxed_weathered_lutrum_grate: Waxed Weathered Lutrum Grate
     waxed_weathered_lutrum_plating: Waxed Weathered Lutrum Plating
     waxed_weathered_lutrum_plating_stairs: Waxed Weathered Lutrum Plating Stairs
@@ -483,7 +481,7 @@ block:
     waxed_weathered_lutrum_bulb: Waxed Weathered Lutrum Bulb
     waxed_oxidized_lutrum_sheet_metal: Waxed Oxidized Lutrum Sheet Metal
     waxed_oxidized_lutrum_block: Waxed Oxidized Lutrum
-    waxed_oxidized_chiseled_lutrum: Waxed Oxidized Chiseled Lutrum
+    waxed_oxidized_chiseled_lutrum: Waxed Oxidized Chiselled Lutrum
     waxed_oxidized_lutrum_grate: Waxed Oxidized Lutrum Grate
     waxed_oxidized_lutrum_plating: Waxed Oxidized Lutrum Plating
     waxed_oxidized_lutrum_plating_stairs: Waxed Oxidized Lutrum Plating Stairs
@@ -500,7 +498,7 @@ block:
     raw_obdurium_block: Block of Raw Obdurium
     obdurium_sheet_metal: Obdurium Sheet Metal
     obdurium_block: Block of Obdurium
-    chiseled_obdurium: Chiseled Obdurium
+    chiseled_obdurium: Chiselled Obdurium
     obdurium_grate: Obdurium Grate
     obdurium_plating: Obdurium Plating
     obdurium_plating_stairs: Obdurium Plating Stairs
@@ -517,7 +515,7 @@ block:
     raw_malunite_block: Block of Raw Malunite
     malunite_sheet_metal: Malunite Sheet Metal
     malunite_block: Block of Malunite
-    chiseled_malunite: Chiseled Malunite
+    chiseled_malunite: Chiselled Malunite
     malunite_grate: Malunite Grate
     malunite_plating: Malunite Plating
     malunite_plating_stairs: Malunite Plating Stairs
