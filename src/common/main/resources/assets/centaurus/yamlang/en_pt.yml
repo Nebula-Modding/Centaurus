@@ -13,7 +13,7 @@ block:
     mayura_log: Log o' bloo
     mayura_wood: Bloo timber
     stripped_mayura_log: Bare log o' bloo
-    stripped_mayura_wood: bare bloo timber
+    stripped_mayura_wood: Bare bloo timber
     mayura_planks: Planks o' bloo
     mayura_stairs: Stairs o' bloo
     mayura_slab: Slab o' bloo
@@ -32,7 +32,7 @@ block:
     ocris_log: Log o' ocris
     ocris_wood: Ocris timber
     stripped_ocris_log: Bare log o' ocris
-    stripped_ocris_wood: bare ocris timber
+    stripped_ocris_wood: Bare ocris timber
     ocris_planks: Planks o' ocris
     ocris_stairs: Stairs o' ocris
     ocris_slab: Slab o' ocris
@@ -51,7 +51,7 @@ block:
     grimwood_log: Log o' extra dusky oak
     grimwood_wood: Extra dusky oak timber
     stripped_grimwood_log: Bare log o' extra dusky oak
-    stripped_grimwood_wood: bare extra dusky oak timber
+    stripped_grimwood_wood: Bare extra dusky oak timber
     grimwood_planks: Planks o' extra dusky oak
     grimwood_stairs: Stairs o' extra dusky oak
     grimwood_slab: Slab o' extra dusky oak
