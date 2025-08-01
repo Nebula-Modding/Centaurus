@@ -46,7 +46,6 @@ public class CLanguageProvider extends LanguageProvider {
         // endregion
 
         // region Block Translations
-
         addBlock(CBlocks.FLESH_BLOCK, "Block of Flesh");
 
         addBlock(CBlocks.BRUMA_BLOCK, "Bruma Bale");
@@ -81,6 +80,9 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.BlockTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(CTags.BlockTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
+        add(CTags.BlockTags.ORES_LUTRUM, "Lutrum Ores");
+        add(CTags.BlockTags.ORES_OBDURIUM, "Obdurium Ores");
+        add(CTags.BlockTags.ORES_MALUNITE, "Malunite Ores");
         add(CTags.BlockTags.ORES_IN_GROUND_SILICATE_STONE, "Silicate Stone Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_BLUESLATE, "Blueslate Ores In Ground");
@@ -89,9 +91,6 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.BlockTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_NITROGEN_ICE, "Nitrogen Ice Ores In Ground");
         add(CTags.BlockTags.ORES_IN_GROUND_OXYGEN_ICE, "Oxygen Ice Ores In Ground");
-        add(CTags.BlockTags.ORES_LUTRUM, "Lutrum Ores");
-        add(CTags.BlockTags.ORES_OBDURIUM, "Obdurium Ores");
-        add(CTags.BlockTags.ORES_MALUNITE, "Malunite Ores");
         add(CTags.BlockTags.STORAGE_BLOCKS_BRUMA, "Bruma Storage Blocks");
         add(CTags.BlockTags.STORAGE_BLOCKS_LUTRUM, "Lutrum Storage Blocks");
         add(CTags.BlockTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
@@ -100,18 +99,18 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.BlockTags.STORAGE_BLOCKS_RAW_OBDURIUM, "Raw Obdurium Storage Blocks");
         add(CTags.BlockTags.STORAGE_BLOCKS_RAW_MALUNITE, "Raw Malunite Storage Blocks");
         // Centaurus-Specific Tags
+        add(CTags.BlockTags.BASE_STONE_FRIGUS, "Frigus Base Stones");
+        add(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES, "Frigus Carver Replaceables");
+        add(CTags.BlockTags.MAYURA_LOGS, "Mayura Logs");
+        add(CTags.BlockTags.GRIMWOOD_LOGS, "Grimwood Logs");
+        add(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD, "Convertable to Frigus Mud");
+        add(CTags.BlockTags.SILICATE_STONE_ORE_REPLACEABLES, "Silicate Stone Ore Replaceables");
+        add(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES, "Blueschist Ore Replaceables");
+        add(CTags.BlockTags.BLUESLATE_ORE_REPLACEABLES, "Blueslate Ore Replaceables");
+        add(CTags.BlockTags.KARCASS_STONE_ORE_REPLACEABLES, "Karcass Stone Ore Replaceables");
         add(CTags.BlockTags.NEEDS_LUTRUM_TOOL, "Needs Lutrum Tool");
         add(CTags.BlockTags.NEEDS_OBDURIUM_TOOL, "Needs Obdurium Tool");
         add(CTags.BlockTags.NEEDS_MALUNITE_TOOL, "Needs Malunite Tool");
-        add(CTags.BlockTags.BASE_STONE_FRIGUS, "Frigus Base Stones");
-        add(CTags.BlockTags.FRIGUS_CARVER_REPLACEABLES, "Frigus Carver Replaceables");
-        add(CTags.BlockTags.BLUESCHIST_ORE_REPLACEABLES, "Blueschist Ore Replaceables");
-        add(CTags.BlockTags.SILICATE_STONE_ORE_REPLACEABLES, "Silicate Stone Ore Replaceables");
-        add(CTags.BlockTags.BLUESLATE_ORE_REPLACEABLES, "Blueslate Ore Replaceables");
-        add(CTags.BlockTags.KARCASS_STONE_ORE_REPLACEABLES, "Karcass Stone Ore Replaceables");
-        add(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD, "Convertable to Frigus Mud");
-        add(CTags.BlockTags.MAYURA_LOGS, "Mayura Logs");
-        add(CTags.BlockTags.GRIMWOOD_LOGS, "Grimwood Logs");
 
         // Block Item Tags
         add(CTags.ItemTags.COBBLESTONES_SILICATE_STONE, "Silicate Cobblestones");
@@ -126,6 +125,9 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.ORE_BEARING_GROUND_METHANE_ICE, "Methane Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_NITROGEN_ICE, "Nitrogen Ice Ore Bearing Ground");
         add(CTags.ItemTags.ORE_BEARING_GROUND_OXYGEN_ICE, "Oxygen Ice Ore Bearing Ground");
+        add(CTags.ItemTags.ORES_LUTRUM, "Lutrum Ores");
+        add(CTags.ItemTags.ORES_OBDURIUM, "Obdurium Ores");
+        add(CTags.ItemTags.ORES_MALUNITE, "Malunite Ores");
         add(CTags.ItemTags.ORES_IN_GROUND_SILICATE_STONE, "Silicate Stone Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_BLUESCHIST, "Blueschist Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_BLUESLATE, "Blueslate Ores In Ground");
@@ -134,9 +136,6 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.ORES_IN_GROUND_METHANE_ICE, "Methane Ice Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_NITROGEN_ICE, "Nitrogen Ice Ores In Ground");
         add(CTags.ItemTags.ORES_IN_GROUND_OXYGEN_ICE, "Oxygen Ice Ores In Ground");
-        add(CTags.ItemTags.ORES_LUTRUM, "Lutrum Ores");
-        add(CTags.ItemTags.ORES_OBDURIUM, "Obdurium Ores");
-        add(CTags.ItemTags.ORES_MALUNITE, "Malunite Ores");
         add(CTags.ItemTags.STORAGE_BLOCKS_BRUMA, "Bruma Storage Blocks");
         add(CTags.ItemTags.STORAGE_BLOCKS_LUTRUM, "Lutrum Storage Blocks");
         add(CTags.ItemTags.STORAGE_BLOCKS_OBDURIUM, "Obdurium Storage Blocks");
@@ -149,30 +148,39 @@ public class CLanguageProvider extends LanguageProvider {
         add(CTags.ItemTags.GRIMWOOD_LOGS, "Grimwood Logs");
 
         // Item Tags
-        add(CTags.ItemTags.PLATES, "Plates");
-        add(CTags.ItemTags.RAW_MATERIALS_LUTRUM, "Lutrum Raw Materials");
-        add(CTags.ItemTags.NUGGETS_LUTRUM, "Lutrum Nuggets");
-        add(CTags.ItemTags.INGOTS_LUTRUM, "Lutrum Ingots");
-        add(CTags.ItemTags.PLATES_LUTRUM, "Lutrum Plates");
-        add(CTags.ItemTags.RODS_LUTRUM, "Lutrum Rods");
-        add(CTags.ItemTags.RAW_MATERIALS_OBDURIUM, "Obdurium Raw Materials");
-        add(CTags.ItemTags.NUGGETS_OBDURIUM, "Obdurium Nuggets");
-        add(CTags.ItemTags.INGOTS_OBDURIUM, "Obdurium Ingots");
-        add(CTags.ItemTags.PLATES_OBDURIUM, "Obdurium Plates");
-        add(CTags.ItemTags.RODS_OBDURIUM, "Obdurium Rods");
-        add(CTags.ItemTags.RAW_MATERIALS_MALUNITE, "Malunite Raw Materials");
-        add(CTags.ItemTags.NUGGETS_MALUNITE, "Malunite Nuggets");
-        add(CTags.ItemTags.INGOTS_MALUNITE, "Malunite Ingots");
-        add(CTags.ItemTags.PLATES_MALUNITE, "Malunite Plates");
-        add(CTags.ItemTags.RODS_MALUNITE, "Malunite Rods");
         add(CTags.ItemTags.CROPS_BRUMA, "Bruma Crops");
         add(CTags.ItemTags.CROPS_AZURE_ROOT, "Azure Root Crops");
+        add(CTags.ItemTags.RAW_MATERIALS_LUTRUM, "Lutrum Raw Materials");
+        add(CTags.ItemTags.RAW_MATERIALS_OBDURIUM, "Obdurium Raw Materials");
+        add(CTags.ItemTags.RAW_MATERIALS_MALUNITE, "Malunite Raw Materials");
+        add(CTags.ItemTags.NUGGETS_LUTRUM, "Lutrum Nuggets");
+        add(CTags.ItemTags.NUGGETS_OBDURIUM, "Obdurium Nuggets");
+        add(CTags.ItemTags.NUGGETS_MALUNITE, "Malunite Nuggets");
+        add(CTags.ItemTags.INGOTS_LUTRUM, "Lutrum Ingots");
+        add(CTags.ItemTags.INGOTS_OBDURIUM, "Obdurium Ingots");
+        add(CTags.ItemTags.INGOTS_MALUNITE, "Malunite Ingots");
+        add(CTags.ItemTags.PLATES_LUTRUM, "Lutrum Plates");
+        add(CTags.ItemTags.PLATES_OBDURIUM, "Obdurium Plates");
+        add(CTags.ItemTags.PLATES_MALUNITE, "Malunite Plates");
+        add(CTags.ItemTags.RODS_LUTRUM, "Lutrum Rods");
+        add(CTags.ItemTags.RODS_OBDURIUM, "Obdurium Rods");
+        add(CTags.ItemTags.RODS_MALUNITE, "Malunite Rods");
         // endregion
 
         // region GUI Translations
         add(CCreativeTab.CREATIVE_TAB_TITLE, "Centaurus");
 
         // region Cygnus GUI Translations
+        // Stars
+        add("star.centaurus.alpha_centauri", "Alpha Centauri");
+        add("star.centaurus.alpha_centauri_a", "Rigil Kentaurus");
+        add("star.centaurus.alpha_centauri_b", "Toliman");
+        add("star.centaurus.proxima_centauri", "Proxima Centauri");
+        add("star.centaurus.sentinel", "Sentinel");
+        add("star.centaurus.hades", "Hades");
+        add("star.centaurus.cynon", "Cynon");
+        add("star.centaurus.selloa", "Selloa");
+        // Planets
         add("planet.cygnus.ceres", "Ceres");
         add("planet.cygnus.jupiter", "Jupiter");
         add("planet.cygnus.io", "Io");
@@ -210,19 +218,13 @@ public class CLanguageProvider extends LanguageProvider {
         add("planet.cygnus.eris", "Eris");
         add("planet.cygnus.dysnomia", "Dysnomia");
 
-        add("star.centaurus.alpha_centauri", "Alpha Centauri");
-        add("star.centaurus.alpha_centauri_a", "Rigil Kentaurus");
-        add("star.centaurus.alpha_centauri_b", "Toliman");
         add("planet.centaurus.asano", "Asano");
         add("planet.centaurus.indra", "Indra");
-        add("star.centaurus.proxima_centauri", "Proxima Centauri");
-        add("planet.centaurus.proxima_centauri", "Proxima Centauri");
         add("planet.centaurus.accola", "Accola");
         add("planet.centaurus.vicinus", "Vicinus");
         add("planet.centaurus.ignis", "Ignis");
         add("planet.centaurus.frigus", "Frigus");
 
-        add("star.centaurus.sentinel", "Sentinel");
         add("planet.centaurus.vanguard", "Vanguard");
         add("planet.centaurus.alkridge", "Alkridge");
         add("planet.centaurus.arx", "Arx");
@@ -230,11 +232,15 @@ public class CLanguageProvider extends LanguageProvider {
         add("planet.centaurus.obia", "Obia");
         add("planet.centaurus.kador", "Kador");
 
-        add("star.centaurus.hades", "Hades");
         add("planet.centaurus.infurnix", "Infurnix");
-        add("planet.centaurus.him", "Him."); // I know literally 0 people will check the source code :sob:
+        add("planet.centaurus.him", "Him.");
         add("planet.centaurus.why_did", "Obtutus");
         add("planet.centaurus.you_leave_us", "Vultus");
+
+        add("planet.centaurus.opacios", "Opacios");
+        add("planet.centaurus.phanis", "Phanis");
+
+        add("planet.centaurus.tempus", "Tempus");
         // endregion
         // endregion
 

@@ -31,6 +31,11 @@ public class CTags {
                 ORE_BEARING_GROUND_NITROGEN_ICE = commonBlockTag("ore_bearing_ground/nitrogen_ice"),
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonBlockTag("ore_bearing_ground/oxygen_ice"),
 
+                // Ores
+                ORES_LUTRUM = commonBlockTag("ores/lutrum"),
+                ORES_OBDURIUM = commonBlockTag("ores/obdurium"),
+                ORES_MALUNITE = commonBlockTag("ores/malunite"),
+        
                 // Ores In Ground
                 ORES_IN_GROUND_SILICATE_STONE = commonBlockTag("ores_in_ground/silicate_stone"),
                 ORES_IN_GROUND_BLUESCHIST = commonBlockTag("ores_in_ground/blueschist"),
@@ -40,11 +45,6 @@ public class CTags {
                 ORES_IN_GROUND_METHANE_ICE = commonBlockTag("ores_in_ground/methane_ice"),
                 ORES_IN_GROUND_NITROGEN_ICE = commonBlockTag("ores_in_ground/nitrogen_ice"),
                 ORES_IN_GROUND_OXYGEN_ICE = commonBlockTag("ores_in_ground/oxygen_ice"),
-
-                // Ore Blocks
-                ORES_LUTRUM = commonBlockTag("ores/lutrum"),
-                ORES_OBDURIUM = commonBlockTag("ores/obdurium"),
-                ORES_MALUNITE = commonBlockTag("ores/malunite"),
 
                 // Storage Blocks
                 STORAGE_BLOCKS_BRUMA = commonBlockTag("storage_blocks/bruma"),
@@ -111,6 +111,11 @@ public class CTags {
                 ORE_BEARING_GROUND_NITROGEN_ICE = commonItemTag("ore_bearing_ground/nitrogen_ice"),
                 ORE_BEARING_GROUND_OXYGEN_ICE = commonItemTag("ore_bearing_ground/oxygen_ice"),
 
+                // Ores
+                ORES_LUTRUM = commonItemTag("ores/lutrum"),
+                ORES_OBDURIUM = commonItemTag("ores/obdurium"),
+                ORES_MALUNITE = commonItemTag("ores/malunite"),
+
                 // Ores In Ground
                 ORES_IN_GROUND_SILICATE_STONE = commonItemTag("ores_in_ground/silicate_stone"),
                 ORES_IN_GROUND_BLUESCHIST = commonItemTag("ores_in_ground/blueschist"),
@@ -120,11 +125,6 @@ public class CTags {
                 ORES_IN_GROUND_METHANE_ICE = commonItemTag("ores_in_ground/methane_ice"),
                 ORES_IN_GROUND_NITROGEN_ICE = commonItemTag("ores_in_ground/nitrogen_ice"),
                 ORES_IN_GROUND_OXYGEN_ICE = commonItemTag("ores_in_ground/oxygen_ice"),
-
-                // Ore Blocks
-                ORES_LUTRUM = commonItemTag("ores/lutrum"),
-                ORES_OBDURIUM = commonItemTag("ores/obdurium"),
-                ORES_MALUNITE = commonItemTag("ores/malunite"),
 
                 // Storage Blocks
                 STORAGE_BLOCKS_BRUMA = commonItemTag("storage_blocks/bruma"),
@@ -152,30 +152,28 @@ public class CTags {
 
         public static final TagKey<Item>
                 // region Common Tags
+                // Crops
+                CROPS_BRUMA = commonItemTag("crops/bruma"),
+                CROPS_AZURE_ROOT = commonItemTag("crops/azure_root"),
+        
                 // Ores
                 PLATES = commonItemTag("plates"),
 
                 RAW_MATERIALS_LUTRUM = commonItemTag("raw_material/lutrum"),
-                NUGGETS_LUTRUM = commonItemTag("nuggets/lutrum"),
-                INGOTS_LUTRUM = commonItemTag("ingots/lutrum"),
-                PLATES_LUTRUM = commonItemTag("plates/lutrum"),
-                RODS_LUTRUM = commonItemTag("rods/lutrum"),
-
                 RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),
-                NUGGETS_OBDURIUM = commonItemTag("nuggets/obdurium"),
-                INGOTS_OBDURIUM = commonItemTag("ingots/obdurium"),
-                PLATES_OBDURIUM = commonItemTag("plates/obdurium"),
-                RODS_OBDURIUM = commonItemTag("rods/obdurium"),
-
                 RAW_MATERIALS_MALUNITE = commonItemTag("raw_material/malunite"),
+                NUGGETS_LUTRUM = commonItemTag("nuggets/lutrum"),
+                NUGGETS_OBDURIUM = commonItemTag("nuggets/obdurium"),
                 NUGGETS_MALUNITE = commonItemTag("nuggets/malunite"),
+                INGOTS_LUTRUM = commonItemTag("ingots/lutrum"),
+                INGOTS_OBDURIUM = commonItemTag("ingots/obdurium"),
                 INGOTS_MALUNITE = commonItemTag("ingots/malunite"),
+                PLATES_LUTRUM = commonItemTag("plates/lutrum"),
+                PLATES_OBDURIUM = commonItemTag("plates/obdurium"),
                 PLATES_MALUNITE = commonItemTag("plates/malunite"),
-                RODS_MALUNITE = commonItemTag("rods/malunite"),
-
-                // Crops
-                CROPS_BRUMA = commonItemTag("crops/bruma"),
-                CROPS_AZURE_ROOT = commonItemTag("crops/azure_root");
+                RODS_LUTRUM = commonItemTag("rods/lutrum"),
+                RODS_OBDURIUM = commonItemTag("rods/obdurium"),
+                RODS_MALUNITE = commonItemTag("rods/malunite");
                 // endregion
 
                 // region Centaurus-Specific Tags
@@ -192,7 +190,6 @@ public class CTags {
     }
 
     public static TagKey<Block> blockTag(String name) {
-
         return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath(Centaurus.MOD_ID, name));
     }
 
