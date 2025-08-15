@@ -53,39 +53,58 @@ public class CItems {
     // endregion
 
     // region Tools
+    // Lutrum
     public static final DeferredItem<Item>
-            OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(10000).attributes(SwordItem.createAttributes(CToolMaterials.OBDURIUM, 3.0F, -3.2F))));
+            LUTRUM_SWORD = registerSwordItem("lutrum_sword", CTiers.LUTRUM, 3.0F, -2.0F),
+            LUTRUM_SHOVEL = registerShovelItem("lutrum_shovel", CTiers.LUTRUM, 1.5F, -2.6F),
+            LUTRUM_PICKAXE = registerPickaxeItem("lutrum_pickaxe", CTiers.LUTRUM, 1.0F, -2.4F),
+            LUTRUM_AXE = registerAxeItem("lutrum_axe", CTiers.LUTRUM, 6.0F, -2.7F),
+            LUTRUM_HOE = registerHoeItem("lutrum_hoe", CTiers.LUTRUM, -1.0F, -0.6F);
+    // Obdurium
+    public static final DeferredItem<Item>
+            //OBDURIUM_SWORD = registerSwordItem("obdurium_sword", CTiers.OBDURIUM, 3.0F, -2.8F),
+            //OBDURIUM_SHOVEL = registerShovelItem("obdurium_shovel", CTiers.OBDURIUM, 1.5F, -3.4F),
+            //OBDURIUM_PICKAXE = registerPickaxeItem("obdurium_pickaxe", CTiers.OBDURIUM, 1.0F, -3.2F),
+            //OBDURIUM_AXE = registerAxeItem("obdurium_axe", CTiers.OBDURIUM, 6.0F, -3.5F),
+            //OBDURIUM_HOE = registerHoeItem("obdurium_hoe", CTiers.OBDURIUM, -1.0F, -1.4F),
+            OBDURIUM_HAMMER = ITEMS.register("obdurium_hammer", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).durability(9650).attributes(SwordItem.createAttributes(CTiers.OBDURIUM, 3.0F, -3.2F))));
+    // Malunite
+//    public static final DeferredItem <Item>
+//            MALUNITE_SWORD = registerSwordItem("malunite_sword", CTiers.MALUNITE, 3.0F, -2.4F),
+//            MALUNITE_SHOVEL = registerShovelItem("malunite_shovel", CTiers.MALUNITE, 1.5F, -3.0F),
+//            MALUNITE_PICKAXE = registerPickaxeItem("malunite_pickaxe", CTiers.MALUNITE, 1.0F, -2.8F),
+//            MALUNITE_AXE = registerAxeItem("malunite_axe", CTiers.MALUNITE, 6.0F, -3.1F),
+//            MALUNITE_HOE = registerHoeItem("malunite_hoe", CTiers.MALUNITE, -1.0F, -1.0F);
     // endregion
 
     // region Helpers
+    private static DeferredItem<Item> registerSwordItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+        return ITEMS.register(id, () -> new SwordItem(tier, new Item.Properties()
+                .attributes(SwordItem.createAttributes(tier, attackDamage, attackSpeed))
+        ));
+    }
 
-    private static DeferredItem<ShovelItem> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+    private static DeferredItem<Item> registerShovelItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new ShovelItem(tier, new Item.Properties()
                 .attributes(ShovelItem.createAttributes(tier, attackDamage, attackSpeed))
         ));
     }
 
-    private static DeferredItem<PickaxeItem> registerPickaxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+    private static DeferredItem<Item> registerPickaxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new PickaxeItem(tier, new Item.Properties()
                 .attributes(PickaxeItem.createAttributes(tier, attackDamage, attackSpeed))
         ));
     }
 
-    private static DeferredItem<AxeItem> registerAxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+    private static DeferredItem<Item> registerAxeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new AxeItem(tier, new Item.Properties()
                 .attributes(AxeItem.createAttributes(tier, attackDamage, attackSpeed))
         ));
     }
 
-    private static DeferredItem<HoeItem> registerHoeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
+    private static DeferredItem<Item> registerHoeItem(String id, Tier tier, float attackDamage, float attackSpeed) {
         return ITEMS.register(id, () -> new HoeItem(tier, new Item.Properties()
                 .attributes(HoeItem.createAttributes(tier, attackDamage, attackSpeed))
-        ));
-    }
-
-    private static DeferredItem<SwordItem> registerSwordItem(String id, Tier tier, float attackDamage, float attackSpeed) {
-        return ITEMS.register(id, () -> new SwordItem(tier, new Item.Properties()
-                .attributes(SwordItem.createAttributes(tier, attackDamage, attackSpeed))
         ));
     }
     // endregion

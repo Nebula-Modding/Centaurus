@@ -80,6 +80,11 @@ public class CTags {
 
                 // Convertable to Mud
                 CONVERTABLE_TO_FRIGUS_MUD = blockTag("convertable_to_frigus_mud"),
+
+                // Metals
+                LUTRUM_CHESTS = blockTag("lutrum_chests"),
+                LUTRUM = blockTag("lutrum"),
+                LUTRUM_GOLEM_STATUES = blockTag("lutrum_golem_statues"),
                 // endregion
 
                 // region Mod Compatibility Tags
@@ -140,10 +145,13 @@ public class CTags {
                 // Logs
                 MAYURA_LOGS = itemTag("mayura_logs"),
                 GRIMWOOD_LOGS = itemTag("grimwood_logs"),
+                LUTRUM_CHESTS = itemTag("lutrum_chests"),
+                LUTRUM = itemTag("lutrum"),
+                LUTRUM_GOLEM_STATUES = itemTag("lutrum_golem_statues");
                 // endregion
 
                 // region Mod Compatibility Tags
-                CREATE_CRUSHED_RAW_MATERIALS = otherItemTag("create", "crushed_raw_materials");
+                // None yet! :^
                 // endregion
 
         /*
@@ -157,8 +165,6 @@ public class CTags {
                 CROPS_AZURE_ROOT = commonItemTag("crops/azure_root"),
         
                 // Ores
-                PLATES = commonItemTag("plates"),
-
                 RAW_MATERIALS_LUTRUM = commonItemTag("raw_material/lutrum"),
                 RAW_MATERIALS_OBDURIUM = commonItemTag("raw_material/obdurium"),
                 RAW_MATERIALS_MALUNITE = commonItemTag("raw_material/malunite"),
@@ -173,11 +179,20 @@ public class CTags {
                 PLATES_MALUNITE = commonItemTag("plates/malunite"),
                 RODS_LUTRUM = commonItemTag("rods/lutrum"),
                 RODS_OBDURIUM = commonItemTag("rods/obdurium"),
-                RODS_MALUNITE = commonItemTag("rods/malunite");
+                RODS_MALUNITE = commonItemTag("rods/malunite"),
                 // endregion
 
                 // region Centaurus-Specific Tags
-                // None yet! :^
+                LUTRUM_TOOL_MATERIALS = itemTag("lutrum_tool_materials"),
+                REPAIRS_LUTRUM_ARMOR = itemTag("repairs_lutrum_armor"),
+                OBDURIUM_TOOL_MATERIALS = itemTag("obdurium_tool_materials"),
+                REPAIRS_OBDURIUM_ARMOR = itemTag("repairs_obdurium_armor"),
+                MALUNITE_TOOL_MATERIALS = itemTag("malunite_tool_materials"),
+                REPAIRS_MALUNITE_ARMOR = itemTag("repairs_malunite_armor"),
+                // endregion
+
+                // region Mod Compatibility Tags
+                CREATE_CRUSHED_RAW_MATERIALS = otherItemTag("create", "crushed_raw_materials");
                 // endregion
     }
     // region Helpers

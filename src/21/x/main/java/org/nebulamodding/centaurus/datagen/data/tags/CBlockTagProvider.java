@@ -402,7 +402,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.BLUESCHIST_BRICKS.get())
                 .add(CBlocks.CRACKED_BLUESCHIST_BRICKS.get())
                 .add(CBlocks.BLUESCHIST_PILLAR.get())
-                // Blue Shale
+                // Blueslate
                 .add(CBlocks.BLUESLATE.get())
                 .add(CBlocks.COBBLED_BLUESLATE.get())
                 .add(CBlocks.CHISELED_BLUESLATE.get())
@@ -436,6 +436,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_AXE)
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
+                .add(CBlocks.SHORT_GRISTLES.get())
+                .add(CBlocks.TALL_GRISTLES.get())
                 .add(CBlocks.MAYURA_LOG.get())
                 .add(CBlocks.MAYURA_WOOD.get())
                 .add(CBlocks.STRIPPED_MAYURA_LOG.get())
@@ -456,6 +458,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.SWORD_EFFICIENT)
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
+                .add(CBlocks.SHORT_GRISTLES.get())
+                .add(CBlocks.TALL_GRISTLES.get())
         ;
         needsStonePickaxe.forEach(entry -> tag(BlockTags.NEEDS_STONE_TOOL).add(entry.get()));
         tag(net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL)
@@ -580,9 +584,12 @@ public class CBlockTagProvider extends BlockTagsProvider {
         // region Plant Tags
         tag(net.minecraft.tags.BlockTags.REPLACEABLE_BY_TREES)
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
+                .add(CBlocks.SHORT_GRISTLES.get())
+                .add(CBlocks.TALL_GRISTLES.get())
         ;
         tag(net.minecraft.tags.BlockTags.SAPLINGS)
                 .add(CBlocks.MAYURA_SAPLING.get())
+                .add(CBlocks.GRIMWOOD_SAPLING.get())
         ;
         tag(net.minecraft.tags.BlockTags.SMALL_FLOWERS)
                 .add(CBlocks.VIVIAN.get())
@@ -604,6 +611,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.FRIGIAN_DIRT.get())
                 .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
                 .add(CBlocks.FRIGIAN_MUD.get())
+                .add(CBlocks.GRISTLED_FLESH.get())
         ;
         tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
                 .add(CBlocks.FRIGIAN_DIRT.get())
@@ -611,6 +619,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
+                .add(CBlocks.GRISTLED_FLESH.get())
+                .add(CBlocks.GRISTLE_BLOCK.get())
         ;
         tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
@@ -619,6 +629,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
+                .add(CBlocks.GRISTLED_FLESH.get())
+                .add(CBlocks.GRISTLE_BLOCK.get())
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
                 .add(CBlocks.FRIGIAN_FARMLAND.get())
@@ -723,6 +735,36 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.WATER_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.NITROGEN_ICE_LUTRUM_ORE.get())
                 .add(CBlocks.OXYGEN_ICE_LUTRUM_ORE.get())
+        ;
+        tag(CTags.BlockTags.LUTRUM_CHESTS)
+                //.add(CBlocks.LUTRUM_CHEST.get())
+                //.add(CBlocks.EXPOSED_LUTRUM_CHEST.get())
+                //.add(CBlocks.WEATHERED_LUTRUM_CHEST.get())
+                //.add(CBlocks.OXIDIZED_LUTRUM_CHEST.get())
+                //.add(CBlocks.WAXED_LUTRUM_CHEST.get())
+                //.add(CBlocks.WAXED_EXPOSED_LUTRUM_CHEST.get())
+                //.add(CBlocks.WAXED_WEATHERED_LUTRUM_CHEST.get())
+                //.add(CBlocks.WAXED_OXIDIZED_LUTRUM_CHEST.get())
+        ;
+        tag(CTags.BlockTags.LUTRUM)
+                .add(CBlocks.LUTRUM_BLOCK.get())
+                .add(CBlocks.EXPOSED_LUTRUM.get())
+                .add(CBlocks.WEATHERED_LUTRUM.get())
+                .add(CBlocks.OXIDIZED_LUTRUM.get())
+                .add(CBlocks.WAXED_LUTRUM_BLOCK.get())
+                .add(CBlocks.WAXED_EXPOSED_LUTRUM.get())
+                .add(CBlocks.WAXED_WEATHERED_LUTRUM.get())
+                .add(CBlocks.WAXED_OXIDIZED_LUTRUM.get())
+        ;
+        tag(CTags.BlockTags.LUTRUM_GOLEM_STATUES)
+                //.add(CBlocks.LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.EXPOSED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.WEATHERED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.OXIDIZED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.WAXED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.WAXED_EXPOSED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.WAXED_WEATHERED_LUTRUM_GOLEM_STATUE.get())
+                //.add(CBlocks.WAXED_OXIDIZED_LUTRUM_GOLEM_STATUE.get())
         ;
         tag(CTags.BlockTags.ORES_OBDURIUM)
                 .add(CBlocks.BLUESCHIST_OBDURIUM_ORE.get())
@@ -1055,9 +1097,13 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(net.minecraft.tags.BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
                 // Prevents blocks from interfering with enchanting
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
+                .add(CBlocks.SHORT_GRISTLES.get())
+                .add(CBlocks.TALL_GRISTLES.get())
         ;
         tag(net.minecraft.tags.BlockTags.REPLACEABLE)
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
+                .add(CBlocks.SHORT_GRISTLES.get())
+                .add(CBlocks.TALL_GRISTLES.get()).add(CBlocks.FRIGIAN_SHORT_GRASS.get())
         ;
         // endregion
     }

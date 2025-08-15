@@ -12,6 +12,7 @@ import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
+import top.girlkisser.cygnus.content.CygnusTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -136,7 +137,7 @@ public class CItemTagProvider extends ItemTagsProvider {
                 .addTag(CTags.ItemTags.INGOTS_OBDURIUM)
                 .addTag(CTags.ItemTags.INGOTS_MALUNITE)
         ;
-        tag(CTags.ItemTags.PLATES)
+        tag(CygnusTags.Items.c("plates"))
                 .addTag(CTags.ItemTags.PLATES_LUTRUM)
                 .addTag(CTags.ItemTags.PLATES_OBDURIUM)
                 .addTag(CTags.ItemTags.PLATES_MALUNITE)
@@ -146,6 +147,9 @@ public class CItemTagProvider extends ItemTagsProvider {
                 .addTag(CTags.ItemTags.RODS_OBDURIUM)
                 .addTag(CTags.ItemTags.RODS_MALUNITE)
         ;
+        copy(CTags.BlockTags.LUTRUM_CHESTS, CTags.ItemTags.LUTRUM_CHESTS);
+        copy(CTags.BlockTags.LUTRUM, CTags.ItemTags.LUTRUM);
+        copy(CTags.BlockTags.LUTRUM_GOLEM_STATUES, CTags.ItemTags.LUTRUM_GOLEM_STATUES);
         tag(CTags.ItemTags.RAW_MATERIALS_LUTRUM)
                 .add(CItems.RAW_LUTRUM.get())
         ;
@@ -160,6 +164,12 @@ public class CItemTagProvider extends ItemTagsProvider {
         ;
         tag(CTags.ItemTags.RODS_LUTRUM)
                 .add(CItems.LUTRUM_ROD.get())
+        ;
+        tag(CTags.ItemTags.LUTRUM_TOOL_MATERIALS)
+                .add(CItems.LUTRUM_INGOT.get())
+        ;
+        tag(CTags.ItemTags.REPAIRS_LUTRUM_ARMOR)
+                .add(CItems.LUTRUM_INGOT.get())
         ;
         tag(CTags.ItemTags.RAW_MATERIALS_OBDURIUM)
                 .add(CItems.RAW_OBDURIUM.get())
@@ -176,6 +186,12 @@ public class CItemTagProvider extends ItemTagsProvider {
         tag(CTags.ItemTags.RODS_OBDURIUM)
                 .add(CItems.OBDURIUM_ROD.get())
         ;
+        tag(CTags.ItemTags.OBDURIUM_TOOL_MATERIALS)
+                .add(CItems.OBDURIUM_INGOT.get())
+        ;
+        tag(CTags.ItemTags.REPAIRS_OBDURIUM_ARMOR)
+                .add(CItems.OBDURIUM_INGOT.get())
+        ;
         tag(CTags.ItemTags.RAW_MATERIALS_MALUNITE)
                 .add(CItems.RAW_MALUNITE.get())
         ;
@@ -190,6 +206,12 @@ public class CItemTagProvider extends ItemTagsProvider {
         ;
         tag(CTags.ItemTags.RODS_MALUNITE)
                 .add(CItems.MALUNITE_ROD.get())
+        ;
+        tag(CTags.ItemTags.MALUNITE_TOOL_MATERIALS)
+                .add(CItems.MALUNITE_INGOT.get())
+        ;
+        tag(CTags.ItemTags.REPAIRS_MALUNITE_ARMOR)
+                .add(CItems.MALUNITE_INGOT.get())
         ;
         // endregion
 
