@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cygnus:block/chiseled_steel",
+    "east": "cygnus:block/chiseled_steel",
+    "north": "cygnus:block/chiseled_steel",
+    "particle": "cygnus:block/chiseled_steel",
+    "south": "cygnus:block/chiseled_steel",
+    "up": "cygnus:block/chiseled_steel",
+    "west": "cygnus:block/chiseled_steel"
+  }
+}
