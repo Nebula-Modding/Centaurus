@@ -1,0 +1,7 @@
+{
+  "parent": "centaurus:block/template_bars_cap_alt",
+  "textures": {
+    "bars": "centaurus:block/malunite_bars",
+    "edge": "centaurus:block/malunite_bars"
+  }
+}

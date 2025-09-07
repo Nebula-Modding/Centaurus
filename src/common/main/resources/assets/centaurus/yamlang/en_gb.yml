@@ -422,21 +422,21 @@ block.centaurus:
   weathered_lutrum_door: Weathered Lutrum Door
   weathered_lutrum_trapdoor: Weathered Lutrum Trapdoor
   weathered_lutrum_bulb: Weathered Lutrum Bulb
-  oxidized_lutrum_sheet_metal: Oxidized Lutrum Sheet Metal
-  oxidized_lutrum_block: Oxidized Lutrum
-  oxidized_chiseled_lutrum: Oxidized Chiselled Lutrum
-  oxidized_lutrum_grate: Oxidized Lutrum Grate
-  oxidized_lutrum_plating: Oxidized Lutrum Plating
-  oxidized_lutrum_plating_stairs: Oxidized Lutrum Plating Stairs
-  oxidized_lutrum_plating_slab: Oxidized Lutrum Plating Slab
-  oxidized_lutrum_plating_pressure_plate: Oxidized Lutrum Plating Pressure Plate
-  oxidized_lutrum_plating_button: Oxidized Lutrum Plating Button
-  oxidized_lutrum_window: Oxidized Lutrum Window
-  oxidized_lutrum_pillar: Oxidized Lutrum Pillar
-  oxidized_lutrum_bars: Oxidized Lutrum Bars
-  oxidized_lutrum_door: Oxidized Lutrum Door
-  oxidized_lutrum_trapdoor: Oxidized Lutrum Trapdoor
-  oxidized_lutrum_bulb: Oxidized Lutrum Bulb
+  oxidized_lutrum_sheet_metal: Oxidised Lutrum Sheet Metal
+  oxidized_lutrum_block: Oxidised Lutrum
+  oxidized_chiseled_lutrum: Oxidised Chiselled Lutrum
+  oxidized_lutrum_grate: Oxidised Lutrum Grate
+  oxidized_lutrum_plating: Oxidised Lutrum Plating
+  oxidized_lutrum_plating_stairs: Oxidised Lutrum Plating Stairs
+  oxidized_lutrum_plating_slab: Oxidised Lutrum Plating Slab
+  oxidized_lutrum_plating_pressure_plate: Oxidised Lutrum Plating Pressure Plate
+  oxidized_lutrum_plating_button: Oxidised Lutrum Plating Button
+  oxidized_lutrum_window: Oxidised Lutrum Window
+  oxidized_lutrum_pillar: Oxidised Lutrum Pillar
+  oxidized_lutrum_bars: Oxidised Lutrum Bars
+  oxidized_lutrum_door: Oxidised Lutrum Door
+  oxidized_lutrum_trapdoor: Oxidised Lutrum Trapdoor
+  oxidized_lutrum_bulb: Oxidised Lutrum Bulb
   waxed_lutrum_sheet_metal: Waxed Lutrum Sheet Metal
   waxed_lutrum_block: Waxed Block of Lutrum
   waxed_chiseled_lutrum: Waxed Chiselled Lutrum
@@ -482,21 +482,21 @@ block.centaurus:
   waxed_weathered_lutrum_door: Waxed Weathered Lutrum Door
   waxed_weathered_lutrum_trapdoor: Waxed Weathered Lutrum Trapdoor
   waxed_weathered_lutrum_bulb: Waxed Weathered Lutrum Bulb
-  waxed_oxidized_lutrum_sheet_metal: Waxed Oxidized Lutrum Sheet Metal
-  waxed_oxidized_lutrum_block: Waxed Oxidized Lutrum
-  waxed_oxidized_chiseled_lutrum: Waxed Oxidized Chiselled Lutrum
-  waxed_oxidized_lutrum_grate: Waxed Oxidized Lutrum Grate
-  waxed_oxidized_lutrum_plating: Waxed Oxidized Lutrum Plating
-  waxed_oxidized_lutrum_plating_stairs: Waxed Oxidized Lutrum Plating Stairs
-  waxed_oxidized_lutrum_plating_slab: Waxed Oxidized Lutrum Plating Slab
-  waxed_oxidized_lutrum_plating_pressure_plate: Waxed Oxidized Lutrum Plating Pressure Plate
-  waxed_oxidized_lutrum_plating_button: Waxed Oxidized Lutrum Plating Button
-  waxed_oxidized_lutrum_window: Waxed Oxidized Lutrum Window
-  waxed_oxidized_lutrum_pillar: Waxed Oxidized Lutrum Pillar
-  waxed_oxidized_lutrum_bars: Waxed Oxidized Lutrum Bars
-  waxed_oxidized_lutrum_door: Waxed Oxidized Lutrum Door
-  waxed_oxidized_lutrum_trapdoor: Waxed Oxidized Lutrum Trapdoor
-  waxed_oxidized_lutrum_bulb: Waxed Oxidized Lutrum Bulb
+  waxed_oxidized_lutrum_sheet_metal: Waxed Oxidised Lutrum Sheet Metal
+  waxed_oxidized_lutrum_block: Waxed Oxidised Lutrum
+  waxed_oxidized_chiseled_lutrum: Waxed Oxidised Chiselled Lutrum
+  waxed_oxidized_lutrum_grate: Waxed Oxidised Lutrum Grate
+  waxed_oxidized_lutrum_plating: Waxed Oxidised Lutrum Plating
+  waxed_oxidized_lutrum_plating_stairs: Waxed Oxidised Lutrum Plating Stairs
+  waxed_oxidized_lutrum_plating_slab: Waxed Oxidised Lutrum Plating Slab
+  waxed_oxidized_lutrum_plating_pressure_plate: Waxed Oxidised Lutrum Plating Pressure Plate
+  waxed_oxidized_lutrum_plating_button: Waxed Oxidised Lutrum Plating Button
+  waxed_oxidized_lutrum_window: Waxed Oxidised Lutrum Window
+  waxed_oxidized_lutrum_pillar: Waxed Oxidised Lutrum Pillar
+  waxed_oxidized_lutrum_bars: Waxed Oxidised Lutrum Bars
+  waxed_oxidized_lutrum_door: Waxed Oxidised Lutrum Door
+  waxed_oxidized_lutrum_trapdoor: Waxed Oxidised Lutrum Trapdoor
+  waxed_oxidized_lutrum_bulb: Waxed Oxidised Lutrum Bulb
   # Obdurium
   raw_obdurium_block: Block of Raw Obdurium
   obdurium_sheet_metal: Obdurium Sheet Metal
