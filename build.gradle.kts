@@ -1,8 +1,10 @@
+import earth.terrarium.cloche.api.metadata.CommonMetadata
+
 plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.11.20"
+    id("earth.terrarium.cloche") version "0.18.0"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -70,14 +72,11 @@ cloche {
         contributor(p("mod_contributors"))
     }
 
-    val common21 = common("21:x")
-    // val common22 = common("22:x")
-
     neoforge("21:1") {
         minecraftVersion = "1.21.1"
         loaderVersion = p("neo_21.1_version")
 
-        dependsOn(common21)
+        dependsOn(common("21:x"))
 
         data()
 
@@ -88,11 +87,12 @@ cloche {
         }
 
         metadata {
-            // todo: make Centaurus load after
             dependency {
                 modId = "cygnus"
-                required = true
                 version("${p("cygnus_21.1_dependency_version")}+1.21.1")
+                type.set(CommonMetadata.Dependency.Type.Required)
+                ordering.set(CommonMetadata.Dependency.Ordering.After)
+                environment.set(CommonMetadata.Environment.Both)
             }
         }
 
@@ -115,7 +115,7 @@ cloche {
             modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
             modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
             modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
-            modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
+            //modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
             // modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
 
             // DevAuth
@@ -124,44 +124,6 @@ cloche {
             // add Thermal later
         }
     }
-
-    /* to be enabled when Cygnus ports
-    neoforge("21:6") {
-        minecraftVersion = "1.21.6"
-        loaderVersion = p("neo_21.6_version")
-        sourceSet.java.srcDir("src/21/6/main")
-
-        dependsOn(common21)
-
-        data()
-
-        runs {
-            server()
-            client()
-            data()
-        }
-
-        dependencies {
-            // Cygnus
-            modImplementation("com.github.nebula-modding:cygnus:${p("cygnus_21.6_version")}")
-
-            // Lazuli
-            modImplementation("com.github.emmathemartian:lazuli:${p("lazuli_21.6_version")}")
-
-            // EMI
-            compileOnly("dev.emi:emi-neoforge:${p("emi_21.6_version")}+1.21.6:api")
-            runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.6_version")}+1.21.6")
-
-            // Modrinth Stuff
-            modImplementation("maven.modrinth:create:1.21.6-${p("create_version")}")
-            modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21.6")
-            modImplementation("maven.modrinth:jade:${p("jade_21.6_version")}+neoforge")
-            modImplementation("maven.modrinth:mekanism:${p("mekanism_21.6_version")}")
-            modImplementation("maven.modrinth:stellarview:${p("stellarview_21.6_version")}")
-            // add Thermal later
-        }
-    }
-     */
 }
 
 // Manually change the names of the finished jar files
