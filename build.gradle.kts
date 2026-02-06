@@ -104,17 +104,17 @@ cloche {
             modImplementation("maven.modrinth:lazuli:${p("lazuli_21.1_version")}+1.21.1")
 
             // EMI
-            compileOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1:api")
-            runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1")
+            //compileOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1:api")
+            //runtimeOnly("dev.emi:emi-neoforge:${p("emi_21.1_version")}+1.21.1")
 
             // JEI
-            compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${p("jei_21.1_version")}")
-            modRuntimeOnly("mezz.jei:jei-1.21.1-neoforge:${p("jei_21.1_version")}")
+            //compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${p("jei_21.1_version")}")
+            //modRuntimeOnly("mezz.jei:jei-1.21.1-neoforge:${p("jei_21.1_version")}")
 
             // Modrinth Stuff
-            modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
-            modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
-            modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
+            //modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
+            //modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
+            //modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
             //modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
             // modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
 
