@@ -11,7 +11,9 @@
 		{ "x": 1.00, "y": -201.3 } // dawn
 	],
 	"ambient_radiation": 0, // todo
-	"moons": [],
+	"moons": [
+		"cygnus:triton"
+	],
 	"atmospheric_pressure": 200, // todo
 	"danger_index": "non_landable"
 }
