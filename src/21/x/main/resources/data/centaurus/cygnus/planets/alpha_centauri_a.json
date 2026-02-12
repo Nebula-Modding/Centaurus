@@ -1,0 +1,19 @@
+{
+	"gravity": 1585.326, // todo
+	"has_oxygen": false,
+	"day_length": 0,
+	"night_length": 0,
+	"year_length": 29113.13,
+	"ambient_temperature_curve": [
+		{ "x": 0.00, "y": 5517.2 }, // dawn
+		{ "x": 0.25, "y": 5517.2 }, // midday
+		{ "x": 0.50, "y": 5517.2 }, // midnight
+		{ "x": 1.00, "y": 5517.2 } // dawn
+	],
+	"ambient_radiation": 100, // todo
+	"moons": [
+		"centaurus:asano"
+	],
+	"atmospheric_pressure": 534924427, // todo
+	"danger_index": "non_landable"
+}

@@ -1,4 +1,5 @@
 {
 	"texture": "cygnus:textures/environment/star/8x8/m_class.png",
-	"size": 50.0
+	"size": 50.0,
+	"orbit_distance": 1000.0
 }

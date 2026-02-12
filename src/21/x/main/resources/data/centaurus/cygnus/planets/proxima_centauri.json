@@ -1,7 +1,7 @@
 {
 	"gravity": 1585.326,
 	"has_oxygen": false,
-	"day_length": 12000,
+	"day_length": 0,
 	"night_length": 0,
 	"year_length": 199850772.116,
 	"ambient_temperature_curve": [
@@ -10,7 +10,7 @@
 		{ "x": 0.50, "y": 2768.8 }, // midnight
 		{ "x": 1.00, "y": 2768.8 } // dawn
 	],
-	"ambient_radiation": 100,
+	"ambient_radiation": 100, // todo
 	"moons": [
 		"centaurus:accola",
 		"centaurus:vicinus"
