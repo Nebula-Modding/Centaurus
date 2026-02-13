@@ -1,5 +1,5 @@
 {
-	"gravity": 1585.326, // todo
+	"gravity": 234.882, // todo
 	"has_oxygen": false,
 	"day_length": 0,
 	"night_length": 0,
@@ -14,6 +14,5 @@
 	"moons": [
 		"centaurus:indra"
 	],
-	"atmospheric_pressure": 534924427, // todo
 	"danger_index": "non_landable"
 }

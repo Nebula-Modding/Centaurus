@@ -1,9 +1,9 @@
 {
 	"gravity": 0.223,
 	"has_oxygen": false,
-	"day_length": 0,
-	"night_length": 0,
-	"year_length": 79.32,
+	"day_length": 54240,
+	"night_length": 54240,
+	"year_length": 4.52,
 	"ambient_temperature_curve": [
 		{ "x": 0.00, "y": 0.0 }, // dawn
 		{ "x": 0.25, "y": 0.0 }, // midday
