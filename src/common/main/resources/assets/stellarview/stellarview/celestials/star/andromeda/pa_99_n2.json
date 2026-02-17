@@ -1,0 +1,21 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/andromeda/andromeda", "relative": false },
+	"coords": { "right_ascension": {"hours": 0, "minutes": 44, "seconds": 20.89}, "declination": {"degrees": 41, "minutes": 28, "seconds": 44.6}, "distance": {"ly": 2200000} },
+	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+		
+	"min_star_size": 0.1,
+	
+	"texture_layers":
+	[
+		{
+			"texture": "stellarview:textures/environment/star/pa_99_n2.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 4000000000,
+			"min_size": 0.9,
+			"clamp_at_min_size": true,
+			"rotation": 25,
+			"uv": { "flip_uv": false }
+		}
+	]
+}

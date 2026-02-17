@@ -1,0 +1,78 @@
+{
+	"parent": { "location": "stellarview:planet/milky_way/sol/earth" },
+	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+	"orbit_info":
+	{
+		"apoapsis": 405400,
+		"periapsis": 362600,
+		"orbit_clamp_distance": 100000000,
+		"orbital_period": { "ticks": 192000, "synodic": true },
+		"argument_of_periapsis": 0,
+		"inclination": 1.54,
+		"longitude_of_ascending_node": 0,
+		"epoch_mean_anomaly": 157.5
+	},
+	"texture_layers":
+	[
+		{
+			"texture": "stellarview:textures/environment/halo_phases_template.png",
+			"rgba": {"red": 194, "green": 209, "blue": 221, "alpha": 255},
+			"blend": true,
+			"size": 7697847.735118539,
+			"min_size": 0.15,
+			"clamp_at_min_size": true,
+			"rotation": 0,
+			"uv":
+			{
+				"phase_handler":
+				{
+					"ticks_per_phase": 24000,
+					"phase_tick_offset": 0,
+					"columns": 4,
+					"rows": 2
+				},
+				"flip_uv": true,
+				"rotation": 90
+			}
+		},
+		{
+			"texture": "cygnus:textures/environment/solar_system/8x8/moon.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": false,
+			"size": 1924461.93378,
+			"min_size": 0.15,
+			"clamp_at_min_size": true,
+			"rotation": 0,
+			"uv":
+			{ "flip_uv": true, "rotation": 90 }
+		},
+		{
+			"texture": "stellarview:textures/environment/phases_overlay.png",
+			"rgba": {"red": 66, "green": 85, "blue": 107, "alpha": 255},
+			"blend": false,
+			"size": 7697847.735118539,
+			"min_size": 0.15,
+			"clamp_at_min_size": true,
+			"rotation": 0,
+			"uv":
+			{
+				"phase_handler":
+				{
+					"ticks_per_phase": 24000,
+					"phase_tick_offset": 0,
+					"columns": 4,
+					"rows": 2
+				},
+				"flip_uv": true,
+				"rotation": 90
+			}
+		}
+	],
+	
+	"compatibility":
+	{
+		"enhanced_celestials_moon_dimension": "minecraft:overworld",
+		"lunar_moon_dimension": "minecraft:overworld"
+	}
+}

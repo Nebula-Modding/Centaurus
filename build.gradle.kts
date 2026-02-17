@@ -94,6 +94,13 @@ cloche {
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
             }
+            dependency {
+                modId = "stellarview"
+                version("${p("stellarview_21.1_version")}")
+                type.set(CommonMetadata.Dependency.Type.Required)
+                ordering.set(CommonMetadata.Dependency.Ordering.After)
+                environment.set(CommonMetadata.Environment.Both)
+            }
         }
 
         dependencies {
@@ -116,7 +123,7 @@ cloche {
             //modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
             //modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
             //modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
-            // modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
+            //modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
 
             // DevAuth
             modRuntimeOnly("me.djtheredstoner:DevAuth-neoforge:${p("devauth_version")}")

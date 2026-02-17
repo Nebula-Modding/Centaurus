@@ -1,0 +1,59 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/satellite/large_magellanic_cloud", "relative": false },
+	"coords": { "right_ascension": {"hours": 5, "minutes": 35, "seconds": 28.03}, "declination": {"degrees": -69, "minutes": 16, "seconds": 11.79}, "distance": {"ly": 168000} },
+	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+	"texture_layers":
+	[
+		{
+			"texture": "stellarview:textures/environment/star/sn_1987a.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 4488626469,
+			"min_size": 1,
+			"clamp_at_min_size": true,
+			"rotation": -32,
+			"uv": { "flip_uv": false }
+		}
+	],
+	
+	"supernova_info":
+	{
+		"nebula":
+		{
+			"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+			"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+			"texture_layers": []
+		},
+		"supernova_leftover":
+		{
+			"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+			"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+			"texture_layers":
+			[
+				{
+					"texture": "stellarview:textures/environment/black_hole/black_hole_halo.png",
+					"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+					"blend": true,
+					"size": 100000,
+					"min_size": 2,
+					"clamp_at_min_size": true,
+					"rotation": 0,
+					"uv": { "flip_uv": false }
+				},
+				{
+					"texture": "stellarview:textures/environment/black_hole/black_hole.png",
+					"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+					"blend": false,
+					"size": 100000,
+					"min_size": 2,
+					"clamp_at_min_size": true,
+					"rotation": 0,
+					"uv": { "flip_uv": false }
+				}
+			]
+		},
+		"max_size_multiplier": 15,
+		"start_ticks": 2370000,
+		"duration_ticks": 760000
+	}
+}
