@@ -14,8 +14,44 @@
 	},
 	"texture_layers":
 	[
+		{"COMMENT":"Make sure to fix the values"},
+		{"COMMENT":"32x32 star texture"},
 		{
-			"texture": "stellarview:textures/environment/star/alpha_centauri_b.png",
+			"texture": "cygnus:textures/environment/star/32x32/k_class.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 964044749.875,
+			"min_size": 0.4,
+			"clamp_at_min_size": false,
+			"rotation": -90,
+			"uv": { "flip_uv": false }
+		},
+
+		{"COMMENT":"16x16 star texture"},
+		{
+			"texture": "cygnus:textures/environment/star/16x16/k_class.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 964044749.875,
+			"min_size": 0.4,
+			"clamp_at_min_size": false,
+			"rotation": -90,
+			"uv": { "flip_uv": false }
+		},
+
+		{"COMMENT":"8x8 star texture"},
+		{
+			"texture": "cygnus:textures/environment/star/8x8/k_class.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 964044749.875,
+			"min_size": 0.4,
+			"clamp_at_min_size": true,
+			"rotation": -90,
+			"uv": { "flip_uv": false }
+		},
+		{
+			"texture": "stellarview:textures/environment/halo_template.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": true,
 			"size": 3856178999.5,
