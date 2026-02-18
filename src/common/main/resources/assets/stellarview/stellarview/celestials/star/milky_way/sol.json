@@ -4,42 +4,6 @@
 	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": -60 },
 	"texture_layers":
 	[
-		{"COMMENT":"Make sure to fix the values and copy them over to Alpha Centauri A"},
-		{"COMMENT":"32x32 star texture"},
-		{
-			"texture": "cygnus:textures/environment/star/32x32/g_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
-			"blend": true,
-			"size": 1122156617.25,
-			"min_size": 0.5,
-			"clamp_at_min_size": false,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
-		},
-
-		{"COMMENT":"16x16 star texture"},
-		{
-			"texture": "cygnus:textures/environment/star/16x16/g_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
-			"blend": true,
-			"size": 1122156617.25,
-			"min_size": 0.5,
-			"clamp_at_min_size": false,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
-		},
-
-		{"COMMENT":"8x8 star texture"},
-		{
-			"texture": "cygnus:textures/environment/star/8x8/g_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
-			"blend": true,
-			"size": 1122156617.25,
-			"min_size": 0.5,
-			"clamp_at_min_size": true,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
-		},
 		{
 			"texture": "stellarview:textures/environment/halo_template.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
@@ -47,8 +11,16 @@
 			"size": 4488626469,
 			"min_size": 0.5,
 			"clamp_at_min_size": true,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
+			"rotation": -90
+		},
+		{
+			"texture": "cygnus:textures/environment/star/8x8/g_class.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 1122156617.25,
+			"min_size": 0.125,
+			"clamp_at_min_size": true,
+			"rotation": -90
 		}
 	]
 }
