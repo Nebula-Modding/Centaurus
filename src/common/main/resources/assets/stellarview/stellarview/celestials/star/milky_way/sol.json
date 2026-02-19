@@ -14,12 +14,25 @@
 			"rotation": -90
 		},
 		{
+			"texture": "cygnus:textures/environment/star/16x16/g_class.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": true,
+			"size": 1122156617.25,
+			"min_size": 9.35,
+			"clamp_at_min_size": false,
+			"max_size": 1,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		},
+		{
 			"texture": "cygnus:textures/environment/star/8x8/g_class.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": true,
 			"size": 1122156617.25,
 			"min_size": 0.125,
 			"clamp_at_min_size": true,
+			"max_size": 9.35,
+			"clamp_at_max_size": false,
 			"rotation": -90
 		}
 	]
