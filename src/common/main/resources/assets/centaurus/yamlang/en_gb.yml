@@ -1,5 +1,6 @@
 # This mod uses yamlang for every language except for American english.
 # This makes language files easier to read and makes it more bearable for translators to contribute.
+# This is just copied and pasted from en_gb
 warning:
   .1: DO NOT EDIT THE JSON VERSION OF THIS FILE, PLEASE TRANSLATE THE YML FILE IN THE YAMLANG FOLDER INSTEAD
   .2: DO NOT EDIT THE JSON VERSION OF THIS FILE, PLEASE TRANSLATE THE YML FILE IN THE YAMLANG FOLDER INSTEAD
@@ -592,53 +593,6 @@ star.centaurus:
   selloa: Selloa
 
 ### Planets
-planet.cygnus:
-  # The Solar System
-  ceres: Ceres
-
-  jupiter: Jupiter
-  io: Io
-  europa: Europa
-  ganymede: Ganymede
-  callisto: Callisto
-
-  saturn: Saturn
-  mimas: Mimas
-  enceladus: Enceladus
-  tethys: Tethys
-  dione: Dione
-  rhea: Rhea
-  titan: Titan
-  hyperion: Hyperion
-  iapetus: Iapetus
-
-  uranus: Uranus
-  miranda: Miranda
-  ariel: Ariel
-  umbriel: Umbriel
-  titania: Titania
-  oberon: Oberon
-
-  neptune: Neptune
-  triton: Triton
-
-  pluto: Pluto
-  charon: Charon
-  styx: Styx
-  nix: Nix
-  kerberos: Kerberos
-  hydra: Hydra
-
-  haumea: Haumea
-  namaka: Namaka
-  hiiaka: Hiʻiaka
-
-  makemake: Makemake
-  mk2: Kenatea
-
-  eris: Eris
-  dysnomia: Dysnomia
-
 planet.centaurus:
   # Alpha Centauri
   asano: Asano
