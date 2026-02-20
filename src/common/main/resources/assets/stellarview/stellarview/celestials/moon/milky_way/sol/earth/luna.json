@@ -16,62 +16,82 @@
 	"texture_layers":
 	[
 		{
-			"texture": "stellarview:textures/environment/halo_phases_template.png",
-			"rgba": {"red": 194, "green": 209, "blue": 221, "alpha": 255},
+			"texture": "stellarview:textures/environment/8x8/halo_phases.png",
+			"rgba": { "red": 194, "green": 209, "blue": 221, "alpha": 255 },
 			"blend": true,
 			"size": 7697847.735118539,
 			"min_size": 0.15,
 			"clamp_at_min_size": true,
 			"rotation": 0,
-			"uv":
-			{
-				"phase_handler":
-				{
+			"uv": {
+				"rotation": 90,
+				"phase_handler": {
 					"ticks_per_phase": 24000,
 					"phase_tick_offset": 0,
 					"columns": 4,
 					"rows": 2
-				},
-				"flip_uv": true,
-				"rotation": 90
+				}
 			}
 		},
 		{
-			"texture": "cygnus:textures/environment/solar_system/8x8/moon.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"texture": "cygnus:textures/environment/solar_system/16x16/luna.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 1924461.93378,
-			"min_size": 0.15,
-			"clamp_at_min_size": true,
+			"min_size": 1,
+			"clamp_at_min_size": false,
 			"rotation": 0,
-			"uv":
-			{ "flip_uv": true, "rotation": 90 }
+			"uv": { "flip_uv": true, "rotation": 90 }
 		},
 		{
-			"texture": "stellarview:textures/environment/phases_overlay.png",
-			"rgba": {"red": 66, "green": 85, "blue": 107, "alpha": 255},
+			"texture": "stellarview:textures/environment/8x8/luna.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 7697847.735118539,
 			"min_size": 0.15,
 			"clamp_at_min_size": true,
 			"rotation": 0,
-			"uv":
-			{
-				"phase_handler":
-				{
+			"uv": { "flip_uv": true, "rotation": 90 }
+		},
+		{
+			"texture": "stellarview:textures/environment/8x8/phases_overlay.png",
+			"rgba": { "red": 66, "green": 85, "blue": 107, "alpha": 255 },
+			"blend": false,
+			"size": 7697847.735118539,
+			"min_size": 0.15,
+			"clamp_at_min_size": true,
+			"rotation": 0,
+			"uv": {
+				"rotation": 90,
+				"phase_handler": {
 					"ticks_per_phase": 24000,
 					"phase_tick_offset": 0,
 					"columns": 4,
 					"rows": 2
-				},
-				"flip_uv": true,
-				"rotation": 90
+				}
+			}
+		},
+		{
+			"texture": "stellarview:textures/environment/8x8/phases_day_overlay.png",
+			"rgba": { "red": 66, "green": 85, "blue": 107, "alpha": 255 },
+			"blend": false,
+			"size": 7697847.735118539,
+			"min_size": 0.15,
+			"clamp_at_min_size": true,
+			"rotation": 0,
+			"uv": { 
+				"rotation": 90,
+				"phase_handler": {
+					"ticks_per_phase": 24000,
+					"phase_tick_offset": 0,
+					"columns": 4,
+					"rows": 2
+				}
 			}
 		}
 	],
 	
-	"compatibility":
-	{
+	"compatibility": {
 		"enhanced_celestials_moon_dimension": "minecraft:overworld",
 		"lunar_moon_dimension": "minecraft:overworld"
 	}

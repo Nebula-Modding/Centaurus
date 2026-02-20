@@ -5,8 +5,8 @@
 	"texture_layers":
 	[
 		{
-			"texture": "stellarview:textures/environment/halo_template.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"texture": "stellarview:textures/environment/8x8/halo.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 4488626469,
 			"min_size": 0.5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"texture": "cygnus:textures/environment/star/16x16/g_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 1122156617.25,
 			"min_size": 9.35,
@@ -26,7 +26,7 @@
 		},
 		{
 			"texture": "cygnus:textures/environment/star/8x8/g_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 1122156617.25,
 			"min_size": 0.125,
