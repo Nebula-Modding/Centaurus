@@ -1,0 +1,134 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
+	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+	
+	"stars":
+	[
+		{
+			"name": "Rigel",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 14, "seconds": 32.27210},
+				"declination": {"degrees": -8, "minutes": 12, "seconds": 5.8981},
+				"distance": {"ly": 773}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 198.9,
+			"size": 0.3,
+			"rotation": 327,
+			"max_visible_distance": 5000000
+		},
+		{
+			"name": "Bellatrix",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 25, "seconds": 7.86325},
+				"declination": {"degrees": 6, "minutes": 20, "seconds": 58.9318},
+				"distance": {"ly": 250}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 149,
+			"size": 0.25,
+			"rotation": 99,
+			"max_visible_distance": 30000
+		},
+		{
+			"name": "Alnilam",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 36, "seconds": 12.81},
+				"declination": {"degrees": -1, "minutes": 12, "seconds": 6.9},
+				"distance": {"ly": 1180}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 147.3,
+			"size": 0.25,
+			"rotation": 111,
+			"max_visible_distance": 30000
+		},
+		{
+			"coords": {
+			"name": "Alnitak",
+				"right_ascension": {"hours": 5, "minutes": 40, "seconds": 45.52666},
+				"declination": {"degrees": -1, "minutes": 56, "seconds": 34.2649},
+				"distance": {"ly": 1260}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 145.6,
+			"size": 0.25,
+			"rotation": 264,
+			"max_visible_distance": 15000
+		},
+		{
+			"name": "Saiph",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 47, "seconds": 45.38884},
+				"declination": {"degrees": -9, "minutes": 40, "seconds": 10.5777},
+				"distance": {"ly": 650}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 134.3,
+			"size": 0.2,
+			"rotation": 19,
+			"max_visible_distance": 25000
+		},
+		{
+			"name": "Mintaka",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 32, "seconds": 0.40009},
+				"declination": {"degrees": -0, "minutes": 17, "seconds": 56.7424},
+				"distance": {"ly": 1200}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 129.9,
+			"size": 0.2,
+			"rotation": 2,
+			"max_visible_distance": 30000
+		},
+
+
+
+
+
+		{
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 35, "seconds": 25.98},
+				"declination": {"degrees": -5, "minutes": 54, "seconds": 35.6},
+				"distance": {"ly": 1200}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255}, "brightness": 111.1, "size": 0.2, "rotation": 2, "max_visible_distance": 30000, "name": "Hatysa"
+		},
+		{
+			"coords": {
+				"right_ascension": {"hours": 4, "minutes": 49, "seconds": 50.14},
+				"declination": {"degrees": -6, "minutes": 57, "seconds": 40.5},
+				"distance": {"ly": 1200}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255}, "brightness": 96.1, "size": 0.2, "rotation": 2, "max_visible_distance": 30000, "name": "Tabit"
+		},
+		{
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 24, "seconds": 28.62},
+				"declination": {"degrees": -2, "minutes": 23, "seconds": 49.7},
+				"distance": {"ly": 1200}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255}, "brightness": 90.6, "size": 0.2, "rotation": 2, "max_visible_distance": 30000, "name": "Eta Orionis"
+		},
+
+
+
+
+
+		{
+			"name": "Meissa",
+			"coords": {
+				"right_ascension": {"hours": 5, "minutes": 35, "seconds": 8.27608},
+				"declination": {"degrees": 9, "minutes": 56, "seconds": 2.9913},
+				"distance": {"ly": 1320}
+			},
+			"rgb": {"red": 207, "green": 207, "blue": 255},
+			"brightness": 86.5,
+			"size": 0.15,
+			"rotation": 68,
+			"max_visible_distance": 15000
+		}
+	]
+}

@@ -18,21 +18,31 @@
 			"texture": "stellarview:textures/environment/halo_template.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": true,
-			"size": 30791388,
-			"min_size": 0.5,
+			"size": 12742000,
+			"min_size": 0.8,
 			"clamp_at_min_size": true,
 			"rotation": 23.15,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"uv": { "rotation": -90 }
 		},
 		{
-			"texture": "stellarview:textures/environment/planet/sol/earth.png",
+			"texture": "cygnus:textures/environment/solar_system/16x16/earth.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": false,
-			"size": 30791388,
-			"min_size": 0.5,
+			"size": 3185500,
+			"min_size": 0.2,
 			"clamp_at_min_size": true,
 			"rotation": 23.15,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"uv": { "flip_uv": true, "rotation": -90 }
+		},
+		{
+			"texture": "cygnus:textures/environment/solar_system/8x8/earth.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": false,
+			"size": 3185500,
+			"min_size": 0.2,
+			"clamp_at_min_size": true,
+			"rotation": 23.15,
+			"uv": { "flip_uv": true, "rotation": -90 }
 		}
 	]
 }

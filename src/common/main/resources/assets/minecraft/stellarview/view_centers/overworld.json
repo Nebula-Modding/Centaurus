@@ -4,6 +4,6 @@
     "axis_rotation": { "x_axis": 0, "y_axis": -90, "z_axis": -90 },
     "rotation_period": 24000,
 
-    "day_blending": { "max_brightness": 1, "min_visible_size": 10, "max_visible_size": 30 },
-    "sun_day_blending": { "max_brightness": 1, "min_visible_size": 2, "max_visible_size": 20 }
+    "day_blending": { "max_brightness": 4, "min_visible_size": 10, "max_visible_size": 30 },
+	"sun_day_blending": { "max_brightness": 2, "min_visible_size": 1, "max_visible_size": 20 }
 }

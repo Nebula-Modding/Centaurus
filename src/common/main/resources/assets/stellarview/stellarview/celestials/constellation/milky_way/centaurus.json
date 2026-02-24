@@ -6,8 +6,16 @@
 	"stars":
 	[
 		{
-			"coords": { "right_ascension": {"hours": 14, "minutes": 39, "seconds": 36}, "declination": {"degrees": -60, "minutes": 50, "seconds": 7}, "distance": {"ly": 4, "km": 3254490000000} },
-			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 0.3, "rotation": 327, "max_visible_distance": 5000000, "name": "Alpha Centauri"
+			"coords": { "right_ascension": {"hours": 14, "minutes": 3, "seconds": 49.44}, "declination": {"degrees": -60, "minutes": 22, "seconds": 22.7}, "distance": {"ly": 525} },
+			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Beta Centauri"
+		},
+		{
+			"coords": { "right_ascension": {"hours": 14, "minutes": 6, "seconds": 41.32}, "declination": {"degrees": -36, "minutes": 22, "seconds": 7.3}, "distance": {"ly": 61} },
+			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Theta Centauri"
+		},
+		{
+			"coords": { "right_ascension": {"hours": 12, "minutes": 41, "seconds": 31.2}, "declination": {"degrees": -48, "minutes": 57, "seconds": 35.6}, "distance": {"ly": 130} },
+			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Gamma Centauri"
 		}
 	]
 }
