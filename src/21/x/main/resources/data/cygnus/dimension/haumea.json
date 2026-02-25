@@ -1,5 +1,5 @@
 {
-    "type": "cygnus:asteroid",
+    "type": "minecraft:overworld",
     "generator": {
       "type": "minecraft:noise",
       "settings": "minecraft:overworld",

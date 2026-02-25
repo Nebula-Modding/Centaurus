@@ -1,5 +1,5 @@
 {
-    "view_center": "stellarview:planet/milky_way/sol/earth",
+    "view_center": "stellarview:planet/milky_way/alpha_centauri/proxima_centauri_b",
     
     "axis_rotation": { "x_axis": 0, "y_axis": -90, "z_axis": -90 },
     "rotation_period": 24000,

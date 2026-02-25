@@ -1,8 +1,38 @@
 {
 	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
-	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
-	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": -60 },
+	"coords": {
+		"x": {"ly": 0},
+		"y": {"ly": 0},
+		"z": {"ly": 0}
+	},
+	"axis_rotation": {
+		"x_axis": 0,
+		"y_axis": 0,
+		"z_axis": -60
+	},
+
 	"texture_layers": [
+		{
+			"texture": "stellarview:textures/environment/32x32/halo.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": true,
+			"size": 2784000000,
+			"min_size": 61.6,
+			"clamp_at_min_size": false,
+			"rotation": -90
+		},
+		{
+			"texture": "cygnus:textures/environment/star/32x32/g_class.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": true,
+			"size": 696000000,
+			"min_size": 15.4,
+			"clamp_at_min_size": false,
+			"rotation": -90
+		},
+
+
+
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
@@ -10,6 +40,8 @@
 			"size": 2784000000,
 			"min_size": 22.272,
 			"clamp_at_min_size": false,
+			"max_size": 61.6,
+			"clamp_at_max_size": false,
 			"rotation": -90
 		},
 		{
@@ -19,14 +51,19 @@
 			"size": 696000000,
 			"min_size": 5.568,
 			"clamp_at_min_size": false,
+			"max_size": 15.4,
+			"clamp_at_max_size": false,
 			"rotation": -90
 		},
+
+
+
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 2784000000,
-			"min_size": 4.0,
+			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -37,7 +74,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 696000000,
-			"min_size": 0.5,
+			"min_size": 0.01,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,

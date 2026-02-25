@@ -4,51 +4,73 @@
 	"axis_rotation": { "x_axis": 30, "y_axis": 0, "z_axis": 0 },
 	"texture_layers":
 	[
-		{"COMMENT":"Make sure to fix the values"},
-		{"COMMENT":"32x32 star texture"},
+		{
+			"texture": "stellarview:textures/environment/32x32/halo.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": true,
+			"size": 429292800,
+			"min_size": 9.48,
+			"clamp_at_min_size": false,
+			"rotation": -90
+		},
 		{
 			"texture": "cygnus:textures/environment/star/32x32/m_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 173036550.375,
-			"min_size": 0.3,
+			"size": 107323200,
+			"min_size": 2.37,
 			"clamp_at_min_size": false,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
+			"rotation": -90
 		},
 
-		{"COMMENT":"16x16 star texture"},
+
+
+		{
+			"texture": "stellarview:textures/environment/16x16/halo.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": true,
+			"size": 429292800,
+			"min_size": 3.4,
+			"clamp_at_min_size": false,
+			"max_size": 9.48,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		},
 		{
 			"texture": "cygnus:textures/environment/star/16x16/m_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 173036550.375,
-			"min_size": 0.3,
+			"size": 107323200,
+			"min_size": 0.85,
 			"clamp_at_min_size": false,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
+			"max_size": 2.37,
+			"clamp_at_max_size": false,
+			"rotation": -90
 		},
 
-		{"COMMENT":"8x8 star texture"},
+
+
 		{
-			"texture": "cygnus:textures/environment/star/8x8/m_class.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"texture": "stellarview:textures/environment/8x8/halo.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 173036550.375,
-			"min_size": 0.3,
-			"clamp_at_min_size": true,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
+			"size": 429292800,
+			"min_size": 0.04,
+			"clamp_at_min_size": false,
+			"max_size": 3.4,
+			"clamp_at_max_size": false,
+			"rotation": -90
 		},
 		{
-			"texture": "stellarview:textures/environment/halo_template.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"texture": "cygnus:textures/environment/star/8x8/m_class.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 692146201.5,
-			"min_size": 0.3,
-			"clamp_at_min_size": true,
-			"rotation": -90,
-			"uv": { "flip_uv": false }
+			"size": 107323200,
+			"min_size": 0.01,
+			"clamp_at_min_size": false,
+			"max_size": 0.85,
+			"clamp_at_max_size": false,
+			"rotation": -90
 		}
 	]
 }
