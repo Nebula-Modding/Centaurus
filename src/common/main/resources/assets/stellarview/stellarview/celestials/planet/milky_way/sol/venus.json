@@ -14,26 +14,35 @@
 	},
 	"texture_layers":
 	[
-		
 		{
 			"texture": "stellarview:textures/environment/halo_template.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": true,
-			"size": 6051800,
-			"min_size": 2.0,
+			"size": 12742000,
+			"min_size": 1.6,
 			"clamp_at_min_size": true,
 			"rotation": 2.64,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"uv": { "rotation": -90 }
 		},
 		{
-			"texture": "stellarview:textures/environment/planet/sol/venus.png",
+			"texture": "cygnus:textures/environment/solar_system/16x16/venus.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": false,
-			"size": 6051800,
-			"min_size": 0.5,
+			"size": 3185500,
+			"min_size": 0.2,
 			"clamp_at_min_size": true,
 			"rotation": 2.64,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"uv": { "flip_uv": true, "rotation": -90 }
+		},
+		{
+			"texture": "cygnus:textures/environment/solar_system/8x8/venus.png",
+			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"blend": false,
+			"size": 3185500,
+			"min_size": 0.2,
+			"clamp_at_min_size": true,
+			"rotation": 2.64,
+			"uv": { "flip_uv": true, "rotation": -90 }
 		}
 	]
 }
