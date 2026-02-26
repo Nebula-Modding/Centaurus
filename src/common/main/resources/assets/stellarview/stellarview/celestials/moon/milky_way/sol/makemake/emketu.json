@@ -1,9 +1,16 @@
 {
 	"parent": { "location": "stellarview:planet/milky_way/sol/makemake" },
-	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
-	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
-	"orbit_info":
-	{
+	"coords": {
+		"x": {"ly": 0},
+		"y": {"ly": 0},
+		"z": {"ly": 0}
+	},
+	"axis_rotation": {
+		"x_axis": 0,
+		"y_axis": 0,
+		"z_axis": 0
+	},
+	"orbit_info": {
 		"apoapsis": 21000,
 		"periapsis": 21000,
 		"orbit_clamp_distance": 7000000,
@@ -13,27 +20,27 @@
 		"longitude_of_ascending_node": 63.25,
 		"epoch_mean_anomaly": 180
 	},
-	"texture_layers":
-	[
+
+	"texture_layers": [
 		{
-			"texture": "stellarview:textures/environment/halo_template.png",
-			"rgba": {"red": 64, "green": 64, "blue": 64, "alpha": 192},
+			"texture": "stellarview:textures/environment/6x6/halo.png",
+			"rgba": {"red": 189, "green": 148, "blue": 116, "alpha": 255},
 			"blend": true,
-			"size": 175000,
-			"min_size": 0.05,
+			"size": 350000,
+			"min_size": 0.01,
 			"clamp_at_min_size": false,
-			"rotation": 0,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"rotation": 0.0,
+			"uv": { "rotation": -90 }
 		},
 		{
-			"texture": "stellarview:textures/environment/planet/sol/emketu.png",
+			"texture": "cygnus:textures/environment/solar_system/6x6/mk2.png",
 			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 			"blend": false,
-			"size": 175000,
-			"min_size": 0.05,
+			"size": 87500,
+			"min_size": 0.01,
 			"clamp_at_min_size": false,
-			"rotation": 0,
-			"uv": { "flip_uv": false, "rotation": -90 }
+			"rotation": 0.0,
+			"uv": { "flip_uv": true, "rotation": -90 }
 		}
 	]
 }

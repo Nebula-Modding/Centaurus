@@ -1,9 +1,16 @@
 {
 	"parent": { "location": "stellarview:planet/milky_way/sol/earth" },
-	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
-	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
-	"orbit_info":
-	{
+	"coords": {
+		"x": {"ly": 0},
+		"y": {"ly": 0},
+		"z": {"ly": 0}
+	},
+	"axis_rotation": {
+		"x_axis": 0,
+		"y_axis": 0,
+		"z_axis": 0
+	},
+	"orbit_info": {
 		"apoapsis": 405400,
 		"periapsis": 362600,
 		"orbit_clamp_distance": 100000000,
@@ -13,15 +20,40 @@
 		"longitude_of_ascending_node": 0,
 		"epoch_mean_anomaly": 157.5
 	},
-	"texture_layers":
-	[
+
+	"texture_layers": [
+		{
+			"texture": "stellarview:textures/environment/16x16/halo.png",
+			"rgba": { "red": 194, "green": 209, "blue": 221, "alpha": 255 },
+			"blend": true,
+			"size": 6949600,
+			"min_size": 20.0,
+			"clamp_at_min_size": false,
+			"rotation": 0,
+			"uv": { "rotation": -90 }
+		},
+		{
+			"texture": "cygnus:textures/environment/solar_system/16x16/luna.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": false,
+			"size": 1737400,
+			"min_size": 5.0,
+			"clamp_at_min_size": false,
+			"rotation": 0,
+			"uv": { "flip_uv": true, "rotation": -90 }
+		},
+
+
+
 		{
 			"texture": "stellarview:textures/environment/8x8/halo_phases.png",
 			"rgba": { "red": 194, "green": 209, "blue": 221, "alpha": 255 },
 			"blend": true,
 			"size": 6949600,
-			"min_size": 0.184,
+			"min_size": 0.0012,
 			"clamp_at_min_size": true,
+			"max_size": 20.0,
+			"clamp_at_max_size": false,
 			"rotation": 0,
 			"uv": {
 				"rotation": -90,
@@ -34,22 +66,14 @@
 			}
 		},
 		{
-			"texture": "cygnus:textures/environment/solar_system/16x16/luna.png",
-			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
-			"blend": false,
-			"size": 1737400,
-			"min_size": 1,
-			"clamp_at_min_size": false,
-			"rotation": 0,
-			"uv": { "flip_uv": true, "rotation": -90 }
-		},
-		{
 			"texture": "stellarview:textures/environment/8x8/luna.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 6949600,
-			"min_size": 0.184,
+			"min_size": 0.0012,
 			"clamp_at_min_size": true,
+			"max_size": 20.0,
+			"clamp_at_max_size": false,
 			"rotation": 0,
 			"uv": { "flip_uv": true, "rotation": -90 }
 		},
@@ -58,8 +82,10 @@
 			"rgba": { "red": 66, "green": 85, "blue": 107, "alpha": 255 },
 			"blend": false,
 			"size": 6949600,
-			"min_size": 0.184,
+			"min_size": 0.0012,
 			"clamp_at_min_size": true,
+			"max_size": 20.0,
+			"clamp_at_max_size": false,
 			"rotation": 0,
 			"uv": {
 				"rotation": -90,
@@ -71,10 +97,5 @@
 				}
 			}
 		}
-	],
-	
-	"compatibility": {
-		"enhanced_celestials_moon_dimension": "minecraft:overworld",
-		"lunar_moon_dimension": "minecraft:overworld"
-	}
+	]
 }
