@@ -1,0 +1,133 @@
+black_hole:
+S A*
+Gargantua
+Research more
+
+
+
+constellation:
+Centaurus
+Crux
+Orion
+Pleiades
+
+
+
+moon: 
+Xiangliu
+
+Namaka
+Hiiaka
+
+Adrastea
+Amalthea
+Callisto
+Europa
+Ganymede
+Himalia
+Io
+Metis
+Thebe
+
+Despina
+Galatea
+Larissa
+Nereid
+Proteus
+Triton
+
+Vanth
+
+Hydra
+Kerberos
+Nix
+Styx
+
+Weywot
+
+Actaea
+
+Dione
+Enceladus
+Epimetheus
+Hyperion
+Iapetus
+Janus
+Mimas
+Phoebe
+Rhea
+Tethys
+Titan
+
+Ariel
+Miranda
+Oberon
+Portia
+Puck
+Sycorax
+Titania
+Umbriel
+
+Glacio
+
+Pandora
+
+
+
+nebula:
+Crab
+Dumbbell
+Eagle
+Lagoon
+Orion
+Ring
+
+
+
+planet:
+Ceres
+Charon
+Eris
+Gonggong
+Haumea
+Jupiter
+Makemake
+Neptune
+Orcus
+Pluto
+Pluto-Charon Barycenter
+Quaoar
+Salacia
+Saturn
+Sedna
+Uranus
+Vesta
+
+Proxima Centauri b
+Proxima Centauri c
+Proxima Centauri d
+Rigil Kentaurus b
+Toliman b
+
+end
+
+
+
+star:
+Alpha Centauri Barycenter (fade out)
+
+Betelgeuse
+sn 1987A
+
+pa 99 n2
+sn 1885A
+
+
+
+star_field:
+Andromeda
+Milky Way
+Triangulum
+
+NGC_3109
+Pegasus Dwarf Irregular

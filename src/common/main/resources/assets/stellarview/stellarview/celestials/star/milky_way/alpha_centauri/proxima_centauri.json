@@ -55,7 +55,7 @@
 			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
 			"blend": true,
 			"size": 429292800,
-			"min_size": 0.04,
+			"min_size": 0.08,
 			"clamp_at_min_size": false,
 			"max_size": 3.4,
 			"clamp_at_max_size": false,
