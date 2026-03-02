@@ -1,6 +1,16 @@
 {
-	"dust_cloud_types":
-	[
-		{ "rgb": {"red": 140, "green": 160, "blue": 255}, "min_size": 2.0, "max_size": 6.0, "min_brightness": 255, "max_brightness": 255, "weight": 1 }
+	"dust_cloud_types": [
+		{
+			"rgb": { "red": 200, "green": 220, "blue": 255 },
+			"min_size": 2.0, "max_size": 6.0,
+			"min_brightness": 180, "max_brightness": 240,
+			"weight": 4
+		},
+		{
+			"rgb": { "red": 255, "green": 100, "blue": 100 },
+			"min_size": 1.0, "max_size": 2.0,
+			"min_brightness": 255, "max_brightness": 255,
+			"weight": 3
+		}
 	]
 }
