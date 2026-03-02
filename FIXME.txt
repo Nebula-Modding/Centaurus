@@ -1,0 +1,20 @@
+> Task :compile211Java
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                              ^
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                                                      ^
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                              ^
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                                                      ^
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                              ^
+C:\GitHub\Centaurus\src\21\x\main\java\org\nebulamodding\centaurus\datagen\CDataGeneration.java:23: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = Centaurus.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+                                                                      ^
+6 warnings

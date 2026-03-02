@@ -1,15 +1,19 @@
 black_hole:
 S A*
-Gargantua
-Research more
+M31*
+Ansky
+
 
 
 
 constellation:
+https://iauarchive.eso.org/public/themes/constellations/
 Centaurus
 Crux
 Orion
 Pleiades
+Andromeda
+
 
 
 
@@ -115,12 +119,15 @@ end
 
 star:
 Alpha Centauri Barycenter (fade out)
-
-Betelgeuse
+Betelgeuse (Black Hole and Supernova)
 sn 1987A
-
-pa 99 n2
 sn 1885A
+Sirius
+Polaris
+
+Canopus
+Luhman 16
+Wolf 359
 
 
 

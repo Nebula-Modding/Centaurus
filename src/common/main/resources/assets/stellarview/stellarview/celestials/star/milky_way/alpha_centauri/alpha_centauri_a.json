@@ -26,7 +26,7 @@
 			"rgba": { "red": 247, "green": 234, "blue": 83, "alpha": 255 },
 			"blend": true,
 			"size": 3389520000,
-			"min_size": 75.0,
+			"min_size": 61.6,
 			"clamp_at_min_size": false,
 			"rotation": -90
 		},
@@ -35,7 +35,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 847380000,
-			"min_size": 18.75,
+			"min_size": 15.4,
 			"clamp_at_min_size": false,
 			"rotation": -90
 		},
@@ -47,9 +47,9 @@
 			"rgba": { "red": 247, "green": 234, "blue": 83, "alpha": 255 },
 			"blend": true,
 			"size": 3389520000,
-			"min_size": 27.12,
+			"min_size": 22.272,
 			"clamp_at_min_size": false,
-			"max_size": 75.0,
+			"max_size": 61.6,
 			"clamp_at_max_size": false,
 			"rotation": -90
 		},
@@ -58,9 +58,9 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 847380000,
-			"min_size": 6.78,
+			"min_size": 5.568,
 			"clamp_at_min_size": false,
-			"max_size": 18.75,
+			"max_size": 15.4,
 			"clamp_at_max_size": false,
 			"rotation": -90
 		},
@@ -74,7 +74,7 @@
 			"size": 3389520000,
 			"min_size": 0.16,
 			"clamp_at_min_size": true,
-			"max_size": 27.12,
+			"max_size": 22.272,
 			"clamp_at_max_size": false,
 			"rotation": -90
 		},
@@ -85,7 +85,7 @@
 			"size": 847380000,
 			"min_size": 0.01,
 			"clamp_at_min_size": true,
-			"max_size": 6.78,
+			"max_size": 5.568,
 			"clamp_at_max_size": false,
 			"rotation": -90
 		}
