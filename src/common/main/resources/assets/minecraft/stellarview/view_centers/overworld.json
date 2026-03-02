@@ -20,7 +20,7 @@
     },
 
     "shooting_star": {
-        "probability": 5,
+        "probability": 0.01,
 		"meteor_types": [
 			{
 				"weight": 1,
@@ -39,13 +39,13 @@
 	},
 
 	"meteor_shower": {
-        "probability": 5,
+        "probability": 0.01,
 		"meteor_types": [
 			{
 				"weight": 1,
 				"texture_layers": [
 					{
-						"texture": "stellarview:textures/environment/sky_effect/meteor/meteor_red.png",
+						"texture": "stellarview:textures/environment/sky_effect/meteor/meteor_cyan.png",
 						"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
 						"blend": true,
 						"size": 1,
