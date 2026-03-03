@@ -2,7 +2,7 @@
 	"coords": {
 		"right_ascension": { "hours": 1, "minutes": 33, "seconds": 50.02 },
 		"declination": { "degrees": 30, "minutes": 39, "seconds": 36.7 },
-		"distance": {"ly": 3200000}
+		"distance": { "ly": 3200000 }
 	},
 	"axis_rotation": {
 		"x_axis": 0,
