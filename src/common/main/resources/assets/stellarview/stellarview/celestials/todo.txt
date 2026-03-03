@@ -1,6 +1,8 @@
 black_hole:
 S A*
 M31*
+Gaia BH1
+V616 Mon
 Ansky
 
 
@@ -111,7 +113,6 @@ Proxima Centauri b
 Proxima Centauri c
 Proxima Centauri d
 Rigil Kentaurus b
-Toliman b
 
 end
 
