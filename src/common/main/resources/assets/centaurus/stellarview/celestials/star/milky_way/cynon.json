@@ -1,0 +1,40 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
+	"coords": {
+		"right_ascension": { "hours": 14, "minutes": 58, "seconds": 49.9611 },
+		"declination": { "degrees": -30, "minutes": 25, "seconds": 1.509 },
+		"distance": { "ly": 293 }
+	},
+	"axis_rotation": {
+		"x_axis": 0,
+		"y_axis": 0,
+		"z_axis": 0
+	},
+
+	"lensing_intensity": 0.5,
+	
+	"texture_layers": [
+		{
+			"texture": "stellarview:textures/environment/8x8/halo.png",
+			"rgba": { "red": 255, "green": 0, "blue": 0, "alpha": 255 },
+			"blend": true,
+			"size": 60,
+			"min_size": 0.008,
+			"clamp_at_min_size": true,
+			"max_size": 22.272,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		},
+		{
+			"texture": "cygnus:textures/environment/star/8x8/neutron_star.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": true,
+			"size": 15,
+			"min_size": 0.001,
+			"clamp_at_min_size": true,
+			"max_size": 5.568,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		}
+	]
+}
