@@ -3,19 +3,22 @@ S A*
 M31*
 Gaia BH1
 V616 Mon
-Ansky
 
 
 
 
 constellation:
 https://iauarchive.eso.org/public/themes/constellations/
+Andromeda
+Hydra
 Centaurus
 Crux
 Orion
 Pleiades
-Andromeda
-
+Virgo
+Corvus
+Ursa Major
+Ursa Minor
 
 
 
@@ -134,8 +137,14 @@ Wolf 359
 
 star_field:
 Andromeda
+M32
+M110
 Milky Way
 Triangulum
+Whirlpool
+Sombrero
+Bode's Galaxy (M81)
+Cigar (M82)
 
-NGC_3109
+NGC 3109
 Pegasus Dwarf Irregular
