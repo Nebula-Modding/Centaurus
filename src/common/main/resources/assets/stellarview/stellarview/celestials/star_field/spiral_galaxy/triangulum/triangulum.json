@@ -29,7 +29,7 @@
 			"arm_length": 2.0,
 			"arm_thickness": 1.1,
 			"arm_rotation": 0,
-			"stars": 300
+			"stars": 400
 		},
 		{
 			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
@@ -63,7 +63,7 @@
 			"arm_length": 2.0,
 			"arm_thickness": 1.1,
 			"arm_rotation": 180,
-			"stars": 300
+			"stars": 400
 		},
 		{
 			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
