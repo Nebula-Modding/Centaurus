@@ -34,11 +34,11 @@ Infurnix
 Opacios
 Phanis
 
-tempus
+Tempus
 
 
 
 star:
 Sentinel (113 solar radii) (M4 III)
-Hades (4.28 solar radii) (B2 V)
+Hades (4.28 solar radii) (B2 V)t-
 Cynon (15km radius)

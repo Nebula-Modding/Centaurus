@@ -1,6 +1,7 @@
 # black_hole:
 S A*
 M31*
+M32*
 Gaia BH1
 V616 Mon
 
