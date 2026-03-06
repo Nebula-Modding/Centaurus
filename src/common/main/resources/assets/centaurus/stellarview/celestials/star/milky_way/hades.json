@@ -14,7 +14,7 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/32x32/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 104, "green": 208, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 11915520000,
 			"min_size": 61.6,
@@ -22,8 +22,8 @@
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/32x32/m_class.png",
-			"rgba": { "red": 255, "green": 220, "blue": 220, "alpha": 255 },
+			"texture": "cygnus:textures/environment/star/32x32/b_class.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 2978880000,
 			"min_size": 15.4,
@@ -35,7 +35,7 @@
 
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 104, "green": 208, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 11915520000,
 			"min_size": 22.272,
@@ -45,8 +45,8 @@
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/16x16/m_class.png",
-			"rgba": { "red": 255, "green": 220, "blue": 220, "alpha": 255 },
+			"texture": "cygnus:textures/environment/star/16x16/b_class.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 2978880000,
 			"min_size": 5.568,
@@ -60,18 +60,18 @@
 
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 104, "green": 208, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 11915520000,
-			"min_size": 0.08,
+			"min_size": 0.32,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/8x8/m_class.png",
-			"rgba": { "red": 255, "green": 220, "blue": 220, "alpha": 255 },
+			"texture": "cygnus:textures/environment/star/8x8/b_class.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 2978880000,
 			"min_size": 0.01,

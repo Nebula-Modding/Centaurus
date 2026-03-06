@@ -1,13 +1,11 @@
-black_hole:
+# black_hole:
 S A*
 M31*
 Gaia BH1
 V616 Mon
 
 
-
-
-constellation:
+# constellation:
 https://iauarchive.eso.org/public/themes/constellations/
 Andromeda
 Hydra
@@ -21,12 +19,11 @@ Ursa Major
 Ursa Minor
 
 
-
-moon: 
+# moon: 
 Xiangliu
 
 Namaka
-Hiiaka
+Hiʻiaka
 
 Adrastea
 Amalthea
@@ -82,8 +79,7 @@ Glacio
 Pandora
 
 
-
-nebula:
+# nebula:
 Crab
 Dumbbell
 Eagle
@@ -92,8 +88,7 @@ Orion
 Ring
 
 
-
-planet:
+# planet:
 Ceres
 Charon
 Eris
@@ -120,8 +115,7 @@ Rigil Kentaurus b
 end
 
 
-
-star:
+# star:
 Alpha Centauri Barycenter (fade out)
 Betelgeuse (Black Hole and Supernova)
 sn 1987A
@@ -134,13 +128,22 @@ Luhman 16
 Wolf 359
 
 
-
-star_field:
+# star_field:
 Andromeda
+
+Large Magellanic Cloud
+Small Magellanic Cloud
+
 M32
 M110
+Antila Dwarf
+Antila B
+Antila 2
+Crater 2 Dwarf
+Saggitarius Dwarf Spheroid
+
 Milky Way
-Triangulum
+
 Whirlpool
 Sombrero
 Bode's Galaxy (M81)

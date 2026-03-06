@@ -10,16 +10,14 @@
 		"y_axis": 0,
 		"z_axis": 0
 	},
-
-	"lensing_intensity": 0.5,
 	
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": { "red": 255, "green": 0, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 247, "green": 252, "blue": 252, "alpha": 255 },
 			"blend": true,
 			"size": 60,
-			"min_size": 0.008,
+			"min_size": 0.32,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -30,7 +28,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 15,
-			"min_size": 0.001,
+			"min_size": 0.01,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,
