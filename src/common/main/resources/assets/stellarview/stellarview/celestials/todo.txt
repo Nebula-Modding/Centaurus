@@ -1,5 +1,6 @@
 # black_hole:
 S A*
+LMC*
 M31*
 M32*
 Gaia BH1
@@ -8,16 +9,100 @@ V616 Mon
 
 # constellation:
 https://iauarchive.eso.org/public/themes/constellations/
-Andromeda
-Hydra
-Centaurus
+Size:
+Reticulum
+Triangulum
 Crux
+Equuleus
+
+WIP:
+Andromeda
+Centaurus
 Orion
 Pleiades
+
+All:
+Hydra
+Cepheus
 Virgo
 Corvus
+Cassiopeia
+Antlia
+Crater
+Pegasus
 Ursa Major
 Ursa Minor
+Apus
+Aquarius
+Aquila
+Ara
+Aries
+Auriga
+Bootes
+Caelum
+Camelopardalis
+Cancer
+Canes Venatici
+Canis Major
+Canis Minor
+Capricornus
+Carina
+Chamaeleon
+Circinus
+Columbia
+Coma Berenices
+Corona Australis
+Corona Borealis
+Delphinus
+Dorado
+Draco
+Eridanus
+Fornax
+Gemini
+Grus
+Hercules
+Horologium
+Hydrus
+Indus
+Lacerta
+Leo
+Leo Minor
+Lepus
+Lacerta
+Libra
+Lupus
+Lynx
+Lyra
+Mensa
+Microscopium
+Monoceros
+Musca
+Norma
+Octans
+Ophiuchus
+Pavo
+Perseus
+Phoenix
+Pictor
+Pisces
+Piscis Austrinus
+Puppis
+Pyxis
+Sagitta
+Saggitarius
+Scorpius
+Sculptor
+Scutum
+Serpens
+Sextans
+Taurus
+Telescopium
+Triangulum Australe
+Tucana
+Vela
+Virgo
+Volans
+Vulpecula
 
 
 # moon: 
@@ -137,11 +222,12 @@ Small Magellanic Cloud
 
 M32
 M110
-Antila Dwarf
-Antila B
 Antila 2
 Crater 2 Dwarf
 Saggitarius Dwarf Spheroid
+NGC 185
+NGC 147
+Milky Way
 
 Milky Way
 

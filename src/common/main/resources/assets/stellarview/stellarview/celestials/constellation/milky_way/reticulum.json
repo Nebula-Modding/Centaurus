@@ -1,0 +1,60 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
+	"coords": { "x": { "ly": 0 }, "y": { "ly": 0 }, "z": { "ly": 0 } },
+	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
+	
+	"stars": [
+		{
+			"name": "Rhombus",
+			"coords": {
+				"right_ascension": { "hours": 4, "minutes": 14, "seconds": 25.47 },
+				"declination": { "degrees": -62, "minutes": 28, "seconds": 25.7 },
+				"distance": { "ly": 160 }
+			},
+			"rgb": { "red": 255, "green": 255, "blue": 223 },
+			"brightness": 91.8,
+			"rotation": 62,
+			"size": 0.2,
+			"max_visible_distance": 5000000
+		},
+		{
+			"name": "Beta Reticuli",
+			"coords": {
+				"right_ascension": { "hours": 3, "minutes": 44, "seconds": 11.97587 },
+				"declination": { "degrees": -64, "minutes": 48, "seconds": 24.861 },
+				"distance": { "ly": 101 }
+			},
+			"rgb": { "red": 255, "green": 239, "blue": 223 },
+			"brightness": 73.8,
+			"rotation": 227,
+			"size": 0.2,
+			"max_visible_distance": 4500000
+		},
+		{
+			"name": "Epsilon Reticuli",
+			"coords": {
+				"right_ascension": { "hours": 4, "minutes": 16, "seconds": 30.04 },
+				"declination": { "degrees": -59, "minutes": 17, "seconds": 57.18 },
+				"distance": { "ly": 59, "km": 7190155159161 }
+			},
+			"rgb": { "red": 255, "green": 239, "blue": 223 },
+			"brightness": 53.3,
+			"rotation": 84,
+			"size": 0.2,
+			"max_visible_distance": 4500000
+		},
+		{
+			"name": "Delta Reticuli",
+			"coords": {
+				"right_ascension": { "hours": 3, "minutes": 58, "seconds": 44.74945 },
+				"declination": { "degrees": -61, "minutes": 24, "seconds": 0.6673 },
+				"distance": { "ly": 530 }
+			},
+			"rgb": { "red": 255, "green": 223, "blue": 223 },
+			"brightness": 47.9,
+			"rotation": 319,
+			"size": 0.2,
+			"max_visible_distance": 4000000
+		}
+	]
+}

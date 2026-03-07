@@ -1,21 +1,60 @@
 {
 	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
-	"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+	"coords": { "x": { "ly": 0 }, "y": { "ly": 0 }, "z": { "ly": 0 } },
 	"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
 	
-	"stars":
-	[
+	"stars": [
 		{
-			"coords": { "right_ascension": {"hours": 14, "minutes": 3, "seconds": 49.44}, "declination": {"degrees": -60, "minutes": 22, "seconds": 22.7}, "distance": {"ly": 525} },
-			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Beta Centauri"
+			"name": "Hadar",
+			"coords": {
+				"right_ascension": { "hours": 14, "minutes": 3, "seconds": 49.40535 },
+				"declination": { "degrees": -60, "minutes": 22, "seconds": 22.9266 },
+				"distance": { "ly": 361 }
+			},
+			"rgb": { "red": 255, "green": 239, "blue": 223 },
+			"brightness": 184.2,
+			"rotation": 51,
+			"size": 0.2,
+			"max_visible_distance": 4500000
 		},
 		{
-			"coords": { "right_ascension": {"hours": 14, "minutes": 6, "seconds": 41.32}, "declination": {"degrees": -36, "minutes": 22, "seconds": 7.3}, "distance": {"ly": 61} },
-			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Theta Centauri"
+			"name": "Menkent",
+			"coords": {
+				"right_ascension": { "hours": 14, "minutes": 6, "seconds": 40.94752 },
+				"declination": { "degrees": -36, "minutes": 22, "seconds": 11.8371 },
+				"distance": { "ly": 58, "km": 7568584378065 }
+			},
+			"rgb": { "red": 255, "green": 239, "blue": 223 },
+			"brightness": 184.2,
+			"rotation": 134.7,
+			"size": 0.2,
+			"max_visible_distance": 4500000
 		},
 		{
-			"coords": { "right_ascension": {"hours": 12, "minutes": 41, "seconds": 31.2}, "declination": {"degrees": -48, "minutes": 57, "seconds": 35.6}, "distance": {"ly": 130} },
-			"rgb": {"red": 255, "green": 255, "blue": 255}, "brightness": 210, "size": 1.0, "rotation": 327, "max_visible_distance": 5000000, "name": "Gamma Centauri"
+			"name": "Muhlifain",
+			"coords": {
+				"right_ascension": { "hours": 12, "minutes": 41, "seconds": 31.04008 },
+				"declination": { "degrees": -48, "minutes": 57, "seconds": 35.5375 },
+				"distance": { "ly": 130 }
+			},
+			"rgb": { "red": 239, "green": 239, "blue": 255 },
+			"brightness": 130.9,
+			"rotation": 133,
+			"size": 0.2,
+			"max_visible_distance": 6000000
+		},
+		{
+			"name": "Epsilon Centauri",
+			"coords": {
+				"right_ascension": { "hours": 13, "minutes": 39, "seconds": 53.25774 },
+				"declination": { "degrees": -53, "minutes": 27, "seconds": 59.0081 },
+				"distance": { "ly": 430 }
+			},
+			"rgb": { "red": 223, "green": 223, "blue": 255 },
+			"brightness": 126.5,
+			"rotation": 294,
+			"size": 0.2,
+			"max_visible_distance": 8000000
 		}
 	]
 }
