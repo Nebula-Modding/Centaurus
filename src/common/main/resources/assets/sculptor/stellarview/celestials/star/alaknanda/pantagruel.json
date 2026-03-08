@@ -1,21 +1,30 @@
 {
-	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
+	"parent": { "location": "sculptor:black_hole/alaknanda/gargantua" },
 	"coords": {
-		"right_ascension": { "hours": 14, "minutes": 58, "seconds": 49.9611 },
-		"declination": { "degrees": -30, "minutes": 25, "seconds": 1.509 },
-		"distance": { "ly": 293 }
+		"x": { "ly": 0 },
+		"y": { "ly": 0 },
+		"z": { "ly": 0 }
 	},
 	"axis_rotation": {
 		"x_axis": 0,
 		"y_axis": 0,
 		"z_axis": 0
 	},
+	"orbit_info": {
+		"apoapsis": 301615776,
+		"periapsis": 29861424,
+		"orbital_period": { "ticks": 3400 },
+		"argument_of_periapsis": 51,
+		"inclination": 0.1,
+		"longitude_of_ascending_node": 0,
+		"epoch_mean_anomaly": 180
+	},
 
-	"min_star_size": 0.005,
+	"min_star_size": 0.1,
 	"fade_out_handler": {
 		"fade_out_start_distance": { "ly": 500000 },
 		"fade_out_end_distance": { "ly": 2000000 },
-		"max_child_render_distance": { "ly": 100 }
+		"max_child_render_distance": { "ly": 1000 }
 	},
 
 	"texture_layers": [
@@ -33,7 +42,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 15,
-			"min_size": 0.01,
+			"min_size": 0.1,
 			"clamp_at_min_size": true,
 			"rotation": -90
 		}

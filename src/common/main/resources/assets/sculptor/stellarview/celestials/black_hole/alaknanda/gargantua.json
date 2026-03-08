@@ -1,9 +1,9 @@
 {
-	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
+	"parent": { "location": "sculptor:star_field/spiral_galaxy/alaknanda/alaknanda", "relative": false },
 	"coords": {
-		"right_ascension": { "hours": 17, "minutes": 45, "seconds": 40.0409 },
-		"declination": { "degrees": -29, "minutes": 0, "seconds": 28.118 },
-		"distance": { "ly": 26670 }
+		"right_ascension": { "hours": 0, "minutes": 14, "seconds": 5.68 },
+		"declination": { "degrees": -30, "minutes": 22, "seconds": 20.67 },
+		"distance": { "ly": 12000000000 }
 	},
 	"axis_rotation": {
 		"x_axis": 0,
@@ -11,7 +11,7 @@
 		"z_axis": 0
 	},
 
-	"min_black_hole_size": 0.01,
+	"min_black_hole_size": 1.0,
 	"lensing_intensity": 8.0,
 
 	"texture_layers": [
@@ -19,7 +19,7 @@
 			"texture": "cygnus:textures/environment/black_hole/32x32.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 288127296000,
+			"size": 1800691200,
 			"min_size": 15.4,
 			"clamp_at_min_size": false,
 			"rotation": -90
@@ -31,7 +31,7 @@
 			"texture": "cygnus:textures/environment/black_hole/16x16.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 288127296000,
+			"size": 1800691200,
 			"min_size": 5.568,
 			"clamp_at_min_size": false,
 			"max_size": 15.4,
@@ -45,8 +45,8 @@
 			"texture": "cygnus:textures/environment/black_hole/8x8.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 288127296000,
-			"min_size": 0.01,
+			"size": 1800691200,
+			"min_size": 1.0,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,

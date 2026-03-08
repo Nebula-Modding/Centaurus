@@ -1,5 +1,5 @@
 {
-	"parent": { "location": "stellarview:star/milky_way/sol" },
+	"parent": { "location": "sculptor:black_hole/alaknanda/gargantua" },
 	"coords": {
 		"x": { "ly": 0 },
 		"y": { "ly": 0 },
@@ -11,21 +11,21 @@
 		"z_axis": 0
 	},
 	"orbit_info": {
-		"apoapsis": 152100000,
-		"periapsis": 147100000,
-		"orbital_period": { "ticks": 2304000 },
-		"argument_of_periapsis": 0,
-		"inclination": 0,
+		"apoapsis": 90034560000,
+		"periapsis": 300115200,
+		"orbital_period": { "ticks": 96768000 },
+		"argument_of_periapsis": 90,
+		"inclination": 37,
 		"longitude_of_ascending_node": 0,
-		"epoch_mean_anomaly": 180
+		"epoch_mean_anomaly": 7
 	},
 	
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": { "red": 53, "green": 118, "blue": 213, "alpha": 255 },
+			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
 			"blend": true,
-			"size": 12742000,
+			"size": 9174240,
 			"min_size": 28.0,
 			"clamp_at_min_size": false,
 			"rotation": 23.15,
@@ -35,7 +35,7 @@
 			"texture": "cygnus:textures/environment/solar_system/16x16/earth.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 3185500,
+			"size": 2293560,
 			"min_size": 7.0,
 			"clamp_at_min_size": false,
 			"rotation": 23.15,
@@ -48,7 +48,7 @@
 			"texture": "stellarview:textures/environment/8x8/halo.png",
 			"rgba": { "red": 53, "green": 118, "blue": 213, "alpha": 255 },
 			"blend": true,
-			"size": 12742000,
+			"size": 9174240,
 			"min_size": 0.004,
 			"clamp_at_min_size": true,
 			"max_size": 28.0,
@@ -60,7 +60,7 @@
 			"texture": "cygnus:textures/environment/solar_system/8x8/earth.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 3185500,
+			"size": 2293560,
 			"min_size": 0.001,
 			"clamp_at_min_size": true,
 			"max_size": 7.0,

@@ -1,0 +1,21 @@
+{
+	"parent": { "location": "sculptor:black_hole/alaknanda/gargantua", "relative": true },
+	"coords": {
+		"x": { "ly": 0 },
+		"y": { "ly": 0 },
+		"z": { "ly": 0 }
+	},
+	"axis_rotation": {
+		"x_axis": 0,
+		"y_axis": 0,
+		"z_axis": 0
+	},
+	
+	"diameter_ly": 0.000211,
+	"seed": 0,
+
+	"dust_cloud_info": "sculptor:gargantua",
+	"dust_cloud_stretch": { "x": 1.0, "y": 0.01, "z": 1.0 },
+	"dust_clouds": 0,
+	"stars": 0
+}

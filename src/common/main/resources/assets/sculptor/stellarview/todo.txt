@@ -1,0 +1,11 @@
+lens:
+Pantagruel
+Wormhole
+
+planet:
+Edmunds
+
+
+star:
+Pantagruel (Neutron Star)
+Panurge
