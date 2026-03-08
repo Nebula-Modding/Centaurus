@@ -10,7 +10,14 @@
 		"y_axis": 0,
 		"z_axis": 0
 	},
-	
+
+	"min_star_size": 0.08,
+	"fade_out_handler": {
+		"fade_out_start_distance": { "ly": 2000000 },
+		"fade_out_end_distance": { "ly": 4000000 },
+		"max_child_render_distance": { "ly": 100 }
+	},
+
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/32x32/halo.png",
@@ -63,7 +70,7 @@
 			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
 			"blend": true,
 			"size": 1954368000000,
-			"min_size": 0.32,
+			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -74,7 +81,7 @@
 			"rgba": { "red": 255, "green": 200, "blue": 200, "alpha": 255 },
 			"blend": true,
 			"size": 488592000000,
-			"min_size": 0.02,
+			"min_size": 0.01,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,
@@ -86,45 +93,52 @@
 
 	"supernova_info": {
 		"supernova_leftover": {
-			"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+			"coords": { "x": { "ly": 0 }, "y": { "ly": 0 }, "z": { "ly": 0 } },
 			"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
 
 			"texture_layers": [
 				{
-					"texture": "stellarview:textures/environment/black_hole/black_hole_halo.png",
+					"texture": "cygnus:textures/environment/black_hole/32x32.png",
 					"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
-					"blend": true,
+					"blend": false,
 					"size": 60,
-					"min_size": 2,
-					"clamp_at_min_size": true,
-					"rotation": 0.01,
-					"uv": { "flip_uv": false }
+					"min_size": 15.4,
+					"clamp_at_min_size": false,
+					"rotation": -90
 				},
+
+
+
 				{
-					"texture": "stellarview:textures/environment/black_hole/black_hole.png",
+					"texture": "cygnus:textures/environment/black_hole/16x16.png",
+					"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+					"blend": false,
+					"size": 60,
+					"min_size": 5.568,
+					"clamp_at_min_size": false,
+					"max_size": 15.4,
+					"clamp_at_max_size": false,
+					"rotation": -90
+				},
+
+
+
+				{
+					"texture": "cygnus:textures/environment/black_hole/8x8.png",
 					"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 					"blend": false,
 					"size": 60,
 					"min_size": 0.01,
 					"clamp_at_min_size": true,
-					"rotation": 0,
-					"uv": { "flip_uv": false }
-				},
-				{
-					"texture": "cygnus:textures/environment/accretion_disk/thick/white.png",
-					"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
-					"blend": false,
-					"size": 60,
-					"min_size": 0.01,
-					"clamp_at_min_size": true,
-					"rotation": 0,
-					"uv": { "flip_uv": false }
+					"max_size": 5.568,
+					"clamp_at_max_size": false,
+					"rotation": -90
 				}
 			]
 		},
 
 		"nebula": {
-			"coords": { "x": {"ly": 0}, "y": {"ly": 0}, "z": {"ly": 0} },
+			"coords": { "x": { "ly": 0 }, "y": { "ly": 0 }, "z": { "ly": 0 } },
 			"axis_rotation": { "x_axis": 0, "y_axis": 0, "z_axis": 0 },
 			"texture_layers": []
 		},

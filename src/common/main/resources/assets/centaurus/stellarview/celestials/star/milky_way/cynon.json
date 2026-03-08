@@ -10,14 +10,21 @@
 		"y_axis": 0,
 		"z_axis": 0
 	},
-	
+
+	"min_star_size": 0.005,
+	"fade_out_handler": {
+		"fade_out_start_distance": { "ly": 500000 },
+		"fade_out_end_distance": { "ly": 2000000 },
+		"max_child_render_distance": { "ly": 100 }
+	},
+
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
 			"rgba": { "red": 247, "green": 252, "blue": 252, "alpha": 255 },
 			"blend": true,
 			"size": 60,
-			"min_size": 0.32,
+			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,

@@ -12,6 +12,13 @@
 		"epoch_mean_anomaly": 0
 	},
 
+	"min_star_size": 0.03,
+	"fade_out_handler": {
+		"fade_out_start_distance": { "ly": 2500000 },
+		"fade_out_end_distance": { "ly": 4500000 },
+		"max_child_render_distance": { "ly": 100 }
+	},
+
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/32x32/halo.png",
@@ -64,7 +71,7 @@
 			"rgba": { "red": 242, "green": 169, "blue": 78, "alpha": 255 },
 			"blend": true,
 			"size": 2403148800,
-			"min_size": 0.32,
+			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,

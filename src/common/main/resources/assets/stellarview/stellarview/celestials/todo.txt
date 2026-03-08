@@ -1,7 +1,5 @@
 # black_hole:
-S A*
 LMC*
-M31*
 M32*
 Gaia BH1
 V616 Mon
@@ -202,13 +200,8 @@ end
 
 
 # star:
-Alpha Centauri Barycenter (fade out)
-Betelgeuse (Black Hole and Supernova)
-sn 1987A
-sn 1885A
 Sirius
 Polaris
-
 Canopus
 Luhman 16
 Wolf 359
@@ -216,12 +209,13 @@ Wolf 359
 
 # star_field:
 Andromeda
+M32
+M110
+Pegasus Dwarf Irregular
 
 Large Magellanic Cloud
 Small Magellanic Cloud
 
-M32
-M110
 Antila 2
 Crater 2 Dwarf
 Saggitarius Dwarf Spheroid
@@ -235,6 +229,3 @@ Whirlpool
 Sombrero
 Bode's Galaxy (M81)
 Cigar (M82)
-
-NGC 3109
-Pegasus Dwarf Irregular
