@@ -4,7 +4,7 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.18.0"
+    id("earth.terrarium.cloche") version "0.18.3"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -96,8 +96,13 @@ cloche {
             }
             dependency {
                 modId = "stellarview"
-                version("${p("stellarview_21.1_version")}")
-                type.set(CommonMetadata.Dependency.Type.Required)
+                version("${p("stellarview_21.1_dependency_version")}")
+                ordering.set(CommonMetadata.Dependency.Ordering.After)
+                environment.set(CommonMetadata.Environment.Both)
+            }
+            dependency {
+                modId = "sgjourney"
+                version("${p("sgjourney_21.1_dependency_version")}")
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
             }
@@ -118,11 +123,6 @@ cloche {
             //compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${p("jei_21.1_version")}")
             //modRuntimeOnly("mezz.jei:jei-1.21.1-neoforge:${p("jei_21.1_version")}")
 
-            // Modrinth Stuff
-            //modImplementation("maven.modrinth:create:1.21.1-${p("create_version")}")
-            //modImplementation("maven.modrinth:appleskin:${p("appleskin_version")}+mc1.21")
-            //modImplementation("maven.modrinth:jade:${p("jade_21.1_version")}+neoforge")
-            //modImplementation("maven.modrinth:mekanism:${p("mekanism_21.1_version")}")
             //modImplementation("maven.modrinth:stellarview:${p("stellarview_21.1_version")}")
 
             // DevAuth
