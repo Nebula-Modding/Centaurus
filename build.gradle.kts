@@ -97,12 +97,14 @@ cloche {
             dependency {
                 modId = "stellarview"
                 version("${p("stellarview_21.1_dependency_version")}")
+                type.set(CommonMetadata.Dependency.Type.Suggested)
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
             }
             dependency {
                 modId = "sgjourney"
                 version("${p("sgjourney_21.1_dependency_version")}")
+                type.set(CommonMetadata.Dependency.Type.Suggested)
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
             }

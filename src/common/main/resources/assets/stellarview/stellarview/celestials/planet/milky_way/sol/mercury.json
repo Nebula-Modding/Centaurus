@@ -23,7 +23,7 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": {"red": 189, "green": 191, "blue": 203, "alpha": 255},
+			"rgba": { "red": 189, "green": 191, "blue": 203, "alpha": 255 },
 			"blend": true,
 			"size": 9758800,
 			"min_size": 28.0,
@@ -33,7 +33,7 @@
 		},
 		{
 			"texture": "cygnus:textures/environment/solar_system/16x16/mercury.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 2439700,
 			"min_size": 7.0,
@@ -46,7 +46,7 @@
 
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": {"red": 161, "green": 160, "blue": 177, "alpha": 255},
+			"rgba": { "red": 161, "green": 160, "blue": 177, "alpha": 255 },
 			"blend": true,
 			"size": 9758800,
 			"min_size": 0.004,
@@ -58,7 +58,7 @@
 		},
 		{
 			"texture": "cygnus:textures/environment/solar_system/8x8/mercury.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 2439700,
 			"min_size": 0.001,
