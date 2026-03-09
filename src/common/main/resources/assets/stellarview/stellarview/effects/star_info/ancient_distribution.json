@@ -1,0 +1,63 @@
+{
+	"star_types": [
+		{
+			"rgb": { "red": 239, "green": 249, "blue": 255 },
+			"min_brightness": 210, "max_brightness": 240,
+			"min_size": 0.15, "max_size": 0.25,
+			"max_visible_distance": 6000000,
+			"weight": 1
+		},
+		{
+			"rgb": { "red": 254, "green": 255, "blue": 251 },
+			"min_brightness": 190, "max_brightness": 230,
+			"min_size": 0.15, "max_size": 0.25,
+			"max_visible_distance": 5500000,
+			"weight": 10
+		},
+		{
+			"rgb": { "red": 252, "green": 255, "blue": 234 },
+			"min_brightness": 180, "max_brightness": 210,
+			"min_size": 0.10, "max_size": 0.25,
+			"max_visible_distance": 5000000,
+			"weight": 15
+		},
+		{
+			"rgb": { "red": 255, "green": 250, "blue": 234 },
+			"min_brightness": 120, "max_brightness": 200,
+			"min_size": 0.10, "max_size": 0.25,
+			"max_visible_distance": 4500000,
+			"weight": 25
+		},
+		{
+			"rgb": { "red": 250, "green": 174, "blue": 158 },
+			"min_brightness": 100, "max_brightness": 150,
+			"min_size": 0.10, "max_size": 0.15,
+			"max_visible_distance": 4000000,
+			"weight": 100
+		},
+
+
+
+		{
+			"rgb": { "red": 250, "green": 174, "blue": 158 },
+			"min_brightness": 100, "max_brightness": 160,
+			"min_size": 0.15, "max_size": 0.30,
+			"max_visible_distance": 4000000,
+			"weight": 100
+		},
+		{
+			"rgb": { "red": 255, "green": 255, "blue": 255 },
+			"min_brightness": 50, "max_brightness": 120,
+			"min_size": 0.01, "max_size": 0.10,
+			"max_visible_distance": 3000000,
+			"weight": 27
+		},
+		{
+			"rgb": { "red": 0, "green": 0, "blue": 0 },
+			"min_brightness": 0, "max_brightness": 60,
+			"min_size": 0.01, "max_size": 0.20,
+			"max_visible_distance": 2000000,
+			"weight": 50
+		}
+	]
+}

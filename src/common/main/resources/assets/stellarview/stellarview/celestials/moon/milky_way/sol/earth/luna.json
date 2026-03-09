@@ -27,7 +27,7 @@
 			"rgba": { "red": 194, "green": 209, "blue": 221, "alpha": 255 },
 			"blend": true,
 			"size": 6949600,
-			"min_size": 20.0,
+			"min_size": 28.0,
 			"clamp_at_min_size": false,
 			"rotation": 0,
 			"uv": { "rotation": -90 }
@@ -37,7 +37,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 1737400,
-			"min_size": 5.0,
+			"min_size": 7.0,
 			"clamp_at_min_size": false,
 			"rotation": 0,
 			"uv": { "flip_uv": true, "rotation": -90 }
@@ -72,7 +72,7 @@
 			"size": 6949600,
 			"min_size": 0.0012,
 			"clamp_at_min_size": true,
-			"max_size": 20.0,
+			"max_size": 28.0,
 			"clamp_at_max_size": false,
 			"rotation": 0,
 			"uv": { "flip_uv": true, "rotation": -90 }
@@ -84,7 +84,7 @@
 			"size": 6949600,
 			"min_size": 0.0012,
 			"clamp_at_min_size": true,
-			"max_size": 20.0,
+			"max_size": 7.0,
 			"clamp_at_max_size": false,
 			"rotation": 0,
 			"uv": {

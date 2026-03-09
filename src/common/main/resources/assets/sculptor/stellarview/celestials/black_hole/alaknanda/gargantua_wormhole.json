@@ -20,7 +20,7 @@
 		"epoch_mean_anomaly": 180
 	},
 
-	"lensing_intensity": 0.01,
+	"lensing_intensity": 0.1,
 
 	"texture_layers": []
 }

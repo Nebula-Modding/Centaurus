@@ -1,0 +1,16 @@
+{
+	"dust_cloud_types": [
+		{
+			"rgb": { "red": 0, "green": 0, "blue": 0 },
+			"min_size": 0, "max_size": 0,
+			"min_brightness": 0, "max_brightness": 0,
+			"weight": 2
+		},
+		{
+			"rgb": { "red": 255, "green": 0, "blue": 0 },
+			"min_size": 2.0, "max_size": 4.0,
+			"min_brightness": 255, "max_brightness": 255,
+			"weight": 1
+		}
+	]
+}

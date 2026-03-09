@@ -1,7 +1,7 @@
 {
-    "view_center": "sculptor:planet/alaknanda/gargantua/miller",
+    "view_center": "stellarview:planet/milky_way/sol/earth",
 
-    "rotation_period": 0,
+    "rotation_period": 24000,
     "axis_rotation": {
         "x_axis": 0,
         "y_axis": -90,
@@ -9,13 +9,51 @@
     },
 
     "sun_day_blending": {
-        "max_brightness": 1000,
-        "min_visible_size": 0.01,
-        "max_visible_size": 5
+        "max_brightness": 2,
+        "min_visible_size": 1,
+        "max_visible_size": 20
     },
     "day_blending": {
         "max_brightness": 4,
-        "min_visible_size": 0.01,
-        "max_visible_size": 5
-    }
+        "min_visible_size": 10,
+        "max_visible_size": 30
+    },
+
+    "shooting_star": {
+        "probability": 0.01,
+		"meteor_types": [
+			{
+				"weight": 1,
+				"texture_layers": [
+					{
+						"texture": "stellarview:textures/environment/sky_effect/meteor/meteor_red.png",
+						"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+						"blend": true,
+						"size": 1,
+						"rotation": 0,
+						"uv": { "flip_uv": true, "rotation": -90 }
+					}
+				]
+			}
+		]
+	},
+
+	"meteor_shower": {
+        "probability": 0.01,
+		"meteor_types": [
+			{
+				"weight": 1,
+				"texture_layers": [
+					{
+						"texture": "stellarview:textures/environment/sky_effect/meteor/meteor_cyan.png",
+						"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+						"blend": true,
+						"size": 1,
+						"rotation": 0,
+						"uv": { "flip_uv": true, "rotation": -90 }
+					}
+				]
+			}
+		]
+	}
 }

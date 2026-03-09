@@ -6,13 +6,13 @@
 		"distance": { "ly": 12000000000 }
 	},
 	"axis_rotation": {
-		"x_axis": 0,
-		"y_axis": 0,
-		"z_axis": 0
+		"x_axis": 70,
+		"y_axis": 180,
+		"z_axis": 25
 	},
 
 	"min_black_hole_size": 1.0,
-	"lensing_intensity": 8.0,
+	"lensing_intensity": 2.2,
 
 	"texture_layers": [
 		{
