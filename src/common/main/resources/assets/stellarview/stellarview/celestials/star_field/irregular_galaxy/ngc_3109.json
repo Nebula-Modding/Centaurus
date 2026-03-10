@@ -1,8 +1,8 @@
 {
 	"coords": {
 		"right_ascension":
-		{ "hours": 0, "minutes": 3, "seconds": 0 },
-		"declination": { "degrees": -26, "minutes": 9, "seconds": 34 },
+		{ "hours": 0, "minutes": 0, "seconds": 0 },
+		"declination": { "degrees": 0, "minutes": 0, "seconds": 0 },
 		"distance": { "ly": 0 }
 	},
 	"axis_rotation": {

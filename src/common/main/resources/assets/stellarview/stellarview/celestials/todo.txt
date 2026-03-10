@@ -1,6 +1,5 @@
 # black_hole:
 LMC*
-M32*
 Gaia BH1
 V616 Mon
 
@@ -209,8 +208,6 @@ Wolf 359
 
 # star_field:
 Andromeda
-M32
-M110
 Pegasus Dwarf Irregular
 
 Large Magellanic Cloud

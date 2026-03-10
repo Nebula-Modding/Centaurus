@@ -1,24 +1,26 @@
 {
 	"parent": { "location": "stellarview:star_field/spiral_galaxy/andromeda/andromeda", "relative": false },
-	"coords": {
-		"right_ascension": {"hours": 0, "minutes": 42, "seconds": 41.8},
-		"declination": {"degrees": 40, "minutes": 51, "seconds": 55},
-		"distance": {"ly": 2490000}
+	"coords":
+	{
+		"right_ascension": { "hours": 0, "minutes": 42, "seconds": 41.8 },
+		"declination": { "degrees": 40, "minutes": 51, "seconds": 55 },
+		"distance": { "ly": 2489000 }
 	},
-	"axis_rotation": {
-		"x_axis": 0,
-		"y_axis": 0,
-		"z_axis": 0
+	"axis_rotation":
+	{
+		"x_axis": 15,
+		"y_axis": 20,
+		"z_axis": 80
 	},
 
-	"diameter_ly": 8000,
-	"seed": 164327,
+	"diameter_ly": 4000,
+	"seed": 19532,
 
 	"dust_cloud_info": "stellarview:galaxy_core_distribution",
 	"dust_cloud_stretch": { "x": 0.7, "y": 1.0, "z": 0.7 },
-	"dust_clouds": 8,
+	"dust_clouds": 3,
 
 	"star_info": "stellarview:main_sequence_distribution",
 	"star_stretch": { "x": 0.7, "y": 1.0, "z": 0.7 },
-	"stars": 500
+	"stars": 200
 }

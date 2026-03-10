@@ -1,0 +1,56 @@
+{
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/andromeda/satellite/m32", "relative": false },
+	"coords": {
+		"right_ascension": { "hours": 0, "minutes": 42, "seconds": 41.8 },
+		"declination": { "degrees": 40, "minutes": 51, "seconds": 55 },
+		"distance": { "ly": 2490000 }
+	},
+	"axis_rotation": {
+		"x_axis": 15,
+		"y_axis": 20,
+		"z_axis": 80
+	},
+
+	"min_black_hole_size": 0.005,
+	"lensing_intensity": 8.0,
+
+	"texture_layers": [
+		{
+			"texture": "cygnus:textures/environment/black_hole/32x32.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": false,
+			"size": 127827000000,
+			"min_size": 15.4,
+			"clamp_at_min_size": false,
+			"rotation": -90
+		},
+
+
+
+		{
+			"texture": "cygnus:textures/environment/black_hole/16x16.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": false,
+			"size": 127827000000,
+			"min_size": 5.568,
+			"clamp_at_min_size": false,
+			"max_size": 15.4,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		},
+
+
+
+		{
+			"texture": "cygnus:textures/environment/black_hole/8x8.png",
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
+			"blend": false,
+			"size": 127827000000,
+			"min_size": 0.01,
+			"clamp_at_min_size": true,
+			"max_size": 5.568,
+			"clamp_at_max_size": false,
+			"rotation": -90
+		}
+	]
+}
