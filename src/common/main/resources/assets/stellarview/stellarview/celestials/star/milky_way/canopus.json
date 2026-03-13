@@ -1,38 +1,38 @@
 {
 	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/milky_way", "relative": false },
 	"coords": {
-		"right_ascension": { "hours": 17, "minutes": 57, "seconds": 48.49847 },
-		"declination": { "degrees": 4, "minutes": 41, "seconds": 36.1139 },
-		"distance": { "ly": 5, "km": 9109744600000 }
+		"right_ascension": { "hours": 6, "minutes": 23, "seconds": 57.10988 },
+		"declination": { "degrees": -52, "minutes": 41, "seconds": 44.381 },
+		"distance": { "ly": 310 }
 	},
 	"axis_rotation": {
 		"x_axis": 0,
 		"y_axis": 0,
-		"z_axis": -79
+		"z_axis": -14
 	},
 
-	"min_star_size": 0.01,
+	"min_star_size": 0.04,
 	"fade_out_handler": {
-		"fade_out_start_distance": { "ly": 2000000 },
-		"fade_out_end_distance": { "ly": 4000000 },
+		"fade_out_start_distance": { "ly": 4000000 },
+		"fade_out_end_distance": { "ly": 6000000 },
 		"max_child_render_distance": { "ly": 100 }
 	},
 
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/32x32/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
 			"blend": true,
-			"size": 545664000,
+			"size": 204067200000,
 			"min_size": 61.6,
 			"clamp_at_min_size": false,
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/32x32/m_class.png",
+			"texture": "cygnus:textures/environment/star/32x32/a_class.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 136416000,
+			"size": 51016800000,
 			"min_size": 15.4,
 			"clamp_at_min_size": false,
 			"rotation": -90
@@ -42,9 +42,9 @@
 
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
 			"blend": true,
-			"size": 545664000,
+			"size": 204067200000,
 			"min_size": 22.272,
 			"clamp_at_min_size": false,
 			"max_size": 61.6,
@@ -52,10 +52,10 @@
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/16x16/m_class.png",
+			"texture": "cygnus:textures/environment/star/16x16/a_class.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 136416000,
+			"size": 51016800000,
 			"min_size": 5.568,
 			"clamp_at_min_size": false,
 			"max_size": 15.4,
@@ -67,9 +67,9 @@
 
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
+			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
 			"blend": true,
-			"size": 545664000,
+			"size": 204067200000,
 			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
@@ -77,10 +77,10 @@
 			"rotation": -90
 		},
 		{
-			"texture": "cygnus:textures/environment/star/8x8/m_class.png",
+			"texture": "cygnus:textures/environment/star/8x8/a_class.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
-			"size": 136416000,
+			"size": 51016800000,
 			"min_size": 0.01,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,

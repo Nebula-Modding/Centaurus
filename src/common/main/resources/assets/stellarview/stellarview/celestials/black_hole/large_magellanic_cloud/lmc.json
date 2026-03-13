@@ -1,9 +1,9 @@
 {
-	"parent": { "location": "stellarview:star_field/spiral_galaxy/andromeda/andromeda", "relative": false },
+	"parent": { "location": "stellarview:star_field/spiral_galaxy/milky_way/satellite/large_magellanic_cloud", "relative": false },
 	"coords": {
-		"right_ascension": { "hours": 0, "minutes": 42, "seconds": 44.3 },
-		"declination": { "degrees": 41, "minutes": 16, "seconds": 9 },
-		"distance": { "ly": 2500000 }
+		"right_ascension": { "hours": 5, "minutes": 23, "seconds": 34 },
+		"declination": { "degrees": -69, "minutes": 45, "seconds": 40 },
+		"distance": { "ly": 163000 }
 	},
 	"axis_rotation": {
 		"x_axis": 0,

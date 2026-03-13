@@ -1,5 +1,6 @@
 # black_hole:
-LMC*
+M31* (Rotation)
+LMC* (Rotation)
 Gaia BH1
 V616 Mon
 
@@ -18,147 +19,44 @@ Centaurus
 Orion
 Pleiades
 
-All:
-Hydra
-Cepheus
-Virgo
-Corvus
-Cassiopeia
-Antlia
-Crater
-Pegasus
-Ursa Major
-Ursa Minor
-Apus
-Aquarius
-Aquila
-Ara
-Aries
-Auriga
-Bootes
-Caelum
-Camelopardalis
-Cancer
-Canes Venatici
-Canis Major
-Canis Minor
-Capricornus
-Carina
-Chamaeleon
-Circinus
-Columbia
-Coma Berenices
-Corona Australis
-Corona Borealis
-Delphinus
-Dorado
-Draco
-Eridanus
-Fornax
-Gemini
-Grus
-Hercules
-Horologium
-Hydrus
-Indus
-Lacerta
-Leo
-Leo Minor
-Lepus
-Lacerta
-Libra
-Lupus
-Lynx
-Lyra
-Mensa
-Microscopium
-Monoceros
-Musca
-Norma
-Octans
-Ophiuchus
-Pavo
-Perseus
-Phoenix
-Pictor
-Pisces
-Piscis Austrinus
-Puppis
-Pyxis
-Sagitta
-Saggitarius
-Scorpius
-Sculptor
-Scutum
-Serpens
-Sextans
-Taurus
-Telescopium
-Triangulum Australe
-Tucana
-Vela
-Virgo
-Volans
-Vulpecula
 
-
-# moon: 
-Xiangliu
-
-Namaka
-Hiʻiaka
-
-Adrastea
-Amalthea
+# moon:
 Callisto
 Europa
 Ganymede
-Himalia
 Io
+Triton
+Dione
+Enceladus
+Iapetus
+Mimas
+Rhea
+Tethys
+Titan
+Ariel
+Miranda
+Oberon
+Titania
+Umbriel
+
+Phoebe
+Adrastea
+Amalthea
+Himalia
 Metis
 Thebe
-
 Despina
 Galatea
 Larissa
 Nereid
 Proteus
-Triton
-
-Vanth
-
-Hydra
-Kerberos
-Nix
-Styx
-
-Weywot
-
-Actaea
-
-Dione
-Enceladus
 Epimetheus
-Hyperion
-Iapetus
 Janus
-Mimas
-Phoebe
-Rhea
-Tethys
-Titan
-
-Ariel
-Miranda
-Oberon
 Portia
 Puck
 Sycorax
-Titania
-Umbriel
 
 Glacio
-
 Pandora
 
 
@@ -172,24 +70,6 @@ Ring
 
 
 # planet:
-Ceres
-Charon
-Eris
-Gonggong
-Haumea
-Jupiter
-Makemake
-Neptune
-Orcus
-Pluto
-Pluto-Charon Barycenter
-Quaoar
-Salacia
-Saturn
-Sedna
-Uranus
-Vesta
-
 Proxima Centauri b
 Proxima Centauri c
 Proxima Centauri d
@@ -199,30 +79,27 @@ end
 
 
 # star:
+Canopus (Halo)
 Sirius
 Polaris
-Canopus
-Luhman 16
-Wolf 359
 
 
 # star_field:
 Andromeda
 Pegasus Dwarf Irregular
 
+Milky Way
 Large Magellanic Cloud
 Small Magellanic Cloud
-
-Antila 2
+Antlia 2
 Crater 2 Dwarf
-Saggitarius Dwarf Spheroid
+Sagittarius Dwarf Spheroid
+
 NGC 185
 NGC 147
-Milky Way
-
-Milky Way
 
 Whirlpool
 Sombrero
+
 Bode's Galaxy (M81)
 Cigar (M82)

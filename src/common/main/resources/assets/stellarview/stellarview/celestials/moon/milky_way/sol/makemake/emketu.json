@@ -24,17 +24,17 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/6x6/halo.png",
-			"rgba": {"red": 189, "green": 148, "blue": 116, "alpha": 255},
+			"rgba": { "red": 189, "green": 148, "blue": 116, "alpha": 255 },
 			"blend": true,
 			"size": 350000,
-			"min_size": 0.01,
+			"min_size": 0.04,
 			"clamp_at_min_size": false,
 			"rotation": 0.0,
 			"uv": { "rotation": -90 }
 		},
 		{
 			"texture": "cygnus:textures/environment/solar_system/6x6/mk2.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 87500,
 			"min_size": 0.01,

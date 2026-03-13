@@ -1,10 +1,12 @@
 {
-	"coords": {
+	"coords":
+	{
 		"right_ascension": { "hours": 1, "minutes": 33, "seconds": 50.02 },
 		"declination": { "degrees": 30, "minutes": 39, "seconds": 36.7 },
 		"distance": { "ly": 2723000 }
 	},
-	"axis_rotation": {
+	"axis_rotation":
+	{
 		"x_axis": 90,
 		"y_axis": 80,
 		"z_axis": 170
@@ -22,7 +24,8 @@
 	"stars": 600,
 
 
-	"spiral_arms": [
+	"spiral_arms":
+	[
 		{
 			"dust_cloud_info": "stellarview:galaxy_arm_distribution_blue",
 			"dust_clouds": 20,
@@ -32,7 +35,7 @@
 			"stars": 400
 		},
 		{
-			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
+			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red_sparse",
 			"dust_clouds": 15,
 			"arm_length": 2.0,
 			"arm_thickness": 1.1,
@@ -49,7 +52,7 @@
 			"stars": 300
 		},
 		{
-			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
+			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red_sparse",
 			"dust_clouds": 10,
 			"arm_length": 1.8,
 			"arm_thickness": 1.1,
@@ -66,7 +69,7 @@
 			"stars": 400
 		},
 		{
-			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
+			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red_sparse",
 			"dust_clouds": 10,
 			"arm_length": 2.0,
 			"arm_thickness": 1.1,
@@ -83,7 +86,7 @@
 			"stars": 300
 		},
 		{
-			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red",
+			"dust_cloud_info": "stellarview:galaxy_arm_distribution_red_sparse",
 			"dust_clouds": 15,
 			"arm_length": 1.8,
 			"arm_thickness": 1.1,

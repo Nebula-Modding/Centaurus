@@ -1,5 +1,6 @@
 {
-	"dust_cloud_types": [
+	"dust_cloud_types":
+	[
 		{
 			"rgb": { "red": 255, "green": 200, "blue": 200 },
 			"min_size": 2.0, "max_size": 6.0,

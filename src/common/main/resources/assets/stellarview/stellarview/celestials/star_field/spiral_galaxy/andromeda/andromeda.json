@@ -1,10 +1,12 @@
 {
-	"coords": {
-		"right_ascension": {"hours": 0, "minutes": 42, "seconds": 44.3},
+	"coords":
+	{
+		"right_ascension": {"hours": 2, "minutes": 42, "seconds": 44.3},
 		"declination": {"degrees": 41, "minutes": 16, "seconds": 9},
 		"distance": {"ly": 2537000}
 	},
-	"axis_rotation": {
+	"axis_rotation":
+	{
 		"x_axis": 0,
 		"y_axis": 0,
 		"z_axis": 0
@@ -14,16 +16,50 @@
 	"seed": 55183,
 
 	"dust_cloud_info": "stellarview:galaxy_core_distribution",
-	"dust_cloud_stretch": { "x": 0.5, "y": 0.25, "z": 0.5 },
-	"dust_clouds": 0,
+	"dust_cloud_stretch": { "x": 0.8, "y": 0.25, "z": 0.8 },
+	"dust_clouds": 60,
 
 	"star_info": "stellarview:main_sequence_distribution",
 	"star_stretch": { "x": 1.0, "y": 0.25, "z": 1.0 },
-	"stars": 0,
+	"stars": 600,
 
-	
-	"spiral_arms": [
-		{ "dust_clouds": 0, "stars": 0, "arm_rotation": 0, "arm_length": 2.92, "arm_thickness": 2.5, "dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution" },
-		{ "dust_clouds": 0, "stars": 0, "arm_rotation": 180, "arm_length": 2.56, "arm_thickness": 2.5, "dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution" }
+
+	"spiral_arms":
+	[
+		{
+			"dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution_blue",
+			"dust_clouds": 20,
+			"arm_length": 2.0,
+			"arm_thickness": 1.8,
+			"arm_rotation": 0,
+			"stars": 600
+		},
+
+		{
+			"dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution_red",
+			"dust_clouds": 15,
+			"arm_length": 1.0,
+			"arm_thickness": 1.0,
+			"arm_rotation": 90,
+			"stars": 400
+		},
+
+		{
+			"dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution_blue",
+			"dust_clouds": 20,
+			"arm_length": 2.0,
+			"arm_thickness": 1.8,
+			"arm_rotation": 180,
+			"stars": 600
+		},
+
+		{
+			"dust_cloud_info": "stellarview:andromeda/andromeda_arm_distribution_red",
+			"dust_clouds": 15,
+			"arm_length": 1.0,
+			"arm_thickness": 1.0,
+			"arm_rotation": 270,
+			"stars": 400
+		}
 	]
 }

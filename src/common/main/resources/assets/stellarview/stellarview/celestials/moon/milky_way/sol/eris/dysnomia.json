@@ -24,17 +24,17 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/6x6/halo.png",
-			"rgba": {"red": 179, "green": 187, "blue": 138, "alpha": 255},
+			"rgba": { "red": 179, "green": 187, "blue": 138, "alpha": 255 },
 			"blend": true,
 			"size": 149400,
-			"min_size": 0.01,
+			"min_size": 0.04,
 			"clamp_at_min_size": false,
 			"rotation": 0.0,
 			"uv": { "rotation": -90 }
 		},
 		{
 			"texture": "cygnus:textures/environment/solar_system/6x6/dysnomia.png",
-			"rgba": {"red": 255, "green": 255, "blue": 255, "alpha": 255},
+			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
 			"size": 37350,
 			"min_size": 0.01,

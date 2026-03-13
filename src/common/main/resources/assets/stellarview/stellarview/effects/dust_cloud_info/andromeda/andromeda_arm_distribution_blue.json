@@ -3,7 +3,7 @@
 	[
 		{
 			"rgb": { "red": 200, "green": 200, "blue": 255 },
-			"min_size": 2.0, "max_size": 6.0,
+			"min_size": 6.0, "max_size": 12.0,
 			"min_brightness": 150, "max_brightness": 200,
 			"weight": 1
 		}
