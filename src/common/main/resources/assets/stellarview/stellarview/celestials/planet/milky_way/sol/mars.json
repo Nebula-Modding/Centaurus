@@ -24,8 +24,8 @@
 			"rgba": { "red": 170, "green": 87, "blue": 40, "alpha": 255 },
 			"blend": true,
 			"size": 6779000,
-			"min_size": 28.0,
-			"clamp_at_min_size": false,
+			"min_size": 28.0, "max_size": 90.0,
+			"clamp_at_min_size": false, "clamp_at_max_size": true,
 			"rotation": 25.19,
 			"uv": { "rotation": -90 }
 		},

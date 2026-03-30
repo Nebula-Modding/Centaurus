@@ -11,7 +11,7 @@
 		"z_axis": 0
 	},
 	
-	"min_star_size": 0.02,
+	"min_star_size": 0.08,
 	"fade_out_handler": {
 		"fade_out_start_distance": { "ly": 2000000 },
 		"fade_out_end_distance": { "ly": 4000000 },
@@ -70,7 +70,7 @@
 			"rgba": { "red": 242, "green": 83, "blue": 42, "alpha": 255 },
 			"blend": true,
 			"size": 1258368000000,
-			"min_size": 0.04,
+			"min_size": 0.36,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -81,7 +81,7 @@
 			"rgba": { "red": 255, "green": 220, "blue": 220, "alpha": 255 },
 			"blend": true,
 			"size": 314592000000,
-			"min_size": 0.01,
+			"min_size": 0.09,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,

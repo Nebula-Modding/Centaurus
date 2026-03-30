@@ -6,7 +6,7 @@
 		"z": { "ly": 0 }
 	},
 	"axis_rotation": {
-		"x_axis": 23.15,
+		"x_axis": 0,
 		"y_axis": 0,
 		"z_axis": 0
 	},
@@ -25,9 +25,9 @@
 			"texture": "stellarview:textures/environment/16x16/halo.png",
 			"rgba": { "red": 53, "green": 118, "blue": 213, "alpha": 255 },
 			"blend": true,
-			"size": 12742000,
-			"min_size": 28.0,
-			"clamp_at_min_size": false,
+			"size": 25484000,
+			"min_size": 28.0, "max_size": 90.0,
+			"clamp_at_min_size": false, "clamp_at_max_size": true,
 			"rotation": 23.15,
 			"uv": { "rotation": -90 }
 		},
@@ -35,7 +35,7 @@
 			"texture": "cygnus:textures/environment/solar_system/16x16/earth.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 3185500,
+			"size": 6371000,
 			"min_size": 7.0,
 			"clamp_at_min_size": false,
 			"rotation": 23.15,
@@ -48,11 +48,9 @@
 			"texture": "stellarview:textures/environment/8x8/halo.png",
 			"rgba": { "red": 53, "green": 118, "blue": 213, "alpha": 255 },
 			"blend": true,
-			"size": 12742000,
-			"min_size": 0.004,
-			"clamp_at_min_size": true,
-			"max_size": 28.0,
-			"clamp_at_max_size": false,
+			"size": 25484000,
+			"min_size": 0.004, "max_size": 28.0,
+			"clamp_at_min_size": false, "clamp_at_max_size": true,
 			"rotation": 23.15,
 			"uv": { "rotation": -90 }
 		},
@@ -60,11 +58,9 @@
 			"texture": "cygnus:textures/environment/solar_system/8x8/earth.png",
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": false,
-			"size": 3185500,
-			"min_size": 0.001,
-			"clamp_at_min_size": true,
-			"max_size": 7.0,
-			"clamp_at_max_size": false,
+			"size": 6371000,
+			"min_size": 0.001, "max_size": 7.0,
+			"clamp_at_min_size": false, "clamp_at_max_size": true,
 			"rotation": 23.15,
 			"uv": { "flip_uv": true, "rotation": -90 }
 		}

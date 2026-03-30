@@ -12,7 +12,7 @@
 		"epoch_mean_anomaly": 0
 	},
 
-	"min_star_size": 0.03,
+	"min_star_size": 0.04,
 	"fade_out_handler": {
 		"fade_out_start_distance": { "ly": 2500000 },
 		"fade_out_end_distance": { "ly": 4500000 },
@@ -71,7 +71,7 @@
 			"rgba": { "red": 242, "green": 169, "blue": 78, "alpha": 255 },
 			"blend": true,
 			"size": 2403148800,
-			"min_size": 0.04,
+			"min_size": 0.16,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -82,7 +82,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 600787200,
-			"min_size": 0.01,
+			"min_size": 0.04,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,

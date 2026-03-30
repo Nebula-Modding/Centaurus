@@ -23,11 +23,11 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 176, "green": 155, "blue": 137, "alpha": 255 },
 			"blend": true,
 			"size": 473000,
-			"min_size": 28.0,
-			"clamp_at_min_size": false,
+			"min_size": 28.0, "max_size": 90.0,
+			"clamp_at_min_size": false, "clamp_at_max_size": true,
 			"rotation": 4.0,
 			"uv": { "rotation": -90 }
 		},
@@ -46,7 +46,7 @@
 
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 176, "green": 155, "blue": 137, "alpha": 255 },
 			"blend": true,
 			"size": 473000,
 			"min_size": 0.004,

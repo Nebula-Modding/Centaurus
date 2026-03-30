@@ -11,7 +11,7 @@
 		"z_axis": -14
 	},
 
-	"min_star_size": 0.04,
+	"min_star_size": 0.06,
 	"fade_out_handler": {
 		"fade_out_start_distance": { "ly": 4000000 },
 		"fade_out_end_distance": { "ly": 6000000 },
@@ -21,7 +21,7 @@
 	"texture_layers": [
 		{
 			"texture": "stellarview:textures/environment/32x32/halo.png",
-			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 121, "green": 225, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 204067200000,
 			"min_size": 61.6,
@@ -42,7 +42,7 @@
 
 		{
 			"texture": "stellarview:textures/environment/16x16/halo.png",
-			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 121, "green": 225, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 204067200000,
 			"min_size": 22.272,
@@ -67,10 +67,10 @@
 
 		{
 			"texture": "stellarview:textures/environment/8x8/halo.png",
-			"rgba": { "red": 0, "green": 255, "blue": 0, "alpha": 255 },
+			"rgba": { "red": 121, "green": 225, "blue": 247, "alpha": 255 },
 			"blend": true,
 			"size": 204067200000,
-			"min_size": 0.04,
+			"min_size": 0.24,
 			"clamp_at_min_size": true,
 			"max_size": 22.272,
 			"clamp_at_max_size": false,
@@ -81,7 +81,7 @@
 			"rgba": { "red": 255, "green": 255, "blue": 255, "alpha": 255 },
 			"blend": true,
 			"size": 51016800000,
-			"min_size": 0.01,
+			"min_size": 0.06,
 			"clamp_at_min_size": true,
 			"max_size": 5.568,
 			"clamp_at_max_size": false,
