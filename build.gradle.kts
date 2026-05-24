@@ -4,7 +4,7 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.18.3"
+    id("earth.terrarium.cloche") version "0.18.11"
     id("me.fallenbreath.yamlang") version "1.4.1"
 }
 
@@ -40,19 +40,19 @@ repositories {
     maven("https://thedarkcolour.github.io/KotlinForForge/")
     maven("https://codeberg.org/EmmaTheMartian/dapper/raw/branch/main/repo/")
 
-    // For EMI
+    // EMI
     maven("https://maven.terraformersmc.com")
 
-    // For JEI
+    // JEI
     maven("https://maven.blamejared.com/")
 
-    // For Mekanism
+    // Mekanism
     maven("https://modmaven.dev")
 
-    // For AppleSkin
+    // AppleSkin
     maven("https://maven.ryanliptak.com")
 
-    // For Create, AppleSkin, Jade, and Stellar View
+    // Create, AppleSkin, Jade, and Stellar View
     maven("https://api.modrinth.com/maven")
 
     // DevAuth
@@ -163,7 +163,6 @@ publishing {
     }
 }
 
-// download sources and javadocs
 idea {
     module {
         isDownloadSources = true
