@@ -4,8 +4,8 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("idea")
-    id("earth.terrarium.cloche") version "0.18.11"
-    id("me.fallenbreath.yamlang") version "1.4.1"
+    id("earth.terrarium.cloche") version "0.18.15"
+    id("me.fallenbreath.yamlang") version "1.5.0"
 }
 
 fun p(property: String) = property(property) as String
@@ -25,7 +25,7 @@ repositories {
         mavenNeoforged()
     }
 
-    // Cygnus and Lazuli
+    // Orion and Lazuli
     exclusiveContent {
         forRepository {
             maven("https://jitpack.io")
@@ -36,7 +36,7 @@ repositories {
         }
     }
 
-    // Cygnus Dependencies
+    // Orion Dependencies
     maven("https://thedarkcolour.github.io/KotlinForForge/")
     maven("https://codeberg.org/EmmaTheMartian/dapper/raw/branch/main/repo/")
 
@@ -89,7 +89,7 @@ cloche {
         metadata {
             dependency {
                 modId = "cygnus"
-                version("${p("cygnus_21.1_dependency_version")}+1.21.1")
+                version("${p("orion_21.1_dependency_version")}+1.21.1")
                 type.set(CommonMetadata.Dependency.Type.Required)
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
@@ -101,18 +101,11 @@ cloche {
                 ordering.set(CommonMetadata.Dependency.Ordering.After)
                 environment.set(CommonMetadata.Environment.Both)
             }
-            dependency {
-                modId = "sgjourney"
-                version("${p("sgjourney_21.1_dependency_version")}")
-                type.set(CommonMetadata.Dependency.Type.Suggested)
-                ordering.set(CommonMetadata.Dependency.Ordering.After)
-                environment.set(CommonMetadata.Environment.Both)
-            }
         }
 
         dependencies {
-            // Cygnus
-            modImplementation("com.github.nebula-modding:cygnus:${p("cygnus_21.1_version")}")
+            // Orion
+            modImplementation("com.github.nebula-modding:cygnus:${p("orion_21.1_version")}")
 
             // Lazuli
             modImplementation("maven.modrinth:lazuli:${p("lazuli_21.1_version")}+1.21.1")
@@ -129,15 +122,58 @@ cloche {
 
             // DevAuth
             modRuntimeOnly("me.djtheredstoner:DevAuth-neoforge:${p("devauth_version")}")
+        }
+    }
 
-            // add Thermal later
+    neoforge("26:2") {
+        minecraftVersion = "26.2"
+        loaderVersion = p("neo_26.2_version")
+
+        data()
+
+        runs {
+            server()
+            client()
+            data()
+        }
+
+        metadata {
+            //dependency {
+            //    modId = "orion"
+            //    version("${p("orion_26.2_dependency_version")}+1.21.1")
+            //    type.set(CommonMetadata.Dependency.Type.Required)
+            //    ordering.set(CommonMetadata.Dependency.Ordering.After)
+            //    environment.set(CommonMetadata.Environment.Both)
+            //}
+            //dependency {
+            //    modId = "stellarview"
+            //    version("${p("stellarview_26.2_dependency_version")}")
+            //    type.set(CommonMetadata.Dependency.Type.Suggested)
+            //    ordering.set(CommonMetadata.Dependency.Ordering.After)
+            //    environment.set(CommonMetadata.Environment.Both)
+            //}
+        }
+
+        dependencies {
+            // Orion
+
+            // Lazuli
+
+            // Stellar View
+
+            // EMI
+
+            // JEI
+
+            // DevAuth
+            //modRuntimeOnly("me.djtheredstoner:DevAuth-neoforge:${p("devauth_version")}")
         }
     }
 }
 
 // Manually change the names of the finished jar files
 tasks.named<Jar>("211Jar") { archiveClassifier = "1.21.1" }
-// tasks.named<Jar>("216Jar") { archiveClassifier = "1.21.6" }
+//tasks.named<Jar>("262Jar") { archiveClassifier = "26.2" }
 
 // YAML to lang
 yamlang {
