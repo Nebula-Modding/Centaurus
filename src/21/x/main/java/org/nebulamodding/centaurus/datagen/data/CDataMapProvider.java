@@ -24,7 +24,7 @@ public class CDataMapProvider extends DataMapProvider {
                 .add(CItems.BRUMA_LOAF.getId(), new Compostable(0.85F), false)
                 .add(CBlocks.VIVIAN.getId(), new Compostable(0.65F), false)
                 .add(CBlocks.WICKUL.getId(), new Compostable(0.65F), false)
-                .add(CBlocks.ICEFLOWER.getId(), new Compostable(0.65F), false)
+                .add(CBlocks.FRISTEL.getId(), new Compostable(0.65F), false)
                 .add(CItems.BRUMA, new Compostable(0.65F), false)
                 .add(CItems.AZURE_ROOT, new Compostable(0.65F), false)
                 .add(CBlocks.GRISTLE_BLOCK.getId(), new Compostable(0.65F), false)

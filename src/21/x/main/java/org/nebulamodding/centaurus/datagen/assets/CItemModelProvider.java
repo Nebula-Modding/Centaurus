@@ -52,7 +52,7 @@ public class CItemModelProvider extends ItemModelProvider {
         blockItemModel(CBlocks.FRIGIAN_SHORT_GRASS, CBlocks.FRIGIAN_SHORT_GRASS, GENERATED);
         blockItemModel(CBlocks.VIVIAN, CBlocks.VIVIAN, GENERATED);
         blockItemModel(CBlocks.WICKUL, CBlocks.WICKUL, GENERATED);
-        blockItemModel(CBlocks.ICEFLOWER, CBlocks.ICEFLOWER, GENERATED);
+        blockItemModel(CBlocks.FRISTEL, CBlocks.FRISTEL, GENERATED);
 
         blockItemModel(CBlocks.TUMOR, CBlocks.TUMOR, GENERATED);
         blockModel(CBlocks.GRISTLED_FLESH);

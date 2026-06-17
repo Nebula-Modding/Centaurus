@@ -594,14 +594,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
         tag(net.minecraft.tags.BlockTags.SMALL_FLOWERS)
                 .add(CBlocks.VIVIAN.get())
                 .add(CBlocks.WICKUL.get())
-                .add(CBlocks.ICEFLOWER.get())
+                .add(CBlocks.FRISTEL.get())
         ;
         tag(net.minecraft.tags.BlockTags.TALL_FLOWERS)
         ;
         tag(net.minecraft.tags.BlockTags.FLOWER_POTS)
                 .add(CBlocks.POTTED_VIVIAN.get())
                 .add(CBlocks.POTTED_WICKUL.get())
-                .add(CBlocks.POTTED_ICEFLOWER.get())
+                .add(CBlocks.POTTED_FRISTEL.get())
         ;
         // endregion
 

@@ -56,7 +56,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.FRIGIAN_SHORT_GRASS);
         excludedBlocks.add(CBlocks.VIVIAN);
         excludedBlocks.add(CBlocks.WICKUL);
-        excludedBlocks.add(CBlocks.ICEFLOWER);
+        excludedBlocks.add(CBlocks.FRISTEL);
         excludedBlocks.add(CBlocks.TUMOR);
         excludedBlocks.add(CBlocks.GRISTLED_FLESH);
         excludedBlocks.add(CBlocks.SHORT_GRISTLES);
@@ -192,7 +192,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
         excludedBlocks.add(CBlocks.POTTED_WICKUL);
-        excludedBlocks.add(CBlocks.POTTED_ICEFLOWER);
+        excludedBlocks.add(CBlocks.POTTED_FRISTEL);
         // endregion
 
         // region Automated Block Models
@@ -274,7 +274,7 @@ public class CBlockStateProvider extends BlockStateProvider {
 
         simpleBlock(CBlocks.VIVIAN.get(), models().cross("vivian", blockLoc(CBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(CBlocks.WICKUL.get(), models().cross("wickul", blockLoc(CBlocks.WICKUL)).renderType("cutout"));
-        simpleBlock(CBlocks.ICEFLOWER.get(), models().cross("iceflower", blockLoc(CBlocks.ICEFLOWER)).renderType("cutout"));
+        simpleBlock(CBlocks.FRISTEL.get(), models().cross("fristel", blockLoc(CBlocks.FRISTEL)).renderType("cutout"));
 
         // Karnis
         simpleBlockWithItem(CBlocks.GRISTLED_FLESH.get(), models().cubeBottomTop("gristled_flesh", blockLoc(CBlocks.GRISTLED_FLESH), blockLoc(CBlocks.FLESH_BLOCK), blockLoc(CBlocks.GRISTLE_BLOCK)));
@@ -428,7 +428,7 @@ public class CBlockStateProvider extends BlockStateProvider {
         simpleBlock(CBlocks.POTTED_GRIMWOOD_SAPLING.get(), models().withExistingParent(CBlocks.POTTED_GRIMWOOD_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.GRIMWOOD_SAPLING)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_VIVIAN.get(), models().withExistingParent(CBlocks.POTTED_VIVIAN.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(CBlocks.POTTED_WICKUL.get(), models().withExistingParent(CBlocks.POTTED_WICKUL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.WICKUL)).renderType("cutout"));
-        simpleBlock(CBlocks.POTTED_ICEFLOWER.get(), models().withExistingParent(CBlocks.POTTED_ICEFLOWER.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.ICEFLOWER)).renderType("cutout"));
+        simpleBlock(CBlocks.POTTED_FRISTEL.get(), models().withExistingParent(CBlocks.POTTED_FRISTEL.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(CBlocks.FRISTEL)).renderType("cutout"));
         // endregion
     }
 

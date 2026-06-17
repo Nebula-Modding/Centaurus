@@ -112,7 +112,7 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.POTTED_GRIMWOOD_SAPLING);
         excludedBlocks.add(CBlocks.POTTED_VIVIAN);
         excludedBlocks.add(CBlocks.POTTED_WICKUL);
-        excludedBlocks.add(CBlocks.POTTED_ICEFLOWER);
+        excludedBlocks.add(CBlocks.POTTED_FRISTEL);
         // endregion
 
         // region Leaf Drops
@@ -213,7 +213,7 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         dropPottedContents(CBlocks.POTTED_MAYURA_SAPLING.get());
         dropPottedContents(CBlocks.POTTED_VIVIAN.get());
         dropPottedContents(CBlocks.POTTED_WICKUL.get());
-        dropPottedContents(CBlocks.POTTED_ICEFLOWER.get());
+        dropPottedContents(CBlocks.POTTED_FRISTEL.get());
         dropPottedContents(CBlocks.POTTED_GRIMWOOD_SAPLING.get());
         // endregion
 

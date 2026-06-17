@@ -44,7 +44,7 @@ public class CEvents {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.GRIMWOOD_SAPLING.getId(), CBlocks.POTTED_GRIMWOOD_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.VIVIAN.getId(), CBlocks.POTTED_VIVIAN);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.WICKUL.getId(), CBlocks.POTTED_WICKUL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.ICEFLOWER.getId(), CBlocks.POTTED_ICEFLOWER);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(CBlocks.FRISTEL.getId(), CBlocks.POTTED_FRISTEL);
         });
     }
 
