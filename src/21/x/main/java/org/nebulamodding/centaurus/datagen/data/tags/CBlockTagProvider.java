@@ -143,9 +143,9 @@ public class CBlockTagProvider extends BlockTagsProvider {
         stonePressurePlates.add(CBlocks.SILICATE_STONE_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.SILICATE_STONE_BUTTON);
         // Frigus Mud
-        pickaxeStairs.add(CBlocks.FRIGIAN_MUD_BRICK_STAIRS);
-        pickaxeSlabs.add(CBlocks.FRIGIAN_MUD_BRICK_SLAB);
-        pickaxeWalls.add(CBlocks.FRIGIAN_MUD_BRICK_WALL);
+        pickaxeStairs.add(CBlocks.GASTRALITH_MUD_BRICK_STAIRS);
+        pickaxeSlabs.add(CBlocks.GASTRALITH_MUD_BRICK_SLAB);
+        pickaxeWalls.add(CBlocks.GASTRALITH_MUD_BRICK_WALL);
         // Blueschist
         pickaxeStairs.add(CBlocks.BLUESCHIST_STAIRS);
         pickaxeStairs.add(CBlocks.COBBLED_BLUESCHIST_STAIRS);
@@ -368,11 +368,11 @@ public class CBlockTagProvider extends BlockTagsProvider {
         // region Tool Tags
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGIAN_DIRT_PATH.get())
-                .add(CBlocks.FRIGIAN_DIRT.get())
-                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
-                .add(CBlocks.FRIGIAN_FARMLAND.get())
-                .add(CBlocks.FRIGIAN_MUD.get())
+                .add(CBlocks.GASTRALITH_PATH.get())
+                .add(CBlocks.GASTRALITH.get())
+                .add(CBlocks.COARSE_GASTRALITH.get())
+                .add(CBlocks.GASTRALITH_FARMLAND.get())
+                .add(CBlocks.GASTRALITH_MUD.get())
         ;
         silicateStoneOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
         blueschistOres.forEach(entry -> tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(entry.get()));
@@ -431,8 +431,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.MALUNITE_PLATING_PRESSURE_PLATE.get())
                 .add(CBlocks.MALUNITE_PLATING_BUTTON.get())
                 // Miscellaneous
-                .add(CBlocks.PACKED_FRIGIAN_MUD.get())
-                .add(CBlocks.FRIGIAN_MUD_BRICKS.get())
+                .add(CBlocks.PACKED_GASTRALITH_MUD.get())
+                .add(CBlocks.GASTRALITH_MUD_BRICKS.get())
         ;
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_AXE)
                 .add(CBlocks.FRIGIAN_SHORT_GRASS.get())
@@ -608,14 +608,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
         // region Soil Tags
         tag(net.minecraft.tags.BlockTags.DIRT)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGIAN_DIRT.get())
-                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
-                .add(CBlocks.FRIGIAN_MUD.get())
+                .add(CBlocks.GASTRALITH.get())
+                .add(CBlocks.COARSE_GASTRALITH.get())
+                .add(CBlocks.GASTRALITH_MUD.get())
                 .add(CBlocks.GRISTLED_FLESH.get())
         ;
         tag(CTags.BlockTags.CONVERTABLE_TO_FRIGUS_MUD)
-                .add(CBlocks.FRIGIAN_DIRT.get())
-                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
+                .add(CBlocks.GASTRALITH.get())
+                .add(CBlocks.COARSE_GASTRALITH.get())
         ;
         tag(net.minecraft.tags.BlockTags.ANIMALS_SPAWNABLE_ON)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
@@ -624,8 +624,8 @@ public class CBlockTagProvider extends BlockTagsProvider {
         ;
         tag(net.minecraft.tags.BlockTags.SNIFFER_DIGGABLE_BLOCK)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
-                .add(CBlocks.FRIGIAN_DIRT.get())
-                .add(CBlocks.COARSE_FRIGIAN_DIRT.get())
+                .add(CBlocks.GASTRALITH.get())
+                .add(CBlocks.COARSE_GASTRALITH.get())
         ;
         tag(net.minecraft.tags.BlockTags.VALID_SPAWN)
                 .add(CBlocks.FRIGIAN_GRASS_BLOCK.get())
@@ -633,7 +633,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.GRISTLE_BLOCK.get())
         ;
         tag(Tags.Blocks.VILLAGER_FARMLANDS)
-                .add(CBlocks.FRIGIAN_FARMLAND.get())
+                .add(CBlocks.GASTRALITH_FARMLAND.get())
         ;
         // endregion
 

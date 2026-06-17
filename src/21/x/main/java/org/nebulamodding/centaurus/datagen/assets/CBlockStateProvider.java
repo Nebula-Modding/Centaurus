@@ -48,11 +48,11 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.GRIMWOOD_BUTTON);
         excludedBlocks.add(CBlocks.GRIMWOOD_SAPLING);
         excludedBlocks.add(CBlocks.FRIGIAN_GRASS_BLOCK);
-        excludedBlocks.add(CBlocks.FRIGIAN_DIRT_PATH);
-        excludedBlocks.add(CBlocks.FRIGIAN_FARMLAND);
-        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_SLAB);
-        excludedBlocks.add(CBlocks.FRIGIAN_MUD_BRICK_WALL);
+        excludedBlocks.add(CBlocks.GASTRALITH_PATH);
+        excludedBlocks.add(CBlocks.GASTRALITH_FARMLAND);
+        excludedBlocks.add(CBlocks.GASTRALITH_MUD_BRICK_STAIRS);
+        excludedBlocks.add(CBlocks.GASTRALITH_MUD_BRICK_SLAB);
+        excludedBlocks.add(CBlocks.GASTRALITH_MUD_BRICK_WALL);
         excludedBlocks.add(CBlocks.FRIGIAN_SHORT_GRASS);
         excludedBlocks.add(CBlocks.VIVIAN);
         excludedBlocks.add(CBlocks.WICKUL);
@@ -268,9 +268,9 @@ public class CBlockStateProvider extends BlockStateProvider {
         // region Body-Specific Blocks
         // Frigus
         simpleBlock(CBlocks.FRIGIAN_SHORT_GRASS.get(), models().cross(CBlocks.FRIGIAN_SHORT_GRASS.getId().getPath(), blockLoc(CBlocks.FRIGIAN_SHORT_GRASS)).renderType("cutout"));
-        stairsBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_STAIRS, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
-        slabBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_SLAB, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
-        wallBlockWithItem(CBlocks.FRIGIAN_MUD_BRICK_WALL, blockLoc(CBlocks.FRIGIAN_MUD_BRICKS));
+        stairsBlockWithItem(CBlocks.GASTRALITH_MUD_BRICK_STAIRS, blockLoc(CBlocks.GASTRALITH_MUD_BRICKS));
+        slabBlockWithItem(CBlocks.GASTRALITH_MUD_BRICK_SLAB, blockLoc(CBlocks.GASTRALITH_MUD_BRICKS));
+        wallBlockWithItem(CBlocks.GASTRALITH_MUD_BRICK_WALL, blockLoc(CBlocks.GASTRALITH_MUD_BRICKS));
 
         simpleBlock(CBlocks.VIVIAN.get(), models().cross("vivian", blockLoc(CBlocks.VIVIAN)).renderType("cutout"));
         simpleBlock(CBlocks.WICKUL.get(), models().cross("wickul", blockLoc(CBlocks.WICKUL)).renderType("cutout"));

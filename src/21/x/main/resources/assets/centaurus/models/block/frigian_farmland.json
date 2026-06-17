@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/template_farmland",
-  "textures": {
-    "dirt": "centaurus:block/frigian_dirt",
-    "top": "centaurus:block/frigian_farmland"
-  }
-}

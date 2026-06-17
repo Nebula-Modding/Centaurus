@@ -17,15 +17,15 @@ import net.neoforged.neoforge.common.CommonHooks;
 
 import javax.annotation.Nullable;
 
-public class FrigianFarmlandBlock extends FarmBlock {
-    public FrigianFarmlandBlock(Properties properties) {
+public class GastralithFarmlandBlock extends FarmBlock {
+    public GastralithFarmlandBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return !this.defaultBlockState().canSurvive(context.getLevel(), context.getClickedPos())
-                ? CBlocks.FRIGIAN_DIRT.get().defaultBlockState()
+                ? CBlocks.GASTRALITH.get().defaultBlockState()
                 : super.getStateForPlacement(context);
     }
 
@@ -48,7 +48,7 @@ public class FrigianFarmlandBlock extends FarmBlock {
     @Override
     protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (!state.canSurvive(level, pos)) {
-            turnToFrigianDirt(null, state, level, pos);
+            turnToGastralith(null, state, level, pos);
         }
     }
 
@@ -59,7 +59,7 @@ public class FrigianFarmlandBlock extends FarmBlock {
             if (i > 0) {
                 level.setBlock(pos, state.setValue(MOISTURE, Integer.valueOf(i - 1)), 2);
             } else if (!shouldMaintainFarmland(level, pos)) {
-                turnToFrigianDirt(null, state, level, pos);
+                turnToGastralith(null, state, level, pos);
             }
         } else if (i < 7) {
             level.setBlock(pos, state.setValue(MOISTURE, Integer.valueOf(7)), 2);
@@ -68,14 +68,14 @@ public class FrigianFarmlandBlock extends FarmBlock {
 
     @Override
     public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDamage) {
-        if (!level.isClientSide() && CommonHooks.onFarmlandTrample(level, pos, CBlocks.FRIGIAN_DIRT.get().defaultBlockState(), fallDamage, entity)) {
-            turnToFrigianDirt(entity, state, level, pos);
+        if (!level.isClientSide() && CommonHooks.onFarmlandTrample(level, pos, CBlocks.GASTRALITH.get().defaultBlockState(), fallDamage, entity)) {
+            turnToGastralith(entity, state, level, pos);
         }
         entity.causeFallDamage(fallDamage, 1.0F, level.damageSources().fall());
     }
 
-    public static void turnToFrigianDirt(@Nullable Entity entity, BlockState state, Level level, BlockPos pos) {
-        BlockState blockstate = pushEntitiesUp(state, CBlocks.FRIGIAN_DIRT.get().defaultBlockState(), level, pos);
+    public static void turnToGastralith(@Nullable Entity entity, BlockState state, Level level, BlockPos pos) {
+        BlockState blockstate = pushEntitiesUp(state, CBlocks.GASTRALITH.get().defaultBlockState(), level, pos);
         level.setBlockAndUpdate(pos, blockstate);
         level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, blockstate));
     }

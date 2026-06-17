@@ -87,16 +87,16 @@ public class CBlocks {
     // region Frigus-Specific Blocks
     public static final DeferredBlock<Block>
             FRIGIAN_GRASS_BLOCK = register("frigian_grass_block", () -> new FrigianGrassBlock(grassProperties().mapColor(MapColor.GLOW_LICHEN))),
-            FRIGIAN_DIRT = register("frigian_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_DIRT_PATH = register("frigian_dirt_path", () -> new FrigianDirtPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            COARSE_FRIGIAN_DIRT = register("coarse_frigian_dirt", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_FARMLAND = register("frigian_farmland", () -> new FrigianFarmlandBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_MUD = register("frigian_mud", () -> new MudBlock(mudProperties().mapColor(MapColor.TERRACOTTA_BLUE))),
-            PACKED_FRIGIAN_MUD = register("packed_frigian_mud", () -> new Block(packedMudProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_MUD_BRICKS = register("frigian_mud_bricks", () -> new Block(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_MUD_BRICK_STAIRS = register("frigian_mud_brick_stairs", () -> new StairBlock(FRIGIAN_MUD_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.FRIGIAN_MUD_BRICKS.get()))),
-            FRIGIAN_MUD_BRICK_SLAB = register("frigian_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
-            FRIGIAN_MUD_BRICK_WALL = register("frigian_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH = register("gastralith", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_PATH = register("gastralith_path", () -> new GastralithPathBlock(pathProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            COARSE_GASTRALITH = register("coarse_gastralith", () -> new Block(dirtProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_FARMLAND = register("gastralith_farmland", () -> new GastralithFarmlandBlock(farmlandProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_MUD = register("gastralith_mud", () -> new MudBlock(mudProperties().mapColor(MapColor.TERRACOTTA_BLUE))),
+            PACKED_GASTRALITH_MUD = register("packed_gastralith_mud", () -> new Block(packedMudProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_MUD_BRICKS = register("gastralith_mud_bricks", () -> new Block(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_MUD_BRICK_STAIRS = register("gastralith_mud_brick_stairs", () -> new StairBlock(GASTRALITH_MUD_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.GASTRALITH_MUD_BRICKS.get()))),
+            GASTRALITH_MUD_BRICK_SLAB = register("gastralith_mud_brick_slab", () -> new SlabBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
+            GASTRALITH_MUD_BRICK_WALL = register("gastralith_mud_brick_wall", () -> new WallBlock(mudBrickProperties().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE))),
             FRIGIAN_SHORT_GRASS = register("frigian_short_grass", () -> new TallGrassBlock(plantProperties().replaceable().offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().mapColor(MapColor.GLOW_LICHEN)));
     public static final DeferredBlock<Block>
             VIVIAN = register("vivian", () -> new FlowerBlock(MobEffects.INVISIBILITY, 3.5F, plantProperties().mapColor(MapColor.COLOR_LIGHT_BLUE).offsetType(BlockBehaviour.OffsetType.XZ))),

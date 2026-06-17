@@ -47,8 +47,8 @@ public class CItemModelProvider extends ItemModelProvider {
 
         // region Body-Specific Blocks
         blockModel(CBlocks.FRIGIAN_GRASS_BLOCK);
-        blockModel(CBlocks.FRIGIAN_DIRT_PATH);
-        blockModel(CBlocks.FRIGIAN_FARMLAND);
+        blockModel(CBlocks.GASTRALITH_PATH);
+        blockModel(CBlocks.GASTRALITH_FARMLAND);
         blockItemModel(CBlocks.FRIGIAN_SHORT_GRASS, CBlocks.FRIGIAN_SHORT_GRASS, GENERATED);
         blockItemModel(CBlocks.VIVIAN, CBlocks.VIVIAN, GENERATED);
         blockItemModel(CBlocks.WICKUL, CBlocks.WICKUL, GENERATED);

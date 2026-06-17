@@ -1,10 +1,10 @@
 {   
     "parent": "block/block",
     "textures": {
-        "particle": "centaurus:block/frigian_dirt",
-        "top": "centaurus:block/frigian_dirt_path_top",
-        "side": "centaurus:block/frigian_dirt_path_side",
-        "bottom": "centaurus:block/frigian_dirt"
+        "particle": "centaurus:block/gastralith",
+        "top": "centaurus:block/gastralith_path_top",
+        "side": "centaurus:block/gastralith_path_side",
+        "bottom": "centaurus:block/gastralith"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

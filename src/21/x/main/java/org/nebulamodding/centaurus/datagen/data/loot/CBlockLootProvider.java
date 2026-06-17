@@ -38,8 +38,8 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         excludedBlocks.add(CBlocks.GRIMWOOD_DOOR);
         excludedBlocks.add(CBlocks.GRIMWOOD_LEAVES);
         excludedBlocks.add(CBlocks.FRIGIAN_GRASS_BLOCK);
-        excludedBlocks.add(CBlocks.FRIGIAN_DIRT_PATH);
-        excludedBlocks.add(CBlocks.FRIGIAN_FARMLAND);
+        excludedBlocks.add(CBlocks.GASTRALITH_PATH);
+        excludedBlocks.add(CBlocks.GASTRALITH_FARMLAND);
         excludedBlocks.add(CBlocks.BLUESCHIST);
         excludedBlocks.add(CBlocks.BLUESLATE);
         excludedBlocks.add(CBlocks.BLUESCHIST_COAL_ORE);
@@ -121,9 +121,9 @@ public class CBlockLootProvider extends BlockLootSubProvider {
         // endregion
 
         // region Body-Specific Blocks
-        add(CBlocks.FRIGIAN_GRASS_BLOCK.get(), b -> createSingleItemTable(CBlocks.FRIGIAN_DIRT.get()));
-        add(CBlocks.FRIGIAN_DIRT_PATH.get(), b -> createSingleItemTable(CBlocks.FRIGIAN_DIRT.get()));
-        add(CBlocks.FRIGIAN_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.FRIGIAN_DIRT.get()));
+        add(CBlocks.FRIGIAN_GRASS_BLOCK.get(), b -> createSingleItemTable(CBlocks.GASTRALITH.get()));
+        add(CBlocks.GASTRALITH_PATH.get(), b -> createSingleItemTable(CBlocks.GASTRALITH.get()));
+        add(CBlocks.GASTRALITH_FARMLAND.get(), b -> createSingleItemTableWithSilkTouch(b, CBlocks.GASTRALITH.get()));
         // endregion
 
         // region Stones
