@@ -215,10 +215,6 @@ public class CBlocks {
             PERMAFROST_BRICK_STAIRS = register("permafrost_brick_stairs", () -> new StairBlock(PERMAFROST_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_BRICKS.get()))),
             PERMAFROST_BRICK_SLAB = register("permafrost_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_BRICKS.get()))),
             PERMAFROST_BRICK_WALL = register("permafrost_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_BRICKS.get()))),
-            PERMAFROST_TILES = register("permafrost_tiles", () -> new Block(stoneProperties().mapColor(MapColor.QUARTZ))),
-            PERMAFROST_TILE_STAIRS = register("permafrost_tile_stairs", () -> new StairBlock(PERMAFROST_TILES.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_TILES.get()))),
-            PERMAFROST_TILE_SLAB = register("permafrost_tile_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_TILES.get()))),
-            PERMAFROST_TILE_WALL = register("permafrost_tile_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CBlocks.PERMAFROST_TILES.get()))),
             PERMAFROST_PILLAR = register("permafrost_pillar", () -> new RotatedPillarBlock(stoneProperties().mapColor(MapColor.QUARTZ)));
     // endregion
 

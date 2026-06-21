@@ -74,11 +74,8 @@ public class CBlockStateProvider extends BlockStateProvider {
         excludedBlocks.add(CBlocks.BLUESLATE_TILE_SLAB);
         excludedBlocks.add(CBlocks.BLUESLATE_TILE_WALL);
         excludedBlocks.add(CBlocks.PERMAFROST_BRICK_STAIRS);
-        excludedBlocks.add(CBlocks.PERMAFROST_TILE_STAIRS);
         excludedBlocks.add(CBlocks.PERMAFROST_BRICK_SLAB);
-        excludedBlocks.add(CBlocks.PERMAFROST_TILE_SLAB);
         excludedBlocks.add(CBlocks.PERMAFROST_BRICK_WALL);
-        excludedBlocks.add(CBlocks.PERMAFROST_TILE_WALL);
         excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_STAIRS);
         excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_SLAB);
         excludedBlocks.add(CBlocks.KARCASS_STONE_BRICK_WALL);
@@ -299,11 +296,8 @@ public class CBlockStateProvider extends BlockStateProvider {
         wallBlockWithItem(CBlocks.BLUESLATE_TILE_WALL, blockLoc(CBlocks.BLUESLATE_TILES));
 
         stairsBlockWithItem(CBlocks.PERMAFROST_BRICK_STAIRS, blockLoc(CBlocks.PERMAFROST_BRICKS));
-        stairsBlockWithItem(CBlocks.PERMAFROST_TILE_STAIRS, blockLoc(CBlocks.PERMAFROST_TILES));
         slabBlockWithItem(CBlocks.PERMAFROST_BRICK_SLAB, blockLoc(CBlocks.PERMAFROST_BRICKS));
-        slabBlockWithItem(CBlocks.PERMAFROST_TILE_SLAB, blockLoc(CBlocks.PERMAFROST_TILES));
         wallBlockWithItem(CBlocks.PERMAFROST_BRICK_WALL, blockLoc(CBlocks.PERMAFROST_BRICKS));
-        wallBlockWithItem(CBlocks.PERMAFROST_TILE_WALL, blockLoc(CBlocks.PERMAFROST_TILES));
 
         stairsBlockWithItem(CBlocks.KARCASS_STONE_BRICK_STAIRS, blockLoc(CBlocks.KARCASS_STONE_BRICKS));
         slabBlockWithItem(CBlocks.KARCASS_STONE_BRICK_SLAB, blockLoc(CBlocks.KARCASS_STONE_BRICKS));

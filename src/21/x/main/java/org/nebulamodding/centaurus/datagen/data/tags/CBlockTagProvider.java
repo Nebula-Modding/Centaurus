@@ -142,7 +142,7 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeWalls.add(CBlocks.SILICATE_STONE_BRICK_WALL);
         stonePressurePlates.add(CBlocks.SILICATE_STONE_PRESSURE_PLATE);
         stoneButtons.add(CBlocks.SILICATE_STONE_BUTTON);
-        // Frigus Mud
+        // Gastralith Mud
         pickaxeStairs.add(CBlocks.GASTRALITH_MUD_BRICK_STAIRS);
         pickaxeSlabs.add(CBlocks.GASTRALITH_MUD_BRICK_SLAB);
         pickaxeWalls.add(CBlocks.GASTRALITH_MUD_BRICK_WALL);
@@ -181,15 +181,14 @@ public class CBlockTagProvider extends BlockTagsProvider {
         pickaxeStairs.add(CBlocks.PERMAFROST_STAIRS);
         pickaxeStairs.add(CBlocks.POLISHED_PERMAFROST_STAIRS);
         pickaxeStairs.add(CBlocks.PERMAFROST_BRICK_STAIRS);
-        pickaxeStairs.add(CBlocks.PERMAFROST_TILE_STAIRS);
         pickaxeSlabs.add(CBlocks.PERMAFROST_SLAB);
         pickaxeSlabs.add(CBlocks.POLISHED_PERMAFROST_SLAB);
         pickaxeSlabs.add(CBlocks.PERMAFROST_BRICK_SLAB);
-        pickaxeSlabs.add(CBlocks.PERMAFROST_TILE_SLAB);
         pickaxeWalls.add(CBlocks.PERMAFROST_WALL);
         pickaxeWalls.add(CBlocks.POLISHED_PERMAFROST_WALL);
         pickaxeWalls.add(CBlocks.PERMAFROST_BRICK_WALL);
-        pickaxeWalls.add(CBlocks.PERMAFROST_TILE_WALL);
+        stonePressurePlates.add(CBlocks.PERMAFROST_PRESSURE_PLATE);
+        stoneButtons.add(CBlocks.PERMAFROST_BUTTON);
         // Karcass Stone
         pickaxeStairs.add(CBlocks.KARCASS_STONE_STAIRS);
         pickaxeStairs.add(CBlocks.KARCASS_COBBLESTONE_STAIRS);
@@ -417,7 +416,6 @@ public class CBlockTagProvider extends BlockTagsProvider {
                 .add(CBlocks.POLISHED_PERMAFROST.get())
                 .add(CBlocks.PERMAFROST_BRICKS.get())
                 .add(CBlocks.CRACKED_PERMAFROST_BRICKS.get())
-                .add(CBlocks.PERMAFROST_TILES.get())
                 .add(CBlocks.PERMAFROST_PILLAR.get())
                 // Karcass Stone
                 .add(CBlocks.KARCASS_STONE.get())
